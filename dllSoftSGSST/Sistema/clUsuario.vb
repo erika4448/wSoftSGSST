@@ -9,6 +9,7 @@ Namespace Sistema
             Dim dbCommand As DbCommand = db.GetStoredProcCommand("sis.spSisCargarInfoUsuarioXLoginYPwd")
             Dim varIdUsuario As Integer = 0
             Dim varIdEmpresa As Integer = 0
+            Dim varIdRelUsuXEmp As Integer = 0
             Dim varEstPrimerLogueo As Integer = 0
             Dim objInfoUsuario As clInfoUsuario
 
@@ -17,19 +18,22 @@ Namespace Sistema
             'db.AddParameter(dbCommand, "parOutIdUsuario", DbType.Int32, ParameterDirection.InputOutput, Nothing, DataRowVersion.Current, varIdUsuario)
             'db.AddParameter(dbCommand, "parOutIdEmpresa", DbType.Int32, ParameterDirection.InputOutput, Nothing, DataRowVersion.Current, varIdEmpresa)
             'db.AddParameter(dbCommand, "parOutEstPrimerLog", DbType.Int32, ParameterDirection.InputOutput, Nothing, DataRowVersion.Current, varEstPrimerLogueo)
+            'db.AddParameter(dbCommand, "parOutIdRelUsuXEmp", DbType.Int32, ParameterDirection.InputOutput, Nothing, DataRowVersion.Current, varIdRelUsuXEmp)
 
             'db.ExecuteNonQuery(dbCommand)
 
             'varIdUsuario = db.GetParameterValue(dbCommand, "parOutIdUsuario")
             'varIdEmpresa = db.GetParameterValue(dbCommand, "parOutIdEmpresa")
             'varEstPrimerLogueo=db.GetParameterValue(dbCommand, "parOutIdEmpresa")
+            'varIdRelUsuXEmp=db.GetParameterValue(dbCommand, "parOutIdRelUsuXEmp")
 
             varIdUsuario = 1
             parTxtUsuario = "Administrator"
             varIdEmpresa = 1
             varEstPrimerLogueo = 1
+            varIdRelUsuXEmp = 1
 
-            objInfoUsuario = New clInfoUsuario(varIdUsuario, parTxtUsuario, varIdEmpresa, varEstPrimerLogueo)
+            objInfoUsuario = New clInfoUsuario(varIdUsuario, parTxtUsuario, varIdEmpresa, varEstPrimerLogueo, varIdRelUsuXEmp)
 
             Return objInfoUsuario
         End Function
@@ -39,6 +43,7 @@ Namespace Sistema
         Dim varIdUsuario As Integer = 0
         Dim varStrLogin As String = ""
         Dim varIdEmpresa As Integer = 0
+        Dim varIdRelUsuXEmp As Integer = 0
         Dim varEstPrimerLog As Integer = 0
 #End Region
 #Region "PROPIEDADES"
@@ -57,6 +62,11 @@ Namespace Sistema
                 Return varIdEmpresa
             End Get
         End Property
+        Public ReadOnly Property pIdRelUsuXEmp As Integer
+            Get
+                Return varIdRelUsuXEmp
+            End Get
+        End Property
         Public Property pEstPrimerLog As Integer
             Get
                 Return varEstPrimerLog
@@ -67,11 +77,13 @@ Namespace Sistema
         End Property
 #End Region
         Public Sub New(ByVal parIdUsuario As Integer, ByVal parStrLogin As String,
-                       ByVal parIdEmpresa As Integer, ByVal parEstPrimerLog As Integer)
+                       ByVal parIdEmpresa As Integer, ByVal parEstPrimerLog As Integer,
+                       ByVal parIdRelUsuXEmp As Integer)
             varIdUsuario = parIdUsuario
             varStrLogin = parStrLogin
             varIdEmpresa = parIdEmpresa
             varEstPrimerLog = parEstPrimerLog
+            varIdRelUsuXEmp = parIdRelUsuXEmp
         End Sub
     End Class
 End Namespace

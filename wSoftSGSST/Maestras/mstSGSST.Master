@@ -1,0 +1,35 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="mstSGSST.master.vb" Inherits="wSoftSGSST.mstSGSST" %>
+
+<%@ Register Src="~/Comun/Ctr/ctrLoading.ascx" TagPrefix="uc1" TagName="ctrLoading" %>
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>SG-SST</title>
+    <link href="App_Themes/SoftSGSST.css" rel="stylesheet" type="text/css" />
+
+    <%--HOJAS DE ESTILO LIBRERIA DE MENSAJES--%>
+    <link href="css/alertify.default.css" rel="stylesheet" />
+    <link href="css/alertify.bootstrap.css" rel="stylesheet" />
+    <link href="css/alertify.core.css" rel="stylesheet" />
+
+    <%--JAVASCRIPT LIBRERIA DE MENSAJES--%>
+    <script type="text/javascript" src="js/alertify.js"></script>
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+            <uc1:ctrLoading runat="server" ID="ctrLoading" />
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

@@ -96,6 +96,8 @@
     <Content Include="css\alertify.bootstrap.css" />
     <Content Include="css\alertify.core.css" />
     <Content Include="css\alertify.default.css" />
+    <Content Include="frmPrincMenuPrincipal.aspx" />
+    <Content Include="frmPrincPrimerIngreso.aspx" />
     <Content Include="Images\Botones\imBtnIngresar.png" />
     <Content Include="Images\General\imLoading.gif" />
     <Content Include="Images\Menu\imUsuarioIngreso.png" />
@@ -108,6 +110,7 @@
     <Content Include="js\jquery-1.8.3.min.js" />
     <Content Include="js\jsapi.js" />
     <Content Include="login.aspx" />
+    <Content Include="Planear\PerfDemografico\frmPlPerfDemografico.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -118,11 +121,32 @@
       <DependentUpon>ctrLoading.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="frmPrincMenuPrincipal.aspx.designer.vb">
+      <DependentUpon>frmPrincMenuPrincipal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrincMenuPrincipal.aspx.vb">
+      <DependentUpon>frmPrincMenuPrincipal.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="frmPrincPrimerIngreso.aspx.designer.vb">
+      <DependentUpon>frmPrincPrimerIngreso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrincPrimerIngreso.aspx.vb">
+      <DependentUpon>frmPrincPrimerIngreso.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="login.aspx.designer.vb">
       <DependentUpon>login.aspx</DependentUpon>
     </Compile>
     <Compile Include="login.aspx.vb">
       <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Maestras\mstSGSST.Master.designer.vb">
+      <DependentUpon>mstSGSST.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Maestras\mstSGSST.Master.vb">
+      <DependentUpon>mstSGSST.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -143,6 +167,13 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Planear\PerfDemografico\frmPlPerfDemografico.aspx.designer.vb">
+      <DependentUpon>frmPlPerfDemografico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Planear\PerfDemografico\frmPlPerfDemografico.aspx.vb">
+      <DependentUpon>frmPlPerfDemografico.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -153,6 +184,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Maestras\mstSGSST.Master" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -171,9 +203,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Maestras\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

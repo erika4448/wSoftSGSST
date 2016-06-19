@@ -4,9 +4,6 @@ Imports System.Web.Security
 
 Namespace Seguridad
     Public Class clUsuario
-        Public Function ValidarUsuario(ByVal parTxtUsuario As String, ByVal parTxtPswd As String)
-
-        End Function
         Public Sub GenerarTicketAutenticacion(ByVal parRefPagina As System.Web.UI.Page,
                                 ByVal parStrLogin As String,
                                 ByVal parObjLoginSesion As dllSoftSGSST.Seguridad.clObjLoginSesion,
