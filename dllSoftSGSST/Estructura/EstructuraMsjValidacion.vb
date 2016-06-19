@@ -27,7 +27,7 @@ Namespace Estructura
             ValidacionCampos = 3
         End Enum
         'FUNCION PARA AGREGAR MENSAJE AL CONSTRUCTOR
-        Public Sub AgregarMensaje(ByVal parStrMensaje As String, Optional ByVal parBoolSaltoLinea As Boolean = False)
+        Public Sub AgregarMensaje(ByVal parStrMensaje As String, Optional ByVal parBoolSaltoLinea As Boolean = True)
             pStrMensaje = pStrMensaje & parStrMensaje & IIf(parBoolSaltoLinea = True, "<br/>", "")
 
             Me.pBoolRtn = False

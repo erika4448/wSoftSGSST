@@ -78,9 +78,7 @@
     <Compile Include="Estructura\EstructuraControl.vb">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Estructura\EstructuraPagina.vb">
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
+    <Compile Include="Estructura\EstructuraPagina.vb" />
     <Compile Include="Estructura\EstructuraTransaccion.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -97,7 +95,10 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Seguridad\clObjLoginSesion.vb" />
+    <Compile Include="Seguridad\clUsuario.vb" />
     <Compile Include="Sistema\clBD.vb" />
+    <Compile Include="Sistema\clUsuario.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">

@@ -91,16 +91,23 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Themes\SoftSGSST.css" />
     <Content Include="Comun\Ctr\ctrLoading.ascx" />
     <Content Include="css\alertify.bootstrap.css" />
     <Content Include="css\alertify.core.css" />
     <Content Include="css\alertify.default.css" />
+    <Content Include="Images\Botones\imBtnIngresar.png" />
     <Content Include="Images\General\imLoading.gif" />
+    <Content Include="Images\Menu\imUsuarioIngreso.png" />
+    <Content Include="Images\Menu\imPswdIngreso.png" />
+    <Content Include="Images\Menu\ImIngreso.png" />
+    <Content Include="Images\Menu\imLogoCliente.png" />
     <Content Include="Images\Msj\imAdvertencia.png" />
     <Content Include="js\alertify.js" />
     <Content Include="js\alertify.min.js" />
     <Content Include="js\jquery-1.8.3.min.js" />
     <Content Include="js\jsapi.js" />
+    <Content Include="login.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -110,6 +117,12 @@
     <Compile Include="Comun\Ctr\ctrLoading.ascx.vb">
       <DependentUpon>ctrLoading.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.vb">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.vb">
+      <DependentUpon>login.aspx</DependentUpon>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -159,8 +172,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Themes\" />
-    <Folder Include="Images\Botones\" />
     <Folder Include="Maestras\" />
   </ItemGroup>
   <PropertyGroup>
