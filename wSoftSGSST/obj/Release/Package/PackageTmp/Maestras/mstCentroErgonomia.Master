@@ -1,0 +1,48 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="mstCentroErgonomia.master.vb" Inherits="wSoftCentroErgonomia.mstCentroErgonomia" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+<%@ Register Src="~/Comun/Ctr/ctrLoading.ascx" TagPrefix="uc1" TagName="ctrLoading" %>
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>SOFT. CENTRO ESTUDIOS ERGONOMIA</title>
+    <script type="text/javascript" src="../js/alertify.js"></script>
+    <script type="text/javascript" src="../js/alertify.min.js"></script>
+    <script type="text/javascript" src="../js/jsapi.js"></script>
+    <link href="../css/alertify.bootstrap.css" rel="stylesheet" />
+    <link href="../css/alertify.core.css" rel="stylesheet" />
+    <link href="../css/alertify.default.css" rel="stylesheet" />
+    <link href="../App_Themes/tmSoftCentroErgonomia/Principal.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="background-color: #E2E2E2">
+    <form id="form1" runat="server">
+        <asp:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server">
+        </asp:ToolkitScriptManager>
+        <uc1:ctrLoading runat="server" id="ctrLoading" />
+        <div align="center">
+            <table align="center" width="100%">
+                <tr>
+                    <td align="center" style="background-color: #000066; height: 100px;">CABEZOTE
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" style="background-color: #FFFFFF;">
+                        <br />
+                        <br />
+                        <asp:ContentPlaceHolder ID="cphPrincipal" runat="server">
+                        </asp:ContentPlaceHolder>
+                        <br />
+                        <br />
+                        <br />
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>

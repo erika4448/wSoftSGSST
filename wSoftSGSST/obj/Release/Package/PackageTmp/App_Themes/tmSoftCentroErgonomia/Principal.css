@@ -1,0 +1,218 @@
+﻿/*MODAL POUP*/
+ .cssBackGroundModal {
+        background-color: #FFFFFF;
+        opacity:0.4;
+        filter:alpha(opacity=40); 
+ }
+.ModalPoup {
+    border: 2px solid #3c3c3c;
+    padding: 15px 15px 15px 15px;
+    background-color: #FFFFFF;
+}
+/*LETRA APLICACION GRAL*/
+form {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+    font-weight: normal;
+}
+
+/*BOTONES*/
+input[type="submit"], input[type="button"] {
+    padding: 5px 15px 5px 15px;
+    border-style: none;
+    border-width: 1px;
+    color: #FFF;
+    background-color: #00337C;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+    font-weight: normal;
+    margin-right: 0px;
+}
+
+/*PANELES*/
+.pnlAgrupadorGral {
+    border-color:#00337C;
+    border-width:1px;
+    border-style:solid;
+    background-color: #ECECFB;
+    padding:10px;
+}
+
+
+/*GRILLAS***************************/
+table {
+    *border-collapse: collapse;
+    margin-left: 0px;
+}
+
+.gvGeneral {
+    border-color: #00337C;
+    -webkit-box-shadow: 0 1px 1px #ccc;
+    -moz-box-shadow: 0 1px 1px #ccc;
+    box-shadow: 0 1px 1px #ccc;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+}
+    .gvGeneral .gvFooter {
+        background-color:#00337C;
+        color:#FFFFFF;
+        font-weight:bold;
+        border-style:solid;
+        border-color:#FFFFFF;
+        border-width:1px;
+    }
+
+    .gvGeneral .gvFooter td {
+        border-style:solid;
+        border-color:#FFFFFF;
+        border-width:1px;
+    }
+     .gvGeneral .gvFooter tr:hover {
+        background: #00337C;
+    }
+
+    .gvGeneral tr:hover {
+        background: #DDEEF9;
+        -o-transition: all 0.1s ease-in-out;
+        -webkit-transition: all 0.1s ease-in-out;
+        -moz-transition: all 0.1s ease-in-out;
+        -ms-transition: all 0.1s ease-in-out;
+        transition: all 0.1s ease-in-out;
+    }
+
+    .gvGeneral td {
+    padding: 6px;
+    /*text-align: left;*/
+    border-style: solid none solid solid;
+    border-top-color: #00337C;
+    border-left-color: #00337C;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-bottom-color: #00337C;
+}
+
+    .gvGeneral th {
+        border-left: 1px solid #fff;
+    }
+
+    .gvGeneral th {
+        background-color: #00337C;
+        -webkit-box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;
+        -moz-box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;
+        /*box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;*/
+        text-shadow: 0 1px 0 rgba(255,255,255,.5);
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: bold;
+        font-variant: normal;
+        text-transform: capitalize;
+        text-align: center;
+        background-repeat: repeat;
+        COLOR:#FFFFFF;
+        padding-top:5px;
+        padding-bottom:5px;
+        padding-left:2px;
+        padding-right:2px;
+    }
+
+        .gvGeneral th a {
+            font-weight: bold;
+            color: #ffffff;
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration:none;
+        }
+
+            .gvGeneral th a:hover {
+                font-weight: bold;
+                color: #ffffff;
+                font-family: Arial, Helvetica, sans-serif;
+                text-decoration:none;
+            }
+/*************************************/
+
+/*PAGINADOR DE LA GRILLA**************/
+.pager {
+    border-style: solid none none none;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-right-color: #CFE1EE;
+    border-bottom-color: #CFE1EE;
+    border-left-color: #CFE1EE;
+    border-top-color: #CFE1EE;
+    background-color: #FFFFFF;
+    font-family: arial, Helvetica, sans-serif;
+    font-size: 10px;
+    vertical-align: top;
+    height: 5px;
+}
+
+.pager tr {
+    border-color: #F7FBFD;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    background: #F7FBFD;
+    height: 5px;
+}    
+
+.pager td {
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    background: #F7FBFD;
+    border-top-color: #F7FBFD;
+    border-right-color: #F7FBFD;
+    border-bottom-color: #F7FBFD;
+    border-left-color: #F7FBFD;
+}
+
+/*LABEL VALIDACION*/
+
+.lblValidador {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+    font-weight: bold;
+    color: #00337C;
+    margin-right:5px;
+}
+
+.lblTituloPagina {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16pt;
+    font-weight: bold;
+    color: #00337C;
+}
+.tdEtiquetalLabelInfo {
+    width:160px;
+}
+.tdColFormulario
+{
+    width:450px;
+}
+.tdSeparacion {
+    width:40px;
+}
+table {
+   border-spacing:0px 1px; 
+}

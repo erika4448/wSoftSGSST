@@ -1,0 +1,415 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>E:\OTROS\WORKS\CENTRO DE ERGONOMIA JAVERIANA\PUBLICACION</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="Admin/AdmActividad.aspx">
+      <publishTime>03/29/2015 21:12:55</publishTime>
+    </File>
+    <File Include="Admin/Ctr/ctrAdminActividad.ascx">
+      <publishTime>03/29/2015 21:18:08</publishTime>
+    </File>
+    <File Include="Admin/Ctr/ctrAdminEmpresa.ascx">
+      <publishTime>04/03/2015 20:12:46</publishTime>
+    </File>
+    <File Include="Admin/Ctr/ctrAdminProcedimiento.ascx">
+      <publishTime>03/29/2015 20:55:21</publishTime>
+    </File>
+    <File Include="Admin/Ctr/ctrAdminProceso.ascx">
+      <publishTime>03/29/2015 20:56:40</publishTime>
+    </File>
+    <File Include="Admin/Ctr/ctrAdminTipoProceso.ascx">
+      <publishTime>03/29/2015 20:57:44</publishTime>
+    </File>
+    <File Include="Admin/Ctr/ctrAdminUsuarios.ascx">
+      <publishTime>03/01/2015 20:14:04</publishTime>
+    </File>
+    <File Include="App_Themes/tmSoftCentroErgonomia/Principal.css">
+      <publishTime>06/08/2015 15:39:46</publishTime>
+    </File>
+    <File Include="bin/AjaxControlToolkit.dll">
+      <publishTime>12/14/2013 09:04:04</publishTime>
+    </File>
+    <File Include="bin/AjaxMin.dll">
+      <publishTime>12/04/2013 14:25:38</publishTime>
+    </File>
+    <File Include="bin/ar/AjaxControlToolkit.resources.dll">
+      <publishTime>12/14/2013 09:04:04</publishTime>
+    </File>
+    <File Include="bin/cs/AjaxControlToolkit.resources.dll">
+      <publishTime>12/14/2013 09:04:04</publishTime>
+    </File>
+    <File Include="bin/de/AjaxControlToolkit.resources.dll">
+      <publishTime>12/14/2013 09:04:04</publishTime>
+    </File>
+    <File Include="bin/de/Microsoft.Data.Edm.resources.dll">
+      <publishTime>12/04/2013 14:25:46</publishTime>
+    </File>
+    <File Include="bin/de/Microsoft.Data.OData.resources.dll">
+      <publishTime>12/04/2013 14:25:48</publishTime>
+    </File>
+    <File Include="bin/de/System.Spatial.resources.dll">
+      <publishTime>12/04/2013 14:25:48</publishTime>
+    </File>
+    <File Include="bin/dllSoftCentroErgonomia.dll">
+      <publishTime>06/08/2015 20:17:03</publishTime>
+    </File>
+    <File Include="bin/es/AjaxControlToolkit.resources.dll">
+      <publishTime>12/14/2013 09:04:04</publishTime>
+    </File>
+    <File Include="bin/es/Microsoft.Data.Edm.resources.dll">
+      <publishTime>12/04/2013 14:25:46</publishTime>
+    </File>
+    <File Include="bin/es/Microsoft.Data.OData.resources.dll">
+      <publishTime>12/04/2013 14:25:48</publishTime>
+    </File>
+    <File Include="bin/es/System.Spatial.resources.dll">
+      <publishTime>12/04/2013 14:25:48</publishTime>
+    </File>
+    <File Include="bin/fr/AjaxControlToolkit.resources.dll">
+      <publishTime>12/14/2013 09:04:04</publishTime>
+    </File>
+    <File Include="bin/fr/Microsoft.Data.Edm.resources.dll">
+      <publishTime>12/04/2013 14:25:46</publishTime>
+    </File>
+    <File Include="bin/fr/Microsoft.Data.OData.resources.dll">
+      <publishTime>12/04/2013 14:25:48</publishTime>
+    </File>
+    <File Include="bin/fr/System.Spatial.resources.dll">
+      <publishTime>12/04/2013 14:25:48</publishTime>
+    </File>
+    <File Include="bin/he/AjaxControlToolkit.resources.dll">
+      <publishTime>12/14/2013 09:04:06</publishTime>
+    </File>
+    <File Include="bin/hi/AjaxControlToolkit.resources.dll">
+      <publishTime>12/14/2013 09:04:06</publishTime>
+    </File>
+    <File Include="bin/HtmlAgilityPack.dll">
+      <publishTime>12/04/2013 14:25:38</publishTime>
+    </File>
+    <File Include="bin/it/AjaxControlToolkit.resources.dll">
+      <publishTime>12/14/2013 09:04:06</publishTime>
+    </File>
+    <File Include="bin/it/Microsoft.Data.Edm.resources.dll">
+      <publishTime>12/04/2013 14:25:46</publishTime>
+    </File>
+    <File Include="bin/it/Microsoft.Data.OData.resources.dll">
+      <publishTime>12/04/2013 14:25:48</publishTime>
+    </File>
+    <File Include="bin/it/System.Spatial.resources.dll">
+      <publishTime>12/04/2013 14:25:48</publishTime>
+    </File>
+    <File Include="bin/ja/AjaxControlToolkit.resources.dll">
+      <publishTime>12/14/2013 09:04:06</publishTime>
+    </File>
+    <File Include="bin/ja/Microsoft.Data.Edm.resources.dll">
+      <publishTime>12/04/2013 14:25:48</publishTime>
+    </File>
+    <File Include="bin/ja/Microsoft.Data.OData.resources.dll">
+      <publishTime>12/04/2013 14:25:48</publishTime>
+    </File>
+    <File Include="bin/ja/System.Spatial.resources.dll">
+      <publishTime>12/04/2013 14:25:48</publishTime>
+    </File>
+    <File Include="bin/ko/AjaxControlToolkit.resources.dll">
+      <publishTime>12/14/2013 09:04:06</publishTime>
+    </File>
+    <File Include="bin/ko/Microsoft.Data.Edm.resources.dll">
+      <publishTime>12/04/2013 14:25:48</publishTime>
+    </File>
+    <File Include="bin/ko/Microsoft.Data.OData.resources.dll">
+      <publishTime>12/04/2013 14:25:48</publishTime>
+    </File>
+    <File Include="bin/ko/System.Spatial.resources.dll">
+      <publishTime>12/04/2013 14:25:48</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Data.Edm.dll">
+      <publishTime>12/04/2013 14:25:46</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Data.OData.dll">
+      <publishTime>12/04/2013 14:25:48</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.EnterpriseLibrary.Common.dll">
+      <publishTime>04/16/2010 14:16:58</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.EnterpriseLibrary.Data.dll">
+      <publishTime>04/16/2010 14:16:58</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.ServiceLocation.dll">
+      <publishTime>04/16/2010 14:16:58</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.Unity.dll">
+      <publishTime>04/16/2010 13:42:32</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.Unity.Interception.dll">
+      <publishTime>04/16/2010 13:42:32</publishTime>
+    </File>
+    <File Include="bin/Microsoft.WindowsAzure.Storage.dll">
+      <publishTime>12/04/2013 14:25:48</publishTime>
+    </File>
+    <File Include="bin/nl/AjaxControlToolkit.resources.dll">
+      <publishTime>12/14/2013 09:04:06</publishTime>
+    </File>
+    <File Include="bin/pl/AjaxControlToolkit.resources.dll">
+      <publishTime>12/14/2013 09:04:06</publishTime>
+    </File>
+    <File Include="bin/pt/AjaxControlToolkit.resources.dll">
+      <publishTime>12/14/2013 09:04:06</publishTime>
+    </File>
+    <File Include="bin/ru/AjaxControlToolkit.resources.dll">
+      <publishTime>12/14/2013 09:04:06</publishTime>
+    </File>
+    <File Include="bin/ru/Microsoft.Data.Edm.resources.dll">
+      <publishTime>12/04/2013 14:25:48</publishTime>
+    </File>
+    <File Include="bin/ru/Microsoft.Data.OData.resources.dll">
+      <publishTime>12/04/2013 14:25:48</publishTime>
+    </File>
+    <File Include="bin/ru/System.Spatial.resources.dll">
+      <publishTime>12/04/2013 14:25:48</publishTime>
+    </File>
+    <File Include="bin/System.Spatial.dll">
+      <publishTime>12/04/2013 14:25:48</publishTime>
+    </File>
+    <File Include="bin/tr-TR/AjaxControlToolkit.resources.dll">
+      <publishTime>12/14/2013 09:04:06</publishTime>
+    </File>
+    <File Include="bin/wSoftCentroErgonomia.dll">
+      <publishTime>06/08/2015 21:16:57</publishTime>
+    </File>
+    <File Include="bin/wSoftCentroErgonomia.xml">
+      <publishTime>06/08/2015 21:16:57</publishTime>
+    </File>
+    <File Include="bin/zh-CHS/AjaxControlToolkit.resources.dll">
+      <publishTime>12/14/2013 09:04:06</publishTime>
+    </File>
+    <File Include="bin/zh-CHT/AjaxControlToolkit.resources.dll">
+      <publishTime>12/14/2013 09:04:06</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/Microsoft.Data.Edm.resources.dll">
+      <publishTime>12/04/2013 14:25:48</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/Microsoft.Data.OData.resources.dll">
+      <publishTime>12/04/2013 14:25:48</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Spatial.resources.dll">
+      <publishTime>12/04/2013 14:25:48</publishTime>
+    </File>
+    <File Include="bin/zh-Hant/Microsoft.Data.Edm.resources.dll">
+      <publishTime>12/04/2013 14:25:48</publishTime>
+    </File>
+    <File Include="bin/zh-Hant/Microsoft.Data.OData.resources.dll">
+      <publishTime>12/04/2013 14:25:48</publishTime>
+    </File>
+    <File Include="bin/zh-Hant/System.Spatial.resources.dll">
+      <publishTime>12/04/2013 14:25:48</publishTime>
+    </File>
+    <File Include="Comun/Ctr/ctrBusEmpleadoXTipYNumDoc.ascx">
+      <publishTime>03/08/2015 12:58:57</publishTime>
+    </File>
+    <File Include="Comun/Ctr/ctrBusquedaActividad.ascx">
+      <publishTime>06/08/2015 19:23:06</publishTime>
+    </File>
+    <File Include="Comun/Ctr/ctrBusquedaCargo.ascx">
+      <publishTime>03/29/2015 21:07:46</publishTime>
+    </File>
+    <File Include="Comun/Ctr/ctrBusquedaProcedimiento.ascx">
+      <publishTime>03/29/2015 21:07:46</publishTime>
+    </File>
+    <File Include="Comun/Ctr/ctrLoading.ascx">
+      <publishTime>03/08/2015 22:38:15</publishTime>
+    </File>
+    <File Include="css/alertify.bootstrap.css">
+      <publishTime>02/08/2015 17:30:17</publishTime>
+    </File>
+    <File Include="css/alertify.core.css">
+      <publishTime>02/08/2015 17:30:17</publishTime>
+    </File>
+    <File Include="css/alertify.default.css">
+      <publishTime>02/08/2015 17:30:17</publishTime>
+    </File>
+    <File Include="Encuesta/Ctr/ctrCabEncuesta.ascx">
+      <publishTime>06/08/2015 14:24:14</publishTime>
+    </File>
+    <File Include="Encuesta/Ctr/ctrCargosReporta.ascx">
+      <publishTime>05/18/2015 21:23:32</publishTime>
+    </File>
+    <File Include="Encuesta/Ctr/ctrDetEncuesta.ascx">
+      <publishTime>06/08/2015 19:21:13</publishTime>
+    </File>
+    <File Include="Encuesta/Ctr/ctrPreguntasEncuesta.ascx">
+      <publishTime>06/08/2015 15:27:57</publishTime>
+    </File>
+    <File Include="Encuesta/frmEncuesta.aspx">
+      <publishTime>06/08/2015 18:33:55</publishTime>
+    </File>
+    <File Include="frmMenuTemp.aspx">
+      <publishTime>05/10/2015 19:43:25</publishTime>
+    </File>
+    <File Include="Images/Botones/imBtnActualizar.fw.png">
+      <publishTime>03/08/2015 19:06:09</publishTime>
+    </File>
+    <File Include="Images/Botones/imBtnAgregar.fw.png">
+      <publishTime>03/10/2015 22:10:08</publishTime>
+    </File>
+    <File Include="Images/Botones/imBtnBuscar.fw.png">
+      <publishTime>03/08/2015 19:02:26</publishTime>
+    </File>
+    <File Include="Images/Botones/imBtnDificultadCinco.fw.png">
+      <publishTime>03/08/2015 20:58:30</publishTime>
+    </File>
+    <File Include="Images/Botones/imBtnDificultadCincoSel.fw.png">
+      <publishTime>03/08/2015 20:59:00</publishTime>
+    </File>
+    <File Include="Images/Botones/imBtnDificultadCuatro.fw.png">
+      <publishTime>03/08/2015 20:58:15</publishTime>
+    </File>
+    <File Include="Images/Botones/imBtnDificultadCuatroSel.fw.png">
+      <publishTime>03/08/2015 20:59:15</publishTime>
+    </File>
+    <File Include="Images/Botones/imBtnDificultadDos.fw.png">
+      <publishTime>03/08/2015 20:57:47</publishTime>
+    </File>
+    <File Include="Images/Botones/imBtnDificultadDosSel.fw.png">
+      <publishTime>03/08/2015 20:59:44</publishTime>
+    </File>
+    <File Include="Images/Botones/imBtnDificultadTres.fw.png">
+      <publishTime>03/08/2015 20:58:01</publishTime>
+    </File>
+    <File Include="Images/Botones/imBtnDificultadTresSel.fw.png">
+      <publishTime>03/08/2015 20:59:28</publishTime>
+    </File>
+    <File Include="Images/Botones/imBtnDificultadUno.fw.png">
+      <publishTime>03/08/2015 20:57:35</publishTime>
+    </File>
+    <File Include="Images/Botones/imBtnDificultadUnoSel.fw.png">
+      <publishTime>03/08/2015 20:59:54</publishTime>
+    </File>
+    <File Include="Images/Botones/imBtnDisfruta1.png">
+      <publishTime>03/08/2015 21:49:31</publishTime>
+    </File>
+    <File Include="Images/Botones/imBtnDisfruta1Sel.png">
+      <publishTime>03/08/2015 21:49:54</publishTime>
+    </File>
+    <File Include="Images/Botones/imBtnDisfruta2.png">
+      <publishTime>03/08/2015 21:50:13</publishTime>
+    </File>
+    <File Include="Images/Botones/imBtnDisfruta2Sel.png">
+      <publishTime>03/08/2015 21:50:32</publishTime>
+    </File>
+    <File Include="Images/Botones/imBtnDisfruta3.png">
+      <publishTime>03/08/2015 21:50:55</publishTime>
+    </File>
+    <File Include="Images/Botones/imBtnDisfruta3Sel.png">
+      <publishTime>03/08/2015 21:51:17</publishTime>
+    </File>
+    <File Include="Images/Botones/imBtnDisfruta4.fw.png">
+      <publishTime>03/08/2015 21:01:58</publishTime>
+    </File>
+    <File Include="Images/Botones/imBtnDisfruta4Sel.fw.png">
+      <publishTime>03/08/2015 21:02:33</publishTime>
+    </File>
+    <File Include="Images/Botones/imBtnDisfruta5.png">
+      <publishTime>03/08/2015 21:14:24</publishTime>
+    </File>
+    <File Include="Images/Botones/imBtnDisfruta5Sel.png">
+      <publishTime>03/08/2015 22:20:48</publishTime>
+    </File>
+    <File Include="Images/Botones/imBtnEditar.fw.png">
+      <publishTime>03/08/2015 21:41:52</publishTime>
+    </File>
+    <File Include="Images/Botones/imBtnEliminar.fw.png">
+      <publishTime>03/08/2015 19:00:22</publishTime>
+    </File>
+    <File Include="Images/Botones/imBtnExportarExcel.fw.png">
+      <publishTime>05/18/2015 16:29:17</publishTime>
+    </File>
+    <File Include="Images/Botones/imBtnNo.fw.png">
+      <publishTime>03/29/2015 20:25:17</publishTime>
+    </File>
+    <File Include="Images/Botones/imBtnSi.fw.png">
+      <publishTime>03/29/2015 20:25:17</publishTime>
+    </File>
+    <File Include="Images/Botones/imBtnVerGral.fw.png">
+      <publishTime>03/29/2015 20:55:00</publishTime>
+    </File>
+    <File Include="Images/frmGetReporte.aspx">
+      <publishTime>05/18/2015 16:54:25</publishTime>
+    </File>
+    <File Include="Images/General/imLoading.gif">
+      <publishTime>03/08/2015 22:25:08</publishTime>
+    </File>
+    <File Include="Images/General/imLogoJaveriana.jpg">
+      <publishTime>03/15/2015 18:18:06</publishTime>
+    </File>
+    <File Include="Images/imAdvertencia.png">
+      <publishTime>02/08/2015 19:48:10</publishTime>
+    </File>
+    <File Include="js/alertify.js">
+      <publishTime>02/08/2015 19:33:34</publishTime>
+    </File>
+    <File Include="js/alertify.min.js">
+      <publishTime>02/08/2015 17:28:27</publishTime>
+    </File>
+    <File Include="js/jquery-1.8.3.min.js">
+      <publishTime>03/08/2015 22:30:35</publishTime>
+    </File>
+    <File Include="js/jsapi.js">
+      <publishTime>06/08/2015 17:41:54</publishTime>
+    </File>
+    <File Include="Maestras/mstCentroErgonomia.Master">
+      <publishTime>05/16/2015 22:45:16</publishTime>
+    </File>
+    <File Include="Procesamiento/Ctr/ctrBusquedaProcesaEmpleado.ascx">
+      <publishTime>04/05/2015 19:10:09</publishTime>
+    </File>
+    <File Include="Procesamiento/Ctr/ctrBusquedaXEmpresa.ascx">
+      <publishTime>03/29/2015 16:14:26</publishTime>
+    </File>
+    <File Include="Procesamiento/frmConsultaProcActividad.aspx">
+      <publishTime>04/12/2015 21:14:37</publishTime>
+    </File>
+    <File Include="Procesamiento/frmConsultaProcEmpleado.aspx">
+      <publishTime>04/12/2015 20:46:35</publishTime>
+    </File>
+    <File Include="Procesamiento/frmProcesamientoActividad.aspx">
+      <publishTime>04/12/2015 21:14:37</publishTime>
+    </File>
+    <File Include="Procesamiento/frmProcesamientoEmpleado.aspx">
+      <publishTime>04/12/2015 20:57:46</publishTime>
+    </File>
+    <File Include="Reportes/Ctr/ctrEmpSedeDep.ascx">
+      <publishTime>05/16/2015 21:02:44</publishTime>
+    </File>
+    <File Include="Reportes/Ctr/ctrGrfTiempoInvAnualXTipoProc.ascx">
+      <publishTime>05/18/2015 14:03:21</publishTime>
+    </File>
+    <File Include="Reportes/Ctr/ctrRptActividades.ascx">
+      <publishTime>06/08/2015 16:22:06</publishTime>
+    </File>
+    <File Include="Reportes/Ctr/ctrRptSobrecargaXCargo.ascx">
+      <publishTime>06/08/2015 16:33:05</publishTime>
+    </File>
+    <File Include="Reportes/Ctr/ctrRptTiempoAdicXCargo.ascx">
+      <publishTime>06/08/2015 16:33:05</publishTime>
+    </File>
+    <File Include="Reportes/Ctr/ctrRptTiempoXProceso.ascx">
+      <publishTime>06/08/2015 17:14:34</publishTime>
+    </File>
+    <File Include="Reportes/Ctr/ctrRptTiempoXTipoProceso.ascx">
+      <publishTime>06/08/2015 17:20:33</publishTime>
+    </File>
+    <File Include="Reportes/frmReportes.aspx">
+      <publishTime>05/18/2015 13:58:32</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>06/08/2015 20:17:11</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

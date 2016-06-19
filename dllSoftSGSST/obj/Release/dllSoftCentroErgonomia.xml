@@ -1,0 +1,136 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+dllSoftCentroErgonomia
+</name>
+</assembly>
+<members>
+<member name="T:dllSoftCentroErgonomia.Reportes.dtsRptTiempoXProceso.dtTiempoXProcesoDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:dllSoftCentroErgonomia.Reportes.dtsRptTiempoXProceso.dtTiempoXProcesoRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:dllSoftCentroErgonomia.Reportes.dtsRptTiempoXProceso.dtTiempoXProcesoRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:dllSoftCentroErgonomia.Reportes.dtsRptTiempoXProceso">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:dllSoftCentroErgonomia.Reportes.dtsRptTiempoXTipoProc.dtTiempoXTipoProcDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:dllSoftCentroErgonomia.Reportes.dtsRptTiempoXTipoProc.dtTiempoXTipoProcRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:dllSoftCentroErgonomia.Reportes.dtsRptTiempoXTipoProc.dtTiempoXTipoProcRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:dllSoftCentroErgonomia.Reportes.dtsRptTiempoXTipoProc">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:dllSoftCentroErgonomia.Encuesta.dtsDetEncuesta.dtDetEncuestaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:dllSoftCentroErgonomia.Encuesta.dtsDetEncuesta.dtDetEncuestaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:dllSoftCentroErgonomia.Encuesta.dtsDetEncuesta.dtDetEncuestaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:dllSoftCentroErgonomia.Encuesta.dtsDetEncuesta">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:dllSoftCentroErgonomia.Encuesta.dtsCargosReporta.dtCargoReportaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:dllSoftCentroErgonomia.Encuesta.dtsCargosReporta.dtCargoReportaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:dllSoftCentroErgonomia.Encuesta.dtsCargosReporta.dtCargoReportaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:dllSoftCentroErgonomia.Encuesta.dtsCargosReporta">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:dllSoftCentroErgonomia.Reportes.dtsSobrecargaXCargo.dtSobrecargaXCargoDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:dllSoftCentroErgonomia.Reportes.dtsSobrecargaXCargo.dtSobrecargaXCargoRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:dllSoftCentroErgonomia.Reportes.dtsSobrecargaXCargo.dtSobrecargaXCargoRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:dllSoftCentroErgonomia.Reportes.dtsSobrecargaXCargo">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="P:dllSoftCentroErgonomia.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:dllSoftCentroErgonomia.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:dllSoftCentroErgonomia.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="T:dllSoftCentroErgonomia.Reportes.dtsRptActividades.dtActividadesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:dllSoftCentroErgonomia.Reportes.dtsRptActividades.dtActividadesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:dllSoftCentroErgonomia.Reportes.dtsRptActividades.dtActividadesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:dllSoftCentroErgonomia.Reportes.dtsRptActividades">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:dllSoftCentroErgonomia.Reportes.dtsRptTiempoAdicXCargo.dtTiempoAdicXCargoDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:dllSoftCentroErgonomia.Reportes.dtsRptTiempoAdicXCargo.dtTiempoAdicXCargoRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:dllSoftCentroErgonomia.Reportes.dtsRptTiempoAdicXCargo.dtTiempoAdicXCargoRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:dllSoftCentroErgonomia.Reportes.dtsRptTiempoAdicXCargo">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+</members>
+</doc>

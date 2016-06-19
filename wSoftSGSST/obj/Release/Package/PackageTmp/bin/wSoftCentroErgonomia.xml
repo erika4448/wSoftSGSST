@@ -1,0 +1,3348 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+wSoftCentroErgonomia
+</name>
+</assembly>
+<members>
+<member name="F:wSoftCentroErgonomia.frmEncuesta.upnlEncuesta">
+	<summary>
+upnlEncuesta control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.frmEncuesta.pnlPaso1InfoEmpleado">
+	<summary>
+pnlPaso1InfoEmpleado control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.frmEncuesta.ctrCabEncuesta">
+	<summary>
+ctrCabEncuesta control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.frmEncuesta.pnlPaso2InfoActividad">
+	<summary>
+pnlPaso2InfoActividad control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.frmEncuesta.ctrDetEncuesta">
+	<summary>
+ctrDetEncuesta control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.frmEncuesta.pnlPaso3InfoPreguntas">
+	<summary>
+pnlPaso3InfoPreguntas control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.frmEncuesta.ctrPreguntasEncuesta">
+	<summary>
+ctrPreguntasEncuesta control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.frmEncuesta.btnAnterior">
+	<summary>
+btnAnterior control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.frmEncuesta.btnSiguiente">
+	<summary>
+btnSiguiente control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.frmEncuesta.btnGuardar">
+	<summary>
+btnGuardar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.frmProcesamientoEmpleado.upnlProcesamientoEmpleado">
+	<summary>
+upnlProcesamientoEmpleado control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.frmProcesamientoEmpleado.lblTitulo">
+	<summary>
+lblTitulo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.frmProcesamientoEmpleado.pnlBusqueda">
+	<summary>
+pnlBusqueda control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.frmProcesamientoEmpleado.ctrBusquedaProcesaEmpleado1">
+	<summary>
+ctrBusquedaProcesaEmpleado1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.frmProcesamientoEmpleado.btnBuscar">
+	<summary>
+btnBuscar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.frmProcesamientoEmpleado.pnlGvProcesamientoEmpleado">
+	<summary>
+pnlGvProcesamientoEmpleado control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.frmProcesamientoEmpleado.gvProcesamientoEmpleado">
+	<summary>
+gvProcesamientoEmpleado control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.frmProcesamientoEmpleado.odsProcesamientoEmpleado">
+	<summary>
+odsProcesamientoEmpleado control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.frmProcesamientoEmpleado.btnGuardar">
+	<summary>
+btnGuardar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrRptActividades.pnlRptActividades">
+	<summary>
+pnlRptActividades control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrRptActividades.imBtnExportarExcel">
+	<summary>
+imBtnExportarExcel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrRptActividades.gvRptActividades">
+	<summary>
+gvRptActividades control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrRptActividades.odsRptActividades">
+	<summary>
+odsRptActividades control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrRptTiempoXTipoProceso.pnlRptTiempoXTipoProc">
+	<summary>
+pnlRptTiempoXTipoProc control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrRptTiempoXTipoProceso.imBtnExportarExcel">
+	<summary>
+imBtnExportarExcel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrRptTiempoXTipoProceso.gvRptTiempoXProc">
+	<summary>
+gvRptTiempoXProc control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrRptTiempoXTipoProceso.odsRptTiempoXProc">
+	<summary>
+odsRptTiempoXProc control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.frmMenuTemp.HyperLink1">
+	<summary>
+HyperLink1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.frmMenuTemp.HyperLink2">
+	<summary>
+HyperLink2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.frmMenuTemp.HyperLink3">
+	<summary>
+HyperLink3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.frmMenuTemp.HyperLink4">
+	<summary>
+HyperLink4 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.frmMenuTemp.HyperLink5">
+	<summary>
+HyperLink5 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.frmMenuTemp.HyperLink6">
+	<summary>
+HyperLink6 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.frmMenuTemp.HyperLink7">
+	<summary>
+HyperLink7 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminProcedimiento.upnlProcedimiento">
+	<summary>
+upnlProcedimiento control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminProcedimiento.pnlGvProcedimiento">
+	<summary>
+pnlGvProcedimiento control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminProcedimiento.lblProcedimiento">
+	<summary>
+lblProcedimiento control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminProcedimiento.txtBusProcedimiento">
+	<summary>
+txtBusProcedimiento control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminProcedimiento.btnBuscar">
+	<summary>
+btnBuscar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminProcedimiento.gvProcedimiento">
+	<summary>
+gvProcedimiento control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminProcedimiento.ddlNumPagProcedimiento">
+	<summary>
+ddlNumPagProcedimiento control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminProcedimiento.odsProcedimiento">
+	<summary>
+odsProcedimiento control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminProcedimiento.btnNuevo">
+	<summary>
+btnNuevo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminProcedimiento.pnlActividad">
+	<summary>
+pnlActividad control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminProcedimiento.ctrAdminActividad">
+	<summary>
+ctrAdminActividad control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminProcedimiento.ModalInfoProcedimiento">
+	<summary>
+ModalInfoProcedimiento control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminProcedimiento.btnFake">
+	<summary>
+btnFake control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminProcedimiento.pnlInfoProcedimiento">
+	<summary>
+pnlInfoProcedimiento control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminProcedimiento.upnlInfoProcedimiento">
+	<summary>
+upnlInfoProcedimiento control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminProcedimiento.Label1">
+	<summary>
+Label1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminProcedimiento.lblNomProcedimiento">
+	<summary>
+lblNomProcedimiento control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminProcedimiento.txtNombre">
+	<summary>
+txtNombre control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminProcedimiento.Label2">
+	<summary>
+Label2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminProcedimiento.lblEstado">
+	<summary>
+lblEstado control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminProcedimiento.ddlEstado">
+	<summary>
+ddlEstado control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminProcedimiento.btnGuardar">
+	<summary>
+btnGuardar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminProcedimiento.btnCerrar">
+	<summary>
+btnCerrar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrLoading.panelUpdateProgress">
+	<summary>
+panelUpdateProgress control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrLoading.UpdateProgress1">
+	<summary>
+UpdateProgress1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrLoading.ModalProgress">
+	<summary>
+ModalProgress control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrRptTiempoXProceso.pnlRptTiempoXProc">
+	<summary>
+pnlRptTiempoXProc control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrRptTiempoXProceso.imBtnExportarExcel">
+	<summary>
+imBtnExportarExcel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrRptTiempoXProceso.gvRptTiempoXProc">
+	<summary>
+gvRptTiempoXProc control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrRptTiempoXProceso.odsRptTiempoXProc">
+	<summary>
+odsRptTiempoXProc control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.frmReportes.upnlReportes">
+	<summary>
+upnlReportes control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.frmReportes.pnlConsulta">
+	<summary>
+pnlConsulta control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.frmReportes.ctrEmpSedeDep1">
+	<summary>
+ctrEmpSedeDep1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.frmReportes.Label1">
+	<summary>
+Label1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.frmReportes.lblTipoReporte">
+	<summary>
+lblTipoReporte control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.frmReportes.ddlTipoReporte">
+	<summary>
+ddlTipoReporte control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.frmReportes.btnBuscar">
+	<summary>
+btnBuscar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.frmReportes.pnlRptTiempoXTipoProceso">
+	<summary>
+pnlRptTiempoXTipoProceso control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.frmReportes.ctrRptTiempoXTipoProceso1">
+	<summary>
+ctrRptTiempoXTipoProceso1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.frmReportes.pnlRptTiempoXProceso">
+	<summary>
+pnlRptTiempoXProceso control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.frmReportes.ctrRptTiempoXProceso1">
+	<summary>
+ctrRptTiempoXProceso1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.frmReportes.pnlRptTiempoAdicXCargo">
+	<summary>
+pnlRptTiempoAdicXCargo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.frmReportes.ctrRptTiempoAdicXCargo1">
+	<summary>
+ctrRptTiempoAdicXCargo1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.frmReportes.pnlGrfTiempoInvAnualXTipoProc">
+	<summary>
+pnlGrfTiempoInvAnualXTipoProc control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.frmReportes.ctrGrfTiempoInvAnualXTipoProc1">
+	<summary>
+ctrGrfTiempoInvAnualXTipoProc1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.frmReportes.pnlRptActividades">
+	<summary>
+pnlRptActividades control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.frmReportes.ctrRptActividades1">
+	<summary>
+ctrRptActividades1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.frmReportes.pnlRptSobrecargaXCargo">
+	<summary>
+pnlRptSobrecargaXCargo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.frmReportes.ctrRptSobrecargaXCargo1">
+	<summary>
+ctrRptSobrecargaXCargo1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="P:wSoftCentroErgonomia.My.MyWebExtension.Computer">
+	<summary>
+ Returns information about the host computer.
+ </summary>
+</member><member name="P:wSoftCentroErgonomia.My.MyWebExtension.User">
+	<summary>
+ Returns information for the current Web user.
+ </summary>
+</member><member name="P:wSoftCentroErgonomia.My.MyWebExtension.Request">
+	<summary>
+ Returns Request object.
+ </summary>
+</member><member name="P:wSoftCentroErgonomia.My.MyWebExtension.Response">
+	<summary>
+ Returns Response object.
+ </summary>
+</member><member name="P:wSoftCentroErgonomia.My.MyWebExtension.Log">
+	<summary>
+ Returns the Asp log object.
+ </summary>
+</member><member name="T:wSoftCentroErgonomia.My.MyWebExtension">
+	<summary>
+ Module used to define the properties that are available in the My Namespace for Web projects.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusquedaXEmpresa.Label1">
+	<summary>
+Label1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusquedaXEmpresa.lblEmpresa">
+	<summary>
+lblEmpresa control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusquedaXEmpresa.ddlEmpresa">
+	<summary>
+ddlEmpresa control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusquedaXEmpresa.pnlTipoProceso">
+	<summary>
+pnlTipoProceso control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusquedaXEmpresa.lblTipoProceso">
+	<summary>
+lblTipoProceso control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusquedaXEmpresa.ddlTipoProceso">
+	<summary>
+ddlTipoProceso control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusquedaXEmpresa.pnlProceso">
+	<summary>
+pnlProceso control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusquedaXEmpresa.lblProceso">
+	<summary>
+lblProceso control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusquedaXEmpresa.ddlProceso">
+	<summary>
+ddlProceso control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusquedaXEmpresa.pnlProcedimiento">
+	<summary>
+pnlProcedimiento control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusquedaXEmpresa.ctrBusquedaProcedimiento1">
+	<summary>
+ctrBusquedaProcedimiento1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusquedaXEmpresa.pnlActividad">
+	<summary>
+pnlActividad control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusquedaXEmpresa.ctrBusquedaActividad1">
+	<summary>
+ctrBusquedaActividad1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusquedaXEmpresa.pnlCargo">
+	<summary>
+pnlCargo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusquedaXEmpresa.ctrBusquedaCargo1">
+	<summary>
+ctrBusquedaCargo1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrRptTiempoAdicXCargo.pnlRptTiempoAdicXCargo">
+	<summary>
+pnlRptTiempoAdicXCargo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrRptTiempoAdicXCargo.imBtnExportarExcel">
+	<summary>
+imBtnExportarExcel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrRptTiempoAdicXCargo.gvRptTiempoAdicXCargo">
+	<summary>
+gvRptTiempoAdicXCargo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrRptTiempoAdicXCargo.odsRptTiempoAdicXCargo">
+	<summary>
+odsRptTiempoAdicXCargo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.AdmActividad.upnlAdminActividad">
+	<summary>
+upnlAdminActividad control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.AdmActividad.lblTitulo">
+	<summary>
+lblTitulo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.AdmActividad.pnlEmpresa">
+	<summary>
+pnlEmpresa control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.AdmActividad.lblEmpresa">
+	<summary>
+lblEmpresa control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.AdmActividad.ddlEmpresa">
+	<summary>
+ddlEmpresa control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.AdmActividad.pnlTipoProceso">
+	<summary>
+pnlTipoProceso control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.AdmActividad.ctrAdminTipoProceso">
+	<summary>
+ctrAdminTipoProceso control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminProceso.upnlProceso">
+	<summary>
+upnlProceso control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminProceso.pnlGvProceso">
+	<summary>
+pnlGvProceso control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminProceso.lblProceso">
+	<summary>
+lblProceso control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminProceso.txtBusProceso">
+	<summary>
+txtBusProceso control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminProceso.btnBuscar">
+	<summary>
+btnBuscar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminProceso.gvProceso">
+	<summary>
+gvProceso control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminProceso.ddlNumPagProceso">
+	<summary>
+ddlNumPagProceso control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminProceso.odsProceso">
+	<summary>
+odsProceso control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminProceso.btnNuevo">
+	<summary>
+btnNuevo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminProceso.pnlProcedimiento">
+	<summary>
+pnlProcedimiento control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminProceso.ctrAdminProcedimiento">
+	<summary>
+ctrAdminProcedimiento control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminProceso.ModalInfoProceso">
+	<summary>
+ModalInfoProceso control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminProceso.btnFake">
+	<summary>
+btnFake control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminProceso.pnlInfoProceso">
+	<summary>
+pnlInfoProceso control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminProceso.upnlInfoProceso">
+	<summary>
+upnlInfoProceso control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminProceso.Label1">
+	<summary>
+Label1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminProceso.lblNomTipoProc">
+	<summary>
+lblNomTipoProc control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminProceso.txtNombre">
+	<summary>
+txtNombre control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminProceso.Label2">
+	<summary>
+Label2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminProceso.lblEstado">
+	<summary>
+lblEstado control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminProceso.ddlEstado">
+	<summary>
+ddlEstado control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminProceso.btnGuardar">
+	<summary>
+btnGuardar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminProceso.btnCerrar">
+	<summary>
+btnCerrar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrDetEncuesta.upnlDetEncuesta">
+	<summary>
+upnlDetEncuesta control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrDetEncuesta.pnlDetInfoEncuesta">
+	<summary>
+pnlDetInfoEncuesta control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrDetEncuesta.Label9">
+	<summary>
+Label9 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrDetEncuesta.ctrBusquedaActividad">
+	<summary>
+ctrBusquedaActividad control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrDetEncuesta.lblPorcDedicacion">
+	<summary>
+lblPorcDedicacion control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrDetEncuesta.txtPorcDedicacion">
+	<summary>
+txtPorcDedicacion control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrDetEncuesta.txtPorcDedicacion_FilteredTextBoxExtender">
+	<summary>
+txtPorcDedicacion_FilteredTextBoxExtender control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrDetEncuesta.Label2">
+	<summary>
+Label2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrDetEncuesta.lblVolumen">
+	<summary>
+lblVolumen control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrDetEncuesta.txtVolumen">
+	<summary>
+txtVolumen control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrDetEncuesta.txtVolumen_FilteredTextBoxExtender">
+	<summary>
+txtVolumen_FilteredTextBoxExtender control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrDetEncuesta.Label3">
+	<summary>
+Label3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrDetEncuesta.lblDificultad">
+	<summary>
+lblDificultad control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrDetEncuesta.ibtnDificultad1">
+	<summary>
+ibtnDificultad1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrDetEncuesta.ibtnDificultad2">
+	<summary>
+ibtnDificultad2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrDetEncuesta.ibtnDificultad3">
+	<summary>
+ibtnDificultad3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrDetEncuesta.ibtnDificultad4">
+	<summary>
+ibtnDificultad4 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrDetEncuesta.ibtnDificultad5">
+	<summary>
+ibtnDificultad5 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrDetEncuesta.Label4">
+	<summary>
+Label4 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrDetEncuesta.lblDisfruta">
+	<summary>
+lblDisfruta control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrDetEncuesta.ibtnDisfruta1">
+	<summary>
+ibtnDisfruta1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrDetEncuesta.ibtnDisfruta2">
+	<summary>
+ibtnDisfruta2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrDetEncuesta.ibtnDisfruta3">
+	<summary>
+ibtnDisfruta3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrDetEncuesta.ibtnDisfruta4">
+	<summary>
+ibtnDisfruta4 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrDetEncuesta.ibtnDisfruta5">
+	<summary>
+ibtnDisfruta5 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrDetEncuesta.btnCancelar">
+	<summary>
+btnCancelar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrDetEncuesta.btnGuardar">
+	<summary>
+btnGuardar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrDetEncuesta.pnlGvDetEncuesta">
+	<summary>
+pnlGvDetEncuesta control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrDetEncuesta.lblPorcTotal">
+	<summary>
+lblPorcTotal control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrDetEncuesta.lblValPorcTotalDedica">
+	<summary>
+lblValPorcTotalDedica control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrDetEncuesta.Label7">
+	<summary>
+Label7 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrDetEncuesta.lblPorcFaltante">
+	<summary>
+lblPorcFaltante control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrDetEncuesta.gvDetEncuesta">
+	<summary>
+gvDetEncuesta control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrEmpSedeDep.Label1">
+	<summary>
+Label1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrEmpSedeDep.lblEmpresa">
+	<summary>
+lblEmpresa control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrEmpSedeDep.ddlEmpresa">
+	<summary>
+ddlEmpresa control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrEmpSedeDep.pnlSede">
+	<summary>
+pnlSede control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrEmpSedeDep.Label2">
+	<summary>
+Label2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrEmpSedeDep.lblSede">
+	<summary>
+lblSede control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrEmpSedeDep.ddlSede">
+	<summary>
+ddlSede control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrCabEncuesta.upnlCabEncuesta">
+	<summary>
+upnlCabEncuesta control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrCabEncuesta.pnlBusquedaEmpleado">
+	<summary>
+pnlBusquedaEmpleado control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrCabEncuesta.ctrBusEmpleadoXTipYNumDoc1">
+	<summary>
+ctrBusEmpleadoXTipYNumDoc1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrCabEncuesta.pnlCabEncuesta">
+	<summary>
+pnlCabEncuesta control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrCabEncuesta.Label1">
+	<summary>
+Label1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrCabEncuesta.lblNombre">
+	<summary>
+lblNombre control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrCabEncuesta.lblValNombreEmp">
+	<summary>
+lblValNombreEmp control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrCabEncuesta.Label2">
+	<summary>
+Label2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrCabEncuesta.lblNumDoc">
+	<summary>
+lblNumDoc control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrCabEncuesta.lblValNumDocEmp">
+	<summary>
+lblValNumDocEmp control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrCabEncuesta.Label3">
+	<summary>
+Label3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrCabEncuesta.lblFecha">
+	<summary>
+lblFecha control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrCabEncuesta.lblValFecha">
+	<summary>
+lblValFecha control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrCabEncuesta.Label4">
+	<summary>
+Label4 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrCabEncuesta.lblSede">
+	<summary>
+lblSede control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrCabEncuesta.lblValSede">
+	<summary>
+lblValSede control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrCabEncuesta.Label5">
+	<summary>
+Label5 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrCabEncuesta.lblCargo">
+	<summary>
+lblCargo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrCabEncuesta.txtCargo">
+	<summary>
+txtCargo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrCabEncuesta.Label6">
+	<summary>
+Label6 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrCabEncuesta.lblArea">
+	<summary>
+lblArea control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrCabEncuesta.txtArea">
+	<summary>
+txtArea control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrCabEncuesta.Label7">
+	<summary>
+Label7 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrCabEncuesta.lblTiempoCargo">
+	<summary>
+lblTiempoCargo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrCabEncuesta.txtTiempoCargo">
+	<summary>
+txtTiempoCargo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrCabEncuesta.txtTiempoCargo_FilteredTextBoxExtender">
+	<summary>
+txtTiempoCargo_FilteredTextBoxExtender control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrCabEncuesta.ddlTiempoCargo">
+	<summary>
+ddlTiempoCargo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrCabEncuesta.Label8">
+	<summary>
+Label8 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrCabEncuesta.lblNivelEscolaridad">
+	<summary>
+lblNivelEscolaridad control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrCabEncuesta.ddlNivelEscolaridad">
+	<summary>
+ddlNivelEscolaridad control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrCabEncuesta.Label9">
+	<summary>
+Label9 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrCabEncuesta.lblUltimoTitulo">
+	<summary>
+lblUltimoTitulo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrCabEncuesta.txtUltTitulo">
+	<summary>
+txtUltTitulo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.frmConsultaProcActividad.upnlProcesamiento">
+	<summary>
+upnlProcesamiento control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.frmConsultaProcActividad.lblTitulo">
+	<summary>
+lblTitulo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.frmConsultaProcActividad.pnlBusqueda">
+	<summary>
+pnlBusqueda control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.frmConsultaProcActividad.ctrBusquedaXEmpresa1">
+	<summary>
+ctrBusquedaXEmpresa1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.frmConsultaProcActividad.btnBuscar">
+	<summary>
+btnBuscar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.frmConsultaProcActividad.pnlGvProcesamiento">
+	<summary>
+pnlGvProcesamiento control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.frmConsultaProcActividad.gvProcesamiento">
+	<summary>
+gvProcesamiento control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.frmConsultaProcActividad.ddlNumPagConsActividad">
+	<summary>
+ddlNumPagConsActividad control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.frmConsultaProcActividad.odsProcesamiento">
+	<summary>
+odsProcesamiento control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.frmProcesamientoActividad.upnlProcesamiento">
+	<summary>
+upnlProcesamiento control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.frmProcesamientoActividad.lblTitulo">
+	<summary>
+lblTitulo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.frmProcesamientoActividad.pnlBusqueda">
+	<summary>
+pnlBusqueda control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.frmProcesamientoActividad.ctrBusquedaXEmpresa1">
+	<summary>
+ctrBusquedaXEmpresa1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.frmProcesamientoActividad.btnBuscar">
+	<summary>
+btnBuscar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.frmProcesamientoActividad.pnlGvProcesamiento">
+	<summary>
+pnlGvProcesamiento control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.frmProcesamientoActividad.gvProcesamiento">
+	<summary>
+gvProcesamiento control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.frmProcesamientoActividad.odsProcesamiento">
+	<summary>
+odsProcesamiento control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.frmProcesamientoActividad.btnGuardar">
+	<summary>
+btnGuardar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminActividad.upnlActividad">
+	<summary>
+upnlActividad control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminActividad.pnlGvActividad">
+	<summary>
+pnlGvActividad control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminActividad.lblActividad">
+	<summary>
+lblActividad control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminActividad.txtBusActividad">
+	<summary>
+txtBusActividad control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminActividad.btnBuscar">
+	<summary>
+btnBuscar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminActividad.gvActividad">
+	<summary>
+gvActividad control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminActividad.ddlNumPagActividad">
+	<summary>
+ddlNumPagActividad control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminActividad.odsActividad">
+	<summary>
+odsActividad control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminActividad.btnNuevo">
+	<summary>
+btnNuevo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminActividad.ModalInfoActividad">
+	<summary>
+ModalInfoActividad control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminActividad.btnFake">
+	<summary>
+btnFake control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminActividad.pnlInfoActividad">
+	<summary>
+pnlInfoActividad control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminActividad.upnlInfoActividad">
+	<summary>
+upnlInfoActividad control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminActividad.Label3">
+	<summary>
+Label3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminActividad.lblCodActividad">
+	<summary>
+lblCodActividad control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminActividad.txtCodigo">
+	<summary>
+txtCodigo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminActividad.lbl">
+	<summary>
+lbl control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminActividad.lblNomActividad">
+	<summary>
+lblNomActividad control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminActividad.txtNombre">
+	<summary>
+txtNombre control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminActividad.Label1">
+	<summary>
+Label1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminActividad.lblDescripcion">
+	<summary>
+lblDescripcion control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminActividad.txtDescripcion">
+	<summary>
+txtDescripcion control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminActividad.Label2">
+	<summary>
+Label2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminActividad.lblEstado">
+	<summary>
+lblEstado control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminActividad.ddlEstado">
+	<summary>
+ddlEstado control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminActividad.btnGuardar">
+	<summary>
+btnGuardar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminActividad.btnCerrar">
+	<summary>
+btnCerrar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusquedaCargo.upnlCargo">
+	<summary>
+upnlCargo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusquedaCargo.pnlBusCargo">
+	<summary>
+pnlBusCargo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusquedaCargo.lblCargo">
+	<summary>
+lblCargo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusquedaCargo.txtCargoBus">
+	<summary>
+txtCargoBus control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusquedaCargo.ibtnBuscar">
+	<summary>
+ibtnBuscar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusquedaCargo.ibtnActualizar">
+	<summary>
+ibtnActualizar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusquedaCargo.lnkDummy">
+	<summary>
+lnkDummy control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusquedaCargo.ModalBusquedaCargo">
+	<summary>
+ModalBusquedaCargo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusquedaCargo.btnFake">
+	<summary>
+btnFake control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusquedaCargo.pnlBusquedaCargo">
+	<summary>
+pnlBusquedaCargo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusquedaCargo.upnlBusquedaCargo">
+	<summary>
+upnlBusquedaCargo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusquedaCargo.lblBusCargo">
+	<summary>
+lblBusCargo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusquedaCargo.txtCargoBusInt">
+	<summary>
+txtCargoBusInt control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusquedaCargo.ibtnBuscarInt">
+	<summary>
+ibtnBuscarInt control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusquedaCargo.pnlGvCargo">
+	<summary>
+pnlGvCargo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusquedaCargo.gvCargo">
+	<summary>
+gvCargo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusquedaCargo.ddlNumPagCargo">
+	<summary>
+ddlNumPagCargo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusquedaCargo.odsCargo">
+	<summary>
+odsCargo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusquedaCargo.btnCerrar">
+	<summary>
+btnCerrar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminUsuarios.pnlGvUsuarios">
+	<summary>
+pnlGvUsuarios control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminUsuarios.lblUsuario">
+	<summary>
+lblUsuario control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminUsuarios.txtUsuario">
+	<summary>
+txtUsuario control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminUsuarios.btnBuscar">
+	<summary>
+btnBuscar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminUsuarios.gvUsuario">
+	<summary>
+gvActividad control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminUsuarios.ddlNumPagUsuario">
+	<summary>
+ddlNumPagUsuario control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminUsuarios.odsUsuario">
+	<summary>
+odsUsuario control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusquedaActividad.upnlActividad">
+	<summary>
+upnlActividad control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusquedaActividad.pnlBusActividad">
+	<summary>
+pnlBusActividad control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusquedaActividad.lblActividad">
+	<summary>
+lblActividad control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusquedaActividad.txtActividadBus">
+	<summary>
+txtActividadBus control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusquedaActividad.ibtnBuscar">
+	<summary>
+ibtnBuscar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusquedaActividad.ibtnActualizar">
+	<summary>
+ibtnActualizar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusquedaActividad.lnkDummy">
+	<summary>
+lnkDummy control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusquedaActividad.ModalBusquedaActividad">
+	<summary>
+ModalBusquedaActividad control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusquedaActividad.btnFake">
+	<summary>
+btnFake control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusquedaActividad.pnlBusquedaActividad">
+	<summary>
+pnlBusquedaActividad control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusquedaActividad.upnlBusquedaActividad">
+	<summary>
+upnlBusquedaActividad control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusquedaActividad.lblBusActividad">
+	<summary>
+lblBusActividad control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusquedaActividad.txtActividadBusInt">
+	<summary>
+txtActividadBusInt control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusquedaActividad.ibtnBuscarInt">
+	<summary>
+ibtnBuscarInt control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusquedaActividad.pnlGvActividad">
+	<summary>
+pnlGvActividad control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusquedaActividad.gvActividad">
+	<summary>
+gvActividad control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusquedaActividad.ddlNumPagActividad">
+	<summary>
+ddlNumPagActividad control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusquedaActividad.odsActividad">
+	<summary>
+odsActividad control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusquedaActividad.btnCerrar">
+	<summary>
+btnCerrar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrPreguntasEncuesta.upnlPreguntasEncuesta">
+	<summary>
+upnlPreguntasEncuesta control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrPreguntasEncuesta.pnlPreguntasEncuesta">
+	<summary>
+pnlPreguntasEncuesta control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrPreguntasEncuesta.Label9">
+	<summary>
+Label9 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrPreguntasEncuesta.Label1">
+	<summary>
+Label1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrPreguntasEncuesta.ctrCargosReportaQuienReporta">
+	<summary>
+ctrCargosReportaQuienReporta control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrPreguntasEncuesta.Label6">
+	<summary>
+Label6 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrPreguntasEncuesta.Label2">
+	<summary>
+Label2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrPreguntasEncuesta.ctrCargosReportaAQuienReporta">
+	<summary>
+ctrCargosReportaAQuienReporta control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrPreguntasEncuesta.Label7">
+	<summary>
+Label7 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrPreguntasEncuesta.Label3">
+	<summary>
+Label3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrPreguntasEncuesta.txtIndicadores">
+	<summary>
+txtIndicadores control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrPreguntasEncuesta.Label10">
+	<summary>
+Label10 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrPreguntasEncuesta.Label5">
+	<summary>
+Label5 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrPreguntasEncuesta.txtObjetivosCargo">
+	<summary>
+txtObjetivosCargo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrPreguntasEncuesta.Label11">
+	<summary>
+Label11 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrPreguntasEncuesta.Label4">
+	<summary>
+Label4 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrPreguntasEncuesta.txtHorasExtras">
+	<summary>
+txtHorasExtras control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrPreguntasEncuesta.txtHorasExtras_FilteredTextBoxExtender">
+	<summary>
+txtHorasExtras_FilteredTextBoxExtender control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusquedaProcesaEmpleado.Label1">
+	<summary>
+Label1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusquedaProcesaEmpleado.lblEmpresa">
+	<summary>
+lblEmpresa control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusquedaProcesaEmpleado.ddlEmpresa">
+	<summary>
+ddlEmpresa control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusquedaProcesaEmpleado.pnlCargo">
+	<summary>
+pnlCargo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusquedaProcesaEmpleado.ctrBusquedaCargo1">
+	<summary>
+ctrBusquedaCargo1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusquedaProcesaEmpleado.pnlSede">
+	<summary>
+pnlSede control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusquedaProcesaEmpleado.lblSede">
+	<summary>
+lblSede control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusquedaProcesaEmpleado.ddlSede">
+	<summary>
+ddlSede control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusquedaProcesaEmpleado.pnlArea">
+	<summary>
+pnlArea control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusquedaProcesaEmpleado.lblArea">
+	<summary>
+lblArea control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusquedaProcesaEmpleado.ddlArea">
+	<summary>
+ddlArea control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.frmConsultaProcEmpleado.upnlProcesamientoEmpleado">
+	<summary>
+upnlProcesamientoEmpleado control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.frmConsultaProcEmpleado.lblTitulo">
+	<summary>
+lblTitulo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.frmConsultaProcEmpleado.pnlBusqueda">
+	<summary>
+pnlBusqueda control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.frmConsultaProcEmpleado.ctrBusquedaProcesaEmpleado1">
+	<summary>
+ctrBusquedaProcesaEmpleado1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.frmConsultaProcEmpleado.btnBuscar">
+	<summary>
+btnBuscar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.frmConsultaProcEmpleado.pnlGvProcesamientoEmpleado">
+	<summary>
+pnlGvProcesamientoEmpleado control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.frmConsultaProcEmpleado.gvProcesamientoEmpleado">
+	<summary>
+gvProcesamientoEmpleado control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.frmConsultaProcEmpleado.odsProcesamientoEmpleado">
+	<summary>
+odsProcesamientoEmpleado control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrCargosReporta.lblCargo">
+	<summary>
+lblCargo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrCargosReporta.ddlCargo">
+	<summary>
+ddlCargo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrCargosReporta.ibtnAgregarCargo">
+	<summary>
+ibtnAgregarCargo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrCargosReporta.dtlCargosReporte">
+	<summary>
+dtlCargosReporte control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrRptSobrecargaXCargo.pnlRptSobrecargaXCargo">
+	<summary>
+pnlRptSobrecargaXCargo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrRptSobrecargaXCargo.imBtnExportarExcel">
+	<summary>
+imBtnExportarExcel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrRptSobrecargaXCargo.gvRptSobrecargaXCargo">
+	<summary>
+gvRptSobrecargaXCargo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrRptSobrecargaXCargo.odsSobrecargaXCargo">
+	<summary>
+odsSobrecargaXCargo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.mstCentroErgonomia.head">
+	<summary>
+head control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.mstCentroErgonomia.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.mstCentroErgonomia.ToolkitScriptManager1">
+	<summary>
+ToolkitScriptManager1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.mstCentroErgonomia.ctrLoading">
+	<summary>
+ctrLoading control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.mstCentroErgonomia.cphPrincipal">
+	<summary>
+cphPrincipal control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminTipoProceso.upnlTipoProceso">
+	<summary>
+upnlTipoProceso control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminTipoProceso.pnlGvTipoProceso">
+	<summary>
+pnlGvTipoProceso control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminTipoProceso.gvTipoProceso">
+	<summary>
+gvTipoProceso control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminTipoProceso.ddlNumPagTipoProceso">
+	<summary>
+ddlNumPagTipoProceso control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminTipoProceso.odsTipoProceso">
+	<summary>
+odsTipoProceso control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminTipoProceso.btnNuevo">
+	<summary>
+btnNuevo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminTipoProceso.pnlProceso">
+	<summary>
+pnlProceso control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminTipoProceso.ctrAdminProceso">
+	<summary>
+ctrAdminProceso control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminTipoProceso.ModalInfoTipoProceso">
+	<summary>
+ModalInfoTipoProceso control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminTipoProceso.btnFake">
+	<summary>
+btnFake control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminTipoProceso.pnlInfoTipoProceso">
+	<summary>
+pnlInfoTipoProceso control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminTipoProceso.upnlInfoTipoProceso">
+	<summary>
+upnlInfoTipoProceso control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminTipoProceso.Label1">
+	<summary>
+Label1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminTipoProceso.lblNomTipoProc">
+	<summary>
+lblNomTipoProc control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminTipoProceso.txtTipoProceso">
+	<summary>
+txtTipoProceso control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminTipoProceso.Label2">
+	<summary>
+Label2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminTipoProceso.lblEstado">
+	<summary>
+lblEstado control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminTipoProceso.ddlEstado">
+	<summary>
+ddlEstado control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminTipoProceso.btnGuardar">
+	<summary>
+btnGuardar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminTipoProceso.btnCerrar">
+	<summary>
+btnCerrar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusEmpleadoXTipYNumDoc.pnlBusEmpleado">
+	<summary>
+pnlBusEmpleado control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusEmpleadoXTipYNumDoc.lblTipoDic">
+	<summary>
+lblTipoDic control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusEmpleadoXTipYNumDoc.ddlTipoDoc">
+	<summary>
+ddlTipoDoc control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusEmpleadoXTipYNumDoc.lblNumDoc">
+	<summary>
+lblNumDoc control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusEmpleadoXTipYNumDoc.txtNumDoc">
+	<summary>
+txtNumDoc control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusEmpleadoXTipYNumDoc.btnBuscar">
+	<summary>
+btnBuscar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusquedaProcedimiento.upnlProcedimiento">
+	<summary>
+upnlProcedimiento control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusquedaProcedimiento.pnlBusActividad">
+	<summary>
+pnlBusActividad control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusquedaProcedimiento.lblProcedimiento">
+	<summary>
+lblProcedimiento control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusquedaProcedimiento.txtProcedimientoBus">
+	<summary>
+txtProcedimientoBus control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusquedaProcedimiento.ibtnBuscar">
+	<summary>
+ibtnBuscar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusquedaProcedimiento.ibtnActualizar">
+	<summary>
+ibtnActualizar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusquedaProcedimiento.lnkDummy">
+	<summary>
+lnkDummy control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusquedaProcedimiento.ModalBusquedaProcedimiento">
+	<summary>
+ModalBusquedaProcedimiento control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusquedaProcedimiento.btnFake">
+	<summary>
+btnFake control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusquedaProcedimiento.pnlBusquedaProcedimiento">
+	<summary>
+pnlBusquedaProcedimiento control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusquedaProcedimiento.upnlBusquedaProcedimiento">
+	<summary>
+upnlBusquedaProcedimiento control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusquedaProcedimiento.lblBusProcedimiento">
+	<summary>
+lblBusProcedimiento control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusquedaProcedimiento.txtProcedimientoBusInt">
+	<summary>
+txtProcedimientoBusInt control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusquedaProcedimiento.ibtnBuscarInt">
+	<summary>
+ibtnBuscarInt control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusquedaProcedimiento.pnlGvProcedimiento">
+	<summary>
+pnlGvProcedimiento control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusquedaProcedimiento.gvProcedimiento">
+	<summary>
+gvProcedimiento control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusquedaProcedimiento.ddlNumPagProcedimiento">
+	<summary>
+ddlNumPagProcedimiento control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusquedaProcedimiento.odsProcedimiento">
+	<summary>
+odsProcedimiento control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrBusquedaProcedimiento.btnCerrar">
+	<summary>
+btnCerrar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.frmGetReporte.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.frmGetReporte.ToolkitScriptManager1">
+	<summary>
+ToolkitScriptManager1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.frmGetReporte.rpVisor">
+	<summary>
+rpVisor control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminEmpresa.upnlEmpresa">
+	<summary>
+upnlEmpresa control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminEmpresa.pnlGvNivelOrganiza">
+	<summary>
+pnlGvNivelOrganiza control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminEmpresa.lblEmpresa">
+	<summary>
+lblEmpresa control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminEmpresa.ddlEmpresa">
+	<summary>
+ddlEmpresa control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminEmpresa.ibtnAgregar">
+	<summary>
+ibtnAgregar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminEmpresa.ibtnEditar">
+	<summary>
+ibtnEditar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminEmpresa.ModalInfoEmpresa">
+	<summary>
+ModalInfoEmpresa control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminEmpresa.btnFake">
+	<summary>
+btnFake control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminEmpresa.pnlInfoEmpresa">
+	<summary>
+pnlInfoEmpresa control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminEmpresa.upnlInfoEmpresa">
+	<summary>
+upnlInfoEmpresa control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminEmpresa.lbl">
+	<summary>
+lbl control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminEmpresa.lblNomEmpresa">
+	<summary>
+lblNomEmpresa control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminEmpresa.txtNombre">
+	<summary>
+txtNombre control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminEmpresa.lbl0">
+	<summary>
+lbl0 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminEmpresa.lblHorasBase">
+	<summary>
+lblHorasBase control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminEmpresa.txtHorasBase">
+	<summary>
+txtHorasBase control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminEmpresa.Label2">
+	<summary>
+Label2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminEmpresa.lblEstado">
+	<summary>
+lblEstado control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminEmpresa.ddlEstado">
+	<summary>
+ddlEstado control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminEmpresa.btnGuardar">
+	<summary>
+btnGuardar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:wSoftCentroErgonomia.ctrAdminEmpresa.btnCerrar">
+	<summary>
+btnCerrar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+</members>
+</doc>
