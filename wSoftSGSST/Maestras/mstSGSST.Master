@@ -1,6 +1,6 @@
 ﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="mstSGSST.master.vb" Inherits="wSoftSGSST.mstSGSST" %>
 
-<%@ Register Src="~/Comun/Ctr/ctrLoading.ascx" TagPrefix="uc1" TagName="ctrLoading" %>
+<%@ Register Src="../Ctr/ctrLoading.ascx" TagPrefix="uc1" TagName="ctrLoading" %>
 
 
 <!DOCTYPE html>
@@ -11,13 +11,13 @@
     <link href="../App_Themes/SoftSGSST.css" rel="stylesheet" type="text/css" />
 
     <%--HOJAS DE ESTILO LIBRERIA DE MENSAJES--%>
-    <link href="css/alertify.default.css" rel="stylesheet" />
-    <link href="css/alertify.bootstrap.css" rel="stylesheet" />
-    <link href="css/alertify.core.css" rel="stylesheet" />
+    <link href="../css/alertify.bootstrap.css" rel="stylesheet" />
+    <link href="../css/alertify.bootstrap.css" rel="stylesheet" />
+    <link href="../css/alertify.core.css" rel="stylesheet" />
 
     <%--JAVASCRIPT LIBRERIA DE MENSAJES--%>
-    <script type="text/javascript" src="js/alertify.js"></script>
-    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="../js/alertify.js"></script>
+    <script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
 
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
@@ -26,21 +26,30 @@
     <form id="form1" runat="server">
         <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
         <uc1:ctrLoading runat="server" ID="ctrLoading" />
+        <%--<div align="right" style="position:absolute; padding-right:-10px; padding-top:90px;float:right">
+            <asp:ImageButton ID="ibtnPanelGestion" runat="server"  CausesValidation="false" ImageUrl="~/Images/Botones/ibtnPnlGestion.png"/>
+        </div>--%>
         <table width="100%" cellpadding="0" cellspacing="0">
             <tr>
                 <td align="center">
-                    <div id="HeaderPagPrincipal">
-                        <table width="100%" cellpadding="0" cellspacing="0">
-                            <tr>
-                                <td align="left">
-                                    <asp:Image ID="imApp" runat="server" ImageUrl="~/Images/Maestra/imApp.png" />
-                                </td>
-                                <td align="right">
-                                    <asp:Image ID="imLogoEmpresa" runat="server" ImageUrl="~/Images/Maestra/imLogoEmpresa.png" />
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
+                    <table width="100%" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td>
+                                <div id="HeaderPagPrincipal">
+                                    <table width="100%" cellpadding="0" cellspacing="0">
+                                        <tr>
+                                            <td align="left">
+                                                <asp:Image ID="imApp" runat="server" ImageUrl="~/Images/Maestra/imApp.png" />
+                                            </td>
+                                            <td align="right">
+                                                <asp:Image ID="imLogoEmpresa" runat="server" ImageUrl="~/Images/Maestra/imLogoEmpresa.png" />
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
                 </td>
             </tr>
             <tr>
@@ -52,7 +61,7 @@
                                     prueba Menu
                                 </div>
                             </td>
-                            <td align="left" width="700px" style="vertical-align:top; text-align:left;">
+                            <td align="left" width="700px" style="vertical-align: top; text-align: left;">
                                 <br />
                                 <table width="100%" cellpadding="0" cellspacing="0">
                                     <tr>

@@ -92,12 +92,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Themes\SoftSGSST.css" />
-    <Content Include="Comun\Ctr\ctrLoading.ascx" />
+    <Content Include="Ctr\ctrLoading.ascx" />
     <Content Include="css\alertify.bootstrap.css" />
     <Content Include="css\alertify.core.css" />
     <Content Include="css\alertify.default.css" />
     <Content Include="frmPrincMenuPrincipal.aspx" />
     <Content Include="frmPrincPrimerIngreso.aspx" />
+    <Content Include="Images\Botones\ibtnPnlGestion.png" />
     <Content Include="Images\Botones\ibtnRequisitosAzul.png" />
     <Content Include="Images\Botones\ibtnRelNuevoCargoAzul.png" />
     <Content Include="Images\Botones\ibtnHistoricoAzul.png" />
@@ -155,13 +156,14 @@
     <Content Include="js\jsapi.js" />
     <Content Include="login.aspx" />
     <Content Include="Planear\PerfDemografico\frmPlPerfDemografico.aspx" />
+    <Content Include="Planear\Profesiograma\frmPlProfesiograma.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Comun\Ctr\ctrLoading.ascx.designer.vb">
+    <Compile Include="Ctr\ctrLoading.ascx.designer.vb">
       <DependentUpon>ctrLoading.ascx</DependentUpon>
     </Compile>
-    <Compile Include="Comun\Ctr\ctrLoading.ascx.vb">
+    <Compile Include="Ctr\ctrLoading.ascx.vb">
       <DependentUpon>ctrLoading.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
@@ -219,6 +221,13 @@
       <DependentUpon>frmPlPerfDemografico.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="Planear\Profesiograma\frmPlProfesiograma.aspx.designer.vb">
+      <DependentUpon>frmPlProfesiograma.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Planear\Profesiograma\frmPlProfesiograma.aspx.vb">
+      <DependentUpon>frmPlProfesiograma.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -248,7 +257,9 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Planear\Ctr\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

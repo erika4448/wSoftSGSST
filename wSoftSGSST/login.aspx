@@ -82,7 +82,7 @@
                                             </tr>
                                             <tr>
                                                 <td align="center">
-                                                    <asp:ImageButton runat="server" ID="ibtnIngresa" CausesValidation="False" ImageUrl="~/Images/Botones/imBtnIngresar.png"></asp:ImageButton>
+                                                    <asp:ImageButton runat="server" ID="ibtnIngresa" CausesValidation="False" ImageUrl="~/Images/Botones/ibtnIngresarAzul.png"></asp:ImageButton>
                                                 </td>
                                             </tr>
                                         </table>
