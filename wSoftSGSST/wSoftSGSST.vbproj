@@ -98,13 +98,38 @@
     <Content Include="css\alertify.default.css" />
     <Content Include="frmPrincMenuPrincipal.aspx" />
     <Content Include="frmPrincPrimerIngreso.aspx" />
-    <Content Include="Images\Botones\imBtnIngresar.png" />
+    <Content Include="Images\Botones\ibtnVerDetalleVerde.png" />
+    <Content Include="Images\Botones\ibtnGuardarInfoVerde.png" />
+    <Content Include="Images\Botones\ibtnAgregarVerde.png" />
+    <Content Include="Images\Botones\ibtnNuevoRiesgoAzul.png" />
+    <Content Include="Images\Botones\ibtIncluirAzul.png" />
+    <Content Include="Images\Botones\ibtnGuardarAzul.png" />
+    <Content Include="Images\Botones\ibtnDescartarAzul.png" />
+    <Content Include="Images\Botones\ibtnCerrarAzul.png" />
+    <Content Include="Images\Botones\ibtnCargarAzul.png" />
+    <Content Include="Images\Botones\imBtnAgregarAzul.png" />
+    <Content Include="Images\Botones\imBtnIngresarAzul.png" />
+    <Content Include="Images\General\ibtnBuscar.png" />
+    <Content Include="Images\General\ibtnRegValido.png" />
+    <Content Include="Images\General\icono_noEncontrado_buscador.fw.png" />
     <Content Include="Images\General\imLoading.gif" />
-    <Content Include="Images\Menu\imUsuarioIngreso.png" />
-    <Content Include="Images\Menu\imPswdIngreso.png" />
-    <Content Include="Images\Menu\ImIngreso.png" />
-    <Content Include="Images\Menu\imLogoCliente.png" />
+    <Content Include="Images\Login\imUsuarioIngreso.png" />
+    <Content Include="Images\Login\imPswdIngreso.png" />
+    <Content Include="Images\Login\ImIngreso.png" />
+    <Content Include="Images\Login\imLogoCliente.png" />
+    <Content Include="Images\Maestra\imApp.png" />
+    <Content Include="Images\Maestra\imLogoEmpresa.png" />
     <Content Include="Images\Msj\imAdvertencia.png" />
+    <Content Include="Images\OpcPagina\ibtnRiesgosGris.png" />
+    <Content Include="Images\OpcPagina\ibtnRiesgosAzul.png" />
+    <Content Include="Images\OpcPagina\ibtnRespSGSSTGris.png" />
+    <Content Include="Images\OpcPagina\ibtnRespSGSSTAzul.png" />
+    <Content Include="Images\OpcPagina\ibtnReqFisicosGris.png" />
+    <Content Include="Images\OpcPagina\ibtnReqFisiciosAzul.png" />
+    <Content Include="Images\OpcPagina\ibtnEPPEntrenamientoGris.png" />
+    <Content Include="Images\OpcPagina\ibtnEPPEntrenamientoAzul.png" />
+    <Content Include="Images\OpcPagina\ibtnCondSaludGris.png" />
+    <Content Include="Images\OpcPagina\ibtnCondSaludAzul.png" />
     <Content Include="js\alertify.js" />
     <Content Include="js\alertify.min.js" />
     <Content Include="js\jquery-1.8.3.min.js" />
@@ -126,20 +151,21 @@
     </Compile>
     <Compile Include="frmPrincMenuPrincipal.aspx.vb">
       <DependentUpon>frmPrincMenuPrincipal.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="frmPrincPrimerIngreso.aspx.designer.vb">
       <DependentUpon>frmPrincPrimerIngreso.aspx</DependentUpon>
     </Compile>
     <Compile Include="frmPrincPrimerIngreso.aspx.vb">
       <DependentUpon>frmPrincPrimerIngreso.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="login.aspx.designer.vb">
       <DependentUpon>login.aspx</DependentUpon>
     </Compile>
     <Compile Include="login.aspx.vb">
       <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Maestras\mstSGSST.Master.designer.vb">
       <DependentUpon>mstSGSST.Master</DependentUpon>
@@ -172,7 +198,7 @@
     </Compile>
     <Compile Include="Planear\PerfDemografico\frmPlPerfDemografico.aspx.vb">
       <DependentUpon>frmPlPerfDemografico.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>

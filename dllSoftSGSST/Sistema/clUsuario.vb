@@ -30,7 +30,7 @@ Namespace Sistema
             varIdUsuario = 1
             parTxtUsuario = "Administrator"
             varIdEmpresa = 1
-            varEstPrimerLogueo = 1
+            varEstPrimerLogueo = 0
             varIdRelUsuXEmp = 1
 
             objInfoUsuario = New clInfoUsuario(varIdUsuario, parTxtUsuario, varIdEmpresa, varEstPrimerLogueo, varIdRelUsuXEmp)
@@ -38,6 +38,7 @@ Namespace Sistema
             Return objInfoUsuario
         End Function
     End Class
+    <Serializable>
     Public Class clInfoUsuario
 #Region "VARIABLES"
         Dim varIdUsuario As Integer = 0

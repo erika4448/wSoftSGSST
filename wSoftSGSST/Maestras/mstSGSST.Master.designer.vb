@@ -50,6 +50,24 @@ Partial Public Class mstSGSST
     Protected WithEvents ctrLoading As Global.wSoftSGSST.ctrLoading
     
     '''<summary>
+    '''imApp control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents imApp As Global.System.Web.UI.WebControls.Image
+    
+    '''<summary>
+    '''imLogoEmpresa control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents imLogoEmpresa As Global.System.Web.UI.WebControls.Image
+    
+    '''<summary>
     '''ContentPlaceHolder1 control.
     '''</summary>
     '''<remarks>

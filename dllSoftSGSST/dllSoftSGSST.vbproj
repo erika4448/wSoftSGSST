@@ -81,7 +81,9 @@
     <Compile Include="Estructura\EstructuraPaginaMaestra.vb">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Estructura\EstructuraPagina.vb" />
+    <Compile Include="Estructura\EstructuraPagina.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="Estructura\EstructuraTransaccion.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">

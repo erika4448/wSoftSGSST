@@ -23,13 +23,13 @@
             <table width="100%" id="LoginContent">
                 <tr>
                     <td align="center" width="50%">
-                        <asp:Image runat="server" ID="imLogoCliente" ImageUrl="~/Images/Menu/imLogoCliente.png"></asp:Image>
+                        <asp:Image runat="server" ID="imLogoCliente" ImageUrl="~/Images/Login/imLogoCliente.png"></asp:Image>
                     </td>
                     <td width="50%">
                         <table>
                             <tr>
                                 <td align="left">
-                                    <asp:Image runat="server" ID="imIngreso" ImageUrl="~/Images/Menu/ImIngreso.png"></asp:Image>
+                                    <asp:Image runat="server" ID="imIngreso" ImageUrl="~/Images/Login/ImIngreso.png"></asp:Image>
                                 </td>
                             </tr>
                             <tr>
@@ -42,7 +42,7 @@
                                                         <table>
                                                             <tr>
                                                                 <td align="left">
-                                                                    <asp:Image ID="imUsuario" runat="server" ImageUrl="~/Images/Menu/imUsuarioIngreso.png" />
+                                                                    <asp:Image ID="imUsuario" runat="server" ImageUrl="~/Images/Login/imUsuarioIngreso.png" />
                                                                 </td>
                                                                 <td align="left">
                                                                     <asp:TextBox ID="txtUsuario" runat="server"></asp:TextBox>
@@ -59,7 +59,7 @@
                                                         <table>
                                                             <tr>
                                                                 <td align="left">
-                                                                    <asp:Image ID="imPwd" runat="server" ImageUrl="~/Images/Menu/imPswdIngreso.png" />
+                                                                    <asp:Image ID="imPwd" runat="server" ImageUrl="~/Images/Login/imPswdIngreso.png" />
                                                                 </td>
                                                                 <td align="left">
                                                                     <asp:TextBox ID="txtPswd" runat="server" TextMode="SingleLine"></asp:TextBox>

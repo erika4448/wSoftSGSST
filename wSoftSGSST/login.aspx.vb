@@ -68,7 +68,7 @@
             objUsuario.GenerarTicketAutenticacion(Me.Page,
                                               Me.pObjInfoUsuario.pStrLogin,
                                               New dllSoftSGSST.Seguridad.clObjLoginSesion(Me.pObjInfoUsuario),
-                                              IIf(Me.pObjInfoUsuario.pEstPrimerLog, "123", "456"))
+                                              IIf(Me.pObjInfoUsuario.pEstPrimerLog = 1, "~/frmPrincPrimerIngreso.aspx", "~/frmPrincMenuPrincipal.aspx"))
 
             Return True
         Catch ex As Exception

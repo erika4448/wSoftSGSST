@@ -33,7 +33,7 @@ Namespace Seguridad
             varStrURLRedirecciona = parRefPagina.Request("ReturnUrl")
 
             'REDIRECCIONA A LA URL DEL SOLICITADA POR EL SISTEMA
-            parRefPagina.Response.Redirect(varStrURLRedirecciona, False)
+            parRefPagina.Response.Redirect(parStrURLRetorno, False)
         End Sub
     End Class
 End Namespace
