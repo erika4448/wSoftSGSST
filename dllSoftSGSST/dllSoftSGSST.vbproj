@@ -103,6 +103,10 @@
     <Compile Include="Seguridad\clObjLoginSesion.vb" />
     <Compile Include="Seguridad\clUsuario.vb" />
     <Compile Include="SGSST\clSgsstCargo.vb" />
+    <Compile Include="SGSST\clSgsstCiudad.vb" />
+    <Compile Include="SGSST\clSgsstEmpleado.vb" />
+    <Compile Include="SGSST\clSgsstHistCargosEmp.vb" />
+    <Compile Include="SGSST\clSgsstPais.vb" />
     <Compile Include="Sistema\clBD.vb" />
     <Compile Include="Sistema\clSisEstado.vb" />
     <Compile Include="Sistema\clUsuario.vb" />

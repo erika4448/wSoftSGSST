@@ -1,5 +1,5 @@
 ﻿Public Class ctrFecha
-    Inherits Maestros.clControlMaestro
+    Inherits dllSoftSGSST.Estructura.EstructuraControl
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         If Not IsPostBack Then
             'CAMBIAR FORMATO TRAIDO DE LA BASE DE DATOS
@@ -14,11 +14,6 @@
 
             'SE ESTABLECEN LOS RANGOS MINIMOS Y MAXIMOS
             Dim formatDate As String = System.Threading.Thread.CurrentThread.CurrentCulture.DateTimeFormat.ShortDatePattern
-
-            Me.pFechaMinima = "1900/01/01"
-            Me.pFechaMaxima = "2031/12/31"
-            Me.pFechaMinima = Me.pFechaMinima.Date.ToString(formatDate)
-            Me.pFechaMaxima = Me.pFechaMaxima.Date.ToString(formatDate)
         End If
     End Sub
     Public Event evtSelFecha()

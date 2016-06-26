@@ -40,35 +40,38 @@
 <asp:Button ID="btnFake" runat="server" CausesValidation="False" Style="display: none" ToolTip="Editar Parámetro" />
 <ajaxToolkit:ModalPopupExtender ID="modalHistCargo" runat="server" BackgroundCssClass="cssModalBackGround" Enabled="True" PopupControlID="pnlHistCargo" TargetControlID="btnFake">
 </ajaxToolkit:ModalPopupExtender>
-<asp:Panel ID="pnlHistCargo" runat="server" CssClass="ModalPoup">
+<asp:Panel ID="pnlHistCargo" runat="server" CssClass="ModalPoup" Style="display: none">
     <asp:UpdatePanel ID="upnlHistCargo" runat="server" UpdateMode="Conditional">
         <ContentTemplate>
             <table>
                 <tr>
                     <td align="right">
-
                         <asp:ImageButton ID="ibtnCerrarHistCargo" runat="server" ImageUrl="~/Images/General/ibtnCerrarModal.png" />
-
                     </td>
                 </tr>
                 <tr>
                     <td align="center">
-                        <asp:Label ID="lblHistCargos" runat="server" Text="Histórico de Cargos" CssClass="tituloForm"></asp:Label>
-                    </td>
-                </tr>
-                <tr>
-                    <td>&nbsp;
+                        <asp:Label ID="lblHistCargos" runat="server" CssClass="tituloForm" Text="Histórico de Cargos"></asp:Label>
                     </td>
                 </tr>
                 <tr>
                     <td align="center">
-                        <asp:GridView ID="gvHistCargos" runat="server" AutoGenerateColumns="False" DataSourceID="odsHistCargo">
+                        <asp:GridView ID="gvHistCargos" runat="server" AllowSorting="True" AutoGenerateColumns="False" DataSourceID="odsHistCargo">
                             <Columns>
-                                <asp:BoundField HeaderText="Cargo" />
-                                <asp:BoundField HeaderText="Fecha Ingreso" />
+                                <asp:BoundField DataField="StrCargo" HeaderText="Cargo" SortExpression="StrCargo" />
+                                <asp:BoundField DataField="shceFchIngreso" HeaderText="Fecha Ingreso" SortExpression="shceFchIngreso" />
                             </Columns>
                         </asp:GridView>
-                        <asp:ObjectDataSource ID="odsHistCargo" runat="server"></asp:ObjectDataSource>
+                        <asp:ObjectDataSource ID="odsHistCargo" runat="server" SelectMethod="GetTblInfoHistCargoXdEmp" TypeName="dllSoftSGSST.SGSST.clSgsstHistCargosEmp">
+                            <SelectParameters>
+                                <asp:Parameter Name="parIdEmpleado" Type="Int32" />
+                            </SelectParameters>
+                        </asp:ObjectDataSource>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        &nbsp;
                     </td>
                 </tr>
             </table>
@@ -79,7 +82,7 @@
 <asp:Button ID="btnFake2" runat="server" CausesValidation="False" Style="display: none" ToolTip="Editar Parámetro" />
 <ajaxToolkit:ModalPopupExtender ID="modalReqCargo" runat="server" BackgroundCssClass="cssModalBackGround" Enabled="True" PopupControlID="pnlReqCargo" TargetControlID="btnFake2">
 </ajaxToolkit:ModalPopupExtender>
-<asp:Panel ID="pnlReqCargo" runat="server" CssClass="ModalPoup">
+<asp:Panel ID="pnlReqCargo" runat="server" CssClass="ModalPoup" Style="display: none">
     <asp:UpdatePanel ID="upnlReqCargo" runat="server" UpdateMode="Conditional">
         <ContentTemplate>
             <table>
@@ -125,14 +128,7 @@
                                 <td align="left">
                                     <asp:Label ID="lblInfoProfesion" runat="server"></asp:Label>
                                 </td>
-                            </tr>
-                            <tr>
-                                <td align="left" class="tdLabel">
-                                    <asp:Label ID="lblExperiencia" runat="server" Text="Experiencia"></asp:Label>
-                                </td>
-                                <td align="left">
-                                    <asp:Label ID="lblInfoExperiencia" runat="server"></asp:Label>
-                                </td>
+                            </tr>d>
                             </tr>
                             <tr>
                                 <td align="left" class="tdLabel">
@@ -161,7 +157,7 @@
 <asp:Button ID="btnFake3" runat="server" CausesValidation="False" Style="display: none" ToolTip="Editar Parámetro" />
 <ajaxToolkit:ModalPopupExtender ID="modalRelNuevoCargo" runat="server" BackgroundCssClass="cssModalBackGround" Enabled="True" PopupControlID="pnlRelNuevoCargo" TargetControlID="btnFake3">
 </ajaxToolkit:ModalPopupExtender>
-<asp:Panel ID="pnlRelNuevoCargo" runat="server" CssClass="ModalPoup">
+<asp:Panel ID="pnlRelNuevoCargo" runat="server" CssClass="ModalPoup" Style="display: none">
     <asp:UpdatePanel ID="upnlRelNuevoCargo" runat="server" UpdateMode="Conditional">
         <ContentTemplate>
             <table>
@@ -205,7 +201,7 @@
                                 <td align="left" class="tdLabel">
 
                                     <asp:DropDownList ID="ddlNuevoCargo" runat="server">
-                                    </asp:DropDownList>
+                                    </asp:DropDownList><asp:Label ID="lblAstValNuevoCargo" runat="server" Text="*"></asp:Label>
 
                                 </td>
                             </tr>
@@ -213,11 +209,11 @@
                                 <td align="left" class="tdLabel">
 
                                     <asp:Label ID="lblFchIngresoCargo" runat="server" Text="Fecha Ingreso Cargo"></asp:Label>
-
+                                    <asp:Label ID="lblAstValFchIngresoCargo" runat="server" Text="*"></asp:Label>
                                 </td>
                                 <td align="left" class="tdLabel">
 
-                                    <uc1:ctrFecha ID="ctrFecha1" runat="server" />
+                                    <uc1:ctrFecha ID="ctrFechaIngreso" runat="server" />
 
                                 </td>
                             </tr>

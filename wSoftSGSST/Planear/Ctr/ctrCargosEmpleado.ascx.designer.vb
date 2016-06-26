@@ -239,24 +239,6 @@ Partial Public Class ctrCargosEmpleado
     Protected WithEvents lblInfoProfesion As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
-    '''lblExperiencia control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents lblExperiencia As Global.System.Web.UI.WebControls.Label
-    
-    '''<summary>
-    '''lblInfoExperiencia control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents lblInfoExperiencia As Global.System.Web.UI.WebControls.Label
-    
-    '''<summary>
     '''lblExperienciaAnios control.
     '''</summary>
     '''<remarks>
@@ -383,6 +365,15 @@ Partial Public Class ctrCargosEmpleado
     Protected WithEvents ddlNuevoCargo As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
+    '''lblAstValNuevoCargo control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblAstValNuevoCargo As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
     '''lblFchIngresoCargo control.
     '''</summary>
     '''<remarks>
@@ -392,13 +383,22 @@ Partial Public Class ctrCargosEmpleado
     Protected WithEvents lblFchIngresoCargo As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
-    '''ctrFecha1 control.
+    '''lblAstValFchIngresoCargo control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents ctrFecha1 As Global.wSoftSGSST.ctrFecha
+    Protected WithEvents lblAstValFchIngresoCargo As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
+    '''ctrFechaIngreso control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ctrFechaIngreso As Global.wSoftSGSST.ctrFecha
     
     '''<summary>
     '''ibtnGuardarCargo control.

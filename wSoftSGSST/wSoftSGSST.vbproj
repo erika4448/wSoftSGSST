@@ -97,6 +97,7 @@
     <Content Include="css\alertify.bootstrap.css" />
     <Content Include="css\alertify.core.css" />
     <Content Include="css\alertify.default.css" />
+    <Content Include="Ctr\ctrPaisCiudadDep.ascx" />
     <Content Include="frmPrincMenuPrincipal.aspx" />
     <Content Include="frmPrincPrimerIngreso.aspx" />
     <Content Include="Global.asax" />
@@ -158,6 +159,7 @@
     <Content Include="js\jsapi.js" />
     <Content Include="login.aspx" />
     <Content Include="Planear\Ctr\ctrCargosEmpleado.ascx" />
+    <Content Include="Planear\Ctr\ctrInfoEmpleado.ascx" />
     <Content Include="Planear\PerfDemografico\frmPlPerfDemografico.aspx" />
     <Content Include="Planear\Profesiograma\frmPlProfesiograma.aspx" />
     <Content Include="Web.config" />
@@ -168,12 +170,20 @@
     </Compile>
     <Compile Include="Ctr\ctrFecha.ascx.vb">
       <DependentUpon>ctrFecha.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Ctr\ctrLoading.ascx.designer.vb">
       <DependentUpon>ctrLoading.ascx</DependentUpon>
     </Compile>
     <Compile Include="Ctr\ctrLoading.ascx.vb">
       <DependentUpon>ctrLoading.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ctr\ctrPaisCiudadDep.ascx.designer.vb">
+      <DependentUpon>ctrPaisCiudadDep.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Ctr\ctrPaisCiudadDep.ascx.vb">
+      <DependentUpon>ctrPaisCiudadDep.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="frmPrincMenuPrincipal.aspx.designer.vb">
@@ -231,6 +241,13 @@
     </Compile>
     <Compile Include="Planear\Ctr\ctrCargosEmpleado.ascx.vb">
       <DependentUpon>ctrCargosEmpleado.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Planear\Ctr\ctrInfoEmpleado.ascx.designer.vb">
+      <DependentUpon>ctrInfoEmpleado.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Planear\Ctr\ctrInfoEmpleado.ascx.vb">
+      <DependentUpon>ctrInfoEmpleado.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Planear\PerfDemografico\frmPlPerfDemografico.aspx.designer.vb">
