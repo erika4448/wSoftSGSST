@@ -9,6 +9,9 @@ Namespace Estructura
 
         Public Sub New()
         End Sub
+        Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+            MaintainScrollPositionOnPostBack = True
+        End Sub
 #Region "PROPIEDADES"
         'PROPIEDAD PARA EL MANEJO DE SESION DE LA PAGINA
         Public ReadOnly Property pObjInfoUsuSesion() As dllSoftSGSST.Seguridad.clObjLoginSesion

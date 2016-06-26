@@ -102,7 +102,9 @@
     </Compile>
     <Compile Include="Seguridad\clObjLoginSesion.vb" />
     <Compile Include="Seguridad\clUsuario.vb" />
+    <Compile Include="SGSST\clSgsstCargo.vb" />
     <Compile Include="Sistema\clBD.vb" />
+    <Compile Include="Sistema\clSisEstado.vb" />
     <Compile Include="Sistema\clUsuario.vb" />
   </ItemGroup>
   <ItemGroup>

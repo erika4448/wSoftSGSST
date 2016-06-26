@@ -13,25 +13,25 @@ Namespace Sistema
             Dim varEstPrimerLogueo As Integer = 0
             Dim objInfoUsuario As clInfoUsuario
 
-            'db.AddInParameter(dbCommand, "parTxtUsuario", DbType.String, parTxtUsuario)
-            'db.AddInParameter(dbCommand, "parTxtPwd", DbType.String, parTxtPwd)
-            'db.AddParameter(dbCommand, "parOutIdUsuario", DbType.Int32, ParameterDirection.InputOutput, Nothing, DataRowVersion.Current, varIdUsuario)
-            'db.AddParameter(dbCommand, "parOutIdEmpresa", DbType.Int32, ParameterDirection.InputOutput, Nothing, DataRowVersion.Current, varIdEmpresa)
-            'db.AddParameter(dbCommand, "parOutEstPrimerLog", DbType.Int32, ParameterDirection.InputOutput, Nothing, DataRowVersion.Current, varEstPrimerLogueo)
-            'db.AddParameter(dbCommand, "parOutIdRelUsuXEmp", DbType.Int32, ParameterDirection.InputOutput, Nothing, DataRowVersion.Current, varIdRelUsuXEmp)
+            db.AddInParameter(dbCommand, "parStrUsuario", DbType.String, parTxtUsuario)
+            db.AddInParameter(dbCommand, "parStrPwd", DbType.String, parTxtPwd)
+            db.AddParameter(dbCommand, "parOutIdUsuario", DbType.Int32, ParameterDirection.InputOutput, Nothing, DataRowVersion.Current, varIdUsuario)
+            db.AddParameter(dbCommand, "parOutIdEmpresa", DbType.Int32, ParameterDirection.InputOutput, Nothing, DataRowVersion.Current, varIdEmpresa)
+            db.AddParameter(dbCommand, "parOutEstPrimerLog", DbType.Int32, ParameterDirection.InputOutput, Nothing, DataRowVersion.Current, varEstPrimerLogueo)
+            db.AddParameter(dbCommand, "parOutIdRelUsuXEmp", DbType.Int32, ParameterDirection.InputOutput, Nothing, DataRowVersion.Current, varIdRelUsuXEmp)
 
-            'db.ExecuteNonQuery(dbCommand)
+            db.ExecuteNonQuery(dbCommand)
 
-            'varIdUsuario = db.GetParameterValue(dbCommand, "parOutIdUsuario")
-            'varIdEmpresa = db.GetParameterValue(dbCommand, "parOutIdEmpresa")
-            'varEstPrimerLogueo=db.GetParameterValue(dbCommand, "parOutIdEmpresa")
-            'varIdRelUsuXEmp=db.GetParameterValue(dbCommand, "parOutIdRelUsuXEmp")
+            varIdUsuario = db.GetParameterValue(dbCommand, "parOutIdUsuario")
+            varIdEmpresa = db.GetParameterValue(dbCommand, "parOutIdEmpresa")
+            varEstPrimerLogueo = db.GetParameterValue(dbCommand, "parOutIdEmpresa")
+            varIdRelUsuXEmp = db.GetParameterValue(dbCommand, "parOutIdRelUsuXEmp")
 
-            varIdUsuario = 1
-            parTxtUsuario = "Administrator"
-            varIdEmpresa = 1
-            varEstPrimerLogueo = 0
-            varIdRelUsuXEmp = 1
+            'varIdUsuario = 1
+            'parTxtUsuario = "Administrator"
+            'varIdEmpresa = 1
+            'varEstPrimerLogueo = 0
+            'varIdRelUsuXEmp = 1
 
             objInfoUsuario = New clInfoUsuario(varIdUsuario, parTxtUsuario, varIdEmpresa, varEstPrimerLogueo, varIdRelUsuXEmp)
 

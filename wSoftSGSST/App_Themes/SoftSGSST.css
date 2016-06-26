@@ -119,3 +119,25 @@ input[type="submit"], input[type="button"] {
     margin-right: 0px;
     height: 32px;
 }
+
+/*FORMULARIO*/
+.tdLabel {
+}
+
+.tituloForm {
+      font-size: 20px;
+      font-family: Berlin Sans FB,Arial;
+      color:#003366;
+}
+
+/*MODAL POUP*/
+.ModalPoup {
+    border: 8px solid #EEEEEE;
+    padding: 2px 10px 10px 10px;
+    background-color: #FFFFFF;
+}
+.cssModalBackGround {
+        background-color: #FFFFFF;
+        opacity: 0.4;
+        filter: alpha(opacity=40);
+    }

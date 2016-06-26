@@ -92,12 +92,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Themes\SoftSGSST.css" />
+    <Content Include="Ctr\ctrFecha.ascx" />
     <Content Include="Ctr\ctrLoading.ascx" />
     <Content Include="css\alertify.bootstrap.css" />
     <Content Include="css\alertify.core.css" />
     <Content Include="css\alertify.default.css" />
     <Content Include="frmPrincMenuPrincipal.aspx" />
     <Content Include="frmPrincPrimerIngreso.aspx" />
+    <Content Include="Global.asax" />
     <Content Include="Images\Botones\ibtnPnlGestion.png" />
     <Content Include="Images\Botones\ibtnRequisitosAzul.png" />
     <Content Include="Images\Botones\ibtnRelNuevoCargoAzul.png" />
@@ -155,11 +157,18 @@
     <Content Include="js\jquery-1.8.3.min.js" />
     <Content Include="js\jsapi.js" />
     <Content Include="login.aspx" />
+    <Content Include="Planear\Ctr\ctrCargosEmpleado.ascx" />
     <Content Include="Planear\PerfDemografico\frmPlPerfDemografico.aspx" />
     <Content Include="Planear\Profesiograma\frmPlProfesiograma.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ctr\ctrFecha.ascx.designer.vb">
+      <DependentUpon>ctrFecha.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Ctr\ctrFecha.ascx.vb">
+      <DependentUpon>ctrFecha.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Ctr\ctrLoading.ascx.designer.vb">
       <DependentUpon>ctrLoading.ascx</DependentUpon>
     </Compile>
@@ -180,6 +189,9 @@
     <Compile Include="frmPrincPrimerIngreso.aspx.vb">
       <DependentUpon>frmPrincPrimerIngreso.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="login.aspx.designer.vb">
       <DependentUpon>login.aspx</DependentUpon>
@@ -213,6 +225,13 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Planear\Ctr\ctrCargosEmpleado.ascx.designer.vb">
+      <DependentUpon>ctrCargosEmpleado.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Planear\Ctr\ctrCargosEmpleado.ascx.vb">
+      <DependentUpon>ctrCargosEmpleado.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Planear\PerfDemografico\frmPlPerfDemografico.aspx.designer.vb">
       <DependentUpon>frmPlPerfDemografico.aspx</DependentUpon>
@@ -257,9 +276,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Planear\Ctr\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
