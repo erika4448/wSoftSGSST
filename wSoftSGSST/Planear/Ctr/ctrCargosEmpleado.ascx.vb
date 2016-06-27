@@ -14,7 +14,8 @@
     Public WriteOnly Property pBoolIniCtr As Boolean
         Set(value As Boolean)
             If value Then
-
+                'SE INICIALIZA LA VISUALIZACION
+                Me.pVisualizaXAccion = EnmAccion.Inicio
             End If
         End Set
     End Property
@@ -211,6 +212,15 @@
     End Sub
     Private Sub LimpiarFormRelNuevoCargo()
         Me.ctrFechaIngreso.LimpiarControl()
+    End Sub
+#End Region
+#Region "PUBLICO"
+    Public Sub CargarInfoCargoXID()
+        If Not (Me.ddlCargo.Items.FindByValue(Me.pIdCargo) Is Nothing) Then
+            Me.ddlCargo.SelectedValue = Me.pIdCargo
+        Else
+            Me.ddlCargo.SelectedValue = 0
+        End If
     End Sub
 #End Region
 #Region "DATA SOURCE GRILLA HISTORICO CARGOS"

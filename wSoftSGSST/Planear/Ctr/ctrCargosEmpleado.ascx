@@ -3,13 +3,13 @@
 <%If (False) Then %>
 <link rel="Stylesheet" type="text/css" href="../../App_Themes/SoftSGSST.css" />
 <%end if%>
-<table>
+<table width="100%">
     <tr>
         <td align="left" class="tdLabel">
             <asp:Label ID="lblCargo" runat="server" Text="Cargo"></asp:Label>
         </td>
         <td align="left">
-            <table cellpadding="0" cellspacing="0">
+            <table cellpadding="0" cellspacing="0" width="100%">
                 <tr>
                     <td align="left">
                         <asp:DropDownList ID="ddlCargo" runat="server" AutoPostBack="True"></asp:DropDownList>

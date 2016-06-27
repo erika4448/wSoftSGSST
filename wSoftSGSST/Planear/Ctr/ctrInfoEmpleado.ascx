@@ -1,162 +1,218 @@
 ﻿<%@ Control Language="vb" AutoEventWireup="false" CodeBehind="ctrInfoEmpleado.ascx.vb" Inherits="wSoftSGSST.ctrInfoEmpleado" %>
-<%@ Register src="../../Ctr/ctrFecha.ascx" tagname="ctrFecha" tagprefix="uc1" %>
+<%@ Register Src="../../Ctr/ctrFecha.ascx" TagName="ctrFecha" TagPrefix="uc1" %>
+<%@ Register Src="../../Ctr/ctrPaisCiudadDep.ascx" TagName="ctrPaisCiudadDep" TagPrefix="uc2" %>
+<%@ Register Src="ctrCargosEmpleado.ascx" TagName="ctrCargosEmpleado" TagPrefix="uc3" %>
 <%If (False) Then %>
 <link rel="Stylesheet" type="text/css" href="../../App_Themes/SoftSGSST.css" />
 <%end if%>
 <table>
-     <tr>
-        <td align="left" class="tdLabel">
-            <asp:ImageButton ID="imEmpleado" runat="server" ImageUrl="~/Images/General/imAgregarFoto.png" />
-        </td>
-        <td align="center">
-            <table align="center">
-                <tr>
-                    <td align="center">
-                        <asp:Label ID="lblNombreEmpleado" runat="server" Font-Bold="True"></asp:Label>
-                    </td>
-                </tr>
-                 <tr>
-                    <td align="center">
-                        <asp:Label ID="lblAnios" runat="server" Font-Bold="True"></asp:Label>
-                     </td>
-                </tr>
-                 <tr>
-                    <td align="center">
-                        <asp:Label ID="lblTipDocNumDoc" runat="server" Font-Bold="True"></asp:Label>
-                     </td>
-                </tr>
-                 <tr>
-                    <td align="center">
-                        <asp:Label ID="lblCargo" runat="server" Font-Bold="True"></asp:Label>
-                     </td>
-                </tr>
-                 <tr>
-                    <td align="center">
-                        <asp:ImageButton ID="ibtnEditarInfo" runat="server" CausesValidation="False" ImageUrl="~/Images/Botones/ibtnEditarInfoAzul.png" />
-                     </td>
-                </tr>
-            </table>
+    <tr>
+        <td colspan="2">
+            <asp:Panel ID="pnlInfoBasicaEmpleado" runat="server">
+                <table>
+                    <tr>
+                        <td align="left" class="tdLabel">
+                            <asp:ImageButton ID="imEmpleado" runat="server" ImageUrl="~/Images/General/imAgregarFoto.png" />
+                        </td>
+                        <td align="center">
+                            <table align="center">
+                                <tr>
+                                    <td align="center">
+                                        <asp:Label ID="lblNombreEmpleado" runat="server" Font-Bold="True"></asp:Label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center">
+                                        <asp:Label ID="lblAnios" runat="server" Font-Bold="True"></asp:Label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center">
+                                        <asp:Label ID="lblTipDocNumDoc" runat="server" Font-Bold="True"></asp:Label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center">
+                                        <asp:Label ID="lblCargo" runat="server" Font-Bold="True"></asp:Label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center">
+                                        <asp:ImageButton ID="ibtnEditarInfo" runat="server" CausesValidation="False" ImageUrl="~/Images/Botones/ibtnEditarInfoAzul.png" />
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </asp:Panel>
         </td>
     </tr>
-     <tr>
+    <tr>
+        <td align="left" class="tdLabel">&nbsp;</td>
+        <td align="left">&nbsp;</td>
+    </tr>
+    <tr>
+        <td align="left" colspan="2">
+            <asp:Panel ID="pnlInfoUsuarioCreaMod" runat="server">
+                <table>
+                    <tr>
+                        <td align="left" class="tdLabel">
+                            <asp:Label ID="lblNombres" runat="server" Text="Nombres Empleado"></asp:Label>
+                        </td>
+                        <td align="left">
+                            
+                            <asp:TextBox ID="txtNombres" runat="server"></asp:TextBox>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left" class="tdLabel">
+                            <asp:Label ID="lblApellidos" runat="server" Text="Apellidos Empleado"></asp:Label>
+                        </td>
+                        <td align="left">
+                            
+                            <asp:TextBox ID="txtApellidos" runat="server"></asp:TextBox>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left" class="tdLabel">
+                            <asp:Label ID="lblTipDoc" runat="server" Text="Tipo Documento"></asp:Label>
+                        </td>
+                        <td align="left">
+                            
+                            <asp:DropDownList ID="ddlTipDoc" runat="server">
+                            </asp:DropDownList>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left" class="tdLabel">
+                            <asp:Label ID="lblNumDoc" runat="server" Text="Número Documento"></asp:Label>
+                        </td>
+                        <td align="left">
+                            
+                            <asp:TextBox ID="txtNumDoc" runat="server"></asp:TextBox>
+                            
+                        </td>
+                    </tr>
+                </table>
+            </asp:Panel>
+        </td>
+    </tr>
+    <tr>
         <td align="left" class="tdLabel">
 
-            <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
+            <asp:Label ID="lblGenero" runat="server" Text="Género"></asp:Label>
 
         </td>
         <td align="left">
-            <asp:DropDownList ID="DropDownList1" runat="server">
+            <asp:DropDownList ID="ddlGenero" runat="server">
             </asp:DropDownList>
-         </td>
+        </td>
     </tr>
-     <tr>
+    <tr>
         <td align="left" class="tdLabel">
 
-            <asp:Label ID="Label3" runat="server" Text="Label"></asp:Label>
+            <asp:Label ID="lblFchNacimiento" runat="server" Text="Fecha Nacimiento"></asp:Label>
 
         </td>
         <td align="left">
-            <uc1:ctrFecha ID="ctrFecha1" runat="server" />
-         </td>
+            <uc1:ctrFecha ID="ctrFechaNacimiento" runat="server" />
+        </td>
     </tr>
-     <tr>
-        <td align="left" class="tdLabel">
+    <tr>
+        <td align="left" colspan="2">
 
-            <asp:Label ID="Label4" runat="server" Text="Label"></asp:Label>
+            <uc2:ctrPaisCiudadDep ID="ctrPaisCiudadDep1" runat="server" />
 
         </td>
-        <td align="left">
-            <asp:DropDownList ID="DropDownList2" runat="server">
-            </asp:DropDownList>
-         </td>
     </tr>
-     <tr>
+    <tr>
         <td align="left" class="auto-style1">
 
-            <asp:Label ID="Label5" runat="server" Text="Label"></asp:Label>
+            <asp:Label ID="lblEducacion" runat="server" Text="Educación"></asp:Label>
 
         </td>
         <td align="left" class="auto-style1">
-            <asp:DropDownList ID="DropDownList3" runat="server">
+            <asp:DropDownList ID="ddlEducacion" runat="server">
             </asp:DropDownList>
-         </td>
+        </td>
     </tr>
-     <tr>
+    <tr>
         <td align="left" class="tdLabel">
 
-            <asp:Label ID="Label6" runat="server" Text="Label"></asp:Label>
+            <asp:Label ID="lblProfesion" runat="server" Text="Profesión"></asp:Label>
 
         </td>
-        <td align="left"></td>
+        <td align="left">
+            <asp:DropDownList ID="ddlProfesion" runat="server">
+            </asp:DropDownList>
+        </td>
     </tr>
-     <tr>
+    <tr>
         <td align="left" class="tdLabel">
 
-            <asp:Label ID="Label7" runat="server" Text="Label"></asp:Label>
+            <asp:Label ID="lblEstCivil" runat="server" Text="Estado Civil"></asp:Label>
 
         </td>
-        <td align="left"></td>
+        <td align="left">
+            <asp:DropDownList ID="ddlEstCivil" runat="server">
+            </asp:DropDownList>
+        </td>
     </tr>
-     <tr>
+    <tr>
+        <td align="left" colspan="2">
+
+            <uc3:ctrCargosEmpleado ID="ctrCargosEmpleado1" runat="server" />
+
+        </td>
+    </tr>
+    <tr>
         <td align="left" class="tdLabel">
 
-            <asp:Label ID="Label8" runat="server" Text="Label"></asp:Label>
+            <asp:Label ID="lblTipoCont" runat="server" Text="Tipo Contrato"></asp:Label>
 
         </td>
-        <td align="left"></td>
+        <td align="left">
+            <asp:DropDownList ID="ddlTipoContrato" runat="server">
+            </asp:DropDownList>
+        </td>
     </tr>
-     <tr>
+    <tr>
         <td align="left" class="tdLabel">
 
-            <asp:Label ID="Label9" runat="server" Text="Label"></asp:Label>
+            <asp:Label ID="lblFchIngreso" runat="server" Text="Fecha de Ingreso"></asp:Label>
 
         </td>
+        <td align="left">
+            <uc1:ctrFecha ID="ctrFechaIngreso" runat="server" />
+        </td>
+    </tr>
+    <tr>
+        <td align="left" class="tdLabel">&nbsp;</td>
         <td align="left"></td>
     </tr>
-     <tr>
-        <td align="left" class="tdLabel">
+    <tr>
+        <td align="center" colspan="2">
 
-            <asp:Label ID="Label10" runat="server" Text="Label"></asp:Label>
+            <asp:ImageButton ID="ibtnGuardarInfo" runat="server" CausesValidation="False" ImageUrl="~/Images/Botones/ibtnGuardarInfoVerde.png" />
 
         </td>
-        <td align="left"></td>
     </tr>
-     <tr>
-        <td align="left" class="tdLabel">
+    <tr>
+        <td align="center"  colspan="2">
 
-            <asp:Label ID="Label11" runat="server" Text="Label"></asp:Label>
-
-        </td>
-        <td align="left"></td>
+            &nbsp;</td>
     </tr>
-     <tr>
-        <td align="left" class="tdLabel">
-
-            <asp:Label ID="Label12" runat="server" Text="Label"></asp:Label>
-
+    <tr>
+        <td align="center" colspan="2">
+            <asp:ImageButton ID="ibtnInfoLaboral" runat="server" CausesValidation="False" ImageUrl="~/Images/OpcPagina/ibtnInfoLaboralGris.png"  />
+            <asp:ImageButton ID="ibtnAccidentesEnf" runat="server" CausesValidation="False" ImageUrl="~/Images/OpcPagina/ibtnAccLaboralesGris.png"  />
+            <asp:ImageButton ID="ibtnConceptosMed" runat="server"  CausesValidation="False" ImageUrl="~/Images/OpcPagina/ibtnConceptoMedicoGris.png" />
+            <asp:ImageButton ID="ibtnRiesgosCargo" runat="server" CausesValidation="False" ImageUrl="~/Images/OpcPagina/ibtnRiesgosCargoGris.png"  />
+            <asp:ImageButton ID="ibtnResponSGSST" runat="server" CausesValidation="False" ImageUrl="~/Images/OpcPagina/ibtnRespSGSSTGris.png" />
         </td>
-        <td align="left"></td>
-    </tr>
-     <tr>
-        <td align="left" class="tdLabel">
-
-            <asp:Label ID="Label13" runat="server" Text="Label"></asp:Label>
-
-        </td>
-        <td align="left"></td>
-    </tr>
-     <tr>
-        <td align="left" class="tdLabel">
-
-            <asp:Label ID="Label14" runat="server" Text="Label"></asp:Label>
-
-        </td>
-        <td align="left"></td>
-    </tr>
-     <tr>
-        <td align="left" class="tdLabel">
-
-        </td>
-        <td align="left"></td>
     </tr>
 </table>

@@ -1,5 +1,5 @@
 ﻿Imports System.Data.Common
-Namespace SGST
+Namespace SGSST
     Public Class clSgsstCiudad
         Inherits Sistema.clBD
 #Region "VARIABLES"

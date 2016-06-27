@@ -2,7 +2,7 @@
 <%If (False) Then %>
 <link rel="Stylesheet" type="text/css" href="../App_Themes/SoftSGSST.css" />
 <%end if%>
-<table>
+<table width="100%">
     <tr>
         <td align="left" class="tdLabel">
             <asp:Label ID="lblPais" runat="server" Text="País"></asp:Label>

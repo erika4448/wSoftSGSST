@@ -104,9 +104,15 @@
     <Compile Include="Seguridad\clUsuario.vb" />
     <Compile Include="SGSST\clSgsstCargo.vb" />
     <Compile Include="SGSST\clSgsstCiudad.vb" />
+    <Compile Include="SGSST\clSgsstEducacion.vb" />
     <Compile Include="SGSST\clSgsstEmpleado.vb" />
+    <Compile Include="SGSST\clSgsstEstadoCivil.vb" />
+    <Compile Include="SGSST\clSgsstGenero.vb" />
     <Compile Include="SGSST\clSgsstHistCargosEmp.vb" />
     <Compile Include="SGSST\clSgsstPais.vb" />
+    <Compile Include="SGSST\clSgsstProfesion.vb" />
+    <Compile Include="SGSST\clSgsstTipoContrato.vb" />
+    <Compile Include="SGSST\clSgsstTipoDocumento.vb" />
     <Compile Include="Sistema\clBD.vb" />
     <Compile Include="Sistema\clSisEstado.vb" />
     <Compile Include="Sistema\clUsuario.vb" />
