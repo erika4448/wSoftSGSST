@@ -115,6 +115,7 @@
     <Compile Include="SGSST\clSgsstTipoDocumento.vb" />
     <Compile Include="Sistema\clBD.vb" />
     <Compile Include="Sistema\clSisEstado.vb" />
+    <Compile Include="Sistema\clSisModulo.vb" />
     <Compile Include="Sistema\clUsuario.vb" />
   </ItemGroup>
   <ItemGroup>
