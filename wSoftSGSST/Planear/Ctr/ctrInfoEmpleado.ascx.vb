@@ -32,7 +32,9 @@
                 Case EnmAccion.Inicio
                     'PANELES================
                     Me.pnlInfoBasicaEmpleado.Visible = IIf(Me.pIdEmpleado <> 0, True, False)
-                    Me.pnlInfoUsuarioCreaMod.Visible = False
+                    Me.pnlInfoUsuario.Visible = True
+                    Me.pnlInfoUsuario.Enabled = True
+                    Me.pnlInfoUsuarioCreaMod.Visible = True
                     '=======================
                     'BOTONES================
                     Me.ibtnEditarInfo.Visible = False
@@ -47,6 +49,10 @@
 
                     'SE INICIALIZA CONTROL DE PAIS_CIUDAD
                     Me.ctrPaisCiudadDep1.pBoolIniCtr = True
+
+                    'SE INICIALIZA CONROL DE CARGO
+                    Me.ctrCargosEmpleado1.pIdEmpleado = Me.pIdEmpleado
+                    Me.ctrCargosEmpleado1.pBoolIniCtr = True
 
                     'SE CARGA EL TIPO_DOCUMENTO
                     Me.CargarTipoDocumento(dllSoftSGSST.Sistema.clSisEstado.EnmEstado.Activo)
@@ -70,6 +76,28 @@
                     'PANELES================
                     Me.pnlInfoBasicaEmpleado.Visible = IIf(Me.pIdEmpleado <> 0, True, False)
                     Me.pnlInfoUsuarioCreaMod.Visible = False
+
+                    Me.pnlInfoUsuarioCreaMod.Enabled = False
+                    Me.pnlInfoUsuario.Visible = True
+                    Me.pnlInfoUsuario.Enabled = False
+                    '=======================
+
+                    'LISTAS DESPLEGABLES====
+                    'Me.ddlTipDoc.Enabled = False
+                    'Me.ddlGenero.Enabled = False
+                    'Me.ddlEducacion.Enabled = False
+                    'Me.ddlProfesion.Enabled = False
+                    'Me.ddlEstCivil.Enabled = False
+                    'Me.ddlTipoContrato.Enabled = False
+                    ''=======================
+                    ''FECHAS=================
+                    'Me.ctrFechaIngreso.pBooSoloLectura = True
+                    'Me.ctrFechaNacimiento.pBooSoloLectura = True
+                    ''=======================
+                    ''CAJAS DE TEXTO=========
+                    'Me.txtNombres.Enabled = False
+                    'Me.txtApellidos.Enabled = False
+                    'Me.txtNumDoc.Enabled = False
                     '=======================
                     'BOTONES================
                     Me.ibtnEditarInfo.Visible = True
@@ -86,6 +114,9 @@
                     'PANELES================
                     Me.pnlInfoBasicaEmpleado.Visible = False
                     Me.pnlInfoUsuarioCreaMod.Visible = True
+                    Me.pnlInfoUsuarioCreaMod.Enabled = True
+                    Me.pnlInfoUsuario.Visible = True
+                    Me.pnlInfoUsuario.Enabled = True
                     '=======================
                     'BOTONES================
                     Me.ibtnEditarInfo.Visible = False
@@ -260,7 +291,7 @@
         End If
 
         If Not (objMsjRtnValida.pBoolRtn) Then
-            Me.AlertDialog(objMsjRtnValida.GetMensaje(dllSoftSGSST.Estructura.EstructuraMsjValidacion.EnmTipoMensaje.Advertencia, objMsjRtnValida.pStrMensaje))
+            Me.AlertDialog(objMsjRtnValida.GetMensaje(dllSoftSGSST.Estructura.EstructuraMsjValidacion.EnmTipoMensaje.Advertencia, objMsjRtnValida.GetMensajeValidacion()))
         End If
 
         Return objMsjRtnValida.pBoolRtn
@@ -289,6 +320,10 @@
             objEmpleado.sgemIdTipoContrato = Me.ddlTipoContrato.SelectedValue
             objEmpleado.sgemFchIngreso = Me.ctrFechaIngreso.pFecha
             objEmpleado.sgemIdEstado = dllSoftSGSST.Sistema.clSisEstado.EnmEstado.Activo
+            If (fuImagenEmp.HasFile) Then
+                objEmpleado.sgemImagen = fuImagenEmp.FileBytes()
+            End If
+
 
             objEmpleado.GuardarInfoEmpleado(Me.pIdRelUsuXEmp, objTrans.trTransaccion)
 
@@ -338,43 +373,47 @@
             'SE CARGA EL PAIS/CIUDAD
             Me.ctrPaisCiudadDep1.CargarPaisCiudad(dtDatos.Rows(0)("sgemIdPais"), dtDatos.Rows(0)("sgemIdCiudad"))
 
+            'SE VAIDA SI TIENE IMAGEN RELACIONADA
+            If Not (IsDBNull(dtDatos.Rows(0)("sgemImagen"))) Then
+                Me.imEmpleado.ImageUrl = New System.Uri(Context.Request.Url, ResolveUrl("~/images/FrmGetImagenEmpleado.aspx?PIE=" & Me.pIdEmpleado)).ToString
+            End If
 
             If Not (Me.ddlTipDoc.Items.FindByValue(dtDatos.Rows(0)("sgemIdTipDoc")) Is Nothing) Then
-                Me.ddlTipDoc.SelectedValue = dtDatos.Rows(0)("sgemIdTipDoc")
-            Else
-                Me.ddlTipDoc.SelectedValue = 0
-            End If
+                    Me.ddlTipDoc.SelectedValue = dtDatos.Rows(0)("sgemIdTipDoc")
+                Else
+                    Me.ddlTipDoc.SelectedValue = 0
+                End If
 
-            If Not (Me.ddlGenero.Items.FindByValue(dtDatos.Rows(0)("sgemIdGenero")) Is Nothing) Then
-                Me.ddlGenero.SelectedValue = dtDatos.Rows(0)("sgemIdGenero")
-            Else
-                Me.ddlGenero.SelectedValue = 0
-            End If
+                If Not (Me.ddlGenero.Items.FindByValue(dtDatos.Rows(0)("sgemIdGenero")) Is Nothing) Then
+                    Me.ddlGenero.SelectedValue = dtDatos.Rows(0)("sgemIdGenero")
+                Else
+                    Me.ddlGenero.SelectedValue = 0
+                End If
 
-            If Not (Me.ddlEducacion.Items.FindByValue(dtDatos.Rows(0)("sgemIdEducacion")) Is Nothing) Then
-                Me.ddlEducacion.SelectedValue = dtDatos.Rows(0)("sgemIdEducacion")
-            Else
-                Me.ddlEducacion.SelectedValue = 0
-            End If
+                If Not (Me.ddlEducacion.Items.FindByValue(dtDatos.Rows(0)("sgemIdEducacion")) Is Nothing) Then
+                    Me.ddlEducacion.SelectedValue = dtDatos.Rows(0)("sgemIdEducacion")
+                Else
+                    Me.ddlEducacion.SelectedValue = 0
+                End If
 
-            If Not (Me.ddlProfesion.Items.FindByValue(dtDatos.Rows(0)("sgemIdProfesion")) Is Nothing) Then
-                Me.ddlProfesion.SelectedValue = dtDatos.Rows(0)("sgemIdProfesion")
-            Else
-                Me.ddlProfesion.SelectedValue = 0
-            End If
+                If Not (Me.ddlProfesion.Items.FindByValue(dtDatos.Rows(0)("sgemIdProfesion")) Is Nothing) Then
+                    Me.ddlProfesion.SelectedValue = dtDatos.Rows(0)("sgemIdProfesion")
+                Else
+                    Me.ddlProfesion.SelectedValue = 0
+                End If
 
-            If Not (Me.ddlEstCivil.Items.FindByValue(dtDatos.Rows(0)("sgemIdEstadoCivil")) Is Nothing) Then
-                Me.ddlEstCivil.SelectedValue = dtDatos.Rows(0)("sgemIdEstadoCivil")
-            Else
-                Me.ddlEstCivil.SelectedValue = 0
-            End If
+                If Not (Me.ddlEstCivil.Items.FindByValue(dtDatos.Rows(0)("sgemIdEstadoCivil")) Is Nothing) Then
+                    Me.ddlEstCivil.SelectedValue = dtDatos.Rows(0)("sgemIdEstadoCivil")
+                Else
+                    Me.ddlEstCivil.SelectedValue = 0
+                End If
 
-            If Not (Me.ddlTipoContrato.Items.FindByValue(dtDatos.Rows(0)("sgemIdTipoContrato")) Is Nothing) Then
-                Me.ddlTipoContrato.SelectedValue = dtDatos.Rows(0)("sgemIdTipoContrato")
-            Else
-                Me.ddlTipoContrato.SelectedValue = 0
+                If Not (Me.ddlTipoContrato.Items.FindByValue(dtDatos.Rows(0)("sgemIdTipoContrato")) Is Nothing) Then
+                    Me.ddlTipoContrato.SelectedValue = dtDatos.Rows(0)("sgemIdTipoContrato")
+                Else
+                    Me.ddlTipoContrato.SelectedValue = 0
+                End If
             End If
-        End If
     End Sub
 #End Region
 End Class

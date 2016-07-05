@@ -45,7 +45,7 @@
                                                                     <asp:Image ID="imUsuario" runat="server" ImageUrl="~/Images/Login/imUsuarioIngreso.png" />
                                                                 </td>
                                                                 <td align="left">
-                                                                    <asp:TextBox ID="txtUsuario" runat="server"></asp:TextBox>
+                                                                    <asp:TextBox ID="txtUsuario" runat="server" Width="190px"></asp:TextBox>
                                                                     <ajaxToolkit:TextBoxWatermarkExtender ID="txtUsuario_TextBoxWatermarkExtender" runat="server" BehaviorID="txtUsuario_TextBoxWatermarkExtender" TargetControlID="txtUsuario" WatermarkText="Usuario" />
                                                                 </td>
                                                             </tr>
@@ -62,7 +62,7 @@
                                                                     <asp:Image ID="imPwd" runat="server" ImageUrl="~/Images/Login/imPswdIngreso.png" />
                                                                 </td>
                                                                 <td align="left">
-                                                                    <asp:TextBox ID="txtPswd" runat="server" TextMode="SingleLine"></asp:TextBox>
+                                                                    <asp:TextBox ID="txtPswd" runat="server" TextMode="SingleLine"  Width="190px"></asp:TextBox>
                                                                     <ajaxToolkit:TextBoxWatermarkExtender ID="txtPswd_TextBoxWatermarkExtender" runat="server" BehaviorID="txtPswd_TextBoxWatermarkExtender" TargetControlID="txtPswd"  WatermarkText="Contraseña" />
                                                                 </td>
                                                             </tr>

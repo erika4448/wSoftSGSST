@@ -62,6 +62,21 @@
             ViewState("pIdEmpleado") = value
         End Set
     End Property
+    'PROPIEDAD PARA VALIDAR ESTADO SOLO LECTURA
+    Public Property pBoolSoloLectura As Boolean
+        Get
+            Return ViewState("pBoolSoloLectura")
+        End Get
+        Set(value As Boolean)
+            ViewState("pBoolSoloLectura") = value
+
+            Me.ddlCargo.Enabled = Not value
+            Me.ibtnHistorico.Enabled = Not value
+            Me.ibtnRelNuevoCargo.Enabled = Not value
+            Me.ibtnRequisitos.Enabled = Not value
+
+        End Set
+    End Property
 #End Region
 #Region "PROTEGIDO"
     Protected Sub ddlCargo_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddlCargo.SelectedIndexChanged

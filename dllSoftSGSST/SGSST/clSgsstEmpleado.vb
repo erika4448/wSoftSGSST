@@ -21,6 +21,7 @@ Namespace SGSST
         Public sgemFchIngreso As Date
         Public sgemAudIdUsuEmp As Integer
         Public sgemIdEstado As dllSoftSGSST.Sistema.clSisEstado.EnmEstado
+        Public sgemImagen As Byte()
 #End Region
         'FUNCION PARA ACTUALIZAR CARGO RELACIONADO AL EMPLEADO
         Public Sub ActInfoCargoEmpleadoXIdEmp(ByVal parAudIdUsuEmp As Integer, Optional ByVal parObjTrans As System.Data.Common.DbTransaction = Nothing)
@@ -68,6 +69,13 @@ Namespace SGSST
             db.AddInParameter(dbCommand, "parSgemFchIngreso", DbType.Date, sgemFchIngreso)
             db.AddInParameter(dbCommand, "parSgemAudIdUsuEmp", DbType.Int32, parAudIdUsuXEmp)
             db.AddInParameter(dbCommand, "parSgemIdEstado", DbType.Int32, sgemIdEstado)
+            db.AddInParameter(dbCommand, "parSgemImagen", DbType.Binary, sgemImagen)
+
+            If parObjTrans Is Nothing Then
+                db.ExecuteNonQuery(dbCommand)
+            Else
+                db.ExecuteNonQuery(dbCommand, parObjTrans)
+            End If
 
             sgemIdEmpleado = db.GetParameterValue(dbCommand, "parSgemIdEmpleado")
         End Sub

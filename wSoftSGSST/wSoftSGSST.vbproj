@@ -121,6 +121,7 @@
     <Content Include="Images\Botones\ibtnAgregarAzul.png" />
     <Content Include="Images\Botones\ibtnIngresarAzul.png" />
     <Content Include="Images\Botones\ibtnNuevaConsulta.png" />
+    <Content Include="Images\frmGetImagenEmpleado.aspx" />
     <Content Include="Images\General\ibtnCerrarModal.png" />
     <Content Include="Images\General\ibtnBuscar.png" />
     <Content Include="Images\General\ibtnRegValido.png" />
@@ -202,6 +203,13 @@
     </Compile>
     <Compile Include="Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Images\frmGetImagenEmpleado.aspx.designer.vb">
+      <DependentUpon>frmGetImagenEmpleado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Images\frmGetImagenEmpleado.aspx.vb">
+      <DependentUpon>frmGetImagenEmpleado.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="login.aspx.designer.vb">
       <DependentUpon>login.aspx</DependentUpon>

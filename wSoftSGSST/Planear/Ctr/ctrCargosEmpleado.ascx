@@ -3,10 +3,10 @@
 <%If (False) Then %>
 <link rel="Stylesheet" type="text/css" href="../../App_Themes/SoftSGSST.css" />
 <%end if%>
-<table width="100%">
+<table>
     <tr>
         <td align="left" class="tdLabel">
-            <asp:Label ID="lblCargo" runat="server" Text="Cargo"></asp:Label>
+            <asp:Label ID="lblCargo" runat="server" Text="*Cargo"></asp:Label>
         </td>
         <td align="left">
             <table cellpadding="0" cellspacing="0" width="100%">
@@ -55,8 +55,13 @@
                     </td>
                 </tr>
                 <tr>
+                    <td>
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
                     <td align="center">
-                        <asp:GridView ID="gvHistCargos" runat="server" AllowSorting="True" AutoGenerateColumns="False" DataSourceID="odsHistCargo">
+                        <asp:GridView ID="gvHistCargos" runat="server" AllowSorting="True" AutoGenerateColumns="False" DataSourceID="odsHistCargo" CssClass="gvSGSST">
                             <Columns>
                                 <asp:BoundField DataField="StrCargo" HeaderText="Cargo" SortExpression="StrCargo" />
                                 <asp:BoundField DataField="shceFchIngreso" HeaderText="Fecha Ingreso" SortExpression="shceFchIngreso" />
@@ -85,7 +90,7 @@
 <asp:Panel ID="pnlReqCargo" runat="server" CssClass="ModalPoup" Style="display: none">
     <asp:UpdatePanel ID="upnlReqCargo" runat="server" UpdateMode="Conditional">
         <ContentTemplate>
-            <table>
+            <table style="padding:10px;">
                 <tr>
                     <td align="right">
 
@@ -99,7 +104,8 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>&nbsp;
+                    <td>
+                        &nbsp;
                     </td>
                 </tr>
                 <tr>
@@ -128,7 +134,7 @@
                                 <td align="left">
                                     <asp:Label ID="lblInfoProfesion" runat="server"></asp:Label>
                                 </td>
-                            </tr>d>
+                            </tr>
                             </tr>
                             <tr>
                                 <td align="left" class="tdLabel">

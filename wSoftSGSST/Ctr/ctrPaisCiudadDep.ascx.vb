@@ -52,6 +52,19 @@
             Return IIf(Me.pnlCiudad.Visible, Me.ddlCiudad.SelectedValue, 0)
         End Get
     End Property
+    'PROPIEDAD PARA ESTABLECE SOLO LECTURA
+    Public Property pBoolSoloLectura() As Boolean
+        Get
+            Return ViewState("pBoolSoloLectura")
+        End Get
+        Set(value As Boolean)
+            ViewState("pBoolSoloLectura") = value
+
+            Me.ddlPais.Enabled = Not value
+            Me.ddlCiudad.Enabled = Not value
+        End Set
+    End Property
+
 #End Region
 #Region "PRIVADO"
     Private Sub CargarPais()
@@ -60,7 +73,7 @@
         Me.CargarListaDesplegable(Me.ddlPais, objPais.GetTblPaisXEstado(Me.pIdEmpresa, dllSoftSGSST.Sistema.clSisEstado.EnmEstado.Activo), "sgpaIdPais", "sgpaNombre")
     End Sub
     Private Sub CargarCiudadXPais(ByVal parIdPais As Integer)
-        Dim objCiudad As New dllSoftSGSST.SGST.clSgsstCiudad
+        Dim objCiudad As New dllSoftSGSST.SGSST.clSgsstCiudad
 
         Me.CargarListaDesplegable(Me.ddlCiudad, objCiudad.GetTblInfoCiudadXIdPaisYEst(parIdPais, dllSoftSGSST.Sistema.clSisEstado.EnmEstado.Activo), "sgciIdCiudad", "sgciNombre")
     End Sub

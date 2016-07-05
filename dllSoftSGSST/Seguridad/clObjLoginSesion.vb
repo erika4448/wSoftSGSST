@@ -37,6 +37,9 @@ Namespace Seguridad
 
             Dim objeto As dllSoftSGSST.Seguridad.clObjLoginSesion
             objeto = CType(binaryFormatter.Deserialize(memoryStream), dllSoftSGSST.Seguridad.clObjLoginSesion)
+
+            varObjInfoUsuario = objeto.pObjInfoUsuario
+
         End Sub
     End Class
 End Namespace

@@ -10,6 +10,6 @@
     End Sub
 
     Protected Sub btnPerfilDemografico_Click(sender As Object, e As EventArgs) Handles btnPerfilDemografico.Click
-        Me.Response.Redirect("~/Planear/Profesiograma/frmPlPerfDemografico.aspx")
+        Me.Response.Redirect("~/Planear/PerfDemografico/frmPlPerfDemografico.aspx")
     End Sub
 End Class

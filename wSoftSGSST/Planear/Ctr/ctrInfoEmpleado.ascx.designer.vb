@@ -77,6 +77,15 @@ Partial Public Class ctrInfoEmpleado
     Protected WithEvents ibtnEditarInfo As Global.System.Web.UI.WebControls.ImageButton
     
     '''<summary>
+    '''pnlInfoUsuario control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents pnlInfoUsuario As Global.System.Web.UI.WebControls.Panel
+    
+    '''<summary>
     '''pnlInfoUsuarioCreaMod control.
     '''</summary>
     '''<remarks>
@@ -300,6 +309,24 @@ Partial Public Class ctrInfoEmpleado
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ctrFechaIngreso As Global.wSoftSGSST.ctrFecha
+    
+    '''<summary>
+    '''lblImagen control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblImagen As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
+    '''fuImagenEmp control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents fuImagenEmp As Global.System.Web.UI.WebControls.FileUpload
     
     '''<summary>
     '''ibtnGuardarInfo control.

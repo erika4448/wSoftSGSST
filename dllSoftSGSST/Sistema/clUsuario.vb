@@ -24,7 +24,7 @@ Namespace Sistema
 
             varIdUsuario = db.GetParameterValue(dbCommand, "parOutIdUsuario")
             varIdEmpresa = db.GetParameterValue(dbCommand, "parOutIdEmpresa")
-            varEstPrimerLogueo = db.GetParameterValue(dbCommand, "parOutIdEmpresa")
+            varEstPrimerLogueo = db.GetParameterValue(dbCommand, "parOutEstPrimerLog")
             varIdRelUsuXEmp = db.GetParameterValue(dbCommand, "parOutIdRelUsuXEmp")
 
             'varIdUsuario = 1

@@ -5,7 +5,7 @@
 <table width="100%">
     <tr>
         <td align="left" class="tdLabel">
-            <asp:Label ID="lblPais" runat="server" Text="País"></asp:Label>
+            <asp:Label ID="lblPais" runat="server" Text="*País"></asp:Label>
         </td>
         <td align="left">
             <asp:DropDownList ID="ddlPais" runat="server" AutoPostBack="True">
@@ -15,7 +15,7 @@
     <asp:Panel ID="pnlCiudad" runat="server">
         <tr>
             <td align="left" class="tdLabel">
-                 <asp:Label ID="lblCiudad" runat="server" Text="Ciudad"></asp:Label>
+                 <asp:Label ID="lblCiudad" runat="server" Text="*Ciudad"></asp:Label>
             </td>
             <td align="left">
                 <asp:DropDownList ID="ddlCiudad" runat="server">
