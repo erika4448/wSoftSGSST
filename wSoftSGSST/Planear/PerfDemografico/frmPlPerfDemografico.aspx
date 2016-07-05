@@ -11,6 +11,12 @@
     <%--JAVASCRIPT LIBRERIA DE MENSAJES--%>
     <script type="text/javascript" src="../../js/alertify.js"></script>
     <script type="text/javascript" src="../../js/jquery-1.8.3.min.js"></script>
+      
+      <%--MENU--%>
+    <script type="text/javascript"  src="../../js/jquery-3.0.0.min.js"></script>
+    <link href="../../css/Menu/bootstrap-treeview.css" rel="stylesheet"/>
+    <script type="text/javascript"  src="../../js/Menu/bootstrap-treeview.js"></script>
+
     <asp:UpdatePanel ID="upnlPerfDemografico" runat="server" UpdateMode="Conditional">
         <ContentTemplate>
             <table align="center" width="100%">

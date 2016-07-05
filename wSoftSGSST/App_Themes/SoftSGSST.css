@@ -70,6 +70,19 @@
     margin-top: -3px;
     z-index: -2 !important;
     vertical-align: top;
+    text-decoration:none!important;
+}
+
+#Menu a {
+    text-decoration:none!important;
+}
+
+.menuPlanear {
+ background-position: top left;
+    background-repeat:no-repeat;
+    background-image:url('../Images/Menu/imMenuPlanear.png') !important;
+    width:33px;
+    height:29px;
 }
 
 .contentMenu {
@@ -78,6 +91,11 @@
     margin-left: -10px;
     z-index: -2 !important;
     vertical-align: top;
+   text-decoration:none!important;
+}
+
+.contentMenu a {
+    text-decoration:none!important;
 }
 
 /*ESTILO LETRA GENERAL APLICATIVO*/

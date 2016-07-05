@@ -18,9 +18,21 @@
     <%--JAVASCRIPT LIBRERIA DE MENSAJES--%>
     <script type="text/javascript" src="../js/alertify.js"></script>
     <script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+    <script src="../js/jquery-1.9.1.js"></script>
 
+    <%--MENU--%>
+    <link href="../css/Menu/bootstrap-treeview.css" rel="stylesheet"/>
+    <script type="text/javascript"  src="../js/Menu/bootstrap-treeview.js"></script>
+    <script src="../js/Menu/bootstrap.js"></script>
+    <link href="../css/Menu/bootstrap.min.css" rel="stylesheet" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 82px;
+            height: 29px;
+        }
+    </style>
 </head>
 <body style="margin: 0px;">
     <form id="form1" runat="server">
@@ -56,8 +68,10 @@
                 <td align="left">
                     <table width="100%" style="height: 84vh;">
                         <tr>
-                            <td align="left" width="150px" class="contentMenu">prueba Menu123
-                                
+                            <td align="left" width="150px" class="contentMenu">
+                                <div id="tree">
+
+                                </div>
                             </td>
                             <td align="left" width="700px" style="vertical-align: top; text-align: left;">
                                 <br />
