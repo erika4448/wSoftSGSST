@@ -116,6 +116,7 @@
     <Compile Include="Sistema\clBD.vb" />
     <Compile Include="Sistema\clSisEstado.vb" />
     <Compile Include="Sistema\clSisModulo.vb" />
+    <Compile Include="Sistema\clSisPagina.vb" />
     <Compile Include="Sistema\clUsuario.vb" />
   </ItemGroup>
   <ItemGroup>
