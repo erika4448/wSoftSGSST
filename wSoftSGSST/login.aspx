@@ -12,6 +12,7 @@
     <link href="css/alertify.bootstrap.css" rel="stylesheet" />
     <link href="css/alertify.core.css" rel="stylesheet" />
 
+
     <%--JAVASCRIPT LIBRERIA DE MENSAJES--%>
     <script type="text/javascript" src="js/alertify.js"></script>
     <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
