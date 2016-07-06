@@ -36,6 +36,9 @@
                     Me.ibtnNuevoEmpleado.Visible = True
                     '===================
 
+                    'INICIALIZA CONTROL DE DINA CONS
+                    Me.ctrDinaConsObj1.pIdConfigCtrBusDina =
+
                 Case EnmAccion.NuevoEmpleado
                     'PANELES============
                     Me.pnlBusEmpleado.Visible = False
@@ -78,5 +81,8 @@
 
         Me.upnlPerfDemografico.Update()
     End Sub
+#End Region
+#Region "EVENTOS"
+
 #End Region
 End Class
