@@ -12,7 +12,7 @@ Option Explicit On
 
 
 Partial Public Class frmPlProfesiograma
-    
+
     '''<summary>
     '''ctrDinaConsObj control.
     '''</summary>
