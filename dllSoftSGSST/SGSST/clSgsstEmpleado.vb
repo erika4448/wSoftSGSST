@@ -83,7 +83,7 @@ Namespace SGSST
         Public Function CargarInfoEmpleadoXIdEmpleado(ByVal parIdEmpleado As Integer) As Data.DataTable
             Dim dbCommand As DbCommand = db.GetStoredProcCommand("spSgsstCargarInfoEmpleadoXIdEmpleado")
 
-            db.AddInParameter(dbCommand, "parIdEmpleado", DbType.Int32, parIdEmpleado)
+            db.AddInParameter(dbCommand, "parId", DbType.Int32, parIdEmpleado)
 
             Return db.ExecuteDataSet(dbCommand).Tables(0)
         End Function
@@ -91,7 +91,7 @@ Namespace SGSST
         Public Function GetTblnfoEmpleadoXStrNom(ByVal parStrNom As String) As Data.DataTable
             Dim dbCommand As DbCommand = db.GetStoredProcCommand("spSgsstGetTblnfoEmpleadoXStrNom")
 
-            db.AddInParameter(dbCommand, "parStrNom", DbType.String, parStrNom)
+            db.AddInParameter(dbCommand, "parCriCons", DbType.String, parStrNom)
 
             Return db.ExecuteDataSet(dbCommand).Tables(0)
         End Function

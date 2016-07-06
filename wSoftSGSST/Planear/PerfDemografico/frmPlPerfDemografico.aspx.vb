@@ -37,7 +37,8 @@
                     '===================
 
                     'INICIALIZA CONTROL DE DINA CONS
-                    Me.ctrDinaConsObj1.pIdConfigCtrBusDina =
+                    Me.ctrDinaConsObj1.pIdConfigCtrBusDina = 2
+                    Me.ctrDinaConsObj1.pBoolIniCtr = True
 
                 Case EnmAccion.NuevoEmpleado
                     'PANELES============
@@ -83,6 +84,8 @@
     End Sub
 #End Region
 #Region "EVENTOS"
+    Private Sub evtSelEmpleado()
 
+    End Sub
 #End Region
 End Class
