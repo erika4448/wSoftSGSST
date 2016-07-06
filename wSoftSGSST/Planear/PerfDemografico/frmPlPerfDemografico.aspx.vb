@@ -61,7 +61,7 @@
         End Set
     End Property
 #End Region
-#Region "PRIVADO"
+#Region "PROTEGIDO"
     Protected Sub ibtnNuevoEmpleado_Click(sender As Object, e As ImageClickEventArgs) Handles ibtnNuevoEmpleado.Click
         'MODIFICA LA VISUALIZACION
         Me.pVisualizaXAccion = EnmAccion.NuevoEmpleado
@@ -71,21 +71,17 @@
 
         Me.upnlPerfDemografico.Update()
     End Sub
-
-    Protected Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+#End Region
+#Region "EVENTOS"
+    Private Sub evtSelEmpleado() Handles ctrDinaConsObj1.evtSelecciono
         Me.pVisualizaXAccion = EnmAccion.CargarEmpleado
 
-        Me.ctrInfoEmpleado1.pIdEmpleado = 2
+        Me.ctrInfoEmpleado1.pIdEmpleado = Me.ctrDinaConsObj1.pIdSel
         Me.ctrInfoEmpleado1.pBoolIniCtr = True
 
         Me.ctrInfoEmpleado1.CargarEmpleado()
 
         Me.upnlPerfDemografico.Update()
-    End Sub
-#End Region
-#Region "EVENTOS"
-    Private Sub evtSelEmpleado()
-
     End Sub
 #End Region
 End Class

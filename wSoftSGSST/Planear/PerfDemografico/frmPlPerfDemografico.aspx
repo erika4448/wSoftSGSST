@@ -28,7 +28,6 @@
                 </tr>
                 <tr>
                     <td align="right">
-                        <asp:Button ID="Button1" runat="server" Text="Empleado" />
                         <asp:ImageButton ID="ibtnNuevoEmpleado" runat="server" CausesValidation="false" ImageUrl="~/Images/Botones/ibtnNuevoEmpleado.png" />
                     </td>
                 </tr>
@@ -40,9 +39,6 @@
                         <asp:Panel ID="pnlBusEmpleado" runat="server">
                             <table>
                                 <tr>
-                                    <td align="left">
-                                        <asp:Label ID="lblEmpleado" runat="server" Text="Empleado"></asp:Label>
-                                    </td>
                                     <td align="left">
 
                                         <uc2:ctrDinaConsObj ID="ctrDinaConsObj1" runat="server" />

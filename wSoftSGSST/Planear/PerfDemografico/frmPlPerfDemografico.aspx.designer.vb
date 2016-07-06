@@ -32,15 +32,6 @@ Partial Public Class frmPlPerfDemografico
     Protected WithEvents lblTitulo As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
-    '''Button1 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Button1 As Global.System.Web.UI.WebControls.Button
-    
-    '''<summary>
     '''ibtnNuevoEmpleado control.
     '''</summary>
     '''<remarks>
@@ -57,15 +48,6 @@ Partial Public Class frmPlPerfDemografico
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents pnlBusEmpleado As Global.System.Web.UI.WebControls.Panel
-    
-    '''<summary>
-    '''lblEmpleado control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents lblEmpleado As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
     '''ctrDinaConsObj1 control.
