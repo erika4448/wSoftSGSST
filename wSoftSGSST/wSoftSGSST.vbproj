@@ -94,6 +94,7 @@
     <Content Include="App_Themes\SoftSGSST.css" />
     <Content Include="css\Menu\bootstrap-treeview.css" />
     <Content Include="css\Menu\bootstrap.min.css" />
+    <Content Include="Ctr\ctrDinaConsObj.ascx" />
     <Content Include="Ctr\ctrFecha.ascx" />
     <Content Include="Ctr\ctrLoading.ascx" />
     <Content Include="css\alertify.bootstrap.css" />
@@ -167,14 +168,23 @@
     <Content Include="js\Menu\bootstrap-treeview.js" />
     <Content Include="js\Menu\bootstrap.js" />
     <Content Include="login.aspx" />
+    <Content Include="Planear\Ctr\AutoCompleteBusCargo.asmx" />
     <Content Include="Planear\Ctr\ctrCargosEmpleado.ascx" />
     <Content Include="Planear\Ctr\ctrInfoEmpleado.ascx" />
+    <Content Include="Planear\Ctr\ctrProfesiograma.ascx" />
     <Content Include="Planear\Ctr\srvDinaConsEmpleado.asmx" />
     <Content Include="Planear\PerfDemografico\frmPlPerfDemografico.aspx" />
     <Content Include="Planear\Profesiograma\frmPlProfesiograma.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ctr\ctrDinaConsObj.ascx.designer.vb">
+      <DependentUpon>ctrDinaConsObj.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Ctr\ctrDinaConsObj.ascx.vb">
+      <DependentUpon>ctrDinaConsObj.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="Ctr\ctrFecha.ascx.designer.vb">
       <DependentUpon>ctrFecha.ascx</DependentUpon>
     </Compile>
@@ -253,6 +263,10 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Planear\Ctr\AutoCompleteBusCargo.asmx.vb">
+      <DependentUpon>AutoCompleteBusCargo.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Planear\Ctr\ctrCargosEmpleado.ascx.designer.vb">
       <DependentUpon>ctrCargosEmpleado.ascx</DependentUpon>
     </Compile>
@@ -265,6 +279,13 @@
     </Compile>
     <Compile Include="Planear\Ctr\ctrInfoEmpleado.ascx.vb">
       <DependentUpon>ctrInfoEmpleado.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Planear\Ctr\ctrProfesiograma.ascx.designer.vb">
+      <DependentUpon>ctrProfesiograma.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Planear\Ctr\ctrProfesiograma.ascx.vb">
+      <DependentUpon>ctrProfesiograma.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Planear\Ctr\srvDinaConsEmpleado.asmx.vb">
