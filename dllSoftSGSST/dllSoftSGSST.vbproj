@@ -114,7 +114,8 @@
     <Compile Include="SGSST\clSgsstProfesion.vb" />
     <Compile Include="SGSST\clSgsstTipoContrato.vb" />
     <Compile Include="SGSST\clSgsstTipoDocumento.vb" />
-    <Compile Include="SGSST\dtsQuienLeReportaCargo.Designer.vb">
+    <Compile Include="SGSST\dtsQuienLeReportaCargo.Designer.vb" />
+    <Compile Include="SGSST\dtsQuienLeReportaCargo1.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>dtsQuienLeReportaCargo.xsd</DependentUpon>
@@ -149,10 +150,9 @@
       <DependentUpon>dtsQuienLeReportaCargo.xsd</DependentUpon>
     </None>
     <None Include="SGSST\dtsQuienLeReportaCargo.xsd">
-      <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>dtsQuienLeReportaCargo.Designer.vb</LastGenOutput>
-      <CustomToolNamespace>SGSST</CustomToolNamespace>
+      <LastGenOutput>dtsQuienLeReportaCargo1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
     </None>
     <None Include="SGSST\dtsQuienLeReportaCargo.xss">
       <DependentUpon>dtsQuienLeReportaCargo.xsd</DependentUpon>

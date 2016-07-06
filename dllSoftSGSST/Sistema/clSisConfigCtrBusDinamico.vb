@@ -32,11 +32,11 @@ Namespace Sistema
         'FUNCION PARA CARGAR CONFIGURACION DEL CONTROL DE BUSQUEDA DINAMICO X ID
         Public Sub CargarInfoCtrBusDinamicoXId(ByVal parIdConfigCtrDinamico As Integer)
             Dim dbCommand As DbCommand = db.GetStoredProcCommand("sis.spSisCargarInfoCtrBusDinamicoXId")
-            db.AddInParameter(dbCommand, "parIdConfCtrBusDinamico", DbType.Int32, scbdIdConfigCtrBusDinamico)
+            db.AddInParameter(dbCommand, "parIdConfCtrBusDinamico", DbType.Int32, parIdConfigCtrDinamico)
 
             Using drlector As IDataReader = db.ExecuteReader(dbCommand)
                 While drlector.Read
-
+                    Me.CargarLector(drlector)
                 End While
             End Using
         End Sub

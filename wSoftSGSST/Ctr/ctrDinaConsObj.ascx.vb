@@ -4,6 +4,7 @@
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
 
     End Sub
+    Public Event evtSelecciono()
 #Region "PROPIEDADES"
     'ENUMERACION DE ACCIONES
     Public Enum EnmAccion
@@ -12,7 +13,7 @@
     'PROPIEDAD PARA INICIALIZAR EL CONTROL
     WriteOnly Property pBoolIniCtr As Boolean
         Set(value As Boolean)
-
+            Me.pVisualizacionXAccion = EnmAccion.Inicio
         End Set
     End Property
     'PROPIEDAD PARA EL MANEJO DE VISUALIZACION DEL CONTROL
@@ -56,8 +57,7 @@
             ViewState("pStrNomSel") = value
         End Set
     End Property
-    'INSTANCIA DE LA CLASE DEL CONTROL DE CONFIGURACION DINAMICO
-    Dim objConfigCtrDina As New dllSoftSGSST.Sistema.clSisConfigCtrBusDinamico
+
     'PROPIEDAD PARA ALMACENAR EL DICCIONARIO CON LA CONTEXT KEY
     Public Property pContextKey As Dictionary(Of String, String)
         Get
@@ -65,6 +65,42 @@
         End Get
         Set(value As Dictionary(Of String, String))
             ViewState("pContextKey") = value
+        End Set
+    End Property
+    'PROPIEDAD PARA ALMACENAR EL METODO QUE BUSCA POR NOMBRE
+    Private Property pStrSpBusXNom As String
+        Get
+            Return ViewState("pStrSpBusXNom")
+        End Get
+        Set(value As String)
+            ViewState("pStrSpBusXNom") = value
+        End Set
+    End Property
+    'PROPIEDAD PARA ALMACENAR EL METODO QUE BUSCA POR ID
+    Private Property pStrSpBusXId As String
+        Get
+            Return ViewState("pStrSpBusXId")
+        End Get
+        Set(value As String)
+            ViewState("pStrSpBusXId") = value
+        End Set
+    End Property
+    'PROPIEDAD PARA ALMACENAR EL VALUE DEL DDL
+    Private Property pStrValueDdl As String
+        Get
+            Return ViewState("pStrValueDdl")
+        End Get
+        Set(value As String)
+            ViewState("pStrValueDdl") = value
+        End Set
+    End Property
+    'PROPIEDAD PARA ALMACENAR EL TXT DEL DDL
+    Private Property pStrTxtDdl As String
+        Get
+            Return ViewState("pStrTxtDdl")
+        End Get
+        Set(value As String)
+            ViewState("pStrTxtDdl") = value
         End Set
     End Property
 #End Region
@@ -84,10 +120,13 @@
 #Region "PRIVADO"
     'FUNCION PARA CARGAR LA CONFIGURACION DEL CONTROL
     Private Sub CargarConfigCtr()
+        'INSTANCIA DE LA CLASE DEL CONTROL DE CONFIGURACION DINAMICO
+        Dim objConfigCtrDina As New dllSoftSGSST.Sistema.clSisConfigCtrBusDinamico
+
         objConfigCtrDina.CargarInfoCtrBusDinamicoXId(Me.pIdConfigCtrBusDina)
 
         'DEFINIR EL NOMBRE DEL CTR
-        Me.txtObj.Text = objConfigCtrDina.scbdNombre
+        Me.lblNomObj.Text = objConfigCtrDina.scbdNombre
 
         'DEFINIR CONFIGURACION DEL AUTOCOMPLETE
         Me.AutoCompleteExtender.ServicePath = objConfigCtrDina.scbdUrlServicio
@@ -95,21 +134,31 @@
         Me.AutoCompleteExtender.UseContextKey = IIf(objConfigCtrDina.scbdEstUseContextKey = 1, True, False)
         Me.AutoCompleteExtender.MinimumPrefixLength = objConfigCtrDina.scbdMinCaracteres
 
+        Me.pStrSpBusXNom = objConfigCtrDina.scbdMetodoBusXNombre
+        Me.pStrSpBusXId = objConfigCtrDina.scbdMetodoBusXId
+
+        Me.pStrValueDdl = objConfigCtrDina.scbdValueDdl
+        Me.pStrTxtDdl = objConfigCtrDina.scbdTextoDdl
 
     End Sub
     'FUNCION PARA BUSCAR EL OBJETO POR NOMBRE
     Private Sub BuscarXNombre()
+        'INSTANCIA DE LA CLASE DEL CONTROL DE CONFIGURACION DINAMICO
+        Dim objConfigCtrDina As New dllSoftSGSST.Sistema.clSisConfigCtrBusDinamico
         Dim dtDatos As New DataTable
-        dtDatos = objConfigCtrDina.BusXNom(objConfigCtrDina.scbdMetodoBusXNombre, Trim(Me.txtObj.Text), dllSoftSGSST.Sistema.clSisEstado.EnmEstado.Activo)
+        dtDatos = objConfigCtrDina.BusXNom(Me.pStrSpBusXNom, Trim(Me.txtObj.Text), dllSoftSGSST.Sistema.clSisEstado.EnmEstado.Activo)
 
         If (dtDatos.Rows.Count = 1) Then
             'DEFINIR EL OBJETO ENCONTRADO
-            Me.pIdSel = dtDatos.Rows(0)(objConfigCtrDina.scbdValueDdl)
-            Me.pStrNomSel = dtDatos.Rows(0)(objConfigCtrDina.scbdTextoDdl)
-            Me.txtObj.ToolTip = dtDatos.Rows(0)(objConfigCtrDina.scbdTextoDdl)
+            Me.pIdSel = dtDatos.Rows(0)(Me.pStrValueDdl)
+            Me.pStrNomSel = dtDatos.Rows(0)(Me.pStrTxtDdl)
+            Me.txtObj.Text = dtDatos.Rows(0)(Me.pStrTxtDdl)
+            Me.txtObj.ToolTip = dtDatos.Rows(0)(Me.pStrTxtDdl)
 
             Me.imgRegValido.Visible = True
             Me.ddlObj.Visible = False
+
+            RaiseEvent evtSelecciono()
 
         ElseIf (dtDatos.Rows.Count > 1) Then
             'DEFINIR EL OBJETO ENCONTRADO
@@ -133,14 +182,17 @@
     End Sub
     'FUNCION PARA BUSCAR EL OBJETO X ID
     Private Sub BuscarXId()
+        'INSTANCIA DE LA CLASE DEL CONTROL DE CONFIGURACION DINAMICO
+        Dim objConfigCtrDina As New dllSoftSGSST.Sistema.clSisConfigCtrBusDinamico
         Dim dtDatos As New DataTable
-        dtDatos = objConfigCtrDina.BusXId(objConfigCtrDina.scbdMetodoBusXId, Me.ddlObj.SelectedValue)
+        dtDatos = objConfigCtrDina.BusXId(Me.pStrSpBusXId, Me.ddlObj.SelectedValue)
 
         If (dtDatos.Rows.Count <> 0) Then
             'DEFINIR EL OBJETO ENCONTRADO
-            Me.pIdSel = dtDatos.Rows(0)(objConfigCtrDina.scbdValueDdl)
-            Me.pStrNomSel = dtDatos.Rows(0)(objConfigCtrDina.scbdTextoDdl)
-            Me.txtObj.ToolTip = dtDatos.Rows(0)(objConfigCtrDina.scbdTextoDdl)
+            Me.pIdSel = dtDatos.Rows(0)(Me.pStrValueDdl)
+            Me.pStrNomSel = dtDatos.Rows(0)(Me.pStrTxtDdl)
+            Me.txtObj.Text = dtDatos.Rows(0)(Me.pStrTxtDdl)
+            Me.txtObj.ToolTip = dtDatos.Rows(0)(Me.pStrTxtDdl)
 
             Me.imgRegValido.Visible = True
             Me.ddlObj.Visible = False
