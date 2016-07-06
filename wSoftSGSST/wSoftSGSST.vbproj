@@ -169,6 +169,7 @@
     <Content Include="login.aspx" />
     <Content Include="Planear\Ctr\ctrCargosEmpleado.ascx" />
     <Content Include="Planear\Ctr\ctrInfoEmpleado.ascx" />
+    <Content Include="Planear\Ctr\srvDinaConsEmpleado.asmx" />
     <Content Include="Planear\PerfDemografico\frmPlPerfDemografico.aspx" />
     <Content Include="Planear\Profesiograma\frmPlProfesiograma.aspx" />
     <Content Include="Web.config" />
@@ -265,6 +266,10 @@
     <Compile Include="Planear\Ctr\ctrInfoEmpleado.ascx.vb">
       <DependentUpon>ctrInfoEmpleado.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Planear\Ctr\srvDinaConsEmpleado.asmx.vb">
+      <DependentUpon>srvDinaConsEmpleado.asmx</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="Planear\PerfDemografico\frmPlPerfDemografico.aspx.designer.vb">
       <DependentUpon>frmPlPerfDemografico.aspx</DependentUpon>

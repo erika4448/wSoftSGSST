@@ -87,5 +87,13 @@ Namespace SGSST
 
             Return db.ExecuteDataSet(dbCommand).Tables(0)
         End Function
+        'FUNCION PARA CARGAR INFORMACION DE EMPLEDOS POR NOMBRE
+        Public Function GetTblnfoEmpleadoXStrNom(ByVal parStrNom As String) As Data.DataTable
+            Dim dbCommand As DbCommand = db.GetStoredProcCommand("spSgsstGetTblnfoEmpleadoXStrNom")
+
+            db.AddInParameter(dbCommand, "parStrNom", DbType.String, parStrNom)
+
+            Return db.ExecuteDataSet(dbCommand).Tables(0)
+        End Function
     End Class
 End Namespace

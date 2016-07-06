@@ -10,7 +10,7 @@
     <tr>
         <td colspan="2">
             <asp:Panel ID="pnlInfoBasicaEmpleado" runat="server">
-                <table width="100%">
+                <table width="100%" style="border-spacing:0px 1px!important;">
                     <tr>
                         <td align="left" class="tdLabel">
                             <asp:ImageButton ID="imEmpleado" runat="server" ImageUrl="~/Images/General/imAgregarFoto.png" />
