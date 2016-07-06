@@ -6,6 +6,69 @@ wSoftSGSST
 </name>
 </assembly>
 <members>
+<member name="F:wSoftSGSST.ctrDinaConsObj._lblNomObj">
+<summary>
+lblNomObj control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrDinaConsObj._txtObj">
+<summary>
+txtObj control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrDinaConsObj._ddlObj">
+<summary>
+ddlObj control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrDinaConsObj._ibtnBuscar">
+<summary>
+ibtnBuscar control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrDinaConsObj._ibtnActualizar">
+<summary>
+ibtnActualizar control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrDinaConsObj._imgRegValido">
+<summary>
+imgRegValido control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrDinaConsObj._AutoCompleteExtender">
+<summary>
+AutoCompleteExtender control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:wSoftSGSST.ctrFecha._txtFecha">
 <summary>
 txtFecha control.
@@ -1190,6 +1253,15 @@ To modify move field declaration from designer file to code-behind file.
 <member name="F:wSoftSGSST.frmPlPerfDemografico._ctrInfoEmpleado1">
 <summary>
 ctrInfoEmpleado1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.frmPlProfesiograma._ctrDinaConsObj">
+<summary>
+ctrDinaConsObj control.
 </summary>
 <remarks>
 Auto-generated field.

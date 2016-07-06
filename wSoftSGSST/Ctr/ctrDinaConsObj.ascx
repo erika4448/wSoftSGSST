@@ -10,7 +10,7 @@
             <asp:Label ID="lblNomObj" runat="server" Text=""></asp:Label>
         </td>
         <td>
-            <asp:TextBox ID="txtObj" runat="server"></asp:TextBox>
+            <asp:TextBox ID="txtObj" runat="server" AutoPostBack="True"></asp:TextBox>
         </td>
         <td>
             <asp:DropDownList ID="ddlObj" runat="server"></asp:DropDownList>
@@ -27,7 +27,7 @@
     </tr>
     <tr>
         <td colspan="6">
-            <ajaxToolkit:AutoCompleteExtender ID="AutoCompleteExtender" runat="server" ></ajaxToolkit:AutoCompleteExtender>
+            <ajaxToolkit:AutoCompleteExtender ID="AutoCompleteExtender" runat="server" TargetControlID="txtObj" ServiceMethod="xxx"></ajaxToolkit:AutoCompleteExtender>
         </td>
     </tr>
 </table>

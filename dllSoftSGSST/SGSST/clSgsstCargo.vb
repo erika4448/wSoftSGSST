@@ -76,22 +76,5 @@ Namespace SGSST
             db.GetParameterValue(dbCommand, "parIdCargo")
 
         End Sub
-        'FUNCION PARA CARGAR INFORMACION DE CARGOS POR ESTADO
-        Public Function GetTblInfoCargoXIdEst(ByVal parIdEmpresa As Integer, ByVal parIdEstado As Integer) As Data.DataTable
-            Dim dbCommand As DbCommand = db.GetStoredProcCommand("spSgsstGetTblInfoCargoXIdEst")
-
-            db.AddInParameter(dbCommand, "parIdEmpresa", DbType.Int32, parIdEmpresa)
-            db.AddInParameter(dbCommand, "parIdEstado", DbType.Int32, parIdEstado)
-
-            Return db.ExecuteDataSet(dbCommand).Tables(0)
-        End Function
-        'FUNCION PARA CARGAR INFORMACION DEL CARGO POR ID_CARGO
-        Public Function CargarInfoCargoXIdCargo(ByVal parIdCargo As Integer) As Data.DataTable
-            Dim dbCommand As DbCommand = db.GetStoredProcCommand("spSgsstCargarInfoCargoXIdCargo")
-
-            db.AddInParameter(dbCommand, "parIdCargo", DbType.Int32, parIdCargo)
-
-            Return db.ExecuteDataSet(dbCommand).Tables(0)
-        End Function
     End Class
 End Namespace

@@ -94,6 +94,7 @@
     <Content Include="App_Themes\SoftSGSST.css" />
     <Content Include="css\Menu\bootstrap-treeview.css" />
     <Content Include="css\Menu\bootstrap.min.css" />
+    <Content Include="Ctr\ctrDinaConsObj.ascx" />
     <Content Include="Ctr\ctrFecha.ascx" />
     <Content Include="Ctr\ctrLoading.ascx" />
     <Content Include="css\alertify.bootstrap.css" />
@@ -175,6 +176,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ctr\ctrDinaConsObj.ascx.designer.vb">
+      <DependentUpon>ctrDinaConsObj.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Ctr\ctrDinaConsObj.ascx.vb">
+      <DependentUpon>ctrDinaConsObj.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="Ctr\ctrFecha.ascx.designer.vb">
       <DependentUpon>ctrFecha.ascx</DependentUpon>
     </Compile>

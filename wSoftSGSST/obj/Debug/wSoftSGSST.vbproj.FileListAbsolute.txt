@@ -58,3 +58,23 @@ D:\OTROS\WORKS\SG-SST\APP\SGSST\wSoftSGSST\wSoftSGSST\obj\Debug\wSoftSGSST.vbpro
 D:\OTROS\WORKS\SG-SST\APP\SGSST\wSoftSGSST\wSoftSGSST\obj\Debug\wSoftSGSST.dll
 D:\OTROS\WORKS\SG-SST\APP\SGSST\wSoftSGSST\wSoftSGSST\obj\Debug\wSoftSGSST.xml
 D:\OTROS\WORKS\SG-SST\APP\SGSST\wSoftSGSST\wSoftSGSST\obj\Debug\wSoftSGSST.pdb
+C:\Users\Hernan Buitrago\Documents\SoftSGSST\wSoftSGSST\bin\wSoftSGSST.dll.config
+C:\Users\Hernan Buitrago\Documents\SoftSGSST\wSoftSGSST\bin\wSoftSGSST.dll
+C:\Users\Hernan Buitrago\Documents\SoftSGSST\wSoftSGSST\bin\wSoftSGSST.pdb
+C:\Users\Hernan Buitrago\Documents\SoftSGSST\wSoftSGSST\bin\wSoftSGSST.xml
+C:\Users\Hernan Buitrago\Documents\SoftSGSST\wSoftSGSST\bin\AjaxControlToolkit.dll
+C:\Users\Hernan Buitrago\Documents\SoftSGSST\wSoftSGSST\bin\dllSoftSGSST.dll
+C:\Users\Hernan Buitrago\Documents\SoftSGSST\wSoftSGSST\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+C:\Users\Hernan Buitrago\Documents\SoftSGSST\wSoftSGSST\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Users\Hernan Buitrago\Documents\SoftSGSST\wSoftSGSST\bin\dllSoftSGSST.pdb
+C:\Users\Hernan Buitrago\Documents\SoftSGSST\wSoftSGSST\bin\dllSoftSGSST.xml
+C:\Users\Hernan Buitrago\Documents\SoftSGSST\wSoftSGSST\bin\Microsoft.Practices.EnterpriseLibrary.Data.pdb
+C:\Users\Hernan Buitrago\Documents\SoftSGSST\wSoftSGSST\bin\Microsoft.Practices.EnterpriseLibrary.Data.xml
+C:\Users\Hernan Buitrago\Documents\SoftSGSST\wSoftSGSST\bin\Microsoft.Practices.EnterpriseLibrary.Common.pdb
+C:\Users\Hernan Buitrago\Documents\SoftSGSST\wSoftSGSST\bin\Microsoft.Practices.EnterpriseLibrary.Common.xml
+C:\Users\Hernan Buitrago\Documents\SoftSGSST\wSoftSGSST\obj\Debug\wSoftSGSST.vbprojResolveAssemblyReference.cache
+C:\Users\Hernan Buitrago\Documents\SoftSGSST\wSoftSGSST\obj\Debug\wSoftSGSST.Resources.resources
+C:\Users\Hernan Buitrago\Documents\SoftSGSST\wSoftSGSST\obj\Debug\wSoftSGSST.vbproj.GenerateResource.Cache
+C:\Users\Hernan Buitrago\Documents\SoftSGSST\wSoftSGSST\obj\Debug\wSoftSGSST.dll
+C:\Users\Hernan Buitrago\Documents\SoftSGSST\wSoftSGSST\obj\Debug\wSoftSGSST.xml
+C:\Users\Hernan Buitrago\Documents\SoftSGSST\wSoftSGSST\obj\Debug\wSoftSGSST.pdb
