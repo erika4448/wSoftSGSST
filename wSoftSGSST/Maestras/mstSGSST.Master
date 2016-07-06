@@ -41,7 +41,7 @@
         <%--<div align="right" style="position:absolute; padding-right:-10px; padding-top:90px;float:right">
             <asp:ImageButton ID="ibtnPanelGestion" runat="server"  CausesValidation="false" ImageUrl="~/Images/Botones/ibtnPnlGestion.png"/>
         </div>--%>
-        <table width="100%" cellpadding="0" cellspacing="0">
+        <table width="100%" cellpadding="0" cellspacing="0" style="border-spacing:0px 0px!important;">
             <tr>
                 <td align="center">
                     <table width="100%" cellpadding="0" cellspacing="0">
