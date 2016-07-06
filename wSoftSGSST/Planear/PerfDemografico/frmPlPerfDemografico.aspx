@@ -28,7 +28,7 @@
                 <tr>
                     <td align="right">
                         <asp:Button ID="Button1" runat="server" Text="Empleado" />
-                        <asp:ImageButton ID="ibtnNuevoEmpleado" runat="server" CausesValidation="false" ImageUrl="~/Images/Botones/ibtnNuevoProfesiograma.png" />
+                        <asp:ImageButton ID="ibtnNuevoEmpleado" runat="server" CausesValidation="false" ImageUrl="~/Images/Botones/ibtnNuevoEmpleado.png" />
                     </td>
                 </tr>
                 <tr>

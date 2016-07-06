@@ -103,6 +103,7 @@
     <Content Include="frmPrincMenuPrincipal.aspx" />
     <Content Include="frmPrincPrimerIngreso.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="Images\Botones\ibtnNuevoEmpleado.png" />
     <Content Include="Images\Botones\ibtnPnlGestion.png" />
     <Content Include="Images\Botones\ibtnRequisitosAzul.png" />
     <Content Include="Images\Botones\ibtnRelNuevoCargoAzul.png" />
