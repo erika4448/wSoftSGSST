@@ -37,7 +37,7 @@
                     '===================
 
                     'INICIALIZA CONTROL DE DINA CONS
-                    Me.ctrDinaConsObj1.pIdConfigCtrBusDina =
+                    'Me.ctrDinaConsObj1.pIdConfigCtrBusDina =
 
                 Case EnmAccion.NuevoEmpleado
                     'PANELES============

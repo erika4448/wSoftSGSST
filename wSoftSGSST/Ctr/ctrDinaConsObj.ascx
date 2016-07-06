@@ -27,7 +27,7 @@
     </tr>
     <tr>
         <td colspan="6">
-            <ajaxToolkit:AutoCompleteExtender ID="AutoCompleteExtender" runat="server" TargetControlID="txtObj" ServiceMethod="xxx"></ajaxToolkit:AutoCompleteExtender>
+            <ajaxToolkit:AutoCompleteExtender ID="AutoCompleteExtender" runat="server" TargetControlID="txtObj" ServiceMethod="metodo"></ajaxToolkit:AutoCompleteExtender>
         </td>
     </tr>
 </table>
