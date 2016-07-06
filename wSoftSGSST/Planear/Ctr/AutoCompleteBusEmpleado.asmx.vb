@@ -7,7 +7,7 @@ Imports System.ComponentModel
 <System.Web.Services.WebService(Namespace:="http://tempuri.org/")> _
 <System.Web.Services.WebServiceBinding(ConformsTo:=WsiProfiles.BasicProfile1_1)> _
 <ToolboxItem(False)> _
-Public Class srvDinaConsEmpleado
+Public Class AutoCompleteBusEmpleado
     Inherits System.Web.Services.WebService
 
     <WebMethod()>
@@ -24,5 +24,4 @@ Public Class srvDinaConsEmpleado
         Return listaObj.ToArray()
 
     End Function
-
 End Class

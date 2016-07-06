@@ -59,6 +59,24 @@ Partial Public Class frmPlPerfDemografico
     Protected WithEvents pnlBusEmpleado As Global.System.Web.UI.WebControls.Panel
     
     '''<summary>
+    '''lblEmpleado control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblEmpleado As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
+    '''ctrDinaConsObj1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ctrDinaConsObj1 As Global.wSoftSGSST.ctrDinaConsObj
+    
+    '''<summary>
     '''pnlInfoEmpleado control.
     '''</summary>
     '''<remarks>

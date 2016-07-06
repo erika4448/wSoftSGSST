@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Maestras/mstSGSST.Master" CodeBehind="frmPlPerfDemografico.aspx.vb" Inherits="wSoftSGSST.frmPlPerfDemografico" %>
 
 <%@ Register Src="../Ctr/ctrInfoEmpleado.ascx" TagName="ctrInfoEmpleado" TagPrefix="uc1" %>
+<%@ Register src="../../Ctr/ctrDinaConsObj.ascx" tagname="ctrDinaConsObj" tagprefix="uc2" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -37,6 +38,18 @@
                 <tr>
                     <td align="center">
                         <asp:Panel ID="pnlBusEmpleado" runat="server">
+                            <table>
+                                <tr>
+                                    <td align="left">
+                                        <asp:Label ID="lblEmpleado" runat="server" Text="Empleado"></asp:Label>
+                                    </td>
+                                    <td align="left">
+
+                                        <uc2:ctrDinaConsObj ID="ctrDinaConsObj1" runat="server" />
+
+                                    </td>
+                                </tr>
+                            </table>
                         </asp:Panel>
                         <asp:Panel ID="pnlInfoEmpleado" runat="server">
                             <uc1:ctrInfoEmpleado ID="ctrInfoEmpleado1" runat="server" />

@@ -169,10 +169,10 @@
     <Content Include="js\Menu\bootstrap.js" />
     <Content Include="login.aspx" />
     <Content Include="Planear\Ctr\AutoCompleteBusCargo.asmx" />
+    <Content Include="Planear\Ctr\AutoCompleteBusEmpleado.asmx" />
     <Content Include="Planear\Ctr\ctrCargosEmpleado.ascx" />
     <Content Include="Planear\Ctr\ctrInfoEmpleado.ascx" />
     <Content Include="Planear\Ctr\ctrProfesiograma.ascx" />
-    <Content Include="Planear\Ctr\srvDinaConsEmpleado.asmx" />
     <Content Include="Planear\PerfDemografico\frmPlPerfDemografico.aspx" />
     <Content Include="Planear\Profesiograma\frmPlProfesiograma.aspx" />
     <Content Include="Web.config" />
@@ -267,6 +267,10 @@
       <DependentUpon>AutoCompleteBusCargo.asmx</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Planear\Ctr\AutoCompleteBusEmpleado.asmx.vb">
+      <DependentUpon>AutoCompleteBusEmpleado.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Planear\Ctr\ctrCargosEmpleado.ascx.designer.vb">
       <DependentUpon>ctrCargosEmpleado.ascx</DependentUpon>
     </Compile>
@@ -287,10 +291,6 @@
     <Compile Include="Planear\Ctr\ctrProfesiograma.ascx.vb">
       <DependentUpon>ctrProfesiograma.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Planear\Ctr\srvDinaConsEmpleado.asmx.vb">
-      <DependentUpon>srvDinaConsEmpleado.asmx</DependentUpon>
-      <SubType>Component</SubType>
     </Compile>
     <Compile Include="Planear\PerfDemografico\frmPlPerfDemografico.aspx.designer.vb">
       <DependentUpon>frmPlPerfDemografico.aspx</DependentUpon>
