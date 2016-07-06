@@ -91,24 +91,156 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Comun\Ctr\ctrLoading.ascx" />
+    <Content Include="App_Themes\SoftSGSST.css" />
+    <Content Include="Ctr\ctrDinaConsObj.ascx" />
+    <Content Include="Ctr\ctrFecha.ascx" />
+    <Content Include="Ctr\ctrLoading.ascx" />
     <Content Include="css\alertify.bootstrap.css" />
     <Content Include="css\alertify.core.css" />
     <Content Include="css\alertify.default.css" />
+    <Content Include="Ctr\ctrPaisCiudadDep.ascx" />
+    <Content Include="frmPrincMenuPrincipal.aspx" />
+    <Content Include="frmPrincPrimerIngreso.aspx" />
+    <Content Include="frmPrueba.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\Botones\ibtnPnlGestion.png" />
+    <Content Include="Images\Botones\ibtnRequisitosAzul.png" />
+    <Content Include="Images\Botones\ibtnRelNuevoCargoAzul.png" />
+    <Content Include="Images\Botones\ibtnHistoricoAzul.png" />
+    <Content Include="Images\Botones\ibtnGuardarCargoVerde.png" />
+    <Content Include="Images\Botones\ibtnEditarInfoAzul.png" />
+    <Content Include="Images\Botones\ibtnNuevoProfesiograma.png" />
+    <Content Include="Images\Botones\ibtnAgregarActRiesgos.png" />
+    <Content Include="Images\Botones\ibtnVerDetalleVerde.png" />
+    <Content Include="Images\Botones\ibtnGuardarInfoVerde.png" />
+    <Content Include="Images\Botones\ibtnAgregarVerde.png" />
+    <Content Include="Images\Botones\ibtnNuevoRiesgoAzul.png" />
+    <Content Include="Images\Botones\ibtIncluirAzul.png" />
+    <Content Include="Images\Botones\ibtnGuardarAzul.png" />
+    <Content Include="Images\Botones\ibtnDescartarAzul.png" />
+    <Content Include="Images\Botones\ibtnCerrarAzul.png" />
+    <Content Include="Images\Botones\ibtnCargarAzul.png" />
+    <Content Include="Images\Botones\ibtnAgregarAzul.png" />
+    <Content Include="Images\Botones\ibtnIngresarAzul.png" />
+    <Content Include="Images\Botones\ibtnNuevaConsulta.png" />
+    <Content Include="Images\frmGetImagenEmpleado.aspx" />
+    <Content Include="Images\General\ibtnCerrarModal.png" />
+    <Content Include="Images\General\ibtnBuscar.png" />
+    <Content Include="Images\General\ibtnRegValido.png" />
+    <Content Include="Images\General\ibtnRegNoValido.png" />
+    <Content Include="Images\General\ibtnRefrescar.png" />
+    <Content Include="Images\General\imAgregarFoto.png" />
     <Content Include="Images\General\imLoading.gif" />
+    <Content Include="Images\Login\imUsuarioIngreso.png" />
+    <Content Include="Images\Login\imPswdIngreso.png" />
+    <Content Include="Images\Login\ImIngreso.png" />
+    <Content Include="Images\Login\imLogoCliente.png" />
+    <Content Include="Images\Maestra\imApp.png" />
+    <Content Include="Images\Maestra\imLogoEmpresa.png" />
     <Content Include="Images\Msj\imAdvertencia.png" />
+    <Content Include="Images\OpcPagina\ibtnRiesgosCargoAzul.png" />
+    <Content Include="Images\OpcPagina\ibtnRiesgosCargoGris.png" />
+    <Content Include="Images\OpcPagina\ibtnInfoLaboralAzul.png" />
+    <Content Include="Images\OpcPagina\ibtnInfoLaboralGris.png" />
+    <Content Include="Images\OpcPagina\ibtnConceptoMedicoAzul.png" />
+    <Content Include="Images\OpcPagina\ibtnConceptoMedicoGris.png" />
+    <Content Include="Images\OpcPagina\ibtnAccLaboralesAzul.png" />
+    <Content Include="Images\OpcPagina\ibtnAccLaboralesGris.png" />
+    <Content Include="Images\OpcPagina\ibtnRiesgosGris.png" />
+    <Content Include="Images\OpcPagina\ibtnRiesgosAzul.png" />
+    <Content Include="Images\OpcPagina\ibtnRespSGSSTGris.png" />
+    <Content Include="Images\OpcPagina\ibtnRespSGSSTAzul.png" />
+    <Content Include="Images\OpcPagina\ibtnReqFisicosGris.png" />
+    <Content Include="Images\OpcPagina\ibtnReqFisiciosAzul.png" />
+    <Content Include="Images\OpcPagina\ibtnEPPEntrenamientoGris.png" />
+    <Content Include="Images\OpcPagina\ibtnEPPEntrenamientoAzul.png" />
+    <Content Include="Images\OpcPagina\ibtnCondSaludGris.png" />
+    <Content Include="Images\OpcPagina\ibtnCondSaludAzul.png" />
     <Content Include="js\alertify.js" />
     <Content Include="js\alertify.min.js" />
     <Content Include="js\jquery-1.8.3.min.js" />
     <Content Include="js\jsapi.js" />
+    <Content Include="login.aspx" />
+    <Content Include="Planear\Ctr\AutoCompleteBusCargo.asmx" />
+    <Content Include="Planear\Ctr\ctrCargosEmpleado.ascx" />
+    <Content Include="Planear\Ctr\ctrInfoEmpleado.ascx" />
+    <Content Include="Planear\Ctr\ctrProfesiograma.ascx" />
+    <Content Include="Planear\PerfDemografico\frmPlPerfDemografico.aspx" />
+    <Content Include="Planear\Profesiograma\frmPlProfesiograma.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Comun\Ctr\ctrLoading.ascx.designer.vb">
+    <Compile Include="Ctr\ctrDinaConsObj.ascx.designer.vb">
+      <DependentUpon>ctrDinaConsObj.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Ctr\ctrDinaConsObj.ascx.vb">
+      <DependentUpon>ctrDinaConsObj.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ctr\ctrFecha.ascx.designer.vb">
+      <DependentUpon>ctrFecha.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Ctr\ctrFecha.ascx.vb">
+      <DependentUpon>ctrFecha.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ctr\ctrLoading.ascx.designer.vb">
       <DependentUpon>ctrLoading.ascx</DependentUpon>
     </Compile>
-    <Compile Include="Comun\Ctr\ctrLoading.ascx.vb">
+    <Compile Include="Ctr\ctrLoading.ascx.vb">
       <DependentUpon>ctrLoading.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ctr\ctrPaisCiudadDep.ascx.designer.vb">
+      <DependentUpon>ctrPaisCiudadDep.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Ctr\ctrPaisCiudadDep.ascx.vb">
+      <DependentUpon>ctrPaisCiudadDep.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmPrincMenuPrincipal.aspx.designer.vb">
+      <DependentUpon>frmPrincMenuPrincipal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrincMenuPrincipal.aspx.vb">
+      <DependentUpon>frmPrincMenuPrincipal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmPrincPrimerIngreso.aspx.designer.vb">
+      <DependentUpon>frmPrincPrimerIngreso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrincPrimerIngreso.aspx.vb">
+      <DependentUpon>frmPrincPrimerIngreso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmPrueba.aspx.designer.vb">
+      <DependentUpon>frmPrueba.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrueba.aspx.vb">
+      <DependentUpon>frmPrueba.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Images\frmGetImagenEmpleado.aspx.designer.vb">
+      <DependentUpon>frmGetImagenEmpleado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Images\frmGetImagenEmpleado.aspx.vb">
+      <DependentUpon>frmGetImagenEmpleado.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.vb">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.vb">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Maestras\mstSGSST.Master.designer.vb">
+      <DependentUpon>mstSGSST.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Maestras\mstSGSST.Master.vb">
+      <DependentUpon>mstSGSST.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -130,6 +262,45 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Planear\Ctr\AutoCompleteBusCargo.asmx.vb">
+      <DependentUpon>AutoCompleteBusCargo.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Planear\Ctr\ctrCargosEmpleado.ascx.designer.vb">
+      <DependentUpon>ctrCargosEmpleado.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Planear\Ctr\ctrCargosEmpleado.ascx.vb">
+      <DependentUpon>ctrCargosEmpleado.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Planear\Ctr\ctrInfoEmpleado.ascx.designer.vb">
+      <DependentUpon>ctrInfoEmpleado.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Planear\Ctr\ctrInfoEmpleado.ascx.vb">
+      <DependentUpon>ctrInfoEmpleado.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Planear\Ctr\ctrProfesiograma.ascx.designer.vb">
+      <DependentUpon>ctrProfesiograma.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Planear\Ctr\ctrProfesiograma.ascx.vb">
+      <DependentUpon>ctrProfesiograma.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Planear\PerfDemografico\frmPlPerfDemografico.aspx.designer.vb">
+      <DependentUpon>frmPlPerfDemografico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Planear\PerfDemografico\frmPlPerfDemografico.aspx.vb">
+      <DependentUpon>frmPlPerfDemografico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Planear\Profesiograma\frmPlProfesiograma.aspx.designer.vb">
+      <DependentUpon>frmPlProfesiograma.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Planear\Profesiograma\frmPlProfesiograma.aspx.vb">
+      <DependentUpon>frmPlProfesiograma.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -140,6 +311,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Maestras\mstSGSST.Master" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -158,11 +330,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Themes\" />
-    <Folder Include="Images\Botones\" />
-    <Folder Include="Maestras\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

@@ -78,6 +78,9 @@
     <Compile Include="Estructura\EstructuraControl.vb">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="Estructura\EstructuraPaginaMaestra.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="Estructura\EstructuraPagina.vb">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
@@ -97,7 +100,31 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Seguridad\clObjLoginSesion.vb" />
+    <Compile Include="Seguridad\clUsuario.vb" />
+    <Compile Include="SGSST\clSgsstArea.vb" />
+    <Compile Include="SGSST\clSgsstCargo.vb" />
+    <Compile Include="SGSST\clSgsstCiudad.vb" />
+    <Compile Include="SGSST\clSgsstEducacion.vb" />
+    <Compile Include="SGSST\clSgsstEmpleado.vb" />
+    <Compile Include="SGSST\clSgsstEstadoCivil.vb" />
+    <Compile Include="SGSST\clSgsstGenero.vb" />
+    <Compile Include="SGSST\clSgsstHistCargosEmp.vb" />
+    <Compile Include="SGSST\clSgsstPais.vb" />
+    <Compile Include="SGSST\clSgsstProfesion.vb" />
+    <Compile Include="SGSST\clSgsstTipoContrato.vb" />
+    <Compile Include="SGSST\clSgsstTipoDocumento.vb" />
+    <Compile Include="SGSST\dtsQuienLeReportaCargo.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dtsQuienLeReportaCargo.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Sistema\clBD.vb" />
+    <Compile Include="Sistema\clSisConfigCtrBusDinamico.vb" />
+    <Compile Include="Sistema\clSisEstado.vb" />
+    <Compile Include="Sistema\clSisModulo.vb" />
+    <Compile Include="Sistema\clSisPagina.vb" />
+    <Compile Include="Sistema\clUsuario.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -118,6 +145,18 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="packages.config" />
+    <None Include="SGSST\dtsQuienLeReportaCargo.xsc">
+      <DependentUpon>dtsQuienLeReportaCargo.xsd</DependentUpon>
+    </None>
+    <None Include="SGSST\dtsQuienLeReportaCargo.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dtsQuienLeReportaCargo.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>SGSST</CustomToolNamespace>
+    </None>
+    <None Include="SGSST\dtsQuienLeReportaCargo.xss">
+      <DependentUpon>dtsQuienLeReportaCargo.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

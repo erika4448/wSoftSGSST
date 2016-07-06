@@ -7,7 +7,10 @@ Namespace Estructura
         Dim trConexion As DbConnection
         Public trTransaccion As DbTransaction
         Public Sub trCrearTransaccion()
-            db = DatabaseFactory.CreateDatabase
+            Dim dbFact As DatabaseProviderFactory = New DatabaseProviderFactory()
+            db = dbFact.Create("cnnBDSGSST")
+
+            'db = DatabaseFactory.CreateDatabase
             trConexion = db.CreateConnection
             trConexion.Open()
             trTransaccion = trConexion.BeginTransaction()

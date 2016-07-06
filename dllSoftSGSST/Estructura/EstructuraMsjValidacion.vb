@@ -27,7 +27,7 @@ Namespace Estructura
             ValidacionCampos = 3
         End Enum
         'FUNCION PARA AGREGAR MENSAJE AL CONSTRUCTOR
-        Public Sub AgregarMensaje(ByVal parStrMensaje As String, Optional ByVal parBoolSaltoLinea As Boolean = False)
+        Public Sub AgregarMensaje(ByVal parStrMensaje As String, Optional ByVal parBoolSaltoLinea As Boolean = True)
             pStrMensaje = pStrMensaje & parStrMensaje & IIf(parBoolSaltoLinea = True, "<br/>", "")
 
             Me.pBoolRtn = False
@@ -42,7 +42,7 @@ Namespace Estructura
             strBuilder.Append("<img src='../../Images/Msj/imAdvertencia.png' />")
             strBuilder.Append("     </td>")
             strBuilder.Append("     <td align='left'>")
-            strBuilder.Append("Por favor verifique <br/>" & Me.pStrMensaje)
+            strBuilder.Append("Hacen falta ingresar los campos de: <br/>" & Me.pStrMensaje)
             strBuilder.Append("     </td>")
             strBuilder.Append(" </tr>")
             strBuilder.Append("</table>")

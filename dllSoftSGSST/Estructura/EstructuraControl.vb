@@ -1,24 +1,46 @@
-﻿Imports System.Web.UI.WebControls
+﻿Imports System.Web.Security
+Imports System.Web.UI.WebControls
 Namespace Estructura
     Public Class EstructuraControl
         Inherits System.Web.UI.UserControl
         Public Sub New()
-            pIdRelUsuXEmp = 1
+
         End Sub
-        Public Property pIdRelUsuXEmp As Integer
+#Region "PROPIEDADES"
+        'PROPIEDAD PARA EL MANEJO DE SESION DE LA PAGINA
+        Public ReadOnly Property pObjInfoUsuSesion() As dllSoftSGSST.Seguridad.clObjLoginSesion
             Get
-                Return ViewState("pIdRelUsuXEmp")
+                If Me.Session("pOIUS") Is Nothing Then
+                    If Me.Page.User.Identity.IsAuthenticated Then
+                        Me.Session("pOIUS") = New dllSoftSGSST.Seguridad.clObjLoginSesion
+                        Me.Session("pOIUS").CargarObjetoLogin(Me.pTicket.UserData)
+                    End If
+                End If
+                Return Me.Session("pOIUS")
             End Get
-            Set(value As Integer)
-                ViewState("pIdRelUsuXEmp") = value
-            End Set
         End Property
-        Public Sub NuevaVentana(ByVal parStrKey As String, ByVal parStrUrl As String)
-            ScriptManager.RegisterStartupScript(Me.Page, GetType(String), _
-                                                parStrKey, _
-                                                "window.open('" & Me.Page.ResolveClientUrl(parStrUrl) & "');", _
-                                                True)
-        End Sub
+        Public ReadOnly Property p_Identity() As FormsIdentity
+            Get
+                Return CType(Me.Page.User.Identity, FormsIdentity)
+            End Get
+        End Property
+        Public ReadOnly Property pTicket() As FormsAuthenticationTicket
+            Get
+                Return p_Identity.Ticket
+            End Get
+        End Property
+        Public ReadOnly Property pIdEmpresa As Integer
+            Get
+                Return Me.pObjInfoUsuSesion.pObjInfoUsuario.pIdEmpresa
+            End Get
+        End Property
+        Public ReadOnly Property pIdRelUsuXEmp As Integer
+            Get
+                Return Me.pObjInfoUsuSesion.pObjInfoUsuario.pIdRelUsuXEmp
+            End Get
+        End Property
+#End Region
+#Region "PUBLICO"
         Public Sub CargarListaDesplegable(ByVal parCombo As DropDownList, ByVal parDtDatos As Data.DataTable, ByVal parValue As String, ByVal parTexto As String)
             parCombo.DataSource = parDtDatos
             parCombo.DataValueField = parValue
@@ -48,5 +70,6 @@ Namespace Estructura
             parStrMensaje = Replace(parStrMensaje, vbCrLf, " - ")
             ScriptManager.RegisterStartupScript(Me.Page, Me.GetType(), "MsjFailureLog", String.Format("alertify.error('{0}');", parStrMensaje), True)
         End Sub
+#End Region
     End Class
 End Namespace

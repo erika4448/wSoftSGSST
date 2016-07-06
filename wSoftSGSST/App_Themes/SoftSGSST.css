@@ -1,0 +1,262 @@
+﻿body {
+}
+/*PAGINA LOGIN*/
+
+/*FOOTER PAGINA LOGIN*/
+#LoginFooter {
+    width: 101%;
+    height: 100px;
+    background-color: #003366;
+    bottom: 0px;
+    color: #FFFFFF;
+    font-family: Calibri;
+    font-size: 10pt;
+    font-weight: bold;
+    margin-left: -10px;
+}
+
+#LoginContent {
+    padding-top: 10%;
+}
+
+/*PANEL DATOS INGRESO USUARIO Y CONTRASEÑA*/
+#DatosIngreso {
+    font-family: Arial;
+    font-size: 20px;
+    color: #222222;
+    padding-top: 60px;
+}
+
+    #DatosIngreso .pnlContentInfo {
+        background-color: #DDDDDD;
+        border-color: #DDDDDD;
+        border-style: solid;
+        border-width: 1px;
+        width: 230px;
+    }
+
+    #DatosIngreso input[type="text"], input[type="password"] {
+        background-color: #DDDDDD;
+        border-color: #DDDDDD;
+        height: 24px;
+        border-style: solid;
+        border-width: 1px;
+        padding-left: 5px;
+    }
+
+    #DatosIngreso .txtWatermark {
+        color: #555555 !important;
+    }
+
+/*PAGINA MAESTRA*/
+#HeaderPagPrincipal {
+    width: 100%;
+    height: 100px;
+    background-color: #003366;
+    bottom: 0px;
+    color: #FFFFFF;
+    font-family: Calibri;
+    font-size: 10pt;
+    font-weight: bold;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: -10px;
+}
+
+#Menu {
+    height: 84vh;
+    background-color: #DCDCDC;
+    margin-left: -10px;
+    margin-top: -3px;
+    z-index: -2 !important;
+    vertical-align: top;
+    text-decoration:none!important;
+}
+
+#Menu a {
+    text-decoration:none!important;
+}
+
+.menuPlanear {
+ background-position: top left;
+    background-repeat:no-repeat;
+    background-image:url('../Images/Menu/imMenuPlanear.png') !important;
+    width:33px;
+    height:29px;
+}
+
+.contentMenu {
+    /*height:84vh;*/
+    background-color: #DCDCDC;
+    margin-left: -10px;
+    z-index: -2 !important;
+    vertical-align: top;
+   text-decoration:none!important;
+}
+
+.contentMenu a {
+    text-decoration:none!important;
+}
+
+/*ESTILO LETRA GENERAL APLICATIVO*/
+form {
+    border-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11pt;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    color: #626262;
+    text-decoration: none;
+}
+
+/*ESTILO CAJAS DE TEXTO Y LISTAS DESPLGABLES*/
+input[type="text"], input[type="password"], textarea {
+    font-size: 11pt;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222222;
+    border: 1px solid #DDDDDD;
+    background-color: #DDDDDD;
+    text-decoration: none;
+    height: 20px !important;
+    width: 400px;
+}
+
+/*ESTILO LISTAS DESPLGABLES*/
+select {
+    font-size: 11pt;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222222;
+    border: 1px solid #DDDDDD;
+    background-color: #DDDDDD;
+    text-decoration: none;
+    height: 25px !important;
+    width: 405px;
+}
+
+/*BOTONES PROVISIONAL*/
+input[type="submit"], input[type="button"] {
+    padding: 5px 5px 5px 5px;
+    border-style: none;
+    border-width: 1px;
+    color: #FFF;
+    background-color: #003366;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    margin-right: 0px;
+    height: 32px;
+}
+
+/*FORMULARIO*/
+.tdLabel {
+    width: 200px;
+}
+
+.tituloForm {
+    font-size: 20px;
+    font-family: Berlin Sans FB,Arial;
+    color: #003366;
+}
+
+/*MODAL POUP*/
+.ModalPoup {
+    border: 8px solid #EEEEEE;
+    padding: 2px 10px 10px 10px;
+    background-color: #FFFFFF;
+}
+
+.cssModalBackGround {
+    background-color: #FFFFFF;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+}
+
+.lbValidacion {
+    color: red;
+    font-weight: bold;
+}
+/*td {
+    border-color:red;
+    border-style:solid;
+    border-width:1px;
+}*/
+table {
+    *border-collapse: collapse;
+    margin-left: 0px;
+    padding-left: 0px;
+    *border-spacing: 0px;
+    border-spacing: 0px 1px;
+}
+/*GRILLAS*/
+.gvSGSST {
+    border-color: #FFFFFF;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+}
+
+    .gvSGSST th {
+        border-left: 1px solid #FFFFFF;
+        border-top: 1px solid #FFFFFF;
+        background-color: #FFFFFF;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: solid;
+        border-bottom-width: 1px;
+        border-bottom-color: #F0F0F0;
+        color: #013466;
+        text-decoration: none;
+        font-style: normal;
+        font-weight: bold;
+        font-variant: normal;
+        text-align: center;
+        padding-bottom:5px;
+        padding-right:20px;
+    }
+
+        .gvSGSST th a {
+            font-weight: bold;
+            color: #013466;
+            text-decoration: none;
+            font-style: normal;
+        }
+
+            .gvSGSST th a:hover {
+                font-weight: bold;
+                color: #013466;
+                text-decoration: none;
+                font-style: normal;
+            }
+
+
+    .gvSGSST tr {
+        border-bottom: none;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        background: #FFFFFF;
+    }
+
+        .gvSGSST tr::alternate {
+            border-bottom: none;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            background: #DDDDDD;
+        }
+
+
+    .gvSGSST td {
+        border-bottom: none;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        padding-right:20px;
+    }
