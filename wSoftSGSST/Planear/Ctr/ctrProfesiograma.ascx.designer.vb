@@ -41,6 +41,42 @@ Partial Public Class ctrProfesiograma
     Protected WithEvents ibtnNuevoProfesiograma As Global.System.Web.UI.WebControls.ImageButton
     
     '''<summary>
+    '''pnlBuscarCargo control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents pnlBuscarCargo As Global.System.Web.UI.WebControls.Panel
+    
+    '''<summary>
+    '''ctrDinaConsObjCargo control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ctrDinaConsObjCargo As Global.wSoftSGSST.ctrDinaConsObj
+    
+    '''<summary>
+    '''ibntVerDetalle control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ibntVerDetalle As Global.System.Web.UI.WebControls.ImageButton
+    
+    '''<summary>
+    '''pnlFormularioCargo control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents pnlFormularioCargo As Global.System.Web.UI.WebControls.Panel
+    
+    '''<summary>
     '''lblNomCargo control.
     '''</summary>
     '''<remarks>
@@ -257,13 +293,13 @@ Partial Public Class ctrProfesiograma
     Protected WithEvents lblQuienLePreporta As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
-    '''ctrDinaConsObj control.
+    '''ctrDinaConsObjQuienLeRep control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents ctrDinaConsObj As Global.wSoftSGSST.ctrDinaConsObj
+    Protected WithEvents ctrDinaConsObjQuienLeRep As Global.wSoftSGSST.ctrDinaConsObj
     
     '''<summary>
     '''pnlGvQuienLeReporta control.
@@ -311,6 +347,15 @@ Partial Public Class ctrProfesiograma
     Protected WithEvents ddlAreaDelCargo As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
+    '''pnlRiesgos control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents pnlRiesgos As Global.System.Web.UI.WebControls.Panel
+    
+    '''<summary>
     '''ibtnRiesgos control.
     '''</summary>
     '''<remarks>
@@ -318,6 +363,15 @@ Partial Public Class ctrProfesiograma
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ibtnRiesgos As Global.System.Web.UI.WebControls.ImageButton
+    
+    '''<summary>
+    '''pnlRqFisicos control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents pnlRqFisicos As Global.System.Web.UI.WebControls.Panel
     
     '''<summary>
     '''itbnRqFisicos control.
@@ -329,6 +383,15 @@ Partial Public Class ctrProfesiograma
     Protected WithEvents itbnRqFisicos As Global.System.Web.UI.WebControls.ImageButton
     
     '''<summary>
+    '''pnlCondicSalud control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents pnlCondicSalud As Global.System.Web.UI.WebControls.Panel
+    
+    '''<summary>
     '''ibtnCondicSalud control.
     '''</summary>
     '''<remarks>
@@ -338,6 +401,15 @@ Partial Public Class ctrProfesiograma
     Protected WithEvents ibtnCondicSalud As Global.System.Web.UI.WebControls.ImageButton
     
     '''<summary>
+    '''pnlEpp control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents pnlEpp As Global.System.Web.UI.WebControls.Panel
+    
+    '''<summary>
     '''ibtEpp control.
     '''</summary>
     '''<remarks>
@@ -345,6 +417,15 @@ Partial Public Class ctrProfesiograma
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ibtEpp As Global.System.Web.UI.WebControls.ImageButton
+    
+    '''<summary>
+    '''pnlResponsabilidad control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents pnlResponsabilidad As Global.System.Web.UI.WebControls.Panel
     
     '''<summary>
     '''ibtnResponsabilidad control.

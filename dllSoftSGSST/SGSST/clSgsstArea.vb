@@ -6,8 +6,8 @@ Namespace SGSST
         'FUNCION PARA OBTENER LAS REGIONES X ID EMPRESA Y ID ESTADO
         Public Function GetTblAreaXIdEst(ByVal parIdEmpresa As Integer, ByVal parIdEstado As Integer) As DataTable
             Dim dbCommand As DbCommand = db.GetStoredProcCommand("spSgsstGetTblAreaXIdEst")
-            db.AddInParameter(dbCommand, "", DbType.Int32, parIdEmpresa)
-            db.AddInParameter(dbCommand, "", DbType.Int32, parIdEstado)
+            db.AddInParameter(dbCommand, "parIdEmpresa", DbType.Int32, parIdEmpresa)
+            db.AddInParameter(dbCommand, "parIdEstado", DbType.Int32, parIdEstado)
             Return db.ExecuteDataSet(dbCommand).Tables(0)
         End Function
     End Class

@@ -11,6 +11,7 @@ Namespace SGSST
         Public sgcaActividadesCargo As String
         Public sgcaIdEducacion As Integer
         Public sgcaIdProfesion As Integer
+        Public sgcaExperiencia As String
         Public sgcaAnosExperiencia As Integer
         Public sgcaHabilidades As String
         Public sgcaAQuienRepotaIdCargo As Integer
@@ -28,12 +29,12 @@ Namespace SGSST
             Return db.ExecuteDataSet(dbCommand).Tables(0)
         End Function
         'FUNCION PARA CARGAR INFORMACION DE CARGOS X ESTADO Y EMPRESA LST
-        Public Function GetTblInfoCargoXIdEstLst(ByVal parIdEmpresa As Integer, ByVal parIdEstado As Integer) As List(Of String)
-            Dim dbCommand As DbCommand = db.GetStoredProcCommand("spSgsstGetTblInfoCargoXIdEst")
+        Public Function GetTblInfoCargoXNomLst(ByVal parIdEmpresa As Integer, ByVal parStrNom As String) As List(Of String)
+            Dim dbCommand As DbCommand = db.GetStoredProcCommand("spSgsstGetTblCargosXNom")
             Dim lst As New List(Of String)
 
-            db.AddInParameter(dbCommand, "parIdEmpresa", DbType.Int32, parIdEmpresa)
-            db.AddInParameter(dbCommand, "parIdEstado", DbType.Int32, parIdEstado)
+            db.AddInParameter(dbCommand, "parCriCons", DbType.String, parStrNom)
+            'db.AddInParameter(dbCommand, "parIdEmpresa", DbType.Int32, parIdEmpresa)
 
             Using drLector As IDataReader = db.ExecuteReader(dbCommand)
                 While drLector.Read
@@ -61,6 +62,7 @@ Namespace SGSST
             db.AddInParameter(dbCommand, "parActividadesCargo", DbType.String, sgcaActividadesCargo)
             db.AddInParameter(dbCommand, "parIdEducacion", DbType.Int32, sgcaIdEducacion)
             db.AddInParameter(dbCommand, "parIdProfesion", DbType.Int32, sgcaIdProfesion)
+            db.AddInParameter(dbCommand, "parExperiencia", DbType.String, sgcaExperiencia)
             db.AddInParameter(dbCommand, "parAnosExperiencia", DbType.Int32, sgcaAnosExperiencia)
             db.AddInParameter(dbCommand, "parHabilidades", DbType.String, sgcaHabilidades)
             db.AddInParameter(dbCommand, "parAQuienRepotaIdCargo", DbType.Int32, sgcaAQuienRepotaIdCargo)

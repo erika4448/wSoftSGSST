@@ -126,6 +126,7 @@
     <Content Include="Images\Botones\ibtnIngresarAzul.png" />
     <Content Include="Images\Botones\ibtnNuevaConsulta.png" />
     <Content Include="Images\frmGetImagenEmpleado.aspx" />
+    <Content Include="Images\General\boton_grilla_eliminar.png" />
     <Content Include="Images\General\ibtnCerrarModal.png" />
     <Content Include="Images\General\ibtnBuscar.png" />
     <Content Include="Images\General\ibtnRegValido.png" />
@@ -170,6 +171,7 @@
     <Content Include="login.aspx" />
     <Content Include="Planear\Ctr\AutoCompleteBusCargo.asmx" />
     <Content Include="Planear\Ctr\AutoCompleteBusEmpleado.asmx" />
+    <Content Include="Planear\Ctr\ctrActividadesYRiesgos.ascx" />
     <Content Include="Planear\Ctr\ctrCargosEmpleado.ascx" />
     <Content Include="Planear\Ctr\ctrInfoEmpleado.ascx" />
     <Content Include="Planear\Ctr\ctrProfesiograma.ascx" />
@@ -270,6 +272,13 @@
     <Compile Include="Planear\Ctr\AutoCompleteBusEmpleado.asmx.vb">
       <DependentUpon>AutoCompleteBusEmpleado.asmx</DependentUpon>
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Planear\Ctr\ctrActividadesYRiesgos.ascx.designer.vb">
+      <DependentUpon>ctrActividadesYRiesgos.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Planear\Ctr\ctrActividadesYRiesgos.ascx.vb">
+      <DependentUpon>ctrActividadesYRiesgos.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Planear\Ctr\ctrCargosEmpleado.ascx.designer.vb">
       <DependentUpon>ctrCargosEmpleado.ascx</DependentUpon>

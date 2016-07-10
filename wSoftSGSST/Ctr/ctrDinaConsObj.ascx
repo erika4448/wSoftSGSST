@@ -19,7 +19,7 @@
             <asp:ImageButton ID="ibtnBuscar" runat="server" ImageUrl="~/Images/General/ibtnBuscar.png" />
         </td>
         <td>
-            <asp:ImageButton ID="ibtnActualizar" runat="server" ImageUrl="~/Images/General/ibtnRefrescar.png" />
+            <asp:ImageButton ID="ibtnActualizar" runat="server" ImageUrl="~/Images/General/ibtnRefrescar.png" style="height: 25px" />
         </td>
         <td>
             <asp:Image ID="imgRegValido" runat="server" ImageUrl="~/Images/General/ibtnRegValido.png" />

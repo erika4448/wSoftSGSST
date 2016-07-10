@@ -12,13 +12,22 @@ Option Explicit On
 
 
 Partial Public Class frmPlProfesiograma
-
+    
     '''<summary>
-    '''ctrDinaConsObj control.
+    '''pnlCtrProfesiograma control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents ctrDinaConsObj As Global.wSoftSGSST.ctrDinaConsObj
+    Protected WithEvents pnlCtrProfesiograma As Global.System.Web.UI.WebControls.Panel
+    
+    '''<summary>
+    '''ctrProfesiograma control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ctrProfesiograma As Global.wSoftSGSST.ctrProfesiograma
 End Class

@@ -11,9 +11,9 @@ Public Class AutoCompleteBusCargo
     Inherits System.Web.Services.WebService
 
     <WebMethod()>
-    Public Function GetLstCargo() As String()
+    Public Function GetLstCargo(ByVal prefixText As String) As String()
         Dim objCargo As New dllSoftSGSST.SGSST.clSgsstCargo
-        Return objCargo.GetTblInfoCargoXIdEstLst(1, 1).ToArray
+        Return objCargo.GetTblInfoCargoXNomLst(1, prefixText).ToArray
     End Function
 
 End Class

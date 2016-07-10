@@ -105,6 +105,13 @@
     End Property
 #End Region
 #Region "PROTEGIDO"
+    'EVENTO DEL BOTON ACTUALIZAR
+    Protected Sub ibtnActualizar_Click(sender As Object, e As ImageClickEventArgs) Handles ibtnActualizar.Click
+        Me.pIdSel = 0
+        Me.pStrNomSel = ""
+        Me.txtObj.Text = ""
+        Me.txtObj.ToolTip = ""
+    End Sub
     'EVENTO DEL TXT
     Protected Sub txtObj_TextChanged(sender As Object, e As EventArgs) Handles txtObj.TextChanged
         If (Trim(Me.txtObj.Text).Length >= Me.AutoCompleteExtender.MinimumPrefixLength) Then
@@ -198,5 +205,11 @@
             Me.ddlObj.Visible = False
         End If
     End Sub
+    'FUNCION PARA LIMPIAR EL CONTROL
+    Public Sub LimpiarCtr()
+        Me.txtObj.Text = ""
+        Me.pIdSel = 0
+    End Sub
+
 #End Region
 End Class
