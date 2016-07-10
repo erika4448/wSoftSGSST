@@ -135,12 +135,12 @@
                         </td>
                     </tr>
                     <tr>
-                        <td align="left" class="auto-style1">
+                        <td align="left" class="tdLabel">
 
                             <asp:Label ID="lblEducacion" runat="server" Text="*Educación"></asp:Label>
 
                         </td>
-                        <td align="left" class="auto-style1">
+                        <td align="left">
                             <asp:DropDownList ID="ddlEducacion" runat="server">
                             </asp:DropDownList>
                         </td>

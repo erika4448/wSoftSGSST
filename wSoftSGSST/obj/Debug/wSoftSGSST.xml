@@ -1817,15 +1817,6 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:wSoftSGSST.frmPlPerfDemografico._Button1">
-<summary>
-Button1 control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
 <member name="F:wSoftSGSST.frmPlPerfDemografico._ibtnNuevoEmpleado">
 <summary>
 ibtnNuevoEmpleado control.
@@ -1838,15 +1829,6 @@ To modify move field declaration from designer file to code-behind file.
 <member name="F:wSoftSGSST.frmPlPerfDemografico._pnlBusEmpleado">
 <summary>
 pnlBusEmpleado control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:wSoftSGSST.frmPlPerfDemografico._lblEmpleado">
-<summary>
-lblEmpleado control.
 </summary>
 <remarks>
 Auto-generated field.

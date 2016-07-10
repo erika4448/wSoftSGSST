@@ -23,19 +23,6 @@ F:\OTROS\WORKS\SG-SST\APP\SGSST\wSoftSGSST\dllSoftSGSST\obj\Debug\dllSoftSGSST.d
 F:\OTROS\WORKS\SG-SST\APP\SGSST\wSoftSGSST\dllSoftSGSST\obj\Debug\dllSoftSGSST.xml
 F:\OTROS\WORKS\SG-SST\APP\SGSST\wSoftSGSST\dllSoftSGSST\obj\Debug\dllSoftSGSST.pdb
 F:\OTROS\WORKS\SG-SST\APP\SGSST\wSoftSGSST\dllSoftSGSST\obj\Debug\dllSoftSGSST.vbprojResolveAssemblyReference.cache
-D:\OTROS\WORKS\SG-SST\APP\SGSST\wSoftSGSST\dllSoftSGSST\bin\Debug\dllSoftSGSST.dll
-D:\OTROS\WORKS\SG-SST\APP\SGSST\wSoftSGSST\dllSoftSGSST\bin\Debug\dllSoftSGSST.pdb
-D:\OTROS\WORKS\SG-SST\APP\SGSST\wSoftSGSST\dllSoftSGSST\bin\Debug\dllSoftSGSST.xml
-D:\OTROS\WORKS\SG-SST\APP\SGSST\wSoftSGSST\dllSoftSGSST\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
-D:\OTROS\WORKS\SG-SST\APP\SGSST\wSoftSGSST\dllSoftSGSST\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
-D:\OTROS\WORKS\SG-SST\APP\SGSST\wSoftSGSST\dllSoftSGSST\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
-D:\OTROS\WORKS\SG-SST\APP\SGSST\wSoftSGSST\dllSoftSGSST\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
-D:\OTROS\WORKS\SG-SST\APP\SGSST\wSoftSGSST\dllSoftSGSST\obj\Debug\dllSoftSGSST.vbprojResolveAssemblyReference.cache
-D:\OTROS\WORKS\SG-SST\APP\SGSST\wSoftSGSST\dllSoftSGSST\obj\Debug\dllSoftSGSST.Resources.resources
-D:\OTROS\WORKS\SG-SST\APP\SGSST\wSoftSGSST\dllSoftSGSST\obj\Debug\dllSoftSGSST.vbproj.GenerateResource.Cache
-D:\OTROS\WORKS\SG-SST\APP\SGSST\wSoftSGSST\dllSoftSGSST\obj\Debug\dllSoftSGSST.dll
-D:\OTROS\WORKS\SG-SST\APP\SGSST\wSoftSGSST\dllSoftSGSST\obj\Debug\dllSoftSGSST.xml
-D:\OTROS\WORKS\SG-SST\APP\SGSST\wSoftSGSST\dllSoftSGSST\obj\Debug\dllSoftSGSST.pdb
 C:\Users\Hernan Buitrago\Documents\SoftSGSST\dllSoftSGSST\bin\Debug\dllSoftSGSST.dll
 C:\Users\Hernan Buitrago\Documents\SoftSGSST\dllSoftSGSST\bin\Debug\dllSoftSGSST.pdb
 C:\Users\Hernan Buitrago\Documents\SoftSGSST\dllSoftSGSST\bin\Debug\dllSoftSGSST.xml
@@ -48,3 +35,15 @@ C:\Users\Hernan Buitrago\Documents\SoftSGSST\dllSoftSGSST\obj\Debug\dllSoftSGSST
 C:\Users\Hernan Buitrago\Documents\SoftSGSST\dllSoftSGSST\obj\Debug\dllSoftSGSST.dll
 C:\Users\Hernan Buitrago\Documents\SoftSGSST\dllSoftSGSST\obj\Debug\dllSoftSGSST.xml
 C:\Users\Hernan Buitrago\Documents\SoftSGSST\dllSoftSGSST\obj\Debug\dllSoftSGSST.pdb
+D:\OTROS\WORKS\SG-SST\APP\SGSST\wSoftSGSST\dllSoftSGSST\bin\Debug\dllSoftSGSST.dll
+D:\OTROS\WORKS\SG-SST\APP\SGSST\wSoftSGSST\dllSoftSGSST\bin\Debug\dllSoftSGSST.pdb
+D:\OTROS\WORKS\SG-SST\APP\SGSST\wSoftSGSST\dllSoftSGSST\bin\Debug\dllSoftSGSST.xml
+D:\OTROS\WORKS\SG-SST\APP\SGSST\wSoftSGSST\dllSoftSGSST\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\OTROS\WORKS\SG-SST\APP\SGSST\wSoftSGSST\dllSoftSGSST\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\OTROS\WORKS\SG-SST\APP\SGSST\wSoftSGSST\dllSoftSGSST\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+D:\OTROS\WORKS\SG-SST\APP\SGSST\wSoftSGSST\dllSoftSGSST\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+D:\OTROS\WORKS\SG-SST\APP\SGSST\wSoftSGSST\dllSoftSGSST\obj\Debug\dllSoftSGSST.Resources.resources
+D:\OTROS\WORKS\SG-SST\APP\SGSST\wSoftSGSST\dllSoftSGSST\obj\Debug\dllSoftSGSST.vbproj.GenerateResource.Cache
+D:\OTROS\WORKS\SG-SST\APP\SGSST\wSoftSGSST\dllSoftSGSST\obj\Debug\dllSoftSGSST.dll
+D:\OTROS\WORKS\SG-SST\APP\SGSST\wSoftSGSST\dllSoftSGSST\obj\Debug\dllSoftSGSST.xml
+D:\OTROS\WORKS\SG-SST\APP\SGSST\wSoftSGSST\dllSoftSGSST\obj\Debug\dllSoftSGSST.pdb
