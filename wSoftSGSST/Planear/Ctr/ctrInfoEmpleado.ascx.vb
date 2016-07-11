@@ -291,7 +291,7 @@
         End If
 
         If Not (objMsjRtnValida.pBoolRtn) Then
-            Me.AlertDialog(objMsjRtnValida.GetMensaje(dllSoftSGSST.Estructura.EstructuraMsjValidacion.EnmTipoMensaje.Advertencia, objMsjRtnValida.GetMensajeValidacion()))
+            Me.AlertDialog(objMsjRtnValida.GetMensaje(dllSoftSGSST.Estructura.EstructuraMsjValidacion.EnmTipoMensaje.Advertencia, objMsjRtnValida.GetMensajeValidacionCamposFaltantes()))
         End If
 
         Return objMsjRtnValida.pBoolRtn

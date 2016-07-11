@@ -42,6 +42,7 @@ D:\OTROS\WORKS\SG-SST\APP\SGSST\wSoftSGSST\dllSoftSGSST\bin\Debug\Microsoft.Prac
 D:\OTROS\WORKS\SG-SST\APP\SGSST\wSoftSGSST\dllSoftSGSST\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
 D:\OTROS\WORKS\SG-SST\APP\SGSST\wSoftSGSST\dllSoftSGSST\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
 D:\OTROS\WORKS\SG-SST\APP\SGSST\wSoftSGSST\dllSoftSGSST\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+D:\OTROS\WORKS\SG-SST\APP\SGSST\wSoftSGSST\dllSoftSGSST\obj\Debug\dllSoftSGSST.vbprojResolveAssemblyReference.cache
 D:\OTROS\WORKS\SG-SST\APP\SGSST\wSoftSGSST\dllSoftSGSST\obj\Debug\dllSoftSGSST.Resources.resources
 D:\OTROS\WORKS\SG-SST\APP\SGSST\wSoftSGSST\dllSoftSGSST\obj\Debug\dllSoftSGSST.vbproj.GenerateResource.Cache
 D:\OTROS\WORKS\SG-SST\APP\SGSST\wSoftSGSST\dllSoftSGSST\obj\Debug\dllSoftSGSST.dll

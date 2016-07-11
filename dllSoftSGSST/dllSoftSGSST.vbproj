@@ -110,11 +110,25 @@
     <Compile Include="SGSST\clSgsstEstadoCivil.vb" />
     <Compile Include="SGSST\clSgsstGenero.vb" />
     <Compile Include="SGSST\clSgsstHistCargosEmp.vb" />
+    <Compile Include="SGSST\clSgsstLugar.vb" />
     <Compile Include="SGSST\clSgsstPais.vb" />
+    <Compile Include="SGSST\clSgsstProceso.vb" />
     <Compile Include="SGSST\clSgsstProfesion.vb" />
     <Compile Include="SGSST\clSgsstRelCargoXQuienRepIdCargo.vb" />
+    <Compile Include="SGSST\clSgsstRelProcesoXPeligro.vb" />
     <Compile Include="SGSST\clSgsstTipoContrato.vb" />
     <Compile Include="SGSST\clSgsstTipoDocumento.vb" />
+    <Compile Include="SGSST\clSgsstRelLugarXPeligro.vb" />
+    <Compile Include="SGSST\dtsLugar.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dtsLugar.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SGSST\dtsProceso.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dtsProceso.xsd</DependentUpon>
+    </Compile>
     <Compile Include="SGSST\dtsQuienLeReportaCargo1.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -146,6 +160,30 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="packages.config" />
+    <None Include="SGSST\dtsLugar.xsc">
+      <DependentUpon>dtsLugar.xsd</DependentUpon>
+    </None>
+    <None Include="SGSST\dtsLugar.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dtsLugar.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>SGSST</CustomToolNamespace>
+    </None>
+    <None Include="SGSST\dtsLugar.xss">
+      <DependentUpon>dtsLugar.xsd</DependentUpon>
+    </None>
+    <None Include="SGSST\dtsProceso.xsc">
+      <DependentUpon>dtsProceso.xsd</DependentUpon>
+    </None>
+    <None Include="SGSST\dtsProceso.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dtsProceso.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>SGSST</CustomToolNamespace>
+    </None>
+    <None Include="SGSST\dtsProceso.xss">
+      <DependentUpon>dtsProceso.xsd</DependentUpon>
+    </None>
     <None Include="SGSST\dtsQuienLeReportaCargo.xsc">
       <DependentUpon>dtsQuienLeReportaCargo.xsd</DependentUpon>
     </None>

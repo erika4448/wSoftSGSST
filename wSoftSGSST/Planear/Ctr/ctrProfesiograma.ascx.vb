@@ -249,7 +249,7 @@
         End If
 
         If Not (objMsj._varBoolRtn) Then
-            Me.AlertDialog(objMsj.GetMensaje(dllSoftSGSST.Estructura.EstructuraMsjValidacion.EnmTipoMensaje.Advertencia, objMsj.GetMensajeValidacion()))
+            Me.AlertDialog(objMsj.GetMensaje(dllSoftSGSST.Estructura.EstructuraMsjValidacion.EnmTipoMensaje.Advertencia, objMsj.GetMensajeValidacionCamposFaltantes()))
         End If
         Return objMsj
     End Function
