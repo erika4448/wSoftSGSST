@@ -20,10 +20,10 @@
     <link href="../../css/Menu/bootstrap-treeview.css" rel="stylesheet"/>
     <script type="text/javascript"  src="../../js/Menu/bootstrap-treeview.js"></script>
 
-    <table>
+    <table align="center">
         <tr>
-            <td align="center">
-                <asp:Panel ID="pnlCtrProfesiograma" runat="server">
+            <td>
+                <asp:Panel ID="pnlCtrProfesiograma" runat="server" HorizontalAlign="Center">
                     <uc1:ctrProfesiograma runat="server" ID="ctrProfesiograma" />
                 </asp:Panel>
             </td>

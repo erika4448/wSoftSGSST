@@ -5,7 +5,7 @@
 <link rel="Stylesheet" type="text/css" href="../../App_Themes/SoftSGSST.css" />
 <%end if%>
 
-<table width="100%" align="center">
+<table align="center">
     <tr>
         <td colspan="3" align="center">
             <asp:Label ID="lblProfesiograma" runat="server" Text="Profesiograma"></asp:Label>

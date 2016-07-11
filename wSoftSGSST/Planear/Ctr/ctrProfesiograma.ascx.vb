@@ -155,6 +155,7 @@
     End Sub
     'EVENTO DEL BOTON NUEVO PROFESIOGRAMA
     Protected Sub ibtnNuevoProfesiograma_Click(sender As Object, e As ImageClickEventArgs) Handles ibtnNuevoProfesiograma.Click
+        Me.pVisualizacionXAccion = EnmAccion.Cargar
         Me.LimpiarForm()
     End Sub
     'EVENTO DEL BOTON ELIMINAR DE LA GRILLA
@@ -390,6 +391,9 @@
         Me.ddlAQuienReporta.SelectedValue = 0
 
         'LIMPIAR LA GRILLA DE QUIEN LE REPORTA
+        Me.pTblQuienReportaCargo = New dllSoftSGSST.SGSST.dtsQuienLeReportaCargo.dtQuienRepCargoDataTable
+        Me.CargarGvQuienLeReporta()
+
         Me.ddlAreaDelCargo.SelectedValue = 0
     End Sub
 #End Region
