@@ -1367,6 +1367,96 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
+<member name="F:wSoftSGSST.ctrLugar._lblLugar">
+<summary>
+lblLugar control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrLugar._ddlLugar">
+<summary>
+ddlLugar control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrLugar._ibtnAgregar">
+<summary>
+ibtnAgregar control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrLugar._pnlGvLugar">
+<summary>
+pnlGvLugar control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrLugar._gvLugar">
+<summary>
+gvLugar control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrProceso._lblProceso">
+<summary>
+lblProceso control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrProceso._ddlProceso">
+<summary>
+ddlProceso control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrProceso._ibtnAgregar">
+<summary>
+ibtnAgregar control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrProceso._pnlGvProcesos">
+<summary>
+pnlGvProcesos control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrProceso._gvProceso">
+<summary>
+gvProceso control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:wSoftSGSST.ctrProfesiograma._lblProfesiograma">
 <summary>
 lblProfesiograma control.

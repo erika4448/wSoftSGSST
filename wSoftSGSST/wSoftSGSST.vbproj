@@ -104,6 +104,7 @@
     <Content Include="frmPrincMenuPrincipal.aspx" />
     <Content Include="frmPrincPrimerIngreso.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="Images\Botones\ibtnEliminarGrilla.png" />
     <Content Include="Images\Botones\ibtnNuevoEmpleado.png" />
     <Content Include="Images\Botones\ibtnPnlGestion.png" />
     <Content Include="Images\Botones\ibtnRequisitosAzul.png" />
@@ -174,7 +175,10 @@
     <Content Include="Planear\Ctr\ctrActividadesYRiesgos.ascx" />
     <Content Include="Planear\Ctr\ctrCargosEmpleado.ascx" />
     <Content Include="Planear\Ctr\ctrInfoEmpleado.ascx" />
+    <Content Include="Planear\Ctr\ctrLugar.ascx" />
+    <Content Include="Planear\Ctr\ctrProceso.ascx" />
     <Content Include="Planear\Ctr\ctrProfesiograma.ascx" />
+    <Content Include="Planear\Ctr\ctrPeligro.ascx" />
     <Content Include="Planear\PerfDemografico\frmPlPerfDemografico.aspx" />
     <Content Include="Planear\Profesiograma\frmPlProfesiograma.aspx" />
     <Content Include="Web.config" />
@@ -294,11 +298,32 @@
       <DependentUpon>ctrInfoEmpleado.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="Planear\Ctr\ctrLugar.ascx.designer.vb">
+      <DependentUpon>ctrLugar.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Planear\Ctr\ctrLugar.ascx.vb">
+      <DependentUpon>ctrLugar.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Planear\Ctr\ctrProceso.ascx.designer.vb">
+      <DependentUpon>ctrProceso.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Planear\Ctr\ctrProceso.ascx.vb">
+      <DependentUpon>ctrProceso.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="Planear\Ctr\ctrProfesiograma.ascx.designer.vb">
       <DependentUpon>ctrProfesiograma.ascx</DependentUpon>
     </Compile>
     <Compile Include="Planear\Ctr\ctrProfesiograma.ascx.vb">
       <DependentUpon>ctrProfesiograma.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Planear\Ctr\ctrPeligro.ascx.designer.vb">
+      <DependentUpon>ctrPeligro.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Planear\Ctr\ctrPeligro.ascx.vb">
+      <DependentUpon>ctrPeligro.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Planear\PerfDemografico\frmPlPerfDemografico.aspx.designer.vb">
@@ -344,7 +369,9 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Planear\MatrizRiesgos\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

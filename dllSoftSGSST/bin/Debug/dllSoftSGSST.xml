@@ -22,6 +22,46 @@ dllSoftSGSST
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="T:dllSoftSGSST.SGSST.dtsLugar">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:dllSoftSGSST.SGSST.dtsLugar.dtLugarDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:dllSoftSGSST.SGSST.dtsLugar.dtLugarRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:dllSoftSGSST.SGSST.dtsLugar.dtLugarRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:dllSoftSGSST.SGSST.dtsProceso">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:dllSoftSGSST.SGSST.dtsProceso.dtProcesoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:dllSoftSGSST.SGSST.dtsProceso.dtProcesoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:dllSoftSGSST.SGSST.dtsProceso.dtProcesoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
 <member name="T:dllSoftSGSST.SGSST.dtsQuienLeReportaCargo">
 <summary>
 Represents a strongly typed in-memory cache of data.

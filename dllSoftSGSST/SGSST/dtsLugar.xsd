@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dtsLugar" targetNamespace="http://tempuri.org/dtsLugar.xsd" xmlns:mstns="http://tempuri.org/dtsLugar.xsd" xmlns="http://tempuri.org/dtsLugar.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dtsLugar" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dtsLugar" msprop:Generator_UserDSName="dtsLugar">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtLugar" msprop:Generator_TableClassName="dtLugarDataTable" msprop:Generator_TableVarName="tabledtLugar" msprop:Generator_TablePropName="dtLugar" msprop:Generator_RowDeletingName="dtLugarRowDeleting" msprop:Generator_RowChangingName="dtLugarRowChanging" msprop:Generator_RowEvHandlerName="dtLugarRowChangeEventHandler" msprop:Generator_RowDeletedName="dtLugarRowDeleted" msprop:Generator_UserTableName="dtLugar" msprop:Generator_RowChangedName="dtLugarRowChanged" msprop:Generator_RowEvArgName="dtLugarRowChangeEvent" msprop:Generator_RowClassName="dtLugarRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="tmpIdTabla" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="1" msprop:Generator_ColumnVarNameInTable="columntmpIdTabla" msprop:Generator_ColumnPropNameInRow="tmpIdTabla" msprop:Generator_ColumnPropNameInTable="tmpIdTablaColumn" msprop:Generator_UserColumnName="tmpIdTabla" type="xs:int" />
+              <xs:element name="tmpIdRel" msprop:Generator_ColumnVarNameInTable="columntmpIdRel" msprop:Generator_ColumnPropNameInRow="tmpIdRel" msprop:Generator_ColumnPropNameInTable="tmpIdRelColumn" msprop:Generator_UserColumnName="tmpIdRel" type="xs:int" minOccurs="0" />
+              <xs:element name="tmpIdLugar" msprop:Generator_ColumnVarNameInTable="columntmpIdLugar" msprop:Generator_ColumnPropNameInRow="tmpIdLugar" msprop:Generator_ColumnPropNameInTable="tmpIdLugarColumn" msprop:Generator_UserColumnName="tmpIdLugar" type="xs:int" minOccurs="0" />
+              <xs:element name="tmpNombreLugar" msprop:Generator_ColumnVarNameInTable="columntmpNombreLugar" msprop:Generator_ColumnPropNameInRow="tmpNombreLugar" msprop:Generator_ColumnPropNameInTable="tmpNombreLugarColumn" msprop:Generator_UserColumnName="tmpNombreLugar" type="xs:string" minOccurs="0" />
+              <xs:element name="tmpIdEstado" msprop:Generator_ColumnVarNameInTable="columntmpIdEstado" msprop:Generator_ColumnPropNameInRow="tmpIdEstado" msprop:Generator_ColumnPropNameInTable="tmpIdEstadoColumn" msprop:Generator_UserColumnName="tmpIdEstado" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:dtLugar" />
+      <xs:field xpath="mstns:tmpIdTabla" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

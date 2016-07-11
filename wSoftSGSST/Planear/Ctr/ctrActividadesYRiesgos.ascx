@@ -20,7 +20,7 @@
             <td align="center">
                 <asp:Label ID="lblRiesgos" runat="server" Text="Riesgos del Cargo"></asp:Label>
             </td>
-            <td align="rigth">
+            <td align="right">
                 
             </td>
         </tr>

@@ -33,7 +33,7 @@ Namespace Estructura
             Me.pBoolRtn = False
         End Sub
 
-        Public Function GetMensajeValidacion() As String
+        Public Function GetMensajeValidacionCamposFaltantes() As String
             Dim strBuilder As New StringBuilder()
 
             strBuilder.Append("<table align='center' width='500px'>")
@@ -49,6 +49,24 @@ Namespace Estructura
 
             Return strBuilder.ToString()
         End Function
+
+        Public Function GetMensajeValidacion() As String
+            Dim strBuilder As New StringBuilder()
+
+            strBuilder.Append("<table align='center' width='500px'>")
+            strBuilder.Append(" <tr>")
+            strBuilder.Append("     <td align='center' width='100px'>")
+            strBuilder.Append("<img src='../../Images/Msj/imAdvertencia.png' />")
+            strBuilder.Append("     </td>")
+            strBuilder.Append("     <td align='left'>")
+            strBuilder.Append("Por favor verifique: <br/>" & Me.pStrMensaje)
+            strBuilder.Append("     </td>")
+            strBuilder.Append(" </tr>")
+            strBuilder.Append("</table>")
+
+            Return strBuilder.ToString()
+        End Function
+
 
         Public Function GetMensaje(ByVal parIdTipoMensaje As EnmTipoMensaje, ByVal parStrMensaje As String) As String
             Dim strBuilder As New StringBuilder()

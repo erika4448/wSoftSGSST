@@ -200,7 +200,7 @@
         End If
 
         If Not (objMsjRtnValida.pBoolRtn) Then
-            Me.AlertDialog(objMsjRtnValida.GetMensajeValidacion())
+            Me.AlertDialog(objMsjRtnValida.GetMensajeValidacionCamposFaltantes())
         End If
 
         Return objMsjRtnValida.pBoolRtn
