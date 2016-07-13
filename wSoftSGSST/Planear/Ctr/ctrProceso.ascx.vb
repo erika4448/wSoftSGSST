@@ -77,6 +77,9 @@
                     'ENVIA A ACTUALIZAR RELACION 
                     Me.ActEstRelProcesoXPeligro(drRow.tmpIdRel, dllSoftSGSST.Sistema.clSisEstado.EnmEstado.Inactivo)
 
+                    'ELIMINA LA FILA
+                    drRow.Delete()
+
                     If (Me.varBoolActEstRel) Then
                         Me.SuccessLog("Eliminado correctamente.")
                     End If
@@ -106,10 +109,10 @@
     Private Function EsProcesoYaRelacionado(ByVal parIdProceso As Integer) As Boolean
         For Each dtsRow As dllSoftSGSST.SGSST.dtsProceso.dtProcesoRow In Me.pTblProceso.Rows
             If (parIdProceso = dtsRow.tmpIdProceso) Then
-                Return False
+                Return True
             End If
         Next
-        Return True
+        Return False
     End Function
     Private Function PermiteAgregar() As Boolean
         Dim objMsjRtnValida As New dllSoftSGSST.Estructura.EstructuraMsjValidacion

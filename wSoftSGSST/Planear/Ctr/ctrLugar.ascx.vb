@@ -36,7 +36,7 @@
                     'SE INCIALIZA EL DATASET
                     Me.pTblLugar = New dllSoftSGSST.SGSST.dtsLugar.dtLugarDataTable()
 
-                    'SE CARGAN LOS PROCESOS
+                    'SE CARGAN LOS LUGARES
                     Me.CargarLugares()
             End Select
         End Set
@@ -50,7 +50,7 @@
             ViewState("pIdPeligro") = value
         End Set
     End Property
-    'PROPIEDAD PARA EL MANEJO DE DATASET PROCESO
+    'PROPIEDAD PARA EL MANEJO DE DATASET LUGAR
     Private Property pTblLugar As dllSoftSGSST.SGSST.dtsLugar.dtLugarDataTable
         Get
             Return ViewState("pTblLugar")
@@ -77,6 +77,9 @@
                     'ENVIA A ACTUALIZAR RELACION 
                     Me.ActEstRelLugarXPeligro(drRow.tmpIdRel, dllSoftSGSST.Sistema.clSisEstado.EnmEstado.Inactivo)
 
+                    'ELIMINA LA FILA
+                    drRow.Delete()
+
                     If (Me.varBoolActEstRel) Then
                         Me.SuccessLog("Eliminado correctamente.")
                     End If
@@ -93,7 +96,7 @@
     Protected Sub ibtnAgregar_Click(sender As Object, e As ImageClickEventArgs) Handles ibtnAgregar.Click
         If (Me.PermiteAgregar()) Then
             'SE AGREGA EL LUGAR
-            Me.AgregarProceso(Me.ddlLugar.SelectedValue, Me.ddlLugar.SelectedItem.Text)
+            Me.AgregarLugar(Me.ddlLugar.SelectedValue, Me.ddlLugar.SelectedItem.Text)
         End If
     End Sub
 #End Region
@@ -106,10 +109,10 @@
     Private Function EsLugarYaRelacionado(ByVal parIdLugar As Integer) As Boolean
         For Each dtsRow As dllSoftSGSST.SGSST.dtsLugar.dtLugarRow In Me.pTblLugar.Rows
             If (parIdLugar = dtsRow.tmpIdLugar) Then
-                Return False
+                Return True
             End If
         Next
-        Return True
+        Return False
     End Function
     Private Function PermiteAgregar() As Boolean
         Dim objMsjRtnValida As New dllSoftSGSST.Estructura.EstructuraMsjValidacion
@@ -140,7 +143,7 @@
             Me.pnlGvLugar.Visible = False
         End If
     End Sub
-    Private Sub AgregarProceso(ByVal parIdLugar As Integer, ByVal parNomLugar As String)
+    Private Sub AgregarLugar(ByVal parIdLugar As Integer, ByVal parNomLugar As String)
         Me.pTblLugar.AdddtLugarRow(0,
                                     parIdLugar,
                                     parNomLugar,
@@ -175,10 +178,10 @@
     Public Sub GuardarInfo(ByVal parObjTrans As System.Data.Common.DbTransaction)
         Dim objRelLugarXPeligro As New dllSoftSGSST.SGSST.clSgsstRelLugarXPeligro
 
-        For Each drRow As dllSoftSGSST.SGSST.dtsProceso.dtProcesoRow In Me.pTblLugar.Rows
+        For Each drRow As dllSoftSGSST.SGSST.dtsLugar.dtLugarRow In Me.pTblLugar.Rows
             objRelLugarXPeligro.srlpIdRelLugarXPeligro = drRow.tmpIdRel
             objRelLugarXPeligro.srlpIdPeligro = Me.pIdPeligro
-            objRelLugarXPeligro.srlpIdLugar = drRow.tmpIdProceso
+            objRelLugarXPeligro.srlpIdLugar = drRow.tmpIdLugar
             objRelLugarXPeligro.srlpIdEstado = dllSoftSGSST.Sistema.clSisEstado.EnmEstado.Activo
 
 
@@ -191,7 +194,7 @@
 
         Me.pTblLugar = New dllSoftSGSST.SGSST.dtsLugar.dtLugarDataTable
 
-        'SE CARGA LA INFORMACION DE PROCESO POR PELIGRO
+        'SE CARGA LA INFORMACION DE LUGAR POR PELIGRO
         dtDatos = objLugar.GetTblInfoLugarXIdPeligro(Me.pIdPeligro, dllSoftSGSST.Sistema.clSisEstado.EnmEstado.Activo)
 
         For Each drRow As DataRow In dtDatos.Rows

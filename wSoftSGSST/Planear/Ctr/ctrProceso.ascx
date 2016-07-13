@@ -3,7 +3,7 @@
 <link rel="Stylesheet" type="text/css" href="../../App_Themes/SoftSGSST.css" />
 <%end if%>
 
-<table>
+<table width="100%">
     <tr>
         <td align="left" class="tdLabel">
             <asp:Label ID="lblProceso" runat="server" Text="Proceso"></asp:Label>
@@ -21,7 +21,7 @@
                 <asp:GridView ID="gvProceso" runat="server" AutoGenerateColumns="False" CssClass="gvSGSST" DataKeyNames="tmpIdTabla">
                     <Columns>
                         <asp:BoundField HeaderText="Proceso" DataField="tmpNombreProceso" SortExpression="tmpNombreProceso" />
-                        <asp:ButtonField ButtonType="Image" ImageUrl="~/Images/Botones/ibtnEliminarGrilla.png" Text="Eliminar" HeaderText="Eliminar" />
+                        <asp:ButtonField ButtonType="Image" ImageUrl="~/Images/Botones/ibtnEliminarGrilla.png" Text="Eliminar" HeaderText="Eliminar" CommandName="cmdEliminar" />
                     </Columns>
                 </asp:GridView>
 

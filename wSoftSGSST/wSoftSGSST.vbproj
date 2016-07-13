@@ -104,6 +104,11 @@
     <Content Include="frmPrincMenuPrincipal.aspx" />
     <Content Include="frmPrincPrimerIngreso.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="Images\Botones\ibtnRegresarMatriz.png" />
+    <Content Include="Images\Botones\ibtnEscogerCampos.png" />
+    <Content Include="Images\Botones\ibtnFiltrosConsulta.png" />
+    <Content Include="Images\Botones\ibtnMatrizPDF.png" />
+    <Content Include="Images\Botones\ibtnIncluirRiesgoVerde.png" />
     <Content Include="Images\Botones\ibtnEliminarGrilla.png" />
     <Content Include="Images\Botones\ibtnNuevoEmpleado.png" />
     <Content Include="Images\Botones\ibtnPnlGestion.png" />
@@ -128,6 +133,8 @@
     <Content Include="Images\Botones\ibtnNuevaConsulta.png" />
     <Content Include="Images\frmGetImagenEmpleado.aspx" />
     <Content Include="Images\General\boton_grilla_eliminar.png" />
+    <Content Include="Images\General\ibtnCalificarRiesgo.png" />
+    <Content Include="Images\General\ibtnMedidaIntervencion.png" />
     <Content Include="Images\General\ibtnCerrarModal.png" />
     <Content Include="Images\General\ibtnBuscar.png" />
     <Content Include="Images\General\ibtnRegValido.png" />
@@ -143,6 +150,14 @@
     <Content Include="Images\Maestra\imLogoEmpresa.png" />
     <Content Include="Images\Menu\imMenuPlanear.fw.png" />
     <Content Include="Images\Msj\imAdvertencia.png" />
+    <Content Include="Images\OpcPagina\ibtnCtrExistentesAzul.png" />
+    <Content Include="Images\OpcPagina\ibtnCtrExistentesGris.png" />
+    <Content Include="Images\OpcPagina\ibtnCriteriosCtrAzul.png" />
+    <Content Include="Images\OpcPagina\ibtnCriteriosCtrGris.png" />
+    <Content Include="Images\OpcPagina\ibtnEvalRiesgosAzul.png" />
+    <Content Include="Images\OpcPagina\ibtnEvalRiesgosGris.png" />
+    <Content Include="Images\OpcPagina\ibtnMedIntervencionAzul.png" />
+    <Content Include="Images\OpcPagina\ibtnMedIntervencionGris.png" />
     <Content Include="Images\OpcPagina\ibtnRiesgosCargoAzul.png" />
     <Content Include="Images\OpcPagina\ibtnRiesgosCargoGris.png" />
     <Content Include="Images\OpcPagina\ibtnInfoLaboralAzul.png" />
@@ -161,6 +176,7 @@
     <Content Include="Images\OpcPagina\ibtnEPPEntrenamientoAzul.png" />
     <Content Include="Images\OpcPagina\ibtnCondSaludGris.png" />
     <Content Include="Images\OpcPagina\ibtnCondSaludAzul.png" />
+    <Content Include="Images\PnlInfo\imPnlInfoPeligro.png" />
     <Content Include="js\alertify.js" />
     <Content Include="js\alertify.min.js" />
     <Content Include="js\jquery-1.8.3.min.js" />
@@ -175,10 +191,13 @@
     <Content Include="Planear\Ctr\ctrActividadesYRiesgos.ascx" />
     <Content Include="Planear\Ctr\ctrCargosEmpleado.ascx" />
     <Content Include="Planear\Ctr\ctrInfoEmpleado.ascx" />
+    <Content Include="Planear\Ctr\ctrInfoPeligro.ascx" />
     <Content Include="Planear\Ctr\ctrLugar.ascx" />
     <Content Include="Planear\Ctr\ctrProceso.ascx" />
     <Content Include="Planear\Ctr\ctrProfesiograma.ascx" />
     <Content Include="Planear\Ctr\ctrPeligro.ascx" />
+    <Content Include="Planear\MatrizRiesgos\frmMtRgCalificarRiesgo.aspx" />
+    <Content Include="Planear\MatrizRiesgos\frmMtRgMatrizRiesgos.aspx" />
     <Content Include="Planear\PerfDemografico\frmPlPerfDemografico.aspx" />
     <Content Include="Planear\Profesiograma\frmPlProfesiograma.aspx" />
     <Content Include="Web.config" />
@@ -298,6 +317,13 @@
       <DependentUpon>ctrInfoEmpleado.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="Planear\Ctr\ctrInfoPeligro.ascx.designer.vb">
+      <DependentUpon>ctrInfoPeligro.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Planear\Ctr\ctrInfoPeligro.ascx.vb">
+      <DependentUpon>ctrInfoPeligro.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="Planear\Ctr\ctrLugar.ascx.designer.vb">
       <DependentUpon>ctrLugar.ascx</DependentUpon>
     </Compile>
@@ -325,6 +351,20 @@
     <Compile Include="Planear\Ctr\ctrPeligro.ascx.vb">
       <DependentUpon>ctrPeligro.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Planear\MatrizRiesgos\frmMtRgCalificarRiesgo.aspx.designer.vb">
+      <DependentUpon>frmMtRgCalificarRiesgo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Planear\MatrizRiesgos\frmMtRgCalificarRiesgo.aspx.vb">
+      <DependentUpon>frmMtRgCalificarRiesgo.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Planear\MatrizRiesgos\frmMtRgMatrizRiesgos.aspx.designer.vb">
+      <DependentUpon>frmMtRgMatrizRiesgos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Planear\MatrizRiesgos\frmMtRgMatrizRiesgos.aspx.vb">
+      <DependentUpon>frmMtRgMatrizRiesgos.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Planear\PerfDemografico\frmPlPerfDemografico.aspx.designer.vb">
       <DependentUpon>frmPlPerfDemografico.aspx</DependentUpon>
@@ -369,9 +409,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Planear\MatrizRiesgos\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

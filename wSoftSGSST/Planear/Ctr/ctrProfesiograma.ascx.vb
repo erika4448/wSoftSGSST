@@ -157,7 +157,6 @@
     Protected Sub ibtnNuevoProfesiograma_Click(sender As Object, e As ImageClickEventArgs) Handles ibtnNuevoProfesiograma.Click
         Me.pVisualizacionXAccion = EnmAccion.Cargar
         Me.LimpiarForm()
-        Me.pVisualizacionXAccion = EnmAccion.Cargar
     End Sub
     'EVENTO DEL BOTON ELIMINAR DE LA GRILLA
     Protected Sub ibtnEliminar_Click(sender As Object, e As ImageClickEventArgs)
@@ -264,7 +263,7 @@
 
         Me.pTblQuienReportaCargo.Rows.Add(row)
 
-        Me.CargarGvQuienLeReporta
+        Me.CargarGvQuienLeReporta()
     End Sub
     'FUNCION PARA GUARDAR LA INFORMACION DE EMPLEADO
     Private Sub GuardarInfoCargo()
