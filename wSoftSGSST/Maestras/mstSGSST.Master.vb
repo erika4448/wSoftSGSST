@@ -3,8 +3,8 @@
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         If Not IsPostBack Then
-            Me.CargarMenu()
         End If
+        Me.CargarMenu()
     End Sub
 #Region "PRIVADO"
     Private Sub CargarMenu()

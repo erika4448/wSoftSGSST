@@ -47,3 +47,4 @@ D:\OTROS\WORKS\SG-SST\APP\SGSST\wSoftSGSST\dllSoftSGSST\obj\Debug\dllSoftSGSST.v
 D:\OTROS\WORKS\SG-SST\APP\SGSST\wSoftSGSST\dllSoftSGSST\obj\Debug\dllSoftSGSST.dll
 D:\OTROS\WORKS\SG-SST\APP\SGSST\wSoftSGSST\dllSoftSGSST\obj\Debug\dllSoftSGSST.xml
 D:\OTROS\WORKS\SG-SST\APP\SGSST\wSoftSGSST\dllSoftSGSST\obj\Debug\dllSoftSGSST.pdb
+D:\OTROS\WORKS\SG-SST\APP\SGSST\wSoftSGSST\dllSoftSGSST\obj\Debug\dllSoftSGSST.vbprojResolveAssemblyReference.cache
