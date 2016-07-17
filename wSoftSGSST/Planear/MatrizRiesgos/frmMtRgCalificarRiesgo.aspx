@@ -54,4 +54,5 @@
             </table>
         </ContentTemplate>
     </asp:UpdatePanel>
+    <br />
 </asp:Content>

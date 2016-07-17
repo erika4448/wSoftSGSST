@@ -77,15 +77,6 @@ Partial Public Class login
     Protected WithEvents txtUsuario As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
-    '''txtUsuario_TextBoxWatermarkExtender control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents txtUsuario_TextBoxWatermarkExtender As Global.AjaxControlToolkit.TextBoxWatermarkExtender
-    
-    '''<summary>
     '''pnlTxtPwd control.
     '''</summary>
     '''<remarks>
@@ -111,15 +102,6 @@ Partial Public Class login
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtPswd As Global.System.Web.UI.WebControls.TextBox
-    
-    '''<summary>
-    '''txtPswd_TextBoxWatermarkExtender control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents txtPswd_TextBoxWatermarkExtender As Global.AjaxControlToolkit.TextBoxWatermarkExtender
     
     '''<summary>
     '''ibtnIngresa control.

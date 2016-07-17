@@ -74,14 +74,10 @@
                                 </div>
                             </td>
                             <td align="left" width="700px" style="vertical-align: top; text-align: left;">
-                                <br />
-
-                                <div style="height: 490px; overflow: auto;">
+                                <div style="height: 500px; overflow: auto;">
                                     <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                                     </asp:ContentPlaceHolder>
                                 </div>
-
-
                             </td>
                         </tr>
                     </table>

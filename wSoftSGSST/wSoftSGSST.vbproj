@@ -148,6 +148,11 @@
     <Content Include="Images\Login\imLogoCliente.png" />
     <Content Include="Images\Maestra\imApp.png" />
     <Content Include="Images\Maestra\imLogoEmpresa.png" />
+    <Content Include="Images\MenuPrincipal\imMenuActuar.png" />
+    <Content Include="Images\MenuPrincipal\imMenuHacer.png" />
+    <Content Include="Images\MenuPrincipal\imMenuPlanear.png" />
+    <Content Include="Images\MenuPrincipal\imMenuVerificar.png" />
+    <Content Include="Images\MenuPrincipal\imMenuLogo.png" />
     <Content Include="Images\Menu\imMenuMatrizRiesgos.fw.png" />
     <Content Include="Images\Menu\imMenuPerfilDemografico.fw.png" />
     <Content Include="Images\Menu\imMenuPlanear.fw.png" />
@@ -188,6 +193,7 @@
     <Content Include="js\jsapi.js" />
     <Content Include="js\Menu\bootstrap-treeview.js" />
     <Content Include="js\Menu\bootstrap.js" />
+    <Content Include="js\WaterMark.min.js" />
     <Content Include="login.aspx" />
     <Content Include="Planear\Ctr\AutoCompleteBusCargo.asmx" />
     <Content Include="Planear\Ctr\AutoCompleteBusEmpleado.asmx" />

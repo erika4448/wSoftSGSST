@@ -168,18 +168,54 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:wSoftSGSST.frmPrincMenuPrincipal._btnProfesiograma">
+<member name="F:wSoftSGSST.frmPrincMenuPrincipal._imLogo">
 <summary>
-btnProfesiograma control.
+imLogo control.
 </summary>
 <remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:wSoftSGSST.frmPrincMenuPrincipal._btnPerfilDemografico">
+<member name="F:wSoftSGSST.frmPrincMenuPrincipal._lblPorcAvance">
 <summary>
-btnPerfilDemografico control.
+lblPorcAvance control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.frmPrincMenuPrincipal._Image1">
+<summary>
+Image1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.frmPrincMenuPrincipal._Image2">
+<summary>
+Image2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.frmPrincMenuPrincipal._Image3">
+<summary>
+Image3 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.frmPrincMenuPrincipal._Image4">
+<summary>
+Image4 control.
 </summary>
 <remarks>
 Auto-generated field.
@@ -267,15 +303,6 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:wSoftSGSST.login._txtUsuario_TextBoxWatermarkExtender">
-<summary>
-txtUsuario_TextBoxWatermarkExtender control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
 <member name="F:wSoftSGSST.login._pnlTxtPwd">
 <summary>
 pnlTxtPwd control.
@@ -297,15 +324,6 @@ To modify move field declaration from designer file to code-behind file.
 <member name="F:wSoftSGSST.login._txtPswd">
 <summary>
 txtPswd control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:wSoftSGSST.login._txtPswd_TextBoxWatermarkExtender">
-<summary>
-txtPswd_TextBoxWatermarkExtender control.
 </summary>
 <remarks>
 Auto-generated field.

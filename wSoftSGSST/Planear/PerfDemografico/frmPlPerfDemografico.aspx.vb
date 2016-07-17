@@ -34,6 +34,7 @@
                     '===================
                     'BOTONES============
                     Me.ibtnNuevoEmpleado.Visible = True
+                    Me.btnNuevaConsulta.Visible = False
                     '===================
 
                     'INICIALIZA CONTROL DE DINA CONS
@@ -47,6 +48,7 @@
                     '===================
                     'BOTONES============
                     Me.ibtnNuevoEmpleado.Visible = False
+                    Me.btnNuevaConsulta.Visible = True
                     '===================
 
                 Case EnmAccion.CargarEmpleado
@@ -56,6 +58,7 @@
                     '===================
                     'BOTONES============
                     Me.ibtnNuevoEmpleado.Visible = False
+                    Me.btnNuevaConsulta.Visible = True
                     '===================
             End Select
         End Set
@@ -68,6 +71,12 @@
 
         'INICIALIZA CONTROL DE INFO_EMPLEADO
         Me.ctrInfoEmpleado1.pBoolIniCtr = True
+
+        Me.upnlPerfDemografico.Update()
+    End Sub
+    Protected Sub btnNuevaConsulta_Click(sender As Object, e As EventArgs) Handles btnNuevaConsulta.Click
+        'MODIFICA LA VISUALIZACION
+        Me.pVisualizaXAccion = EnmAccion.Inicio
 
         Me.upnlPerfDemografico.Update()
     End Sub

@@ -1,10 +1,14 @@
-﻿Public Class ctrInfoEmpleado
+﻿Imports System.IO
+
+Public Class ctrInfoEmpleado
     Inherits dllSoftSGSST.Estructura.EstructuraControl
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         If Not IsPostBack Then
 
         End If
+        ScriptManager.GetCurrent(Me.Page).RegisterPostBackControl(Me.ibtnGuardarInfo)
+        Page.Form.Attributes.Add("enctype", "multipart/form-data")
     End Sub
     '===================================VARIABLES=================================
     Dim varBoolGuardoEmpleado As Boolean = False
@@ -149,27 +153,37 @@
 
             If (Me.pIdEmpleado <> 0 AndAlso Me.varBoolGuardoEmpleado) Then
                 Me.SuccessLog("Empleado guardado correctamente")
+
+                'SE CARGA LA INFORMACION DEL EMPLEADO
+                Me.pVisualizaXAccion = EnmAccion.CargarEmpleado
             End If
         End If
+        Me.upnlInfoEmpleado.Update()
     End Sub
     Protected Sub ibtnInfoLaboral_Click(sender As Object, e As ImageClickEventArgs) Handles ibtnInfoLaboral.Click
         Me.AlertDialog("Funcionalidad en desarrollo. No se encuentra aún disponible.")
+        Me.upnlInfoEmpleado.Update()
     End Sub
     Protected Sub ibtnAccidentesEnf_Click(sender As Object, e As ImageClickEventArgs) Handles ibtnAccidentesEnf.Click
         Me.AlertDialog("Funcionalidad en desarrollo. No se encuentra aún disponible.")
+        Me.upnlInfoEmpleado.Update()
     End Sub
     Protected Sub ibtnConceptosMed_Click(sender As Object, e As ImageClickEventArgs) Handles ibtnConceptosMed.Click
         Me.AlertDialog("Funcionalidad en desarrollo. No se encuentra aún disponible.")
+        Me.upnlInfoEmpleado.Update()
     End Sub
     Protected Sub ibtnRiesgosCargo_Click(sender As Object, e As ImageClickEventArgs) Handles ibtnRiesgosCargo.Click
         Me.AlertDialog("Funcionalidad en desarrollo. No se encuentra aún disponible.")
+        Me.upnlInfoEmpleado.Update()
     End Sub
     Protected Sub ibtnResponSGSST_Click(sender As Object, e As ImageClickEventArgs) Handles ibtnResponSGSST.Click
         Me.AlertDialog("Funcionalidad en desarrollo. No se encuentra aún disponible.")
+        Me.upnlInfoEmpleado.Update()
     End Sub
     Protected Sub ibtnEditarInfo_Click(sender As Object, e As ImageClickEventArgs) Handles ibtnEditarInfo.Click
         'MODIFICACION VISUALIZACION
         Me.pVisualizaXAccion = EnmAccion.EditarEmpleado
+        Me.upnlInfoEmpleado.Update()
     End Sub
 #End Region
 #Region "PRIVADO"
@@ -321,7 +335,11 @@
             objEmpleado.sgemFchIngreso = Me.ctrFechaIngreso.pFecha
             objEmpleado.sgemIdEstado = dllSoftSGSST.Sistema.clSisEstado.EnmEstado.Activo
             If (fuImagenEmp.HasFile) Then
-                objEmpleado.sgemImagen = fuImagenEmp.FileBytes()
+                Dim tmpStream As New MemoryStream(fuImagenEmp.FileBytes())
+                Dim tmBytesRedimen As Byte()
+
+                tmBytesRedimen = Me.RedimensionarImagen(tmpStream, 171, 164)
+                objEmpleado.sgemImagen = tmBytesRedimen
             End If
 
 
@@ -337,6 +355,25 @@
             Me.FailureLog("Error al intentar guardar información empleado: " & ex.Message)
         End Try
     End Sub
+    Private Function RedimensionarImagen(ByVal parStream As Stream, ByVal parWidth As Integer, ByVal parHeight As Integer) As Byte()
+        Dim objImagen As New dllSoftSGSST.Sistema.clImagen
+        Dim varMemoryStream As New System.IO.MemoryStream
+        Dim varOldImagen As System.Drawing.Image
+        Dim varNewImagen As System.Drawing.Image
+
+        'SE CARGA EL OBJETO IMPORTADO EN EL OBJETO IMAGEN
+        'varOldImagen = System.Drawing.Image.FromFile(parStrRutaArh)
+        varOldImagen = System.Drawing.Image.FromStream(parStream)
+
+        varNewImagen = objImagen.ResizeImage2(varOldImagen, parWidth, parHeight)
+        varOldImagen.Dispose()
+
+        varNewImagen.Save(varMemoryStream, System.Drawing.Imaging.ImageFormat.Jpeg)
+
+        Dim varBytes As Byte() = varMemoryStream.ToArray()
+
+        Return varBytes
+    End Function
 #End Region
 #Region "PUBLICO"
     Public Sub CargarEmpleado()
@@ -376,44 +413,46 @@
             'SE VAIDA SI TIENE IMAGEN RELACIONADA
             If Not (IsDBNull(dtDatos.Rows(0)("sgemImagen"))) Then
                 Me.imEmpleado.ImageUrl = New System.Uri(Context.Request.Url, ResolveUrl("~/images/FrmGetImagenEmpleado.aspx?PIE=" & Me.pIdEmpleado)).ToString
+            Else
+                Me.imEmpleado.ImageUrl = New System.Uri(Context.Request.Url, ResolveUrl("~/Images/General/imAgregarFoto.png")).ToString
             End If
 
             If Not (Me.ddlTipDoc.Items.FindByValue(dtDatos.Rows(0)("sgemIdTipDoc")) Is Nothing) Then
-                    Me.ddlTipDoc.SelectedValue = dtDatos.Rows(0)("sgemIdTipDoc")
-                Else
-                    Me.ddlTipDoc.SelectedValue = 0
-                End If
-
-                If Not (Me.ddlGenero.Items.FindByValue(dtDatos.Rows(0)("sgemIdGenero")) Is Nothing) Then
-                    Me.ddlGenero.SelectedValue = dtDatos.Rows(0)("sgemIdGenero")
-                Else
-                    Me.ddlGenero.SelectedValue = 0
-                End If
-
-                If Not (Me.ddlEducacion.Items.FindByValue(dtDatos.Rows(0)("sgemIdEducacion")) Is Nothing) Then
-                    Me.ddlEducacion.SelectedValue = dtDatos.Rows(0)("sgemIdEducacion")
-                Else
-                    Me.ddlEducacion.SelectedValue = 0
-                End If
-
-                If Not (Me.ddlProfesion.Items.FindByValue(dtDatos.Rows(0)("sgemIdProfesion")) Is Nothing) Then
-                    Me.ddlProfesion.SelectedValue = dtDatos.Rows(0)("sgemIdProfesion")
-                Else
-                    Me.ddlProfesion.SelectedValue = 0
-                End If
-
-                If Not (Me.ddlEstCivil.Items.FindByValue(dtDatos.Rows(0)("sgemIdEstadoCivil")) Is Nothing) Then
-                    Me.ddlEstCivil.SelectedValue = dtDatos.Rows(0)("sgemIdEstadoCivil")
-                Else
-                    Me.ddlEstCivil.SelectedValue = 0
-                End If
-
-                If Not (Me.ddlTipoContrato.Items.FindByValue(dtDatos.Rows(0)("sgemIdTipoContrato")) Is Nothing) Then
-                    Me.ddlTipoContrato.SelectedValue = dtDatos.Rows(0)("sgemIdTipoContrato")
-                Else
-                    Me.ddlTipoContrato.SelectedValue = 0
-                End If
+                Me.ddlTipDoc.SelectedValue = dtDatos.Rows(0)("sgemIdTipDoc")
+            Else
+                Me.ddlTipDoc.SelectedValue = 0
             End If
+
+            If Not (Me.ddlGenero.Items.FindByValue(dtDatos.Rows(0)("sgemIdGenero")) Is Nothing) Then
+                Me.ddlGenero.SelectedValue = dtDatos.Rows(0)("sgemIdGenero")
+            Else
+                Me.ddlGenero.SelectedValue = 0
+            End If
+
+            If Not (Me.ddlEducacion.Items.FindByValue(dtDatos.Rows(0)("sgemIdEducacion")) Is Nothing) Then
+                Me.ddlEducacion.SelectedValue = dtDatos.Rows(0)("sgemIdEducacion")
+            Else
+                Me.ddlEducacion.SelectedValue = 0
+            End If
+
+            If Not (Me.ddlProfesion.Items.FindByValue(dtDatos.Rows(0)("sgemIdProfesion")) Is Nothing) Then
+                Me.ddlProfesion.SelectedValue = dtDatos.Rows(0)("sgemIdProfesion")
+            Else
+                Me.ddlProfesion.SelectedValue = 0
+            End If
+
+            If Not (Me.ddlEstCivil.Items.FindByValue(dtDatos.Rows(0)("sgemIdEstadoCivil")) Is Nothing) Then
+                Me.ddlEstCivil.SelectedValue = dtDatos.Rows(0)("sgemIdEstadoCivil")
+            Else
+                Me.ddlEstCivil.SelectedValue = 0
+            End If
+
+            If Not (Me.ddlTipoContrato.Items.FindByValue(dtDatos.Rows(0)("sgemIdTipoContrato")) Is Nothing) Then
+                Me.ddlTipoContrato.SelectedValue = dtDatos.Rows(0)("sgemIdTipoContrato")
+            Else
+                Me.ddlTipoContrato.SelectedValue = 0
+            End If
+        End If
     End Sub
 #End Region
 End Class
