@@ -32,6 +32,42 @@ Partial Public Class ctrLugar
     Protected WithEvents ddlLugar As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
+    '''txtLugar control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtLugar As Global.System.Web.UI.WebControls.TextBox
+    
+    '''<summary>
+    '''ibtnIncluir control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ibtnIncluir As Global.System.Web.UI.WebControls.ImageButton
+    
+    '''<summary>
+    '''ibtnGuardar control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ibtnGuardar As Global.System.Web.UI.WebControls.ImageButton
+    
+    '''<summary>
+    '''ibtnCerrar control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ibtnCerrar As Global.System.Web.UI.WebControls.ImageButton
+    
+    '''<summary>
     '''ibtnAgregar control.
     '''</summary>
     '''<remarks>

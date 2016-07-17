@@ -23,6 +23,15 @@ Partial Public Class frmPlProfesiograma
     Protected WithEvents pnlCtrProfesiograma As Global.System.Web.UI.WebControls.Panel
     
     '''<summary>
+    '''lblPathPagina control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblPathPagina As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
     '''ctrProfesiograma control.
     '''</summary>
     '''<remarks>

@@ -9,6 +9,7 @@
     End Sub
     '=====================================BANDERAS=======================================
     Dim varBoolActEstRel As Boolean = False
+    Dim varBoolGuardoProceso As Boolean = False
     '====================================================================================
 #Region "PROPIEDADES"
     'PROPIEDAD PARA INICIALIZAR EL CONTROL
@@ -23,6 +24,8 @@
     'ENUMERACION PARA EL CONTROL DE ACCIONES QUE SE REALIZAN EN EL CONTROL
     Private Enum EnmAccion
         Inicio = 1
+        Nuevo = 2
+        SelProceso = 3
     End Enum
     'PROPIEDAD PARA EL CONTROL DE ACCIONES QUE SE REALIZAN EN EL CONTROL
     Private WriteOnly Property pVisualizaXAccion As EnmAccion
@@ -32,12 +35,52 @@
                     'PANELES==================
                     Me.pnlGvProcesos.Visible = False
                     '=========================
+                    'LISTAS DESPLEGABLES======
+                    Me.ddlProceso.Visible = True
+                    '=========================
+                    'CAJA_TEXTO===============
+                    Me.txtProceso.Visible = False
+                    '=========================
+                    'BOTONES==================
+                    Me.ibtnAgregar.Visible = True
+                    Me.ibtnIncluir.Visible = True
+                    Me.ibtnGuardar.Visible = False
+                    Me.ibtnCerrar.Visible = False
+                    '=========================
 
                     'SE INCIALIZA EL DATASET
                     Me.pTblProceso = New dllSoftSGSST.SGSST.dtsProceso.dtProcesoDataTable()
 
                     'SE CARGAN LOS PROCESOS
                     Me.CargarProcesos()
+
+                Case EnmAccion.SelProceso
+                    'LISTAS DESPLEGABLES======
+                    Me.ddlProceso.Visible = True
+                    '=========================
+                    'CAJA_TEXTO===============
+                    Me.txtProceso.Visible = False
+                    '=========================
+                    'BOTONES==================
+                    Me.ibtnAgregar.Visible = True
+                    Me.ibtnIncluir.Visible = True
+                    Me.ibtnGuardar.Visible = False
+                    Me.ibtnCerrar.Visible = False
+                    '=========================
+
+                Case EnmAccion.Nuevo
+                    'LISTAS DESPLEGABLES======
+                    Me.ddlProceso.Visible = False
+                    '=========================
+                    'CAJA_TEXTO===============
+                    Me.txtProceso.Visible = True
+                    '=========================
+                    'BOTONES==================
+                    Me.ibtnAgregar.Visible = False
+                    Me.ibtnIncluir.Visible = False
+                    Me.ibtnGuardar.Visible = True
+                    Me.ibtnCerrar.Visible = True
+                    '=========================
             End Select
         End Set
     End Property
@@ -98,6 +141,51 @@
             'SE AGREGA EL PROCESO
             Me.AgregarProceso(Me.ddlProceso.SelectedValue, Me.ddlProceso.SelectedItem.Text)
         End If
+    End Sub
+    Protected Sub ibtnIncluir_Click(sender As Object, e As ImageClickEventArgs) Handles ibtnIncluir.Click
+        'ELIMINA LA SELECCION
+        If (Me.ddlProceso.Items.Count > 0) Then
+            Me.ddlProceso.SelectedValue = 0
+        End If
+
+        'MODIFICA_VISUALIZACION
+        Me.pVisualizaXAccion = EnmAccion.Nuevo
+    End Sub
+    Protected Sub ibtnGuardar_Click(sender As Object, e As ImageClickEventArgs) Handles ibtnGuardar.Click
+        Dim varIdProceso As Integer = 0
+
+        If (Me.PermiteGuardar()) Then
+            'ENVIA A GUARDAR
+            varIdProceso = Me.GuardarProceso()
+
+            If (Me.varBoolGuardoProceso) Then
+                Me.SuccessLog("Se guardó correctamente.")
+
+                'SE LIMPIA EL CTR PROCESO
+                Me.LimpiarCtrProceso()
+
+                'SE CARGA LA INFORMACION DE PROCESOS
+                Me.CargarProcesos()
+
+                'VALIDA SI CARGA LA SELECCION
+                If Not (Me.ddlProceso.Items.FindByValue(varIdProceso) Is Nothing) Then
+                    Me.ddlProceso.SelectedValue = varIdProceso
+                Else
+                    Me.ddlProceso.SelectedValue = 0
+                End If
+
+                'MODIFICA VISUALIZACION
+                Me.pVisualizaXAccion = EnmAccion.SelProceso
+
+            End If
+        End If
+    End Sub
+    Protected Sub ibtnCerrar_Click(sender As Object, e As ImageClickEventArgs) Handles ibtnCerrar.Click
+        'SE LIMPIA EL CTR PROCESO
+        Me.LimpiarCtrProceso()
+
+        'MODIFICA VISUALIZACION
+        Me.pVisualizaXAccion = EnmAccion.SelProceso
     End Sub
 #End Region
 #Region "PRIVADO"
@@ -167,6 +255,46 @@
             Me.FailureLog("Error al intentar guardar información de Relación Proceso - Peligro " & ex.Message)
         End Try
     End Sub
+    Private Function PermiteGuardar() As Boolean
+        Dim objMsjRtnValida As New dllSoftSGSST.Estructura.EstructuraMsjValidacion
+
+        'VALIDA INGRESO DE PROCESO
+        If (Trim(Me.txtProceso.Text).Length = 0) Then
+            objMsjRtnValida.AgregarMensaje("Debe ingresar proceso.", True)
+        End If
+
+        If Not (objMsjRtnValida.pBoolRtn) Then
+            Me.AlertDialog(objMsjRtnValida.GetMensajeValidacion())
+        End If
+
+        Return objMsjRtnValida.pBoolRtn
+    End Function
+    Private Function GuardarProceso() As Integer
+        Dim objProceso As New dllSoftSGSST.SGSST.clSgsstProceso
+        Dim objTrans As New dllSoftSGSST.Estructura.EstructuraTransaccion
+        Dim varIdProceso As Integer = 0
+        Try
+            objTrans.trCrearTransaccion()
+
+            objProceso.sgpIdProceso = 0
+            objProceso.sgpIdEmpresa = Me.pIdEmpresa
+            objProceso.sgpNombre = Trim(Me.txtProceso.Text)
+            objProceso.sgpdIdEstado = dllSoftSGSST.Sistema.clSisEstado.EnmEstado.Activo
+
+            objProceso.GuardarInfoProceso(Me.pIdRelUsuXEmp, objTrans.trTransaccion)
+
+            Me.varBoolGuardoProceso = True
+            objTrans.trConfirmarTransaccion()
+
+            varIdProceso = objProceso.sgpIdProceso
+        Catch ex As Exception
+            Me.varBoolGuardoProceso = False
+            objTrans.trRollBackTransaccion()
+            Me.FailureLog("Error al intentar guardar proceso: " & ex.Message)
+        End Try
+
+        Return varIdProceso
+    End Function
 #End Region
 #Region "PUBLICO"
     Public Function SeleccionoProceso() As Boolean
@@ -206,6 +334,9 @@
 
         'SE ACTUALIZA LA GRILLA
         Me.ActualizarGrillaProcesos()
+    End Sub
+    Public Sub LimpiarCtrProceso()
+        Me.txtProceso.Text = ""
     End Sub
 #End Region
 End Class

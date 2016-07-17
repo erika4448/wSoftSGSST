@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Maestras/mstSGSST.Master" CodeBehind="frmMtRgCalificarRiesgo.aspx.vb" Inherits="wSoftSGSST.frmMtRgCalificarRiesgo" %>
 
-<%@ Register src="../Ctr/ctrInfoPeligro.ascx" tagname="ctrInfoPeligro" tagprefix="uc1" %>
+<%@ Register Src="../Ctr/ctrInfoPeligro.ascx" TagName="ctrInfoPeligro" TagPrefix="uc1" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
@@ -20,7 +20,15 @@
     <asp:UpdatePanel ID="upnlCalificarRiesgo" runat="server" UpdateMode="Conditional">
         <ContentTemplate>
             <table width="100%">
-                 <tr>
+                <tr>
+                    <td align="left">
+                        <asp:Label ID="lblPathPagina" runat="server" Text="Planear / Matriz de Riesgos" CssClass="pathMenu"></asp:Label>
+                    </td>
+                </tr>
+            </table>
+            <br />
+            <table width="100%">
+                <tr>
                     <td align="center">
                         <asp:Label ID="lblTitulo" runat="server" Text="Matriz de Peligros" CssClass="tituloForm"></asp:Label>
                     </td>
@@ -33,8 +41,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>
-                        &nbsp;
+                    <td>&nbsp;
                     </td>
                 </tr>
                 <tr>

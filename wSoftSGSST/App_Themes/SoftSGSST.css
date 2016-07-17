@@ -118,6 +118,7 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
     border: 1px solid #DDDDDD;
     background-color: #DDDDDD;
     text-decoration: none;
+    width: 300px;
     }
 
 /*ESTILO LISTAS DESPLGABLES*/
@@ -248,6 +249,16 @@ table {
             border-left: none;
             border-right: none;
             background: #DDDDDD;
+            height:50px;
+        }
+
+
+         .gvSGSST_Tr_Alternate {
+            border-bottom: none;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            background: #DDDDDD!important;
         }
 
 
@@ -257,4 +268,19 @@ table {
         border-left: none;
         border-right: none;
         padding-right:20px;
+        height:50px;
+        padding-left:5px;
     }
+
+.pathMenu {
+    color:#0034D8!important;
+    margin-left:10px;
+    font-weight:bold;
+}
+
+.pnlContentGv {
+    border-style:solid;
+    border-width:1px;
+    border-color:#C3C3C3;
+    padding:5px;
+}

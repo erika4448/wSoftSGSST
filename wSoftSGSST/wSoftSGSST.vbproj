@@ -148,7 +148,10 @@
     <Content Include="Images\Login\imLogoCliente.png" />
     <Content Include="Images\Maestra\imApp.png" />
     <Content Include="Images\Maestra\imLogoEmpresa.png" />
+    <Content Include="Images\Menu\imMenuMatrizRiesgos.fw.png" />
+    <Content Include="Images\Menu\imMenuPerfilDemografico.fw.png" />
     <Content Include="Images\Menu\imMenuPlanear.fw.png" />
+    <Content Include="Images\Menu\imMenuProfesiograma.fw.png" />
     <Content Include="Images\Msj\imAdvertencia.png" />
     <Content Include="Images\OpcPagina\ibtnCtrExistentesAzul.png" />
     <Content Include="Images\OpcPagina\ibtnCtrExistentesGris.png" />

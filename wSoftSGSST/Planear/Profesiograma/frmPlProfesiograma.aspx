@@ -24,6 +24,14 @@
         <tr>
             <td>
                 <asp:Panel ID="pnlCtrProfesiograma" runat="server" HorizontalAlign="Center">
+                    <table width="100%">
+                        <tr>
+                            <td align="left">
+                                <asp:Label ID="lblPathPagina" runat="server" Text="Planear / Profesiograma" CssClass="pathMenu"></asp:Label>
+                            </td>
+                        </tr>
+                    </table>
+                    <br />
                     <uc1:ctrProfesiograma runat="server" ID="ctrProfesiograma" />
                 </asp:Panel>
             </td>

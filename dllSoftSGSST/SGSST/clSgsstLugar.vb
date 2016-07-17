@@ -27,5 +27,24 @@ Namespace SGSST
 
             Return db.ExecuteDataSet(dbCommand).Tables(0)
         End Function
+        'FUNCION PARA GUARDAR INFORMACION DE LUGAR
+        Public Sub GuardarInfoLugar(ByVal parIdUsuEmp As Integer, Optional ByVal parObjTrans As System.Data.Common.DbTransaction = Nothing)
+            Dim dbCommand As DbCommand = db.GetStoredProcCommand("spSgsstGuardarInfoLugar")
+
+            db.AddParameter(dbCommand, "parSglIdLugar", DbType.Int32, ParameterDirection.InputOutput, Nothing, DataRowVersion.Current, sglIdLugar)
+            db.AddInParameter(dbCommand, "parSglIdEmpresa", DbType.Int32, sglIdEmpresa)
+            db.AddInParameter(dbCommand, "parSglNombre", DbType.String, sglNombre)
+            db.AddInParameter(dbCommand, "parSglAudIdUsuEmp", DbType.Int32, parIdUsuEmp)
+            db.AddInParameter(dbCommand, "parSglIdEstado", DbType.Int32, sglIdEstado)
+
+
+            If parObjTrans Is Nothing Then
+                db.ExecuteNonQuery(dbCommand)
+            Else
+                db.ExecuteNonQuery(dbCommand, parObjTrans)
+            End If
+
+            sglIdLugar = db.GetParameterValue(dbCommand, "parSglIdLugar")
+        End Sub
     End Class
 End Namespace

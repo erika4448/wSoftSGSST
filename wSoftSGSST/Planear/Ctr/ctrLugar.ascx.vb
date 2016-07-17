@@ -9,6 +9,7 @@
     End Sub
     '=====================================BANDERAS=======================================
     Dim varBoolActEstRel As Boolean = False
+    Dim varBoolGuardoLugar As Boolean = False
     '====================================================================================
 #Region "PROPIEDADES"
     'PROPIEDAD PARA INICIALIZAR EL CONTROL
@@ -23,6 +24,8 @@
     'ENUMERACION PARA EL CONTROL DE ACCIONES QUE SE REALIZAN EN EL CONTROL
     Private Enum EnmAccion
         Inicio = 1
+        Nuevo = 2
+        SelLugar = 3
     End Enum
     'PROPIEDAD PARA EL CONTROL DE ACCIONES QUE SE REALIZAN EN EL CONTROL
     Private WriteOnly Property pVisualizaXAccion As EnmAccion
@@ -32,12 +35,52 @@
                     'PANELES==================
                     Me.pnlGvLugar.Visible = False
                     '=========================
+                    'LISTAS DESPLEGABLES======
+                    Me.ddlLugar.Visible = True
+                    '=========================
+                    'CAJA_TEXTO===============
+                    Me.txtLugar.Visible = False
+                    '=========================
+                    'BOTONES==================
+                    Me.ibtnAgregar.Visible = True
+                    Me.ibtnIncluir.Visible = True
+                    Me.ibtnGuardar.Visible = False
+                    Me.ibtnCerrar.Visible = False
+                    '=========================
 
                     'SE INCIALIZA EL DATASET
                     Me.pTblLugar = New dllSoftSGSST.SGSST.dtsLugar.dtLugarDataTable()
 
                     'SE CARGAN LOS LUGARES
                     Me.CargarLugares()
+
+                Case EnmAccion.SelLugar
+                    'LISTAS DESPLEGABLES======
+                    Me.ddlLugar.Visible = True
+                    '=========================
+                    'CAJA_TEXTO===============
+                    Me.txtLugar.Visible = False
+                    '=========================
+                    'BOTONES==================
+                    Me.ibtnAgregar.Visible = True
+                    Me.ibtnIncluir.Visible = True
+                    Me.ibtnGuardar.Visible = False
+                    Me.ibtnCerrar.Visible = False
+                    '=========================
+
+                Case EnmAccion.Nuevo
+                    'LISTAS DESPLEGABLES======
+                    Me.ddlLugar.Visible = False
+                    '=========================
+                    'CAJA_TEXTO===============
+                    Me.txtLugar.Visible = True
+                    '=========================
+                    'BOTONES==================
+                    Me.ibtnAgregar.Visible = False
+                    Me.ibtnIncluir.Visible = False
+                    Me.ibtnGuardar.Visible = True
+                    Me.ibtnCerrar.Visible = True
+                    '=========================
             End Select
         End Set
     End Property
@@ -98,6 +141,51 @@
             'SE AGREGA EL LUGAR
             Me.AgregarLugar(Me.ddlLugar.SelectedValue, Me.ddlLugar.SelectedItem.Text)
         End If
+    End Sub
+    Protected Sub ibtnIncluir_Click(sender As Object, e As ImageClickEventArgs) Handles ibtnIncluir.Click
+        'ELIMINA LA SELECCION
+        If (Me.ddlLugar.Items.Count > 0) Then
+            Me.ddlLugar.SelectedValue = 0
+        End If
+
+        'MODIFICA_VISUALIZACION
+        Me.pVisualizaXAccion = EnmAccion.Nuevo
+    End Sub
+    Protected Sub ibtnGuardar_Click(sender As Object, e As ImageClickEventArgs) Handles ibtnGuardar.Click
+        Dim varIdLugar As Integer = 0
+
+        If (Me.PermiteGuardar()) Then
+            'ENVIA A GUARDAR
+            varIdLugar = Me.GuardarLugar()
+
+            If (Me.varBoolGuardoLugar) Then
+                Me.SuccessLog("Se guardó correctamente.")
+
+                'SE LIMPIA EL CTR LUGAR
+                Me.LimpiarCtrLugar()
+
+                'SE CARGA LA INFORMACION DE LUGARES
+                Me.CargarLugares()
+
+                'VALIDA SI CARGA LA SELECCION
+                If Not (Me.ddlLugar.Items.FindByValue(varIdLugar) Is Nothing) Then
+                    Me.ddlLugar.SelectedValue = varIdLugar
+                Else
+                    Me.ddlLugar.SelectedValue = 0
+                End If
+
+                'MODIFICA VISUALIZACION
+                Me.pVisualizaXAccion = EnmAccion.SelLugar
+
+            End If
+        End If
+    End Sub
+    Protected Sub ibtnCerrar_Click(sender As Object, e As ImageClickEventArgs) Handles ibtnCerrar.Click
+        'SE LIMPIA EL CTR LUGAR
+        Me.LimpiarCtrLugar()
+
+        'MODIFICA VISUALIZACION
+        Me.pVisualizaXAccion = EnmAccion.SelLugar
     End Sub
 #End Region
 #Region "PRIVADO"
@@ -167,6 +255,46 @@
             Me.FailureLog("Error al intentar guardar información de Relación Lugar - Peligro " & ex.Message)
         End Try
     End Sub
+    Private Function PermiteGuardar() As Boolean
+        Dim objMsjRtnValida As New dllSoftSGSST.Estructura.EstructuraMsjValidacion
+
+        'VALIDA INGRESO DE LUGAR
+        If (Trim(Me.txtLugar.Text).Length = 0) Then
+            objMsjRtnValida.AgregarMensaje("Debe ingresar lugar.", True)
+        End If
+
+        If Not (objMsjRtnValida.pBoolRtn) Then
+            Me.AlertDialog(objMsjRtnValida.GetMensajeValidacion())
+        End If
+
+        Return objMsjRtnValida.pBoolRtn
+    End Function
+    Private Function GuardarLugar() As Integer
+        Dim objLugar As New dllSoftSGSST.SGSST.clSgsstLugar
+        Dim objTrans As New dllSoftSGSST.Estructura.EstructuraTransaccion
+        Dim varIdLugar As Integer = 0
+        Try
+            objTrans.trCrearTransaccion()
+
+            objLugar.sglIdLugar = 0
+            objLugar.sglIdEmpresa = Me.pIdEmpresa
+            objLugar.sglNombre = Trim(Me.txtLugar.Text)
+            objLugar.sglIdEstado = dllSoftSGSST.Sistema.clSisEstado.EnmEstado.Activo
+
+            objLugar.GuardarInfoLugar(Me.pIdRelUsuXEmp, objTrans.trTransaccion)
+
+            Me.varBoolGuardoLugar = True
+            objTrans.trConfirmarTransaccion()
+
+            varIdLugar = objLugar.sglIdLugar
+        Catch ex As Exception
+            Me.varBoolGuardoLugar = False
+            objTrans.trRollBackTransaccion()
+            Me.FailureLog("Error al intentar guardar lugar: " & ex.Message)
+        End Try
+
+        Return varIdLugar
+    End Function
 #End Region
 #Region "PUBLICO"
     Public Function SeleccionoLugar() As Boolean
@@ -206,6 +334,9 @@
 
         'SE ACTUALIZA LA GRILLA
         Me.ActualizarGrillaLugares()
+    End Sub
+    Public Sub LimpiarCtrLugar()
+        Me.txtLugar.Text = ""
     End Sub
 #End Region
 End Class

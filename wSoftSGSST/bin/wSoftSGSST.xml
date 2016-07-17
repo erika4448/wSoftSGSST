@@ -998,6 +998,15 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
+<member name="F:wSoftSGSST.ctrInfoEmpleado._upnlInfoEmpleado">
+<summary>
+upnlInfoEmpleado control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:wSoftSGSST.ctrInfoEmpleado._pnlInfoBasicaEmpleado">
 <summary>
 pnlInfoBasicaEmpleado control.
@@ -1574,6 +1583,42 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
+<member name="F:wSoftSGSST.ctrLugar._txtLugar">
+<summary>
+txtLugar control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrLugar._ibtnIncluir">
+<summary>
+ibtnIncluir control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrLugar._ibtnGuardar">
+<summary>
+ibtnGuardar control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrLugar._ibtnCerrar">
+<summary>
+ibtnCerrar control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:wSoftSGSST.ctrLugar._ibtnAgregar">
 <summary>
 ibtnAgregar control.
@@ -1613,6 +1658,42 @@ To modify move field declaration from designer file to code-behind file.
 <member name="F:wSoftSGSST.ctrProceso._ddlProceso">
 <summary>
 ddlProceso control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrProceso._txtProceso">
+<summary>
+txtProceso control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrProceso._ibtnIncluir">
+<summary>
+ibtnIncluir control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrProceso._ibtnGuardar">
+<summary>
+ibtnGuardar control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrProceso._ibtnCerrar">
+<summary>
+ibtnCerrar control.
 </summary>
 <remarks>
 Auto-generated field.
@@ -2087,6 +2168,15 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
+<member name="F:wSoftSGSST.frmMtRgCalificarRiesgo._lblPathPagina">
+<summary>
+lblPathPagina control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:wSoftSGSST.frmMtRgCalificarRiesgo._lblTitulo">
 <summary>
 lblTitulo control.
@@ -2117,6 +2207,15 @@ To modify move field declaration from designer file to code-behind file.
 <member name="F:wSoftSGSST.frmMtRgMatrizRiesgos._upnlMatrizRiesgos">
 <summary>
 upnlMatrizRiesgos control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.frmMtRgMatrizRiesgos._lblPathPagina">
+<summary>
+lblPathPagina control.
 </summary>
 <remarks>
 Auto-generated field.
@@ -2204,9 +2303,27 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
+<member name="F:wSoftSGSST.frmPlPerfDemografico._lblPathPagina">
+<summary>
+lblPathPagina control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:wSoftSGSST.frmPlPerfDemografico._lblTitulo">
 <summary>
 lblTitulo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.frmPlPerfDemografico._btnNuevaConsulta">
+<summary>
+btnNuevaConsulta control.
 </summary>
 <remarks>
 Auto-generated field.
@@ -2261,6 +2378,15 @@ To modify move field declaration from designer file to code-behind file.
 <member name="F:wSoftSGSST.frmPlProfesiograma._pnlCtrProfesiograma">
 <summary>
 pnlCtrProfesiograma control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.frmPlProfesiograma._lblPathPagina">
+<summary>
+lblPathPagina control.
 </summary>
 <remarks>
 Auto-generated field.
