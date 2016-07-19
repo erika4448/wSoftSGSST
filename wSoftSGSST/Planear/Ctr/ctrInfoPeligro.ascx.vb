@@ -22,6 +22,9 @@
     'ENUEMRACION PARA EL CONTROL DE ACCIONES QUE SE REALIZAN EN EL CONTROL
     Private Enum EnmAccion
         Inicio = 1
+        SelInfoCtrExistentes = 2
+        SelInfoCriteriosCtr = 3
+        SelInfoMedIntervencion = 4
     End Enum
     'PROPIEDAD PARA EL MANEJO DE VISUALIZACION DE LA ACCION
     Private WriteOnly Property pVisualizaXAccion As EnmAccion
@@ -46,6 +49,49 @@
                     Me.ctrLugar1.pIdPeligro = Me.pIdPeligro
                     Me.ctrLugar1.pBoolIniCtr = True
                     Me.ctrLugar1.CargarInfoXPeligro()
+
+                Case EnmAccion.SelInfoCtrExistentes
+                    'PANELES====================
+                    Me.pnlCtrExistentes.Visible = True
+                    Me.pnlCriteriosCtr.Visible = False
+                    Me.pnlMedIntervencion.Visible = False
+                    '===========================
+
+                    'INICIALIZA CONTROL DE CONTROLES EXISTENTES
+                    Me.ctrMtRsControlesExistentes1.pIdPeligro = Me.pIdPeligro
+                    Me.ctrMtRsControlesExistentes1.pBoolIniCtr = True
+
+                    'ESTABLECE EL TITULO DE LA VENTANA
+                    Me.lblTituloInfoAdicPeligro.Text = "Controles Existentes"
+
+                Case EnmAccion.SelInfoCriteriosCtr
+                    'PANELES====================
+                    Me.pnlCtrExistentes.Visible = False
+                    Me.pnlCriteriosCtr.Visible = True
+                    Me.pnlMedIntervencion.Visible = False
+                    '===========================
+
+                    'INICIALIZA CONTROL DE CRITERIOS CONTROLES
+                    Me.ctrMtRsCriControles1.pIdPeligro = Me.pIdPeligro
+                    Me.ctrMtRsCriControles1.pBoolIniCtr = True
+
+                    'ESTABLECE EL TITULO DE LA VENTANA
+                    Me.lblTituloInfoAdicPeligro.Text = "Criterios para Establecer Controles"
+
+                Case EnmAccion.SelInfoMedIntervencion
+                    'PANELES====================
+                    Me.pnlCtrExistentes.Visible = False
+                    Me.pnlCriteriosCtr.Visible = False
+                    Me.pnlMedIntervencion.Visible = True
+                    '===========================
+
+                    'INICIALIZA CONTROL DE MEDIDAS INTERVENCION
+                    Me.ctrMtRsMedIntervencion1.pIdPeligro = Me.pIdPeligro
+                    Me.ctrMtRsMedIntervencion1.pBoolIniCtr = True
+
+                    'ESTABLECE EL TITULO DE LA VENTANA
+                    Me.lblTituloInfoAdicPeligro.Text = "Medidas de Intervención"
+
             End Select
         End Set
     End Property
@@ -74,6 +120,35 @@
                 Me.SuccessLog("Se guardó correctamente.")
             End If
         End If
+    End Sub
+    Protected Sub ibtnCtrExistentes_Click(sender As Object, e As ImageClickEventArgs) Handles ibtnCtrExistentes.Click
+        'MODIFICACION VISUALIZACION
+        Me.pVisualizaXAccion = EnmAccion.SelInfoCtrExistentes
+
+        Me.modalInfoAdicPeligro.Show()
+        Me.upnlInfoAdicPeligro.Update()
+    End Sub
+    Protected Sub ibtnCriControles_Click(sender As Object, e As ImageClickEventArgs) Handles ibtnCriControles.Click
+        'MODIFICACION VISUALIZACION
+        Me.pVisualizaXAccion = EnmAccion.SelInfoCriteriosCtr
+
+        Me.modalInfoAdicPeligro.Show()
+        Me.upnlInfoAdicPeligro.Update()
+    End Sub
+    Protected Sub ibtnMedIntervencion_Click(sender As Object, e As ImageClickEventArgs) Handles ibtnMedIntervencion.Click
+        'MODIFICACION VISUALIZACION
+        Me.pVisualizaXAccion = EnmAccion.SelInfoMedIntervencion
+
+        Me.modalInfoAdicPeligro.Show()
+        Me.upnlInfoAdicPeligro.Update()
+    End Sub
+    Protected Sub ibtnCerrarInfoAdicPeligro_Click(sender As Object, e As ImageClickEventArgs) Handles ibtnCerrarInfoAdicPeligro.Click
+        Me.ctrMtRsControlesExistentes1.LimpiarCtr()
+        Me.ctrMtRsCriControles1.LimpiarCtr()
+        Me.ctrMtRsMedIntervencion1.LimpiarCtr()
+
+        Me.modalInfoAdicPeligro.Hide()
+        Me.upnlInfoAdicPeligro.Update()
     End Sub
 #End Region
 #Region "PRIVADO"
@@ -143,7 +218,9 @@
         If (dtDatosPeligro.Rows.Count > 0) Then
             Me.lblActividad.Text = dtDatosPeligro.Rows(0)("StrActividad")
             Me.txtDescripcion.Text = dtDatosPeligro.Rows(0)("StrDescripcion")
+            Me.lblDescPeligro.Text = dtDatosPeligro.Rows(0)("StrDescripcion")
             Me.lblClasificacion.Text = dtDatosPeligro.Rows(0)("StrClasificacion")
+            Me.lblClasiPeligro.Text = dtDatosPeligro.Rows(0)("StrClasificacion")
             Me.lblRiesgo.Text = dtDatosPeligro.Rows(0)("StrRiesgo")
 
             varEstRutinaria = IIf(dtDatosPeligro.Rows(0)("sgplEstRutinario") = 1, EnmRutinaria.Si, EnmRutinaria.No)
@@ -174,6 +251,29 @@
     End Sub
     Protected Sub odsCargos_ObjectCreating(ByVal sender As Object, ByVal e As System.Web.UI.WebControls.ObjectDataSourceEventArgs) Handles odsCargos.ObjectCreating
         e.ObjectInstance = New dllSoftSGSST.SGSST.clSgsstCargo
+    End Sub
+#End Region
+#Region "EVENTOS"
+    Private Sub evtSelGuardoCtrExistentes() Handles ctrMtRsControlesExistentes1.evtGuardo
+        'SE LIMPIA EL CONTROL
+        Me.ctrMtRsControlesExistentes1.LimpiarCtr()
+        'OCULTA LA VENTANA MODAL
+        Me.modalInfoAdicPeligro.Hide()
+        Me.upnlInfoAdicPeligro.Update()
+    End Sub
+    Private Sub evtSelGuardoCriControles() Handles ctrMtRsCriControles1.evtGuardo
+        'SE LIMPIA EL CONTROL
+        Me.ctrMtRsCriControles1.LimpiarCtr()
+        'OCULTA LA VENTANA MODAL
+        Me.modalInfoAdicPeligro.Hide()
+        Me.upnlInfoAdicPeligro.Update()
+    End Sub
+    Private Sub evtSelMedIntervencion() Handles ctrMtRsMedIntervencion1.evtGuardo
+        'SE LIMPIA EL CONTROL
+        Me.ctrMtRsMedIntervencion1.LimpiarCtr()
+        'OCULTA LA VENTANA MODAL
+        Me.modalInfoAdicPeligro.Hide()
+        Me.upnlInfoAdicPeligro.Update()
     End Sub
 #End Region
 End Class

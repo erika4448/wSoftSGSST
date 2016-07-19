@@ -56,5 +56,61 @@ Namespace SGSST
 
             Return db.ExecuteDataSet(dbCommand).Tables(0)
         End Function
+        'FUNCION PARA ACTUALIZAR INFORMACION CONTROLES EXISTENTES
+        Public Sub ActInfoCtrExistentesXPeligro(ByVal parIdRelUsuXEmp As Integer, Optional ByVal parObjTrans As System.Data.Common.DbTransaction = Nothing)
+            Dim dbCommand As DbCommand = db.GetStoredProcCommand("spSgsstActInfoCtrExistentesXPeligro")
+
+            db.AddParameter(dbCommand, "parSgplIdPeligro", DbType.Int32, ParameterDirection.InputOutput, Nothing, DataRowVersion.Current, sgplIdPeligro)
+            db.AddInParameter(dbCommand, "parSgplCtrExisCtrFuente", DbType.String, sgplCtrExisCtrFuente)
+            db.AddInParameter(dbCommand, "parSgplCtrExisCtrMedio", DbType.String, sgplCtrExisCtrMedio)
+            db.AddInParameter(dbCommand, "parSgplCtrExisCtrIndividuo", DbType.String, sgplCtrExisCtrIndividuo)
+            db.AddInParameter(dbCommand, "parSgplAudIdUsuEmp", DbType.Int32, parIdRelUsuXEmp)
+
+            If parObjTrans Is Nothing Then
+                db.ExecuteNonQuery(dbCommand)
+            Else
+                db.ExecuteNonQuery(dbCommand, parObjTrans)
+            End If
+
+            sgplIdPeligro = db.GetParameterValue(dbCommand, "parSgplIdPeligro")
+        End Sub
+        'FUNCION PARA ACTUALIZAR INFORMACION CRITERIOS CONTROLES
+        Public Sub ActInfoCriteriosCtrXPeligro(ByVal parIdRelUsuXEmp As Integer, Optional ByVal parObjTrans As System.Data.Common.DbTransaction = Nothing)
+            Dim dbCommand As DbCommand = db.GetStoredProcCommand("spSgsstActInfoCriteriosCtrXPeligro")
+
+            db.AddParameter(dbCommand, "parSgplIdPeligro", DbType.Int32, ParameterDirection.InputOutput, Nothing, DataRowVersion.Current, sgplIdPeligro)
+            db.AddInParameter(dbCommand, "parSgplCriCtrNumExpuestos", DbType.String, sgplCriCtrNumExpuestos)
+            db.AddInParameter(dbCommand, "parSgplCriCtrPeorConsec", DbType.String, sgplCriCtrPeorConsec)
+            db.AddInParameter(dbCommand, "parSgplCriCtrEstExisteRQLegal", DbType.Int32, sgplCriCtrEstExisteRQLegal)
+            db.AddInParameter(dbCommand, "parSgplAudIdUsuEmp", DbType.Int32, parIdRelUsuXEmp)
+
+            If parObjTrans Is Nothing Then
+                db.ExecuteNonQuery(dbCommand)
+            Else
+                db.ExecuteNonQuery(dbCommand, parObjTrans)
+            End If
+
+            sgplIdPeligro = db.GetParameterValue(dbCommand, "parSgplIdPeligro")
+        End Sub
+        'FUNCION PARA ACTUALIZACION INFORMACION MEDIDAS INTERVENCION
+        Public Sub ActInfoMedIntervecionXPeligro(ByVal parIdRelUsuXEmp As Integer, Optional ByVal parObjTrans As System.Data.Common.DbTransaction = Nothing)
+            Dim dbCommand As DbCommand = db.GetStoredProcCommand("spSgsstActInfoMedIntervecionXPeligro")
+
+            db.AddParameter(dbCommand, "parSgplIdPeligro", DbType.Int32, ParameterDirection.InputOutput, Nothing, DataRowVersion.Current, sgplIdPeligro)
+            db.AddInParameter(dbCommand, "parSgplIntEliminacion", DbType.String, sgplIntEliminacion)
+            db.AddInParameter(dbCommand, "parSgplIntSustitucion", DbType.String, sgplIntSustitucion)
+            db.AddInParameter(dbCommand, "parSgplIntCtrIngenieria", DbType.String, sgplIntCtrIngenieria)
+            db.AddInParameter(dbCommand, "parSgplIntCtrAdmin", DbType.String, sgplIntCtrAdmin)
+            db.AddInParameter(dbCommand, "parSgplIntEEPP", DbType.String, sgplIntEEPP)
+            db.AddInParameter(dbCommand, "parSgplAudIdUsuEmp", DbType.Int32, parIdRelUsuXEmp)
+
+            If parObjTrans Is Nothing Then
+                db.ExecuteNonQuery(dbCommand)
+            Else
+                db.ExecuteNonQuery(dbCommand, parObjTrans)
+            End If
+
+            sgplIdPeligro = db.GetParameterValue(dbCommand, "parSgplIdPeligro")
+        End Sub
     End Class
 End Namespace

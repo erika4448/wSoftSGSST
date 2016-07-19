@@ -202,6 +202,9 @@
     <Content Include="Planear\Ctr\ctrInfoEmpleado.ascx" />
     <Content Include="Planear\Ctr\ctrInfoPeligro.ascx" />
     <Content Include="Planear\Ctr\ctrLugar.ascx" />
+    <Content Include="Planear\Ctr\ctrMtRsMedIntervencion.ascx" />
+    <Content Include="Planear\Ctr\ctrMtRsCriControles.ascx" />
+    <Content Include="Planear\Ctr\ctrMtRsControlesExistentes.ascx" />
     <Content Include="Planear\Ctr\ctrProceso.ascx" />
     <Content Include="Planear\Ctr\ctrProfesiograma.ascx" />
     <Content Include="Planear\Ctr\ctrPeligro.ascx" />
@@ -338,6 +341,27 @@
     </Compile>
     <Compile Include="Planear\Ctr\ctrLugar.ascx.vb">
       <DependentUpon>ctrLugar.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Planear\Ctr\ctrMtRsMedIntervencion.ascx.designer.vb">
+      <DependentUpon>ctrMtRsMedIntervencion.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Planear\Ctr\ctrMtRsMedIntervencion.ascx.vb">
+      <DependentUpon>ctrMtRsMedIntervencion.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Planear\Ctr\ctrMtRsCriControles.ascx.designer.vb">
+      <DependentUpon>ctrMtRsCriControles.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Planear\Ctr\ctrMtRsCriControles.ascx.vb">
+      <DependentUpon>ctrMtRsCriControles.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Planear\Ctr\ctrMtRsControlesExistentes.ascx.designer.vb">
+      <DependentUpon>ctrMtRsControlesExistentes.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Planear\Ctr\ctrMtRsControlesExistentes.ascx.vb">
+      <DependentUpon>ctrMtRsControlesExistentes.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Planear\Ctr\ctrProceso.ascx.designer.vb">

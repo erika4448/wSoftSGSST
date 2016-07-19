@@ -201,4 +201,157 @@ Partial Public Class ctrInfoPeligro
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ibtnMedIntervencion As Global.System.Web.UI.WebControls.ImageButton
+    
+    '''<summary>
+    '''btnFake control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents btnFake As Global.System.Web.UI.WebControls.Button
+    
+    '''<summary>
+    '''modalInfoAdicPeligro control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents modalInfoAdicPeligro As Global.AjaxControlToolkit.ModalPopupExtender
+    
+    '''<summary>
+    '''pnlInfoAdicPeligro control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents pnlInfoAdicPeligro As Global.System.Web.UI.WebControls.Panel
+    
+    '''<summary>
+    '''upnlInfoAdicPeligro control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents upnlInfoAdicPeligro As Global.System.Web.UI.UpdatePanel
+    
+    '''<summary>
+    '''ibtnCerrarInfoAdicPeligro control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ibtnCerrarInfoAdicPeligro As Global.System.Web.UI.WebControls.ImageButton
+    
+    '''<summary>
+    '''lblTituloInfoAdicPeligro control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblTituloInfoAdicPeligro As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
+    '''pnlInfoBasicaPeligro control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents pnlInfoBasicaPeligro As Global.System.Web.UI.WebControls.Panel
+    
+    '''<summary>
+    '''bNomDescPeligro control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents bNomDescPeligro As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
+    '''lblDescPeligro control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblDescPeligro As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
+    '''lblNomClasiPeligro control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblNomClasiPeligro As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
+    '''lblClasiPeligro control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblClasiPeligro As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
+    '''pnlCtrExistentes control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents pnlCtrExistentes As Global.System.Web.UI.WebControls.Panel
+    
+    '''<summary>
+    '''ctrMtRsControlesExistentes1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ctrMtRsControlesExistentes1 As Global.wSoftSGSST.ctrMtRsControlesExistentes
+    
+    '''<summary>
+    '''pnlCriteriosCtr control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents pnlCriteriosCtr As Global.System.Web.UI.WebControls.Panel
+    
+    '''<summary>
+    '''ctrMtRsCriControles1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ctrMtRsCriControles1 As Global.wSoftSGSST.ctrMtRsCriControles
+    
+    '''<summary>
+    '''pnlMedIntervencion control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents pnlMedIntervencion As Global.System.Web.UI.WebControls.Panel
+    
+    '''<summary>
+    '''ctrMtRsMedIntervencion1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ctrMtRsMedIntervencion1 As Global.wSoftSGSST.ctrMtRsMedIntervencion
 End Class

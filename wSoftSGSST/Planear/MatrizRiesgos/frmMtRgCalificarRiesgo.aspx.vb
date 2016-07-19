@@ -30,6 +30,7 @@
                     'SE INICIALIZA EL CONTROL DE PELIGRO
                     Me.ctrInfoPeligro1.pIdPeligro = Me.pIdPeligro
                     Me.ctrInfoPeligro1.pBoolIniCtr = True
+
             End Select
         End Set
     End Property
