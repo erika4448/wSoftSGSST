@@ -91,8 +91,8 @@
 			 * @type {Object}
 			 */
 			labels : {
-				ok     : "OK",
-				cancel : "Cancel"
+				ok     : "Aceptar",
+				cancel : "Cancelar"
 			},
 
 			/**
@@ -111,7 +111,7 @@
 			 * Which button should be focused by default
 			 * @type {String}	"ok" (default), "cancel", or "none"
 			 */
-			buttonFocus : "ok",
+			buttonFocus : "Aceptar",
 
 			/**
 			 * Set the transition event on load

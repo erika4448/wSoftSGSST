@@ -3,8 +3,8 @@
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         If Not IsPostBack Then
-            Me.CargarMenu()
         End If
+        Me.CargarMenu()
     End Sub
 #Region "PRIVADO"
     Private Sub CargarMenu()
@@ -20,31 +20,22 @@
 
         strBuilder.Append("[")
         'SE CARGAN LOS MODULOS DE ACCESO
-        dtDatosModulo = objModulo.GetTblModuloXIdRelUsuEmp(1)
+        dtDatosModulo = objModulo.GetTblModuloXIdRelUsuEmp(Me.pIdRelUsuXEmp)
 
         For Each drModuloRow As DataRow In dtDatosModulo.Rows
             strBuilder.Append(" {")
-            'strBuilder.Append("text: '<img src='" & New System.Uri(Context.Request.Url, ResolveUrl("~/Images/Menu/imMenuPlanear.fw.png")).ToString & "' />',")
-            strBuilder.AppendFormat("text: '<img src={0}http://localhost:2617/Images/Menu/imMenuPlanear.fw.png{0}/>',", Chr(34))
-
-            'Select Case drModuloRow("simoIdModulo")
-            '    Case 1 'PLANEAR
-            '        strBuilder.Append("icon: 'menuPlanear',")
-            '        'strBuilder.Append("icon: 'glyphicons glyphicons-puzzle',")
-            '        'strBuilder.Append("selectedIcon: 'glyphicons glyphicons-puzzle',")
-
-            'End Select
+            strBuilder.AppendFormat("text: '<img src={0}{1}{0}/>',", Chr(34), New System.Uri(Context.Request.Url, ResolveUrl(drModuloRow("simoURL"))).ToString)
 
 
             'SE CARGAN LAS PAGINAS DEL MODULO
-            dtDatosPagina = objPagina.GetTblInfoPaginaXIdModYRelUsuEmp(drModuloRow("simoIdModulo"), 1)
+            dtDatosPagina = objPagina.GetTblInfoPaginaXIdModYRelUsuEmp(drModuloRow("simoIdModulo"), Me.pIdRelUsuXEmp)
             If (dtDatosPagina.Rows.Count > 0) Then
                 strBuilderPag = New StringBuilder()
                 strBuilderPag.Append("    nodes: [")
 
                 For Each drPaginaRow As DataRow In dtDatosPagina.Rows
                     strBuilderPag.Append("     {")
-                    strBuilderPag.AppendFormat("   text: '{0}',", drPaginaRow("sipaNombre"))
+                    strBuilderPag.AppendFormat("   text: '<img src={0}{1}{0}/>',", Chr(34), New System.Uri(Context.Request.Url, ResolveUrl(drPaginaRow("sipaURLImagen"))).ToString)
                     strBuilderPag.AppendFormat("   href: '{0}',", ResolveUrl(drPaginaRow("sipaURLPag")))
                     strBuilderPag.Append("   selectable: true")
                     strBuilderPag.Append("     },")

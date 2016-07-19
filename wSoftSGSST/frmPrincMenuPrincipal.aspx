@@ -3,15 +3,45 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <table width="100%" align="center">
+    <table width="100%" cellpadding="0" cellspacing="0">
         <tr>
-            <td align="left">
-                <asp:Button ID="btnProfesiograma" runat="server" Text="Profesiograma" />
+            <td width="300px">
+                <table width="300px" style="padding-left:20px;">
+                    <tr>
+                        <td align="center">
+                            <asp:Image ID="imLogo" runat="server" ImageUrl="~/Images/MenuPrincipal/imMenuLogo.png" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <asp:Label ID="lblPorcAvance" runat="server" Text="Porcentaje de Avance" Font-Bold="True"></asp:Label>
+                        </td>
+                    </tr>
+                </table>
             </td>
-        </tr>
-        <tr>
-            <td align="left">
-             <asp:Button ID="btnPerfilDemografico" runat="server" Text="Perfil Demográfico" />
+            <td>
+                <table width="100%" cellpadding="0" cellspacing="0" style="border-spacing:0px 0px!important;">
+                    <tr>
+                        <td>
+                            <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/MenuPrincipal/imMenuPlanear.png" />
+                        </td>
+                    </tr>
+                     <tr>
+                        <td>
+                            <asp:Image ID="Image2" runat="server" ImageUrl="~/Images/MenuPrincipal/imMenuHacer.png" />
+                        </td>
+                    </tr>
+                     <tr>
+                        <td>
+                            <asp:Image ID="Image3" runat="server" ImageUrl="~/Images/MenuPrincipal/imMenuVerificar.png" />
+                        </td>
+                    </tr>
+                     <tr>
+                        <td>
+                            <asp:Image ID="Image4" runat="server" ImageUrl="~/Images/MenuPrincipal/imMenuActuar.png" />
+                        </td>
+                    </tr>
+                </table>
             </td>
         </tr>
     </table>

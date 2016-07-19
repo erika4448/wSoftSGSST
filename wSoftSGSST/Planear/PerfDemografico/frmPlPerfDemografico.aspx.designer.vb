@@ -23,6 +23,15 @@ Partial Public Class frmPlPerfDemografico
     Protected WithEvents upnlPerfDemografico As Global.System.Web.UI.UpdatePanel
     
     '''<summary>
+    '''lblPathPagina control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblPathPagina As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
     '''lblTitulo control.
     '''</summary>
     '''<remarks>
@@ -30,6 +39,15 @@ Partial Public Class frmPlPerfDemografico
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents lblTitulo As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
+    '''btnNuevaConsulta control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents btnNuevaConsulta As Global.System.Web.UI.WebControls.Button
     
     '''<summary>
     '''ibtnNuevoEmpleado control.

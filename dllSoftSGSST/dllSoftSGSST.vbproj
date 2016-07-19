@@ -53,6 +53,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Web.Services" />
@@ -124,6 +125,7 @@
     <Compile Include="SGSST\clSgsstTipoContrato.vb" />
     <Compile Include="SGSST\clSgsstTipoDocumento.vb" />
     <Compile Include="SGSST\clSgsstRelLugarXPeligro.vb" />
+    <Compile Include="SGSST\clSgsstPeligro.vb" />
     <Compile Include="SGSST\dtsLugar.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -148,6 +150,7 @@
       <DependentUpon>dtsQuienLeReportaCargo.xsd</DependentUpon>
     </Compile>
     <Compile Include="Sistema\clBD.vb" />
+    <Compile Include="Sistema\clImagen.vb" />
     <Compile Include="Sistema\clSisConfigCtrBusDinamico.vb" />
     <Compile Include="Sistema\clSisEstado.vb" />
     <Compile Include="Sistema\clSisModulo.vb" />

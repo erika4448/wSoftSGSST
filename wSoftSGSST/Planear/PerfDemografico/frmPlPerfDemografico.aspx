@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Maestras/mstSGSST.Master" CodeBehind="frmPlPerfDemografico.aspx.vb" Inherits="wSoftSGSST.frmPlPerfDemografico" %>
 
 <%@ Register Src="../Ctr/ctrInfoEmpleado.ascx" TagName="ctrInfoEmpleado" TagPrefix="uc1" %>
-<%@ Register src="../../Ctr/ctrDinaConsObj.ascx" tagname="ctrDinaConsObj" tagprefix="uc2" %>
+<%@ Register Src="../../Ctr/ctrDinaConsObj.ascx" TagName="ctrDinaConsObj" TagPrefix="uc2" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -12,14 +12,22 @@
     <%--JAVASCRIPT LIBRERIA DE MENSAJES--%>
     <script type="text/javascript" src="../../js/alertify.js"></script>
     <script type="text/javascript" src="../../js/jquery-1.8.3.min.js"></script>
-      
-      <%--MENU--%>
-    <script type="text/javascript"  src="../../js/jquery-3.0.0.min.js"></script>
-    <link href="../../css/Menu/bootstrap-treeview.css" rel="stylesheet"/>
-    <script type="text/javascript"  src="../../js/Menu/bootstrap-treeview.js"></script>
+
+    <%--MENU--%>
+    <script type="text/javascript" src="../../js/jquery-3.0.0.min.js"></script>
+    <link href="../../css/Menu/bootstrap-treeview.css" rel="stylesheet" />
+    <script type="text/javascript" src="../../js/Menu/bootstrap-treeview.js"></script>
 
     <asp:UpdatePanel ID="upnlPerfDemografico" runat="server" UpdateMode="Conditional">
         <ContentTemplate>
+            <table width="100%">
+                <tr>
+                    <td align="left">
+                        <asp:Label ID="lblPathPagina" runat="server" Text="Planear / Perfil Demográfico" CssClass="pathMenu"></asp:Label>
+                    </td>
+                </tr>
+            </table>
+            <br />
             <table align="center" width="100%">
                 <tr>
                     <td align="center">
@@ -28,6 +36,7 @@
                 </tr>
                 <tr>
                     <td align="right">
+                        <asp:Button ID="btnNuevaConsulta" runat="server" CausesValidation="False" Text="Nueva Consulta" />
                         <asp:ImageButton ID="ibtnNuevoEmpleado" runat="server" CausesValidation="false" ImageUrl="~/Images/Botones/ibtnNuevoEmpleado.png" />
                     </td>
                 </tr>
@@ -55,4 +64,5 @@
             </table>
         </ContentTemplate>
     </asp:UpdatePanel>
+    <br />
 </asp:Content>

@@ -16,6 +16,13 @@
     <%--JAVASCRIPT LIBRERIA DE MENSAJES--%>
     <script type="text/javascript" src="js/alertify.js"></script>
     <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/WaterMark.min.js"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            $("[id*=txtUsuario], [id*=txtPswd]").WaterMark();
+        });
+    </script>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -46,8 +53,7 @@
                                                                     <asp:Image ID="imUsuario" runat="server" ImageUrl="~/Images/Login/imUsuarioIngreso.png" />
                                                                 </td>
                                                                 <td align="left">
-                                                                    <asp:TextBox ID="txtUsuario" runat="server" Width="190px"></asp:TextBox>
-                                                                    <ajaxToolkit:TextBoxWatermarkExtender ID="txtUsuario_TextBoxWatermarkExtender" runat="server" BehaviorID="txtUsuario_TextBoxWatermarkExtender" TargetControlID="txtUsuario" WatermarkText="Usuario" />
+                                                                    <asp:TextBox ID="txtUsuario" runat="server" Width="190px" ToolTip="Usuario"></asp:TextBox>
                                                                 </td>
                                                             </tr>
                                                         </table>
@@ -56,15 +62,14 @@
                                             </tr>
                                             <tr>
                                                 <td align="left">
-                                                    <asp:Panel ID="pnlTxtPwd" runat="server"  CssClass="pnlContentInfo">
+                                                    <asp:Panel ID="pnlTxtPwd" runat="server" CssClass="pnlContentInfo">
                                                         <table>
                                                             <tr>
                                                                 <td align="left">
                                                                     <asp:Image ID="imPwd" runat="server" ImageUrl="~/Images/Login/imPswdIngreso.png" />
                                                                 </td>
                                                                 <td align="left">
-                                                                    <asp:TextBox ID="txtPswd" runat="server" TextMode="SingleLine"  Width="190px"></asp:TextBox>
-                                                                    <ajaxToolkit:TextBoxWatermarkExtender ID="txtPswd_TextBoxWatermarkExtender" runat="server" BehaviorID="txtPswd_TextBoxWatermarkExtender" TargetControlID="txtPswd"  WatermarkText="Contraseña" />
+                                                                    <asp:TextBox ID="txtPswd" runat="server" TextMode="Password" Width="190px" ToolTip="Contraseña"></asp:TextBox>
                                                                 </td>
                                                             </tr>
                                                         </table>
@@ -72,13 +77,11 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td align="left">
-                                                    &nbsp;
+                                                <td align="left">&nbsp;
                                                 </td>
                                             </tr>
-                                              <tr>
-                                                <td align="left">
-                                                    &nbsp;
+                                            <tr>
+                                                <td align="left">&nbsp;
                                                 </td>
                                             </tr>
                                             <tr>
@@ -98,7 +101,7 @@
         <div style="position: fixed; bottom: 0px; width: 100%; z-index: -1;">
             <div id="LoginFooter">
                 <div align="center">
-                    <table align="center" cellpadding="0" cellspacing="0" style="vertical-align: central; padding-top:15px;">
+                    <table align="center" cellpadding="0" cellspacing="0" style="vertical-align: central; padding-top: 15px;">
                         <tr>
                             <td align="center">Software Desarrollado por:
                             </td>

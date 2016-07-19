@@ -14,20 +14,56 @@ Option Explicit On
 Partial Public Class frmPrincMenuPrincipal
     
     '''<summary>
-    '''btnProfesiograma control.
+    '''imLogo control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents btnProfesiograma As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents imLogo As Global.System.Web.UI.WebControls.Image
     
     '''<summary>
-    '''btnPerfilDemografico control.
+    '''lblPorcAvance control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents btnPerfilDemografico As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents lblPorcAvance As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
+    '''Image1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Image1 As Global.System.Web.UI.WebControls.Image
+    
+    '''<summary>
+    '''Image2 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Image2 As Global.System.Web.UI.WebControls.Image
+    
+    '''<summary>
+    '''Image3 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Image3 As Global.System.Web.UI.WebControls.Image
+    
+    '''<summary>
+    '''Image4 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Image4 As Global.System.Web.UI.WebControls.Image
 End Class

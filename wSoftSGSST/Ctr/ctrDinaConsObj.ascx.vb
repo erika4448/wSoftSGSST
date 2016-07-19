@@ -13,6 +13,7 @@
     'PROPIEDAD PARA INICIALIZAR EL CONTROL
     WriteOnly Property pBoolIniCtr As Boolean
         Set(value As Boolean)
+            Me.LimpiarCtr()
             Me.pVisualizacionXAccion = EnmAccion.Inicio
         End Set
     End Property
