@@ -170,9 +170,10 @@
     <Content Include="js\Menu\bootstrap-treeview.js" />
     <Content Include="js\Menu\bootstrap.js" />
     <Content Include="login.aspx" />
+    <Content Include="Planear\Ctr\AutoCompleteBusActividad.asmx" />
     <Content Include="Planear\Ctr\AutoCompleteBusCargo.asmx" />
     <Content Include="Planear\Ctr\AutoCompleteBusEmpleado.asmx" />
-    <Content Include="Planear\Ctr\ctrActividadesYRiesgos.ascx" />
+    <Content Include="Planear\Ctr\ctrActividadesYPeligros.ascx" />
     <Content Include="Planear\Ctr\ctrCargosEmpleado.ascx" />
     <Content Include="Planear\Ctr\ctrInfoEmpleado.ascx" />
     <Content Include="Planear\Ctr\ctrLugar.ascx" />
@@ -269,6 +270,10 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Planear\Ctr\AutoCompleteBusActividad.asmx.vb">
+      <DependentUpon>AutoCompleteBusActividad.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Planear\Ctr\AutoCompleteBusCargo.asmx.vb">
       <DependentUpon>AutoCompleteBusCargo.asmx</DependentUpon>
       <SubType>Component</SubType>
@@ -277,11 +282,11 @@
       <DependentUpon>AutoCompleteBusEmpleado.asmx</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Planear\Ctr\ctrActividadesYRiesgos.ascx.designer.vb">
-      <DependentUpon>ctrActividadesYRiesgos.ascx</DependentUpon>
+    <Compile Include="Planear\Ctr\ctrActividadesYPeligros.ascx.designer.vb">
+      <DependentUpon>ctrActividadesYPeligros.ascx</DependentUpon>
     </Compile>
-    <Compile Include="Planear\Ctr\ctrActividadesYRiesgos.ascx.vb">
-      <DependentUpon>ctrActividadesYRiesgos.ascx</DependentUpon>
+    <Compile Include="Planear\Ctr\ctrActividadesYPeligros.ascx.vb">
+      <DependentUpon>ctrActividadesYPeligros.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Planear\Ctr\ctrCargosEmpleado.ascx.designer.vb">

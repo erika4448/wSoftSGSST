@@ -19,6 +19,24 @@ Namespace SGSST
         Public sgcaAudIdUsuEmp As Integer
         Public sgcaIdEstado As Sistema.clSisEstado.EnmEstado
 #End Region
+        'FUNCION PARA CARGAR VARIABLES DE CARGO CON LECTOR
+        Public Sub CargarLector(ByVal drLector As IDataReader)
+            sgcaIdCargo = IIf(IsDBNull(drLector("sgcaIdCargo")), 0, drLector("sgcaIdCargo"))
+            sgcaIdEmpresa = IIf(IsDBNull(drLector("sgcaIdEmpresa")), 0, drLector("sgcaIdEmpresa"))
+            sgcaNombre = IIf(IsDBNull(drLector("sgcaNombre")), "", drLector("sgcaNombre"))
+            sgcaCodigo = IIf(IsDBNull(drLector("sgcaCodigo")), "", drLector("sgcaCodigo"))
+            sgcaObjetivos = IIf(IsDBNull(drLector("sgcaObjetivos")), "", drLector("sgcaObjetivos"))
+            sgcaActividadesCargo = IIf(IsDBNull(drLector("sgcaActividadesCargo")), "", drLector("sgcaActividadesCargo"))
+            sgcaIdEducacion = IIf(IsDBNull(drLector("sgcaIdEducacion")), 0, drLector("sgcaIdEducacion"))
+            sgcaIdProfesion = IIf(IsDBNull(drLector("sgcaIdProfesion")), 0, drLector("sgcaIdProfesion"))
+            sgcaExperiencia = IIf(IsDBNull(drLector("sgcaExperiencia")), "", drLector("sgcaExperiencia"))
+            sgcaAnosExperiencia = IIf(IsDBNull(drLector("sgcaAnosExperiencia")), 0, drLector("sgcaAnosExperiencia"))
+            sgcaHabilidades = IIf(IsDBNull(drLector("sgcaHabilidades")), "", drLector("sgcaHabilidades"))
+            sgcaAQuienRepotaIdCargo = IIf(IsDBNull(drLector("sgcaAQuienRepotaIdCargo")), 0, drLector("sgcaAQuienRepotaIdCargo"))
+            sgcaIdArea = IIf(IsDBNull(drLector("sgcaIdArea")), 0, drLector("sgcaIdArea"))
+            sgcaAudIdUsuEmp = IIf(IsDBNull(drLector("sgcaAudIdUsuEmp")), 0, drLector("sgcaAudIdUsuEmp"))
+            sgcaIdEstado = IIf(IsDBNull(drLector("sgcaIdEstado")), 0, drLector("sgcaIdEstado"))
+        End Sub
         'FUNCION PARA CARGAR INFORMACION DE CARGOS POR ESTADO
         Public Function GetTblInfoCargoXIdEst(ByVal parIdEmpresa As Integer, ByVal parIdEstado As Integer) As Data.DataTable
             Dim dbCommand As DbCommand = db.GetStoredProcCommand("spSgsstGetTblInfoCargoXIdEst")
@@ -75,8 +93,21 @@ Namespace SGSST
             Else
                 db.ExecuteNonQuery(dbCommand, parObjTrans)
             End If
-            db.GetParameterValue(dbCommand, "parIdCargo")
+            sgcaIdCargo = db.GetParameterValue(dbCommand, "parIdCargo")
 
+        End Sub
+        'FUNCION PARA CARGAR INFORMACION DE CARGO X CODIGO CARGO
+        Public Sub CargarInfoCargoXStrCodCargo(ByVal parIdCargo As Integer, ByVal parStrCodigoCargo As String, ByVal parIdEstado As Integer)
+            Dim dbCommand As DbCommand = db.GetStoredProcCommand("spSgsstCargarInfoCargoXStrCodCargo")
+            db.AddInParameter(dbCommand, "parIdCargo", DbType.Int32, parIdCargo)
+            db.AddInParameter(dbCommand, "parCodigoCargo", DbType.Int32, parStrCodigoCargo)
+            db.AddInParameter(dbCommand, "parIdEstado", DbType.Int32, parIdEstado)
+
+            Using drLector As IDataReader = db.ExecuteReader(dbCommand)
+                While drLector.Read
+                    Me.CargarLector(drLector)
+                End While
+            End Using
         End Sub
     End Class
 End Namespace

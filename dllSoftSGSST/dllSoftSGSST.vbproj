@@ -102,9 +102,11 @@
     </Compile>
     <Compile Include="Seguridad\clObjLoginSesion.vb" />
     <Compile Include="Seguridad\clUsuario.vb" />
+    <Compile Include="SGSST\clSgsstActividad.vb" />
     <Compile Include="SGSST\clSgsstArea.vb" />
     <Compile Include="SGSST\clSgsstCargo.vb" />
     <Compile Include="SGSST\clSgsstCiudad.vb" />
+    <Compile Include="SGSST\clSgsstClasificacionPeligro.vb" />
     <Compile Include="SGSST\clSgsstEducacion.vb" />
     <Compile Include="SGSST\clSgsstEmpleado.vb" />
     <Compile Include="SGSST\clSgsstEstadoCivil.vb" />
@@ -112,10 +114,13 @@
     <Compile Include="SGSST\clSgsstHistCargosEmp.vb" />
     <Compile Include="SGSST\clSgsstLugar.vb" />
     <Compile Include="SGSST\clSgsstPais.vb" />
+    <Compile Include="SGSST\clSgsstPeligro.vb" />
     <Compile Include="SGSST\clSgsstProceso.vb" />
     <Compile Include="SGSST\clSgsstProfesion.vb" />
     <Compile Include="SGSST\clSgsstRelCargoXQuienRepIdCargo.vb" />
+    <Compile Include="SGSST\clSgsstRelPeligroXCargo.vb" />
     <Compile Include="SGSST\clSgsstRelProcesoXPeligro.vb" />
+    <Compile Include="SGSST\clSgsstRiesgo.vb" />
     <Compile Include="SGSST\clSgsstTipoContrato.vb" />
     <Compile Include="SGSST\clSgsstTipoDocumento.vb" />
     <Compile Include="SGSST\clSgsstRelLugarXPeligro.vb" />
@@ -123,6 +128,14 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>dtsLugar.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SGSST\dtsPeligro.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dtsPeligro.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SGSST\dtsPeligro.vb">
+      <DependentUpon>dtsPeligro.xsd</DependentUpon>
     </Compile>
     <Compile Include="SGSST\dtsProceso.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -171,6 +184,18 @@
     </None>
     <None Include="SGSST\dtsLugar.xss">
       <DependentUpon>dtsLugar.xsd</DependentUpon>
+    </None>
+    <None Include="SGSST\dtsPeligro.xsc">
+      <DependentUpon>dtsPeligro.xsd</DependentUpon>
+    </None>
+    <None Include="SGSST\dtsPeligro.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dtsPeligro.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>SGSST</CustomToolNamespace>
+    </None>
+    <None Include="SGSST\dtsPeligro.xss">
+      <DependentUpon>dtsPeligro.xsd</DependentUpon>
     </None>
     <None Include="SGSST\dtsProceso.xsc">
       <DependentUpon>dtsProceso.xsd</DependentUpon>

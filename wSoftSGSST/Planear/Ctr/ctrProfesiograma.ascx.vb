@@ -9,6 +9,7 @@
     Public Enum EnmAccion
         Inicio = 1
         Cargar = 2
+        ActividadesPeligros = 3
     End Enum
     'PROPIEDAD PARA INICIALIZAR EL CONTROL
     Public WriteOnly Property pBoolIniCtr As Boolean
@@ -22,8 +23,10 @@
             Select Case value
                 Case EnmAccion.Inicio
                     'MOSTRAR PANELES
+                    Me.pnlProfesiograma.Visible = True
                     Me.pnlBuscarCargo.Visible = True
                     Me.pnlFormularioCargo.Visible = False
+                    Me.pnlActividadesPeligros.Visible = False
 
                     'INICIALIZAR EL CONTROL DE BUSQUEDA DINAMICO
                     Me.ctrDinaConsObjCargo.pIdConfigCtrBusDina = 1
@@ -65,14 +68,16 @@
 
                 Case EnmAccion.Cargar
                     'MOSTRAR PANELES
+                    Me.pnlProfesiograma.Visible = True
                     Me.pnlBuscarCargo.Visible = False
                     Me.pnlFormularioCargo.Visible = True
+                    Me.pnlActividadesPeligros.Visible = False
 
                     'OCULTAR BOTON DE VER DETALLES
                     Me.ibntVerDetalle.Visible = False
 
                     'INABILITAR LOS BOTONES COMPLEMENTARIOS
-                    Me.pnlRiesgos.Enabled = False
+                    Me.pnlRiesgos.Enabled = True
                     Me.pnlRqFisicos.Enabled = False
                     Me.pnlCondicSalud.Enabled = False
                     Me.pnlEpp.Enabled = False
@@ -81,6 +86,13 @@
                     'CAMBIAR LA IMAGEN DE LOS BOTONES
                     Me.ibtnRiesgos.ImageUrl = "~/Images/OpcPagina/ibtnRiesgosCargoAzul.png"
                     Me.itbnRqFisicos.ImageUrl = "~/Images/OpcPagina/ibtnReqFisiciosAzul.png"
+
+                Case EnmAccion.ActividadesPeligros
+                    'MOSTRAR PANELES
+                    Me.pnlProfesiograma.Visible = False
+                    Me.pnlBuscarCargo.Visible = False
+                    Me.pnlFormularioCargo.Visible = False
+                    Me.pnlActividadesPeligros.Visible = True
             End Select
         End Set
     End Property
@@ -91,6 +103,15 @@
         End Get
         Set(value As Integer)
             ViewState("pIdCargo") = value
+        End Set
+    End Property
+    'PROPIEDAD PARA ALMACENAR EL NOMBRE DEL CARGO
+    Public Property pStrNomCargo As String
+        Get
+            Return ViewState("pStrNomCargo")
+        End Get
+        Set(value As String)
+            ViewState("pStrNomCargo") = value
         End Set
     End Property
     'PROPIEDAD PARA EL ALMACENAMIENTO DE LOS CARGOS QUIEN LE REPORTA
@@ -127,6 +148,14 @@
     End Sub
     'EVENTO DEL BOTON RIESGOS
     Protected Sub ibtnRiesgos_Click(sender As Object, e As ImageClickEventArgs) Handles ibtnRiesgos.Click
+        'CAMBIAR VISUALIZACION
+        Me.pVisualizacionXAccion = EnmAccion.ActividadesPeligros
+
+        'INICIALIZAR Y MOSTRAR CONTROL DE ACTIVIDADES Y PELIGROS
+        Me.ctrActividadesYPeligros.pIdCargo = Me.pIdCargo
+        Me.ctrActividadesYPeligros.pStrNomCargo = Me.pStrNomCargo
+        Me.ctrActividadesYPeligros.pBoolIniCtr = True
+
 
     End Sub
     'EVENTO DEL BOTON VER DETALLE
@@ -186,6 +215,10 @@
 
         Me.CargarGvQuienLeReporta()
     End Sub
+    'EVENTO DEL TXT CODIGO CARGO PARA VALIDAR SI YA EXISTE UN CARGO CON ESE CODIGO
+    Protected Sub txtCodCargo_TextChanged(sender As Object, e As EventArgs) Handles txtCodCargo.TextChanged
+        Me.ValidarExisteCodigoCargo
+    End Sub
 #End Region
 #Region "PRIVADO"
     'FUNCION PARA CAGAR EL DD EDUCACION
@@ -238,6 +271,15 @@
 
         Else
             Me.lblCodCargoObliga.Visible = False
+        End If
+
+        'VALIDAR EXISTENCIA DEL CODIGO
+        Dim objCargo As New dllSoftSGSST.SGSST.clSgsstCargo
+        objCargo.CargarInfoCargoXStrCodCargo(Me.pIdCargo, Trim(Me.txtCodCargo.Text), dllSoftSGSST.Sistema.clSisEstado.EnmEstado.Activo)
+
+        If (objCargo.sgcaIdCargo <> 0) Then
+            objMsj.AgregarMensaje("Código ya creado y perteneciente al cargo " & objCargo.sgcaNombre)
+            objMsj._varBoolRtn = False
         End If
 
         'VALIDAR TXT ACTIVIDADES DEL CARGO
@@ -293,6 +335,7 @@
             objCargo.GuardarInfoCargo(objTrans.trTransaccion)
 
             Me.pIdCargo = objCargo.sgcaIdCargo
+            Me.pStrNomCargo = Me.txtNomCargo.Text
 
             'GUARDAR INFORMACION DE QUIEN LE REPOTA
             For Each row As DataRow In Me.pTblQuienReportaCargo.Rows
@@ -326,6 +369,15 @@
             Me.pnlGvQuienLeReporta.Visible = False
         End If
     End Sub
+    'FUNCION PARA VALIDAR SI YA EXISTE UN CARGO CON ESE CODIGO
+    Private Sub ValidarExisteCodigoCargo()
+        Dim objCargo As New dllSoftSGSST.SGSST.clSgsstCargo
+        objCargo.CargarInfoCargoXStrCodCargo(Me.pIdCargo, Trim(Me.txtCodCargo.Text), dllSoftSGSST.Sistema.clSisEstado.EnmEstado.Activo)
+
+        If (objCargo.sgcaIdCargo <> 0) Then
+            Me.AlertDialog("Código ya creado y perteneciente al cargo " & objCargo.sgcaNombre)
+        End If
+    End Sub
 #End Region
 #Region "PUBLICO"
     'FUNCION PARA CARGAR LA INFORMACION DE UN CARGO X ID CARGO
@@ -338,6 +390,7 @@
         dtDatos = objCargo.CargarInfoCargoXIdCargo(Me.pIdCargo)
 
         If (dtDatos.Rows.Count <> 0) Then
+            Me.pStrNomCargo = dtDatos.Rows(0)("sgcaNombre")
             Me.txtNomCargo.Text = dtDatos.Rows(0)("sgcaNombre")
             Me.txtCodCargo.Text = dtDatos.Rows(0)("sgcaCodigo")
             Me.txtObjCargo.Text = dtDatos.Rows(0)("sgcaObjetivos")
@@ -372,9 +425,6 @@
     Public Sub LimpiarBuscador()
         'LIMPIAR CONTROL DE CARGOS
         Me.ctrDinaConsObjCargo.LimpiarCtr()
-
-
-
     End Sub
     'FUNCION PARA LIMPIAR EL FORMULARIO DEL CONTROL
     Public Sub LimpiarForm()
@@ -397,5 +447,11 @@
 
         Me.ddlAreaDelCargo.SelectedValue = 0
     End Sub
+    'MANEJO DEL EVENTO CERRAR CTR DE ACTIVIDADES Y PELIGROS
+    Public Sub evtCerrarCtrActividades() Handles ctrActividadesYPeligros.evtCerrarCtr
+        Me.pVisualizacionXAccion = EnmAccion.Cargar
+    End Sub
+
+
 #End Region
 End Class

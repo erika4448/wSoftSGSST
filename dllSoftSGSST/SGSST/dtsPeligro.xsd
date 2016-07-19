@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dtsPeligro" targetNamespace="http://tempuri.org/dtsPeligro.xsd" xmlns:mstns="http://tempuri.org/dtsPeligro.xsd" xmlns="http://tempuri.org/dtsPeligro.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dtsPeligro" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dtsPeligro" msprop:Generator_UserDSName="dtsPeligro">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtPeligro" msprop:Generator_TableClassName="dtPeligroDataTable" msprop:Generator_TableVarName="tabledtPeligro" msprop:Generator_RowChangedName="dtPeligroRowChanged" msprop:Generator_TablePropName="dtPeligro" msprop:Generator_RowDeletingName="dtPeligroRowDeleting" msprop:Generator_RowChangingName="dtPeligroRowChanging" msprop:Generator_RowEvHandlerName="dtPeligroRowChangeEventHandler" msprop:Generator_RowDeletedName="dtPeligroRowDeleted" msprop:Generator_RowClassName="dtPeligroRow" msprop:Generator_UserTableName="dtPeligro" msprop:Generator_RowEvArgName="dtPeligroRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="idCabPeligro" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="1" msprop:Generator_ColumnVarNameInTable="columnidCabPeligro" msprop:Generator_ColumnPropNameInRow="idCabPeligro" msprop:Generator_ColumnPropNameInTable="idCabPeligroColumn" msprop:Generator_UserColumnName="idCabPeligro" type="xs:int" />
+              <xs:element name="EstIncluir" msprop:Generator_ColumnVarNameInTable="columnEstIncluir" msprop:Generator_ColumnPropNameInRow="EstIncluir" msprop:Generator_ColumnPropNameInTable="EstIncluirColumn" msprop:Generator_UserColumnName="EstIncluir" type="xs:int" minOccurs="0" />
+              <xs:element name="idPeligro" msprop:Generator_ColumnVarNameInTable="columnidPeligro" msprop:Generator_ColumnPropNameInRow="idPeligro" msprop:Generator_ColumnPropNameInTable="idPeligroColumn" msprop:Generator_UserColumnName="idPeligro" type="xs:int" minOccurs="0" />
+              <xs:element name="idActividad" msprop:Generator_ColumnVarNameInTable="columnidActividad" msprop:Generator_ColumnPropNameInRow="idActividad" msprop:Generator_ColumnPropNameInTable="idActividadColumn" msprop:Generator_UserColumnName="idActividad" type="xs:int" />
+              <xs:element name="NomActividad" msprop:Generator_ColumnVarNameInTable="columnNomActividad" msprop:Generator_ColumnPropNameInRow="NomActividad" msprop:Generator_ColumnPropNameInTable="NomActividadColumn" msprop:Generator_UserColumnName="NomActividad" type="xs:string" minOccurs="0" />
+              <xs:element name="NomDescripcionPeligro" msprop:Generator_ColumnVarNameInTable="columnNomDescripcionPeligro" msprop:Generator_ColumnPropNameInRow="NomDescripcionPeligro" msprop:Generator_ColumnPropNameInTable="NomDescripcionPeligroColumn" msprop:Generator_UserColumnName="NomDescripcionPeligro" type="xs:string" minOccurs="0" />
+              <xs:element name="idClasificacionPeligro" msprop:Generator_ColumnVarNameInTable="columnidClasificacionPeligro" msprop:Generator_ColumnPropNameInRow="idClasificacionPeligro" msprop:Generator_ColumnPropNameInTable="idClasificacionPeligroColumn" msprop:Generator_UserColumnName="idClasificacionPeligro" type="xs:string" minOccurs="0" />
+              <xs:element name="NomClasificacionPeligro" msprop:Generator_ColumnVarNameInTable="columnNomClasificacionPeligro" msprop:Generator_ColumnPropNameInRow="NomClasificacionPeligro" msprop:Generator_ColumnPropNameInTable="NomClasificacionPeligroColumn" msprop:Generator_UserColumnName="NomClasificacionPeligro" type="xs:string" minOccurs="0" />
+              <xs:element name="idRiesgo" msprop:Generator_ColumnVarNameInTable="columnidRiesgo" msprop:Generator_ColumnPropNameInRow="idRiesgo" msprop:Generator_ColumnPropNameInTable="idRiesgoColumn" msprop:Generator_UserColumnName="idRiesgo" type="xs:int" minOccurs="0" />
+              <xs:element name="NomRiesgo" msprop:Generator_ColumnVarNameInTable="columnNomRiesgo" msprop:Generator_ColumnPropNameInRow="NomRiesgo" msprop:Generator_ColumnPropNameInTable="NomRiesgoColumn" msprop:Generator_UserColumnName="NomRiesgo" type="xs:string" minOccurs="0" />
+              <xs:element name="idEstado" msprop:Generator_ColumnVarNameInTable="columnidEstado" msprop:Generator_ColumnPropNameInRow="idEstado" msprop:Generator_ColumnPropNameInTable="idEstadoColumn" msprop:Generator_UserColumnName="idEstado" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:dtPeligro" />
+      <xs:field xpath="mstns:idCabPeligro" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

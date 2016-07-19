@@ -14,6 +14,15 @@ Option Explicit On
 Partial Public Class ctrProfesiograma
     
     '''<summary>
+    '''pnlProfesiograma control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents pnlProfesiograma As Global.System.Web.UI.WebControls.Panel
+    
+    '''<summary>
     '''lblProfesiograma control.
     '''</summary>
     '''<remarks>
@@ -48,6 +57,15 @@ Partial Public Class ctrProfesiograma
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents pnlBuscarCargo As Global.System.Web.UI.WebControls.Panel
+    
+    '''<summary>
+    '''lblNomCargoBus control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblNomCargoBus As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
     '''ctrDinaConsObjCargo control.
@@ -248,6 +266,15 @@ Partial Public Class ctrProfesiograma
     Protected WithEvents txtExperienciaAnos As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
+    '''txtExperienciaAnos_FilteredTextBoxExtender control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtExperienciaAnos_FilteredTextBoxExtender As Global.AjaxControlToolkit.FilteredTextBoxExtender
+    
+    '''<summary>
     '''lblHabilidades control.
     '''</summary>
     '''<remarks>
@@ -302,6 +329,15 @@ Partial Public Class ctrProfesiograma
     Protected WithEvents ctrDinaConsObjQuienLeRep As Global.wSoftSGSST.ctrDinaConsObj
     
     '''<summary>
+    '''ibtnAgregarQuienLeReporta control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ibtnAgregarQuienLeReporta As Global.System.Web.UI.WebControls.ImageButton
+    
+    '''<summary>
     '''pnlGvQuienLeReporta control.
     '''</summary>
     '''<remarks>
@@ -318,15 +354,6 @@ Partial Public Class ctrProfesiograma
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents gvQuienLeReporta As Global.System.Web.UI.WebControls.GridView
-    
-    '''<summary>
-    '''ibtnAgregarQuienLeReporta control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents ibtnAgregarQuienLeReporta As Global.System.Web.UI.WebControls.ImageButton
     
     '''<summary>
     '''lblAreaDelCargo control.
@@ -444,4 +471,22 @@ Partial Public Class ctrProfesiograma
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ibtnGuardar As Global.System.Web.UI.WebControls.ImageButton
+    
+    '''<summary>
+    '''pnlActividadesPeligros control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents pnlActividadesPeligros As Global.System.Web.UI.WebControls.Panel
+    
+    '''<summary>
+    '''ctrActividadesYPeligros control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ctrActividadesYPeligros As Global.wSoftSGSST.ctrActividadesYPeligros
 End Class

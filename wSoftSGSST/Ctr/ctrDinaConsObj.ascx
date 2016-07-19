@@ -7,9 +7,6 @@
 <table>
     <tr>
         <td>
-            <asp:Label ID="lblNomObj" runat="server" Text=""></asp:Label>
-        </td>
-        <td>
             <asp:TextBox ID="txtObj" runat="server" AutoPostBack="True"></asp:TextBox>
         </td>
         <td>

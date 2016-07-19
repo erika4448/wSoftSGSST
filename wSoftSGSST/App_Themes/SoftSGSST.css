@@ -118,9 +118,7 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
     border: 1px solid #DDDDDD;
     background-color: #DDDDDD;
     text-decoration: none;
-    height: 20px !important;
-    width: 300px;
-}
+    }
 
 /*ESTILO LISTAS DESPLGABLES*/
 select {

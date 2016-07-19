@@ -120,7 +120,7 @@
     End Sub
     Protected Sub ddlObj_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddlObj.SelectedIndexChanged
         If (Trim(Me.txtObj.Text).Length >= Me.AutoCompleteExtender.MinimumPrefixLength) Then
-            Me.BuscarXId()
+            Me.BuscarXId(Me.ddlObj.SelectedValue)
         End If
     End Sub
 #End Region
@@ -133,7 +133,7 @@
         objConfigCtrDina.CargarInfoCtrBusDinamicoXId(Me.pIdConfigCtrBusDina)
 
         'DEFINIR EL NOMBRE DEL CTR
-        Me.lblNomObj.Text = objConfigCtrDina.scbdNombre
+        'Me.lblNomObj.Text = objConfigCtrDina.scbdNombre
 
         'DEFINIR CONFIGURACION DEL AUTOCOMPLETE
         Me.AutoCompleteExtender.ServicePath = objConfigCtrDina.scbdUrlServicio
@@ -188,11 +188,11 @@
 
     End Sub
     'FUNCION PARA BUSCAR EL OBJETO X ID
-    Private Sub BuscarXId()
+    Public Sub BuscarXId(ByVal parId As Integer)
         'INSTANCIA DE LA CLASE DEL CONTROL DE CONFIGURACION DINAMICO
         Dim objConfigCtrDina As New dllSoftSGSST.Sistema.clSisConfigCtrBusDinamico
         Dim dtDatos As New DataTable
-        dtDatos = objConfigCtrDina.BusXId(Me.pStrSpBusXId, Me.ddlObj.SelectedValue)
+        dtDatos = objConfigCtrDina.BusXId(Me.pStrSpBusXId, parId)
 
         If (dtDatos.Rows.Count <> 0) Then
             'DEFINIR EL OBJETO ENCONTRADO

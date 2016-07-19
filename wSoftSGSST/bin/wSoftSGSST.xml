@@ -6,15 +6,6 @@ wSoftSGSST
 </name>
 </assembly>
 <members>
-<member name="F:wSoftSGSST.ctrDinaConsObj._lblNomObj">
-<summary>
-lblNomObj control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
 <member name="F:wSoftSGSST.ctrDinaConsObj._txtObj">
 <summary>
 txtObj control.
@@ -431,7 +422,7 @@ To modify move field declaration from designer file to code-behind file.
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
-<member name="F:wSoftSGSST.ctrActividadesYRiesgos._pnlGvActRiesgos">
+<member name="F:wSoftSGSST.ctrActividadesYPeligros._pnlGvActRiesgos">
 <summary>
 pnlGvActRiesgos control.
 </summary>
@@ -440,7 +431,7 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:wSoftSGSST.ctrActividadesYRiesgos._ibtCerrar">
+<member name="F:wSoftSGSST.ctrActividadesYPeligros._ibtCerrar">
 <summary>
 ibtCerrar control.
 </summary>
@@ -449,7 +440,7 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:wSoftSGSST.ctrActividadesYRiesgos._lblRiesgos">
+<member name="F:wSoftSGSST.ctrActividadesYPeligros._lblRiesgos">
 <summary>
 lblRiesgos control.
 </summary>
@@ -458,7 +449,7 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:wSoftSGSST.ctrActividadesYRiesgos._lblNomNomCargo">
+<member name="F:wSoftSGSST.ctrActividadesYPeligros._lblNomNomCargo">
 <summary>
 lblNomNomCargo control.
 </summary>
@@ -467,7 +458,7 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:wSoftSGSST.ctrActividadesYRiesgos._lblNomCargo">
+<member name="F:wSoftSGSST.ctrActividadesYPeligros._lblNomCargo">
 <summary>
 lblNomCargo control.
 </summary>
@@ -476,7 +467,7 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:wSoftSGSST.ctrActividadesYRiesgos._ibtnAgregarActividad">
+<member name="F:wSoftSGSST.ctrActividadesYPeligros._ibtnAgregarActividad">
 <summary>
 ibtnAgregarActividad control.
 </summary>
@@ -485,25 +476,34 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:wSoftSGSST.ctrActividadesYRiesgos._pnlGvActividad">
+<member name="F:wSoftSGSST.ctrActividadesYPeligros._pnlPeligrosXCargo">
 <summary>
-pnlGvActividad control.
+pnlPeligrosXCargo control.
 </summary>
 <remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:wSoftSGSST.ctrActividadesYRiesgos._gvActividades">
+<member name="F:wSoftSGSST.ctrActividadesYPeligros._gvPeligrosXCargo">
 <summary>
-gvActividades control.
+gvPeligrosXCargo control.
 </summary>
 <remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:wSoftSGSST.ctrActividadesYRiesgos._pnlActividad">
+<member name="F:wSoftSGSST.ctrActividadesYPeligros._lblNoHayActividades">
+<summary>
+lblNoHayActividades control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrActividadesYPeligros._pnlActividad">
 <summary>
 pnlActividad control.
 </summary>
@@ -512,7 +512,7 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:wSoftSGSST.ctrActividadesYRiesgos._ibtnCerrarActividad">
+<member name="F:wSoftSGSST.ctrActividadesYPeligros._ibtnCerrarActividad">
 <summary>
 ibtnCerrarActividad control.
 </summary>
@@ -521,7 +521,7 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:wSoftSGSST.ctrActividadesYRiesgos._lblRegNuevaAct">
+<member name="F:wSoftSGSST.ctrActividadesYPeligros._lblRegNuevaAct">
 <summary>
 lblRegNuevaAct control.
 </summary>
@@ -530,16 +530,25 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:wSoftSGSST.ctrActividadesYRiesgos._ctrDinaConsObj">
+<member name="F:wSoftSGSST.ctrActividadesYPeligros._ctrDinaConsObjActividad">
 <summary>
-ctrDinaConsObj control.
+ctrDinaConsObjActividad control.
 </summary>
 <remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:wSoftSGSST.ctrActividadesYRiesgos._ibnIncluirActividad">
+<member name="F:wSoftSGSST.ctrActividadesYPeligros._ibtnNuevaActivdad">
+<summary>
+ibtnNuevaActivdad control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrActividadesYPeligros._ibnIncluirActividad">
 <summary>
 ibnIncluirActividad control.
 </summary>
@@ -548,16 +557,52 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:wSoftSGSST.ctrActividadesYRiesgos._ibntNuevaActividad">
+<member name="F:wSoftSGSST.ctrActividadesYPeligros._pnlGvPeligro">
 <summary>
-ibntNuevaActividad control.
+pnlGvPeligro control.
 </summary>
 <remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:wSoftSGSST.ctrActividadesYRiesgos._pnlNuevaActividad">
+<member name="F:wSoftSGSST.ctrActividadesYPeligros._gvPeligro">
+<summary>
+gvPeligro control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrActividadesYPeligros._ibtnDescartar">
+<summary>
+ibtnDescartar control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrActividadesYPeligros._ibtnCargar">
+<summary>
+ibtnCargar control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrActividadesYPeligros._ibntNuevoRiesgo">
+<summary>
+ibntNuevoRiesgo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrActividadesYPeligros._pnlNuevaActividad">
 <summary>
 pnlNuevaActividad control.
 </summary>
@@ -566,7 +611,7 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:wSoftSGSST.ctrActividadesYRiesgos._lblNuevaAct">
+<member name="F:wSoftSGSST.ctrActividadesYPeligros._lblNuevaAct">
 <summary>
 lblNuevaAct control.
 </summary>
@@ -575,7 +620,7 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:wSoftSGSST.ctrActividadesYRiesgos._txtNuevaActividad">
+<member name="F:wSoftSGSST.ctrActividadesYPeligros._txtNuevaActividad">
 <summary>
 txtNuevaActividad control.
 </summary>
@@ -584,7 +629,7 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:wSoftSGSST.ctrActividadesYRiesgos._ibtnGuardarNuevaAct">
+<member name="F:wSoftSGSST.ctrActividadesYPeligros._ibtnGuardarNuevaAct">
 <summary>
 ibtnGuardarNuevaAct control.
 </summary>
@@ -593,9 +638,81 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:wSoftSGSST.ctrActividadesYRiesgos._ibtnCerrarNuevaAct">
+<member name="F:wSoftSGSST.ctrActividadesYPeligros._ibtnCerrarNuevaAct">
 <summary>
 ibtnCerrarNuevaAct control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrActividadesYPeligros._pnlDescClasRies">
+<summary>
+pnlDescClasRies control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrActividadesYPeligros._lblDescripcion">
+<summary>
+lblDescripcion control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrActividadesYPeligros._txtDescripcion">
+<summary>
+txtDescripcion control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrActividadesYPeligros._lblCladificacion">
+<summary>
+lblCladificacion control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrActividadesYPeligros._ddlClasificacion">
+<summary>
+ddlClasificacion control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrActividadesYPeligros._lblRiesgo">
+<summary>
+lblRiesgo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrActividadesYPeligros._ddlRiesgo">
+<summary>
+ddlRiesgo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrActividadesYPeligros._ibtAgregarDescClasRies">
+<summary>
+ibtAgregarDescClasRies control.
 </summary>
 <remarks>
 Auto-generated field.
@@ -1457,6 +1574,15 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
+<member name="F:wSoftSGSST.ctrProfesiograma._pnlProfesiograma">
+<summary>
+pnlProfesiograma control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:wSoftSGSST.ctrProfesiograma._lblProfesiograma">
 <summary>
 lblProfesiograma control.
@@ -1487,6 +1613,15 @@ To modify move field declaration from designer file to code-behind file.
 <member name="F:wSoftSGSST.ctrProfesiograma._pnlBuscarCargo">
 <summary>
 pnlBuscarCargo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrProfesiograma._lblNomCargoBus">
+<summary>
+lblNomCargoBus control.
 </summary>
 <remarks>
 Auto-generated field.
@@ -1691,6 +1826,15 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
+<member name="F:wSoftSGSST.ctrProfesiograma._txtExperienciaAnos_FilteredTextBoxExtender">
+<summary>
+txtExperienciaAnos_FilteredTextBoxExtender control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:wSoftSGSST.ctrProfesiograma._lblHabilidades">
 <summary>
 lblHabilidades control.
@@ -1745,6 +1889,15 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
+<member name="F:wSoftSGSST.ctrProfesiograma._ibtnAgregarQuienLeReporta">
+<summary>
+ibtnAgregarQuienLeReporta control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:wSoftSGSST.ctrProfesiograma._pnlGvQuienLeReporta">
 <summary>
 pnlGvQuienLeReporta control.
@@ -1757,15 +1910,6 @@ To modify move field declaration from designer file to code-behind file.
 <member name="F:wSoftSGSST.ctrProfesiograma._gvQuienLeReporta">
 <summary>
 gvQuienLeReporta control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:wSoftSGSST.ctrProfesiograma._ibtnAgregarQuienLeReporta">
-<summary>
-ibtnAgregarQuienLeReporta control.
 </summary>
 <remarks>
 Auto-generated field.
@@ -1883,6 +2027,24 @@ To modify move field declaration from designer file to code-behind file.
 <member name="F:wSoftSGSST.ctrProfesiograma._ibtnGuardar">
 <summary>
 ibtnGuardar control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrProfesiograma._pnlActividadesPeligros">
+<summary>
+pnlActividadesPeligros control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrProfesiograma._ctrActividadesYPeligros">
+<summary>
+ctrActividadesYPeligros control.
 </summary>
 <remarks>
 Auto-generated field.
