@@ -125,7 +125,6 @@
     <Compile Include="SGSST\clSgsstTipoContrato.vb" />
     <Compile Include="SGSST\clSgsstTipoDocumento.vb" />
     <Compile Include="SGSST\clSgsstRelLugarXPeligro.vb" />
-    <Compile Include="SGSST\clSgsstPeligro.vb" />
     <Compile Include="SGSST\dtsLugar.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
