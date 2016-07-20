@@ -41,6 +41,15 @@ Partial Public Class ctrInfoPeligro
     Protected WithEvents ctrProceso1 As Global.wSoftSGSST.ctrProceso
     
     '''<summary>
+    '''lblCargosRel control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblCargosRel As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
     '''pnlCargos control.
     '''</summary>
     '''<remarks>
@@ -302,6 +311,87 @@ Partial Public Class ctrInfoPeligro
     Protected WithEvents lblClasiPeligro As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
+    '''pnlInfoAdicParamPeligro control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents pnlInfoAdicParamPeligro As Global.System.Web.UI.WebControls.Panel
+    
+    '''<summary>
+    '''lblNomEvalPeligro control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblNomEvalPeligro As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
+    '''lblEvalPeligro control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblEvalPeligro As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
+    '''lblNomNumExpuestos control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblNomNumExpuestos As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
+    '''lblNumExpuestos control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblNumExpuestos As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
+    '''lblNomPeorConsec control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblNomPeorConsec As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
+    '''lblPeorConsec control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblPeorConsec As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
+    '''lblNomReqLegal control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblNomReqLegal As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
+    '''lblReqLegal control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblReqLegal As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
     '''pnlCtrExistentes control.
     '''</summary>
     '''<remarks>
@@ -354,4 +444,13 @@ Partial Public Class ctrInfoPeligro
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ctrMtRsMedIntervencion1 As Global.wSoftSGSST.ctrMtRsMedIntervencion
+    
+    '''<summary>
+    '''pnlEvalPeligro control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents pnlEvalPeligro As Global.System.Web.UI.WebControls.Panel
 End Class

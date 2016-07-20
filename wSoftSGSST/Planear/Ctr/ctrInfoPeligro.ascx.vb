@@ -25,6 +25,7 @@
         SelInfoCtrExistentes = 2
         SelInfoCriteriosCtr = 3
         SelInfoMedIntervencion = 4
+        SelEvalPeligro = 5
     End Enum
     'PROPIEDAD PARA EL MANEJO DE VISUALIZACION DE LA ACCION
     Private WriteOnly Property pVisualizaXAccion As EnmAccion
@@ -55,6 +56,8 @@
                     Me.pnlCtrExistentes.Visible = True
                     Me.pnlCriteriosCtr.Visible = False
                     Me.pnlMedIntervencion.Visible = False
+                    Me.pnlInfoAdicParamPeligro.Visible = False
+                    Me.pnlEvalPeligro.Visible = False
                     '===========================
 
                     'INICIALIZA CONTROL DE CONTROLES EXISTENTES
@@ -69,6 +72,8 @@
                     Me.pnlCtrExistentes.Visible = False
                     Me.pnlCriteriosCtr.Visible = True
                     Me.pnlMedIntervencion.Visible = False
+                    Me.pnlInfoAdicParamPeligro.Visible = False
+                    Me.pnlEvalPeligro.Visible = False
                     '===========================
 
                     'INICIALIZA CONTROL DE CRITERIOS CONTROLES
@@ -83,6 +88,8 @@
                     Me.pnlCtrExistentes.Visible = False
                     Me.pnlCriteriosCtr.Visible = False
                     Me.pnlMedIntervencion.Visible = True
+                    Me.pnlInfoAdicParamPeligro.Visible = True
+                    Me.pnlEvalPeligro.Visible = False
                     '===========================
 
                     'INICIALIZA CONTROL DE MEDIDAS INTERVENCION
@@ -91,6 +98,21 @@
 
                     'ESTABLECE EL TITULO DE LA VENTANA
                     Me.lblTituloInfoAdicPeligro.Text = "Medidas de Intervención"
+
+                Case EnmAccion.SelEvalPeligro
+                    'PANELES====================
+                    Me.pnlCtrExistentes.Visible = False
+                    Me.pnlCriteriosCtr.Visible = False
+                    Me.pnlMedIntervencion.Visible = False
+                    Me.pnlInfoAdicParamPeligro.Visible = False
+                    Me.pnlEvalPeligro.Visible = True
+                    '===========================
+
+
+                    'ESTABLECE EL TITULO DE LA VENTANA
+                    Me.lblTituloInfoAdicPeligro.Text = "Evaluación del Riesgo"
+
+                    'AQUI VA LA INICIALIZACION DEL CONTROL DE HERNAN<------------OJO
 
             End Select
         End Set
@@ -218,10 +240,17 @@
         If (dtDatosPeligro.Rows.Count > 0) Then
             Me.lblActividad.Text = dtDatosPeligro.Rows(0)("StrActividad")
             Me.txtDescripcion.Text = dtDatosPeligro.Rows(0)("StrDescripcion")
-            Me.lblDescPeligro.Text = dtDatosPeligro.Rows(0)("StrDescripcion")
             Me.lblClasificacion.Text = dtDatosPeligro.Rows(0)("StrClasificacion")
-            Me.lblClasiPeligro.Text = dtDatosPeligro.Rows(0)("StrClasificacion")
             Me.lblRiesgo.Text = dtDatosPeligro.Rows(0)("StrRiesgo")
+
+            'INFORMACION BASICA QUE SE MUESTRA EN LAS VENTANAS MODALES
+            Me.lblDescPeligro.Text = dtDatosPeligro.Rows(0)("StrDescripcion")
+            Me.lblClasiPeligro.Text = dtDatosPeligro.Rows(0)("StrClasificacion")
+            Me.lblEvalPeligro.Text = dtDatosPeligro.Rows(0)("tmpNivelRiesgo")
+            Me.lblNumExpuestos.Text = dtDatosPeligro.Rows(0)("sgplCriCtrNumExpuestos")
+            Me.lblPeorConsec.Text = dtDatosPeligro.Rows(0)("sgplCriCtrPeorConsec")
+            Me.lblReqLegal.Text = dtDatosPeligro.Rows(0)("StrReqLegal")
+
 
             varEstRutinaria = IIf(dtDatosPeligro.Rows(0)("sgplEstRutinario") = 1, EnmRutinaria.Si, EnmRutinaria.No)
             If Not (Me.ddlRutinaria.Items.FindByValue(varEstRutinaria) Is Nothing) Then
@@ -257,6 +286,10 @@
     Private Sub evtSelGuardoCtrExistentes() Handles ctrMtRsControlesExistentes1.evtGuardo
         'SE LIMPIA EL CONTROL
         Me.ctrMtRsControlesExistentes1.LimpiarCtr()
+
+        'SE CARGA LA INFORMACION DE PELIGRO
+        Me.CargarInfoPeligro()
+
         'OCULTA LA VENTANA MODAL
         Me.modalInfoAdicPeligro.Hide()
         Me.upnlInfoAdicPeligro.Update()
@@ -264,6 +297,10 @@
     Private Sub evtSelGuardoCriControles() Handles ctrMtRsCriControles1.evtGuardo
         'SE LIMPIA EL CONTROL
         Me.ctrMtRsCriControles1.LimpiarCtr()
+
+        'SE CARGA LA INFORMACION DE PELIGRO
+        Me.CargarInfoPeligro()
+
         'OCULTA LA VENTANA MODAL
         Me.modalInfoAdicPeligro.Hide()
         Me.upnlInfoAdicPeligro.Update()
@@ -271,6 +308,10 @@
     Private Sub evtSelMedIntervencion() Handles ctrMtRsMedIntervencion1.evtGuardo
         'SE LIMPIA EL CONTROL
         Me.ctrMtRsMedIntervencion1.LimpiarCtr()
+
+        'SE CARGA LA INFORMACION DE PELIGRO
+        Me.CargarInfoPeligro()
+
         'OCULTA LA VENTANA MODAL
         Me.modalInfoAdicPeligro.Hide()
         Me.upnlInfoAdicPeligro.Update()

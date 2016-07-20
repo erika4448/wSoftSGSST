@@ -2,8 +2,8 @@
 <%@ Register Src="ctrProceso.ascx" TagName="ctrProceso" TagPrefix="uc1" %>
 <%@ Register Src="ctrLugar.ascx" TagName="ctrLugar" TagPrefix="uc2" %>
 <%@ Register Src="ctrMtRsControlesExistentes.ascx" TagName="ctrMtRsControlesExistentes" TagPrefix="uc3" %>
-<%@ Register src="ctrMtRsCriControles.ascx" tagname="ctrMtRsCriControles" tagprefix="uc4" %>
-<%@ Register src="ctrMtRsMedIntervencion.ascx" tagname="ctrMtRsMedIntervencion" tagprefix="uc5" %>
+<%@ Register Src="ctrMtRsCriControles.ascx" TagName="ctrMtRsCriControles" TagPrefix="uc4" %>
+<%@ Register Src="ctrMtRsMedIntervencion.ascx" TagName="ctrMtRsMedIntervencion" TagPrefix="uc5" %>
 <%If (False) Then %>
 <link rel="Stylesheet" type="text/css" href="../../App_Themes/SoftSGSST.css" />
 <%end if%>
@@ -25,6 +25,11 @@
 
             <uc1:ctrProceso ID="ctrProceso1" runat="server" />
 
+        </td>
+    </tr>
+    <tr>
+        <td align="left" colspan="2">
+            <asp:Label ID="lblCargosRel" runat="server">Cargos Relacionados</asp:Label>
         </td>
     </tr>
     <tr>
@@ -154,11 +159,11 @@
 <asp:Button ID="btnFake" runat="server" CausesValidation="False" Style="display: none" ToolTip="Editar Parámetro" />
 <ajaxToolkit:ModalPopupExtender ID="modalInfoAdicPeligro" runat="server" BackgroundCssClass="cssModalBackGround" Enabled="True" PopupControlID="pnlInfoAdicPeligro" TargetControlID="btnFake">
 </ajaxToolkit:ModalPopupExtender>
-<asp:Panel ID="pnlInfoAdicPeligro" runat="server" CssClass="ModalPoup" Style="display: none" >
+<asp:Panel ID="pnlInfoAdicPeligro" runat="server" CssClass="ModalPoup"  Style="display: none">
     <asp:UpdatePanel ID="upnlInfoAdicPeligro" runat="server" UpdateMode="Conditional">
         <ContentTemplate>
             <table>
-                 <tr>
+                <tr>
                     <td align="right">
 
                         <asp:ImageButton ID="ibtnCerrarInfoAdicPeligro" runat="server" ImageUrl="~/Images/General/ibtnCerrarModal.png" />
@@ -171,32 +176,78 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>
-                        &nbsp;
+                    <td>&nbsp;
                     </td>
                 </tr>
                 <tr>
-                    <td align="left">
-                        <asp:Panel ID="pnlInfoBasicaPeligro" runat="server" CssClass="pnlContentInfoGris">
-                            <table>
-                                <tr>
-                                    <td align="left" class="tdLabel">
-                                        <asp:Label ID="bNomDescPeligro" runat="server" Text="Descripción del Peligro"></asp:Label>
-                                    </td>
-                                    <td align="left">
-                                        <asp:Label ID="lblDescPeligro" runat="server"></asp:Label>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td align="left" class="tdLabel">
-                                        <asp:Label ID="lblNomClasiPeligro" runat="server" Text="Clasificación del Peligro"></asp:Label>
-                                    </td>
-                                    <td align="left">
-                                        <asp:Label ID="lblClasiPeligro" runat="server"></asp:Label>
-                                    </td>
-                                </tr>
-                            </table>
-                        </asp:Panel>
+                    <td align="center">
+                        <table align="center">
+                            <tr>
+                                <td align="center">
+                                    <asp:Panel ID="pnlInfoBasicaPeligro" runat="server" CssClass="pnlContentInfoGris">
+                                        <table>
+                                            <tr>
+                                                <td align="left" class="tdLabel">
+                                                    <asp:Label ID="bNomDescPeligro" runat="server" Text="Descripción del Peligro"></asp:Label>
+                                                </td>
+                                                <td align="left">
+                                                    <asp:Label ID="lblDescPeligro" runat="server"></asp:Label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="left" class="tdLabel">
+                                                    <asp:Label ID="lblNomClasiPeligro" runat="server" Text="Clasificación del Peligro"></asp:Label>
+                                                </td>
+                                                <td align="left">
+                                                    <asp:Label ID="lblClasiPeligro" runat="server"></asp:Label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="left" colspan="2">
+                                                    <asp:Panel ID="pnlInfoAdicParamPeligro" runat="server">
+                                                        <table>
+                                                            <tr>
+                                                                <td align="left" class="tdLabel">
+                                                                     <asp:Label ID="lblNomEvalPeligro" runat="server">Evaluación del Peligro</asp:Label>
+                                                                </td>
+                                                                <td align="left">
+                                                                     <asp:Label ID="lblEvalPeligro" runat="server" Font-Bold="True" ForeColor="Red"></asp:Label>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="left" class="tdLabel">
+                                                                     <asp:Label ID="lblNomNumExpuestos" runat="server">Número de Expuestos</asp:Label>
+                                                                </td>
+                                                                <td align="left">
+                                                                     <asp:Label ID="lblNumExpuestos" runat="server"></asp:Label>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="left" class="tdLabel">
+                                                                     <asp:Label ID="lblNomPeorConsec" runat="server">Peor Consecuencia</asp:Label>
+                                                                </td>
+                                                                <td align="left">
+                                                                     <asp:Label ID="lblPeorConsec" runat="server"></asp:Label>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="left" class="tdLabel">
+                                                                     <asp:Label ID="lblNomReqLegal" runat="server">Requisito Legal</asp:Label>
+                                                                </td>
+                                                                <td align="left">
+                                                                     <asp:Label ID="lblReqLegal" runat="server"></asp:Label>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </asp:Panel>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </asp:Panel>
+                                </td>
+                            </tr>
+                        </table>
+
                     </td>
                 </tr>
                 <tr>
@@ -217,6 +268,9 @@
                         <asp:Panel ID="pnlMedIntervencion" runat="server">
 
                             <uc5:ctrMtRsMedIntervencion ID="ctrMtRsMedIntervencion1" runat="server" />
+
+                        </asp:Panel>
+                        <asp:Panel ID="pnlEvalPeligro" runat="server">
 
                         </asp:Panel>
                     </td>
