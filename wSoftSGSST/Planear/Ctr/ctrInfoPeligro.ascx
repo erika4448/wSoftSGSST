@@ -4,6 +4,8 @@
 <%@ Register Src="ctrMtRsControlesExistentes.ascx" TagName="ctrMtRsControlesExistentes" TagPrefix="uc3" %>
 <%@ Register src="ctrMtRsCriControles.ascx" tagname="ctrMtRsCriControles" tagprefix="uc4" %>
 <%@ Register src="ctrMtRsMedIntervencion.ascx" tagname="ctrMtRsMedIntervencion" tagprefix="uc5" %>
+<%@ Register Src="~/Planear/Ctr/ctrEvaluacionPeligro.ascx" TagPrefix="uc1" TagName="ctrEvaluacionPeligro" %>
+
 <%If (False) Then %>
 <link rel="Stylesheet" type="text/css" href="../../App_Themes/SoftSGSST.css" />
 <%end if%>
@@ -224,4 +226,12 @@
             </table>
         </ContentTemplate>
     </asp:UpdatePanel>
+</asp:Panel>
+
+<%-- VENTANA MODAL EVALUACION DEL RIESGO --%>
+<asp:Button ID="btnFake2" runat="server" CausesValidation="False" Style="display: none" ToolTip="Editar Parámetro" />
+<ajaxToolkit:ModalPopupExtender ID="modalEvalPeligro" runat="server" BackgroundCssClass="cssModalBackGround" Enabled="True" PopupControlID="pnlEvalPeligro" TargetControlID="btnFake2">
+</ajaxToolkit:ModalPopupExtender>
+<asp:Panel ID="pnlEvalPeligro" runat="server" CssClass="ModalPoup" Style="display: none" >
+<uc1:ctrEvaluacionPeligro runat="server" id="ctrEvaluacionPeligro" />
 </asp:Panel>

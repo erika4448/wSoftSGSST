@@ -109,6 +109,7 @@
         Si = 1
         No = 2
     End Enum
+
 #End Region
 #Region "PROTEGIDO"
     Protected Sub ibtnIncluirRiesgo_Click(sender As Object, e As ImageClickEventArgs) Handles ibtnIncluirRiesgo.Click
@@ -149,6 +150,15 @@
 
         Me.modalInfoAdicPeligro.Hide()
         Me.upnlInfoAdicPeligro.Update()
+    End Sub
+    'EVENTO DEL BOTON EVALUACION DE RIESGO
+    Protected Sub ibtnEvaluacionRiesgo_Click(sender As Object, e As ImageClickEventArgs) Handles ibtnEvaluacionRiesgo.Click
+        'INICIALIZAR EL CONTROL DE EVALUACION PELIGRO
+        Me.ctrEvaluacionPeligro.pIdPeligro = Me.pIdPeligro
+        Me.ctrEvaluacionPeligro.pBoolIniCtr = True
+
+        'MOSTRAR EL POPUP
+        Me.modalEvalPeligro.Show()
     End Sub
 #End Region
 #Region "PRIVADO"
@@ -223,7 +233,7 @@
             Me.lblClasiPeligro.Text = dtDatosPeligro.Rows(0)("StrClasificacion")
             Me.lblRiesgo.Text = dtDatosPeligro.Rows(0)("StrRiesgo")
 
-            varEstRutinaria = IIf(dtDatosPeligro.Rows(0)("sgplEstRutinario") = 1, EnmRutinaria.Si, EnmRutinaria.No)
+            varEstRutinaria = IIf(IIf(IsDBNull(dtDatosPeligro.Rows(0)("sgplEstRutinario")), 0, dtDatosPeligro.Rows(0)("sgplEstRutinario")) = 1, EnmRutinaria.Si, EnmRutinaria.No)
             If Not (Me.ddlRutinaria.Items.FindByValue(varEstRutinaria) Is Nothing) Then
                 Me.ddlRutinaria.SelectedValue = varEstRutinaria
             Else
@@ -274,6 +284,9 @@
         'OCULTA LA VENTANA MODAL
         Me.modalInfoAdicPeligro.Hide()
         Me.upnlInfoAdicPeligro.Update()
+    End Sub
+    Private Sub evtCerrarEvaluacion() Handles ctrEvaluacionPeligro.evtCerrar
+        Me.modalEvalPeligro.Hide()
     End Sub
 #End Region
 End Class

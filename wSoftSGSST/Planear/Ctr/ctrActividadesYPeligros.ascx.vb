@@ -183,10 +183,11 @@
             'MANDA A GUARDAR LA ACTIVIDAD
             Me.GuardarActividad()
 
+            Me.pVisualizacionXAccion = EnmAccion.AsociarActividad
+
             'CARGAR EL CONTROL DINAMICO CON LA ACTIVIDAD CREADA
             Me.ctrDinaConsObjActividad.BuscarXId(Me.pIdActividad)
 
-            Me.pVisualizacionXAccion = EnmAccion.AsociarActividad
         End If
     End Sub
     'EVENTO DEL BOTON NUEVO RIESGO

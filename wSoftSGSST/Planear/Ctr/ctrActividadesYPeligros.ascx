@@ -6,6 +6,12 @@
 <link rel="Stylesheet" type="text/css" href="../../App_Themes/SoftSGSST.css" />
 <%end if%>
 
+<style type="text/css">
+    .auto-style1 {
+        height: 21px;
+    }
+</style>
+
 <asp:Panel ID="pnlGvActRiesgos" runat="server">
     <table width="100%">
         <tr>
@@ -67,11 +73,14 @@
             </td>
         </tr>
         <tr>
-            <td align="center" colspan="2">
+            <td align="center" colspan="2" class="auto-style1">
                 <asp:Label ID="lblRegNuevaAct" runat="server" Text="Registro Nueva Actividad"></asp:Label>
             </td>
         </tr>
         <tr>
+            <td>
+                <asp:Label ID="lblActividad" runat="server" Text="Actividad"></asp:Label>
+            </td>
             <td align="center">
                 <uc1:ctrDinaConsObj runat="server" ID="ctrDinaConsObjActividad" />
             </td>

@@ -63,12 +63,6 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\dllSoftSGSST\dllSoftSGSST.vbproj">
-      <Project>{86a1ee2c-e4ad-4854-af05-d9d30b19d560}</Project>
-      <Name>dllSoftSGSST</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Import Include="Microsoft.VisualBasic" />
     <Import Include="System" />
     <Import Include="System.Collections" />
@@ -200,6 +194,7 @@
     <Content Include="Planear\Ctr\AutoCompleteBusEmpleado.asmx" />
     <Content Include="Planear\Ctr\ctrActividadesYPeligros.ascx" />
     <Content Include="Planear\Ctr\ctrCargosEmpleado.ascx" />
+    <Content Include="Planear\Ctr\ctrEvaluacionPeligro.ascx" />
     <Content Include="Planear\Ctr\ctrInfoEmpleado.ascx" />
     <Content Include="Planear\Ctr\ctrInfoPeligro.ascx" />
     <Content Include="Planear\Ctr\ctrLugar.ascx" />
@@ -266,7 +261,7 @@
     </Compile>
     <Compile Include="Images\frmGetImagenEmpleado.aspx.vb">
       <DependentUpon>frmGetImagenEmpleado.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="login.aspx.designer.vb">
       <DependentUpon>login.aspx</DependentUpon>
@@ -325,6 +320,13 @@
     </Compile>
     <Compile Include="Planear\Ctr\ctrCargosEmpleado.ascx.vb">
       <DependentUpon>ctrCargosEmpleado.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Planear\Ctr\ctrEvaluacionPeligro.ascx.designer.vb">
+      <DependentUpon>ctrEvaluacionPeligro.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Planear\Ctr\ctrEvaluacionPeligro.ascx.vb">
+      <DependentUpon>ctrEvaluacionPeligro.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Planear\Ctr\ctrInfoEmpleado.ascx.designer.vb">
@@ -395,14 +397,14 @@
     </Compile>
     <Compile Include="Planear\MatrizRiesgos\frmMtRgCalificarRiesgo.aspx.vb">
       <DependentUpon>frmMtRgCalificarRiesgo.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Planear\MatrizRiesgos\frmMtRgMatrizRiesgos.aspx.designer.vb">
       <DependentUpon>frmMtRgMatrizRiesgos.aspx</DependentUpon>
     </Compile>
     <Compile Include="Planear\MatrizRiesgos\frmMtRgMatrizRiesgos.aspx.vb">
       <DependentUpon>frmMtRgMatrizRiesgos.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Planear\PerfDemografico\frmPlPerfDemografico.aspx.designer.vb">
       <DependentUpon>frmPlPerfDemografico.aspx</DependentUpon>
@@ -416,7 +418,7 @@
     </Compile>
     <Compile Include="Planear\Profesiograma\frmPlProfesiograma.aspx.vb">
       <DependentUpon>frmPlProfesiograma.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -447,7 +449,12 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\dllSoftSGSST\dllSoftSGSST.vbproj">
+      <Project>{86a1ee2c-e4ad-4854-af05-d9d30b19d560}</Project>
+      <Name>dllSoftSGSST</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

@@ -354,4 +354,40 @@ Partial Public Class ctrInfoPeligro
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ctrMtRsMedIntervencion1 As Global.wSoftSGSST.ctrMtRsMedIntervencion
+    
+    '''<summary>
+    '''btnFake2 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents btnFake2 As Global.System.Web.UI.WebControls.Button
+    
+    '''<summary>
+    '''modalEvalPeligro control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents modalEvalPeligro As Global.AjaxControlToolkit.ModalPopupExtender
+    
+    '''<summary>
+    '''pnlEvalPeligro control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents pnlEvalPeligro As Global.System.Web.UI.WebControls.Panel
+    
+    '''<summary>
+    '''ctrEvaluacionPeligro control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ctrEvaluacionPeligro As Global.wSoftSGSST.ctrEvaluacionPeligro
 End Class

@@ -6,7 +6,7 @@ Namespace SGSST
         Public sgplIdPeligro As Integer
         Public sgplIdEmpresa As Integer
         Public sgplIdActividad As Integer
-        Public sgplIdDescripcionPeligro As Integer
+        Public sgplDescripcionPeligro As String
         Public sgplIdClasificacionPeligro As Integer
         Public sgplIdRiesgo As Integer
         Public sgplEstRutinario As Integer
