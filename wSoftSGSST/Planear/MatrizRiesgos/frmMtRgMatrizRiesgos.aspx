@@ -70,8 +70,12 @@
                                     <asp:BoundField HeaderText="Descripción Peligro" DataField="StrDescripcionPeligro" SortExpression="StrDescripcionPeligro" />
                                     <asp:BoundField HeaderText="Clasificación Peligro" DataField="StrClasificacionPeligro" SortExpression="StrClasificacionPeligro" />
                                     <asp:BoundField HeaderText="Riesgo" DataField="StrRiesgo" SortExpression="StrRiesgo" />
-                                    <asp:BoundField HeaderText="Nivel del Riesgo" DataField="sepValorNivRiesgo" SortExpression="sepValorNivRiesgo" />
-                                    <asp:BoundField HeaderText="Interpretación del Riesgo" DataField="StrInterpretacionRiesgo" SortExpression="StrInterpretacionRiesgo" />
+                                    <asp:BoundField HeaderText="Nivel del Riesgo" DataField="sepValorNivRiesgo" SortExpression="sepValorNivRiesgo">
+                                        <ItemStyle HorizontalAlign="Center" />
+                                    </asp:BoundField>
+                                    <asp:BoundField HeaderText="Interpretación del Riesgo" DataField="StrInterpretacionRiesgo" SortExpression="StrInterpretacionRiesgo">
+                                        <ItemStyle HorizontalAlign="Center" />
+                                    </asp:BoundField>
                                     <asp:BoundField HeaderText="Aceptabilidad Riesgo" DataField="StrAceptabilidad" SortExpression="StrAceptabilidad" />
                                     <asp:ButtonField ButtonType="Image" CommandName="cmdMedidas" HeaderText="Medidas" ImageUrl="~/Images/General/ibtnMedidaIntervencion.png" Text="Button" />
                                     <asp:ButtonField ButtonType="Image" CommandName="cmdCalificar" HeaderText="Calificar" ImageUrl="~/Images/General/ibtnCalificarRiesgo.png" Text="Button" />

@@ -1574,6 +1574,105 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
+<member name="F:wSoftSGSST.ctrInfoEmpleado._btnFake">
+<summary>
+btnFake control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrInfoEmpleado._modalInfoRiesgosCargo">
+<summary>
+modalInfoRiesgosCargo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrInfoEmpleado._pnlInfoRiesgosCargo">
+<summary>
+pnlInfoRiesgosCargo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrInfoEmpleado._upnlInfoRiesgosCargo">
+<summary>
+upnlInfoRiesgosCargo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrInfoEmpleado._ibtnCerrrarModalInfoRiesgoCargo">
+<summary>
+ibtnCerrrarModalInfoRiesgoCargo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrInfoEmpleado._lblTituloRiesgosCargo">
+<summary>
+lblTituloRiesgosCargo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrInfoEmpleado._lblNomCargo">
+<summary>
+lblNomCargo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrInfoEmpleado._lblCargoInfoRiesgo">
+<summary>
+lblCargoInfoRiesgo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrInfoEmpleado._pnlRiesgosCargo">
+<summary>
+pnlRiesgosCargo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrInfoEmpleado._gvRiesgosCargo">
+<summary>
+gvRiesgosCargo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrInfoEmpleado._odsRiesgosCargo">
+<summary>
+odsRiesgosCargo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:wSoftSGSST.ctrInfoPeligro._lblNomActividad">
 <summary>
 lblNomActividad control.

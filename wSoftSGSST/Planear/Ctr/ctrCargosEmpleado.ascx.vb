@@ -56,6 +56,12 @@
             End If
         End Set
     End Property
+    'PORPIEDAD PARA EL ALMACENAMIETNO DEL CARGOS SEL
+    Public ReadOnly Property pStrCargo As String
+        Get
+            Return IIf(Me.ddlCargo.Items.Count > 0, Me.ddlCargo.SelectedItem.Text, "")
+        End Get
+    End Property
     'PROPIEDAD PARA EL ALMACENAMIENTO DEL ID_EMPLEADO
     Public Property pIdEmpleado As Integer
         Get

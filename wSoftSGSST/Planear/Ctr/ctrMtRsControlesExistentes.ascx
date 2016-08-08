@@ -11,7 +11,7 @@
         </td>
          <td align="left">
 
-             <asp:TextBox ID="txtCtrFuente" runat="server"></asp:TextBox>
+             <asp:TextBox ID="txtCtrFuente" runat="server" Width="300px" Height="100px" TextMode="MultiLine"></asp:TextBox>
 
         </td>
     </tr>
@@ -21,7 +21,7 @@
             <asp:Label ID="lblCtrMedio" runat="server" Text="Control en el Medio"></asp:Label>
         </td>
          <td align="left">
-              <asp:TextBox ID="txtCtrMedio" runat="server"></asp:TextBox>
+              <asp:TextBox ID="txtCtrMedio" runat="server" Width="300px" Height="100px" TextMode="MultiLine"></asp:TextBox>
         </td>
     </tr>
     <tr>
@@ -30,7 +30,7 @@
             <asp:Label ID="lblCtrIndividuo" runat="server" Text="Control en el Individuo"></asp:Label>
         </td>
          <td align="left">
-              <asp:TextBox ID="txtCtrIndividuo" runat="server"></asp:TextBox>
+              <asp:TextBox ID="txtCtrIndividuo" runat="server" Width="300px" Height="100px" TextMode="MultiLine"></asp:TextBox>
         </td>
     </tr>
     <tr>

@@ -41,6 +41,7 @@ Public Class ctrInfoEmpleado
                     Me.pnlInfoUsuarioCreaMod.Visible = True
                     Me.pnlInfoUsuarioCreaMod.Enabled = True
                     Me.pnlDeptoCiudad.Enabled = True
+                    Me.pnlRiesgosCargo.Visible = False
                     '=======================
                     'BOTONES================
                     Me.ibtnEditarInfo.Visible = False
@@ -108,6 +109,7 @@ Public Class ctrInfoEmpleado
                     Me.pnlInfoUsuario.Visible = True
                     Me.pnlInfoUsuario.Enabled = True
                     Me.pnlDeptoCiudad.Enabled = False
+                    Me.pnlRiesgosCargo.Visible = False
                     '=======================
 
                     'LISTAS DESPLEGABLES ====
@@ -147,6 +149,7 @@ Public Class ctrInfoEmpleado
                     Me.pnlInfoUsuarioCreaMod.Enabled = True
                     Me.pnlInfoUsuario.Visible = True
                     Me.pnlInfoUsuario.Enabled = True
+                    Me.pnlRiesgosCargo.Visible = False
                     '=======================
                     'BOTONES================
                     Me.ibtnEditarInfo.Visible = False
@@ -221,7 +224,11 @@ Public Class ctrInfoEmpleado
         Me.upnlInfoEmpleado.Update()
     End Sub
     Protected Sub ibtnRiesgosCargo_Click(sender As Object, e As ImageClickEventArgs) Handles ibtnRiesgosCargo.Click
-        Me.AlertDialog("Funcionalidad en desarrollo. No se encuentra aún disponible.")
+        Me.modalInfoRiesgosCargo.Show()
+        Me.upnlInfoRiesgosCargo.Update()
+        Me.lblCargoInfoRiesgo.Text = Me.ctrCargosEmpleado1.pStrCargo
+        Me.CargarGrillaRiesgosCargo()
+
         Me.upnlInfoEmpleado.Update()
     End Sub
     Protected Sub ibtnResponSGSST_Click(sender As Object, e As ImageClickEventArgs) Handles ibtnResponSGSST.Click
@@ -231,6 +238,11 @@ Public Class ctrInfoEmpleado
     Protected Sub ibtnEditarInfo_Click(sender As Object, e As ImageClickEventArgs) Handles ibtnEditarInfo.Click
         'MODIFICACION VISUALIZACION
         Me.pVisualizaXAccion = EnmAccion.EditarEmpleado
+        Me.upnlInfoEmpleado.Update()
+    End Sub
+    Protected Sub ibtnCerrrarModalInfoRiesgoCargo_Click(sender As Object, e As ImageClickEventArgs) Handles ibtnCerrrarModalInfoRiesgoCargo.Click
+        Me.modalInfoRiesgosCargo.Hide()
+        Me.upnlInfoRiesgosCargo.Update()
         Me.upnlInfoEmpleado.Update()
     End Sub
 #End Region
@@ -538,6 +550,27 @@ Public Class ctrInfoEmpleado
                 Me.ddlTipoContrato.SelectedValue = 0
             End If
         End If
+    End Sub
+#End Region
+#Region "DATA SOURCE GRILLA RIESGOS CARGO"
+    Public Sub CargarGrillaRiesgosCargo()
+        Me.gvRiesgosCargo.DataBind()
+
+        If (Me.gvRiesgosCargo.Rows.Count > 0) Then
+            Me.pnlRiesgosCargo.Visible = True
+        Else
+            Me.pnlRiesgosCargo.Visible = False
+        End If
+    End Sub
+    Protected Sub odsRiesgosCargo_Selecting(ByVal sender As Object, ByVal e As System.Web.UI.WebControls.ObjectDataSourceSelectingEventArgs) Handles odsRiesgosCargo.Selecting
+        e.InputParameters("parIdCargo") = Me.ctrCargosEmpleado1.pIdCargo
+        e.InputParameters("parIdEstado") = dllSoftSGSST.Sistema.clSisEstado.EnmEstado.Activo
+    End Sub
+    Protected Sub odsRiesgosCargo_Selected(ByVal sender As Object, ByVal e As System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs) Handles odsRiesgosCargo.Selected
+        Me.gvRiesgosCargo.Visible = True
+    End Sub
+    Protected Sub odsRiesgosCargo_ObjectCreating(ByVal sender As Object, ByVal e As System.Web.UI.WebControls.ObjectDataSourceEventArgs) Handles odsRiesgosCargo.ObjectCreating
+        e.ObjectInstance = New dllSoftSGSST.SGSST.clSgsstRelPeligroXCargo
     End Sub
 #End Region
 End Class
