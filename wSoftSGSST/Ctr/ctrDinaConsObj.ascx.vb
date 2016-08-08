@@ -175,10 +175,11 @@
             Me.txtObj.ToolTip = ""
 
             'LLENAR EL DDL CON LA LISTA ENCONTRADA
-            Me.CargarListaDesplegable(Me.ddlObj, dtDatos, objConfigCtrDina.scbdValueDdl, objConfigCtrDina.scbdTextoDdl)
+            Me.CargarListaDesplegable(Me.ddlObj, dtDatos, Me.pStrValueDdl, Me.pStrTxtDdl)
 
             'OCULTAR EL TXT
             Me.txtObj.Visible = False
+            Me.ddlObj.Visible = True
 
         ElseIf (dtDatos.Rows.Count = 0) Then
             'DEFINIR PARAMETROS
@@ -201,9 +202,12 @@
             Me.pStrNomSel = dtDatos.Rows(0)(Me.pStrTxtDdl)
             Me.txtObj.Text = dtDatos.Rows(0)(Me.pStrTxtDdl)
             Me.txtObj.ToolTip = dtDatos.Rows(0)(Me.pStrTxtDdl)
+            Me.txtObj.Visible = True
 
             Me.imgRegValido.Visible = True
             Me.ddlObj.Visible = False
+
+            RaiseEvent evtSelecciono()
         End If
     End Sub
     'FUNCION PARA LIMPIAR EL CONTROL

@@ -10,7 +10,7 @@
             <asp:TextBox ID="txtObj" runat="server" AutoPostBack="True"></asp:TextBox>
         </td>
         <td>
-            <asp:DropDownList ID="ddlObj" runat="server"></asp:DropDownList>
+            <asp:DropDownList ID="ddlObj" runat="server" AutoPostBack="True"></asp:DropDownList>
         </td>
         <td>
             <asp:ImageButton ID="ibtnBuscar" runat="server" ImageUrl="~/Images/General/ibtnBuscar.png" />

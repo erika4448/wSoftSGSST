@@ -103,6 +103,7 @@
     </Compile>
     <Compile Include="Seguridad\clObjLoginSesion.vb" />
     <Compile Include="Seguridad\clUsuario.vb" />
+    <Compile Include="SGSST\clSgsstAceptabilidad.vb" />
     <Compile Include="SGSST\clSgsstActividad.vb" />
     <Compile Include="SGSST\clSgsstArea.vb" />
     <Compile Include="SGSST\clSgsstCargo.vb" />
@@ -111,9 +112,15 @@
     <Compile Include="SGSST\clSgsstEducacion.vb" />
     <Compile Include="SGSST\clSgsstEmpleado.vb" />
     <Compile Include="SGSST\clSgsstEstadoCivil.vb" />
+    <Compile Include="SGSST\clSgsstEvaluacionPeligro.vb" />
     <Compile Include="SGSST\clSgsstGenero.vb" />
     <Compile Include="SGSST\clSgsstHistCargosEmp.vb" />
     <Compile Include="SGSST\clSgsstLugar.vb" />
+    <Compile Include="SGSST\clSgsstNivelConsecuencia.vb" />
+    <Compile Include="SGSST\clSgsstNivelDeficiencia.vb" />
+    <Compile Include="SGSST\clSgsstNivelExposicion.vb" />
+    <Compile Include="SGSST\clSgsstNivelProbabilidad.vb" />
+    <Compile Include="SGSST\clSgsstNivelRiesgo.vb" />
     <Compile Include="SGSST\clSgsstPais.vb" />
     <Compile Include="SGSST\clSgsstPeligro.vb" />
     <Compile Include="SGSST\clSgsstProceso.vb" />
