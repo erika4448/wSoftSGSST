@@ -584,6 +584,15 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
+<member name="F:wSoftSGSST.ctrActividadesYPeligros._lblActividad">
+<summary>
+lblActividad control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:wSoftSGSST.ctrActividadesYPeligros._ctrDinaConsObjActividad">
 <summary>
 ctrDinaConsObjActividad control.
@@ -1181,6 +1190,357 @@ To modify move field declaration from designer file to code-behind file.
 <member name="F:wSoftSGSST.ctrCargosEmpleado._ibtnGuardarCargo">
 <summary>
 ibtnGuardarCargo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrEvaluacionPeligro._upnlEvaluacionRiesgo">
+<summary>
+upnlEvaluacionRiesgo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrEvaluacionPeligro._pnlEvaluacionPeligro">
+<summary>
+pnlEvaluacionPeligro control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrEvaluacionPeligro._ibtnCerrar">
+<summary>
+ibtnCerrar control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrEvaluacionPeligro._lblEvalPeligro">
+<summary>
+lblEvalPeligro control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrEvaluacionPeligro._pnlDescripcion">
+<summary>
+pnlDescripcion control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrEvaluacionPeligro._lblNomDescPeligro">
+<summary>
+lblNomDescPeligro control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrEvaluacionPeligro._lblDescPeligro">
+<summary>
+lblDescPeligro control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrEvaluacionPeligro._lblNomClasifPeligro">
+<summary>
+lblNomClasifPeligro control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrEvaluacionPeligro._lblClasifPeligro">
+<summary>
+lblClasifPeligro control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrEvaluacionPeligro._lblExplicacion">
+<summary>
+lblExplicacion control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrEvaluacionPeligro._lblExplicacion2">
+<summary>
+lblExplicacion2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrEvaluacionPeligro._lblNomCriterio">
+<summary>
+lblNomCriterio control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrEvaluacionPeligro._lblNomValoracion">
+<summary>
+lblNomValoracion control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrEvaluacionPeligro._lblNomExpValoracion">
+<summary>
+lblNomExpValoracion control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrEvaluacionPeligro._lblNivDef">
+<summary>
+lblNivDef control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrEvaluacionPeligro._ddlNivDef">
+<summary>
+ddlNivDef control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrEvaluacionPeligro._pnlExpNivDef">
+<summary>
+pnlExpNivDef control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrEvaluacionPeligro._lblExpNivDef">
+<summary>
+lblExpNivDef control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrEvaluacionPeligro._lblNivExp">
+<summary>
+lblNivExp control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrEvaluacionPeligro._ddlNivExp">
+<summary>
+ddlNivExp control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrEvaluacionPeligro._pnlExpNivExp">
+<summary>
+pnlExpNivExp control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrEvaluacionPeligro._lblExpNivExp">
+<summary>
+lblExpNivExp control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrEvaluacionPeligro._lblNivProb">
+<summary>
+lblNivProb control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrEvaluacionPeligro._lblValNivProb">
+<summary>
+lblValNivProb control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrEvaluacionPeligro._pnlExpNivProb">
+<summary>
+pnlExpNivProb control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrEvaluacionPeligro._lblExpNivProb">
+<summary>
+lblExpNivProb control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrEvaluacionPeligro._lblNivCons">
+<summary>
+lblNivCons control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrEvaluacionPeligro._ddlNivCons">
+<summary>
+ddlNivCons control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrEvaluacionPeligro._pnlExpNivCons">
+<summary>
+pnlExpNivCons control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrEvaluacionPeligro._lblExpNivCons">
+<summary>
+lblExpNivCons control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrEvaluacionPeligro._lblNivRies">
+<summary>
+lblNivRies control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrEvaluacionPeligro._lblValNivRies">
+<summary>
+lblValNivRies control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrEvaluacionPeligro._pnlExpNivRies">
+<summary>
+pnlExpNivRies control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrEvaluacionPeligro._lblExpNivRies">
+<summary>
+lblExpNivRies control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrEvaluacionPeligro._lblAcepNiv">
+<summary>
+lblAcepNiv control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrEvaluacionPeligro._lblValAcepNiv">
+<summary>
+lblValAcepNiv control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrEvaluacionPeligro._pnlExpValAcep">
+<summary>
+pnlExpValAcep control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrEvaluacionPeligro._lblExpValAcep">
+<summary>
+lblExpValAcep control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrEvaluacionPeligro._ibtnGuardarEval">
+<summary>
+ibtnGuardarEval control.
 </summary>
 <remarks>
 Auto-generated field.
@@ -2105,9 +2465,36 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
+<member name="F:wSoftSGSST.ctrInfoPeligro._btnFake2">
+<summary>
+btnFake2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrInfoPeligro._modalEvalPeligro">
+<summary>
+modalEvalPeligro control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:wSoftSGSST.ctrInfoPeligro._pnlEvalPeligro">
 <summary>
 pnlEvalPeligro control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrInfoPeligro._ctrEvaluacionPeligro">
+<summary>
+ctrEvaluacionPeligro control.
 </summary>
 <remarks>
 Auto-generated field.
