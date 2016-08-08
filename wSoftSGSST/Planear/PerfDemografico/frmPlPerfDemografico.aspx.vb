@@ -35,6 +35,7 @@
                     'BOTONES============
                     Me.ibtnNuevoEmpleado.Visible = True
                     Me.btnNuevaConsulta.Visible = False
+                    Me.btnLimpiar.Visible = False
                     '===================
 
                     'INICIALIZA CONTROL DE DINA CONS
@@ -47,8 +48,9 @@
                     Me.pnlInfoEmpleado.Visible = True
                     '===================
                     'BOTONES============
-                    Me.ibtnNuevoEmpleado.Visible = False
+                    Me.ibtnNuevoEmpleado.Visible = True
                     Me.btnNuevaConsulta.Visible = True
+                    Me.btnLimpiar.Visible = True
                     '===================
 
                 Case EnmAccion.CargarEmpleado
@@ -57,8 +59,9 @@
                     Me.pnlInfoEmpleado.Visible = True
                     '===================
                     'BOTONES============
-                    Me.ibtnNuevoEmpleado.Visible = False
+                    Me.ibtnNuevoEmpleado.Visible = True
                     Me.btnNuevaConsulta.Visible = True
+                    Me.btnLimpiar.Visible = False
                     '===================
             End Select
         End Set
@@ -69,8 +72,11 @@
         'MODIFICA LA VISUALIZACION
         Me.pVisualizaXAccion = EnmAccion.NuevoEmpleado
 
+
         'INICIALIZA CONTROL DE INFO_EMPLEADO
+        Me.ctrInfoEmpleado1.pIdEmpleado = 0
         Me.ctrInfoEmpleado1.pBoolIniCtr = True
+        Me.ctrInfoEmpleado1.LimpiarCtr()
 
         Me.upnlPerfDemografico.Update()
     End Sub
@@ -79,6 +85,11 @@
         Me.pVisualizaXAccion = EnmAccion.Inicio
 
         Me.upnlPerfDemografico.Update()
+    End Sub
+#End Region
+#Region "PRIVADO"
+    Private Sub LimpiarCr()
+        Me.ctrInfoEmpleado1.limpiarCtr()
     End Sub
 #End Region
 #Region "EVENTOS"
@@ -90,6 +101,16 @@
 
         Me.ctrInfoEmpleado1.CargarEmpleado()
 
+        Me.upnlPerfDemografico.Update()
+    End Sub
+
+    Protected Sub btnLimpiar_Click(sender As Object, e As EventArgs) Handles btnLimpiar.Click
+        Me.ConfirmationDialog("¿Confirma que desea limpiar el formulario?", Me.lbtnLimpiarForm.UniqueID)
+        Me.upnlPerfDemografico.Update()
+    End Sub
+
+    Protected Sub lbtnLimpiarForm_Click(sender As Object, e As EventArgs) Handles lbtnLimpiarForm.Click
+        Me.LimpiarCr()
         Me.upnlPerfDemografico.Update()
     End Sub
 #End Region

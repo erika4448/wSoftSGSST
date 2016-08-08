@@ -39,6 +39,29 @@
     End Property
 #End Region
 #Region "PROTEGIDO"
+    Protected Sub gvMatrizRiesgos_RowDataBound(sender As Object, e As GridViewRowEventArgs) Handles gvMatrizRiesgos.RowDataBound
+        If e.Row.RowType = DataControlRowType.DataRow Then
+
+
+            Select Case e.Row.DataItem("snrIdNivelRiesgo")
+                Case 0
+                    e.Row.Cells(6).BackColor = Nothing
+
+                Case 1
+                    e.Row.Cells(6).BackColor = Drawing.Color.FromArgb(217, 0, 0)
+
+                Case 2
+                    e.Row.Cells(6).BackColor = Drawing.Color.FromArgb(255, 128, 0)
+
+                Case 3
+                    e.Row.Cells(6).BackColor = Drawing.Color.FromArgb(70, 140, 0)
+
+                Case 4
+                    e.Row.Cells(6).BackColor = Drawing.Color.FromArgb(255, 255, 255)
+            End Select
+        End If
+        Me.upnlMatrizRiesgos.Update()
+    End Sub
     Protected Sub gvMatrizRiesgos_RowCommand(sender As Object, e As GridViewCommandEventArgs) Handles gvMatrizRiesgos.RowCommand
         Select Case e.CommandName
             Case "cmdCalificar"

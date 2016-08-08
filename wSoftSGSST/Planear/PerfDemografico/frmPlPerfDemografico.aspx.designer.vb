@@ -41,6 +41,15 @@ Partial Public Class frmPlPerfDemografico
     Protected WithEvents lblTitulo As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
+    '''btnLimpiar control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents btnLimpiar As Global.System.Web.UI.WebControls.Button
+    
+    '''<summary>
     '''btnNuevaConsulta control.
     '''</summary>
     '''<remarks>
@@ -59,6 +68,15 @@ Partial Public Class frmPlPerfDemografico
     Protected WithEvents ibtnNuevoEmpleado As Global.System.Web.UI.WebControls.ImageButton
     
     '''<summary>
+    '''lbtnLimpiarForm control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lbtnLimpiarForm As Global.System.Web.UI.WebControls.LinkButton
+    
+    '''<summary>
     '''pnlBusEmpleado control.
     '''</summary>
     '''<remarks>
@@ -66,6 +84,15 @@ Partial Public Class frmPlPerfDemografico
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents pnlBusEmpleado As Global.System.Web.UI.WebControls.Panel
+    
+    '''<summary>
+    '''lblEmpleado control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblEmpleado As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
     '''ctrDinaConsObj1 control.

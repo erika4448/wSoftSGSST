@@ -773,6 +773,15 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
+<member name="F:wSoftSGSST.ctrCargosEmpleado._upnlCargosEmpleado">
+<summary>
+upnlCargosEmpleado control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:wSoftSGSST.ctrCargosEmpleado._lblCargo">
 <summary>
 lblCargo control.
@@ -866,6 +875,15 @@ To modify move field declaration from designer file to code-behind file.
 <member name="F:wSoftSGSST.ctrCargosEmpleado._lblHistCargos">
 <summary>
 lblHistCargos control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrCargosEmpleado._pnlGvHistCargos">
+<summary>
+pnlGvHistCargos control.
 </summary>
 <remarks>
 Auto-generated field.
@@ -1106,6 +1124,15 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
+<member name="F:wSoftSGSST.ctrCargosEmpleado._lblAstValNuevoCargo">
+<summary>
+lblAstValNuevoCargo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:wSoftSGSST.ctrCargosEmpleado._lblNuevoCargo">
 <summary>
 lblNuevoCargo control.
@@ -1124,9 +1151,9 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:wSoftSGSST.ctrCargosEmpleado._lblAstValNuevoCargo">
+<member name="F:wSoftSGSST.ctrCargosEmpleado._lblAstValFchIngresoCargo">
 <summary>
-lblAstValNuevoCargo control.
+lblAstValFchIngresoCargo control.
 </summary>
 <remarks>
 Auto-generated field.
@@ -1136,15 +1163,6 @@ To modify move field declaration from designer file to code-behind file.
 <member name="F:wSoftSGSST.ctrCargosEmpleado._lblFchIngresoCargo">
 <summary>
 lblFchIngresoCargo control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:wSoftSGSST.ctrCargosEmpleado._lblAstValFchIngresoCargo">
-<summary>
-lblAstValFchIngresoCargo control.
 </summary>
 <remarks>
 Auto-generated field.
@@ -1361,6 +1379,15 @@ To modify move field declaration from designer file to code-behind file.
 <member name="F:wSoftSGSST.ctrInfoEmpleado._ctrFechaNacimiento">
 <summary>
 ctrFechaNacimiento control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.ctrInfoEmpleado._pnlDeptoCiudad">
+<summary>
+pnlDeptoCiudad control.
 </summary>
 <remarks>
 Auto-generated field.
@@ -3014,6 +3041,15 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
+<member name="F:wSoftSGSST.frmPlPerfDemografico._btnLimpiar">
+<summary>
+btnLimpiar control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:wSoftSGSST.frmPlPerfDemografico._btnNuevaConsulta">
 <summary>
 btnNuevaConsulta control.
@@ -3032,9 +3068,27 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
+<member name="F:wSoftSGSST.frmPlPerfDemografico._lbtnLimpiarForm">
+<summary>
+lbtnLimpiarForm control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:wSoftSGSST.frmPlPerfDemografico._pnlBusEmpleado">
 <summary>
 pnlBusEmpleado control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.frmPlPerfDemografico._lblEmpleado">
+<summary>
+lblEmpleado control.
 </summary>
 <remarks>
 Auto-generated field.

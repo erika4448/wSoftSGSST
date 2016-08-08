@@ -14,6 +14,15 @@ Option Explicit On
 Partial Public Class ctrCargosEmpleado
     
     '''<summary>
+    '''upnlCargosEmpleado control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents upnlCargosEmpleado As Global.System.Web.UI.UpdatePanel
+    
+    '''<summary>
     '''lblCargo control.
     '''</summary>
     '''<remarks>
@@ -111,6 +120,15 @@ Partial Public Class ctrCargosEmpleado
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents lblHistCargos As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
+    '''pnlGvHistCargos control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents pnlGvHistCargos As Global.System.Web.UI.WebControls.Panel
     
     '''<summary>
     '''gvHistCargos control.
@@ -347,6 +365,15 @@ Partial Public Class ctrCargosEmpleado
     Protected WithEvents lblInfoCargoActualRelNuevoCargo As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
+    '''lblAstValNuevoCargo control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblAstValNuevoCargo As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
     '''lblNuevoCargo control.
     '''</summary>
     '''<remarks>
@@ -365,13 +392,13 @@ Partial Public Class ctrCargosEmpleado
     Protected WithEvents ddlNuevoCargo As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
-    '''lblAstValNuevoCargo control.
+    '''lblAstValFchIngresoCargo control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents lblAstValNuevoCargo As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents lblAstValFchIngresoCargo As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
     '''lblFchIngresoCargo control.
@@ -381,15 +408,6 @@ Partial Public Class ctrCargosEmpleado
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents lblFchIngresoCargo As Global.System.Web.UI.WebControls.Label
-    
-    '''<summary>
-    '''lblAstValFchIngresoCargo control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents lblAstValFchIngresoCargo As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
     '''ctrFechaIngreso control.

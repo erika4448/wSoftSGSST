@@ -131,9 +131,9 @@
                             </tr>
                             <tr>
                                 <td align="left" colspan="2">
-
+                                    <asp:Panel ID="pnlDeptoCiudad" runat="server">
                                     <uc2:ctrPaisCiudadDep ID="ctrPaisCiudadDep1" runat="server" />
-
+                                        </asp:Panel>
                                 </td>
                             </tr>
                             <tr>

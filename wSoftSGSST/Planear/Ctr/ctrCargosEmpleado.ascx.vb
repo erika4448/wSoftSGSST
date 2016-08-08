@@ -9,6 +9,9 @@
     '======================================VARIABLES===============================
     Dim varBoolGuardoCargo As Boolean = False
     '==============================================================================
+    '=======================================EVENTOS================================
+    Public Event evtGuardoCargo()
+    '==============================================================================
 #Region "PROPIEDADES"
     'PROPIEDAD PARA INICIALIZAR EL CONTROL
     Public WriteOnly Property pBoolIniCtr As Boolean
@@ -71,9 +74,9 @@
             ViewState("pBoolSoloLectura") = value
 
             Me.ddlCargo.Enabled = Not value
-            Me.ibtnHistorico.Enabled = Not value
-            Me.ibtnRelNuevoCargo.Enabled = Not value
-            Me.ibtnRequisitos.Enabled = Not value
+            'Me.ibtnHistorico.Enabled = Not value
+            'Me.ibtnRelNuevoCargo.Enabled = Not value
+            'Me.ibtnRequisitos.Enabled = Not value
 
         End Set
     End Property
@@ -81,6 +84,8 @@
 #Region "PROTEGIDO"
     Protected Sub ddlCargo_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddlCargo.SelectedIndexChanged
         Me.pIdCargo = Me.ddlCargo.SelectedValue
+
+        Me.upnlCargosEmpleado.Update()
     End Sub
     Protected Sub ibtnRequisitos_Click(sender As Object, e As ImageClickEventArgs) Handles ibtnRequisitos.Click
         'SE ENVIA A CARGAR INFORMACION DE REQUISITOS CARGO
@@ -88,6 +93,8 @@
 
         Me.modalReqCargo.Show()
         Me.upnlReqCargo.Update()
+
+        Me.upnlCargosEmpleado.Update()
     End Sub
     Protected Sub ibtnHistorico_Click(sender As Object, e As ImageClickEventArgs) Handles ibtnHistorico.Click
         'SE ENVIA A CARGAR GRILLA DE HISTORICO CARGOS
@@ -95,6 +102,8 @@
 
         Me.modalHistCargo.Show()
         Me.upnlHistCargo.Update()
+
+        Me.upnlCargosEmpleado.Update()
     End Sub
     Protected Sub ibtnRelNuevoCargo_Click(sender As Object, e As ImageClickEventArgs) Handles ibtnRelNuevoCargo.Click
         'SE CARGA EL NOMBRE DEL CARGO ACTUAL
@@ -105,6 +114,8 @@
 
         Me.modalRelNuevoCargo.Show()
         Me.upnlRelNuevoCargo.Update()
+
+        Me.upnlCargosEmpleado.Update()
     End Sub
     Protected Sub ibtnGuardarCargo_Click(sender As Object, e As ImageClickEventArgs) Handles ibtnGuardarCargo.Click
         If (Me.PermiteGuardarCargo()) Then
@@ -113,6 +124,8 @@
 
             If (varBoolGuardoCargo = True) Then
                 Me.pIdCargo = Me.ddlNuevoCargo.SelectedValue
+
+                Me.SuccessLog("Cargo alamcenado correctamente.")
 
                 'SE CARGA EL CARGO GUARDADO
                 If Not (Me.ddlCargo.Items.FindByValue(Me.pIdCargo) Is Nothing) Then
@@ -123,16 +136,23 @@
 
                 'SE LIMPIA EL FORMULARIO DE REL_NUEVO_CARGO
                 Me.LimpiarFormRelNuevoCargo()
+
+                'SE OCULTA LA VENTANA MODAL
+                Me.modalRelNuevoCargo.Hide()
+                Me.upnlCargosEmpleado.Update()
             End If
         End If
+        Me.upnlRelNuevoCargo.Update()
     End Sub
     Protected Sub ibtnCerrarHistCargo_Click(sender As Object, e As ImageClickEventArgs) Handles ibtnCerrarHistCargo.Click
         Me.modalHistCargo.Hide()
         Me.upnlHistCargo.Update()
+        Me.upnlCargosEmpleado.Update()
     End Sub
     Protected Sub ibtnCerrarReqCargo_Click(sender As Object, e As ImageClickEventArgs) Handles ibtnCerrarReqCargo.Click
         Me.modalReqCargo.Hide()
         Me.upnlReqCargo.Update()
+        Me.upnlCargosEmpleado.Update()
     End Sub
     Protected Sub ibtnCerrarRelNuevoCargo_Click(sender As Object, e As ImageClickEventArgs) Handles ibtnCerrarRelNuevoCargo.Click
         'SE LIMPIA LE FORMULARIO
@@ -140,6 +160,7 @@
 
         Me.modalRelNuevoCargo.Hide()
         Me.upnlRelNuevoCargo.Update()
+        Me.upnlCargosEmpleado.Update()
     End Sub
 #End Region
 #Region "PRIVADO"
@@ -219,6 +240,8 @@
             objEmpleado.ActInfoCargoEmpleadoXIdEmp(Me.pIdRelUsuXEmp, objTrans.trTransaccion)
             Me.varBoolGuardoCargo = True
             objTrans.trConfirmarTransaccion()
+
+            Me.pIdCargo = Me.ddlNuevoCargo.SelectedValue
         Catch ex As Exception
             Me.varBoolGuardoCargo = False
             objTrans.trRollBackTransaccion()
@@ -234,6 +257,12 @@
         If Not (Me.ddlCargo.Items.FindByValue(Me.pIdCargo) Is Nothing) Then
             Me.ddlCargo.SelectedValue = Me.pIdCargo
         Else
+            Me.ddlCargo.SelectedValue = 0
+        End If
+    End Sub
+    Public Sub LimpiarCtr()
+        Me.pIdCargo = 0
+        If (Me.ddlCargo.Items.Count > 0) Then
             Me.ddlCargo.SelectedValue = 0
         End If
     End Sub
