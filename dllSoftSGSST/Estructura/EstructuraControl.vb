@@ -1,4 +1,5 @@
-﻿Imports System.Web.Security
+﻿Imports System.Text
+Imports System.Web.Security
 Imports System.Web.UI.WebControls
 Namespace Estructura
     Public Class EstructuraControl
@@ -69,6 +70,22 @@ Namespace Estructura
             parStrMensaje = Replace(parStrMensaje, Chr(34), "")
             parStrMensaje = Replace(parStrMensaje, vbCrLf, " - ")
             ScriptManager.RegisterStartupScript(Me.Page, Me.GetType(), "MsjFailureLog", String.Format("alertify.error('{0}');", parStrMensaje), True)
+        End Sub
+        Public Sub ConfirmationDialog(ByVal parStrMensaje As String, ByVal parControlID As String, Optional ByVal parBoolApliList As Boolean = False)
+            Dim strBuilderFunction As New StringBuilder()
+
+            parStrMensaje = Replace(parStrMensaje, "'", "")
+            parStrMensaje = Replace(parStrMensaje, ":", "")
+            parStrMensaje = Replace(parStrMensaje, Chr(34), "")
+            parStrMensaje = Replace(parStrMensaje, vbCrLf, " - ")
+
+            strBuilderFunction.Append("function (e) {")
+            strBuilderFunction.Append(" if (e) {")
+            strBuilderFunction.AppendFormat("__doPostBack('{0}', '');", parControlID)
+            strBuilderFunction.Append(" }")
+            strBuilderFunction.Append("}")
+
+            ScriptManager.RegisterStartupScript(Me.Page, Me.GetType(), "MsjValidacion", String.Format("alertify.confirm('{0}',{1});", parStrMensaje, strBuilderFunction.ToString), True)
         End Sub
 #End Region
     End Class

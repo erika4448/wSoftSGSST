@@ -212,6 +212,15 @@ Partial Public Class ctrInfoEmpleado
     Protected WithEvents ctrFechaNacimiento As Global.wSoftSGSST.ctrFecha
     
     '''<summary>
+    '''pnlDeptoCiudad control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents pnlDeptoCiudad As Global.System.Web.UI.WebControls.Panel
+    
+    '''<summary>
     '''ctrPaisCiudadDep1 control.
     '''</summary>
     '''<remarks>

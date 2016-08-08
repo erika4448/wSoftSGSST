@@ -112,5 +112,12 @@
             Me.ddlPais.SelectedValue = 0
         End If
     End Sub
+    Public Sub LimpiarCtr()
+        Me.pnlCiudad.Visible = False
+
+        If (Me.ddlPais.Items.Count > 0) Then
+            Me.ddlPais.SelectedValue = 0
+        End If
+    End Sub
 #End Region
 End Class

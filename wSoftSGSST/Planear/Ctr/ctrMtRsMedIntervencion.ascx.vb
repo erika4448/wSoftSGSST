@@ -89,12 +89,12 @@
         End If
 
         'VALIDA CONTROL ADMINISTRATIVOS
-        If (Trim(Me.txtCtrIngenieria.Text).Length = 0) Then
+        If (Trim(Me.txtCtrAdmin.Text).Length = 0) Then
             objMsjRtnValida.AgregarMensaje("Controles Administrativos.")
         End If
 
         'VALIDA CONTROL EEPP
-        If (Trim(Me.txtCtrIngenieria.Text).Length = 0) Then
+        If (Trim(Me.txtEEPP.Text).Length = 0) Then
             objMsjRtnValida.AgregarMensaje("Elementos / Equipos de Protección Personal.")
         End If
 

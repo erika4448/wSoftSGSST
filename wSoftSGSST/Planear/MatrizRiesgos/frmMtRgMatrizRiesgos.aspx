@@ -67,7 +67,7 @@
                                     <asp:BoundField HeaderText="Procesos" DataField="StrProcesos" SortExpression="StrProcesos" />
                                     <asp:BoundField HeaderText="Cargos" DataField="StrCargos" SortExpression="StrCargos" />
                                     <asp:BoundField HeaderText="Actividad" DataField="StrActividad" SortExpression="StrActividad" />
-                                    <asp:BoundField HeaderText="Desripción Peligro" DataField="StrDescripcionPeligro" SortExpression="StrDescripcionPeligro" />
+                                    <asp:BoundField HeaderText="Descripción Peligro" DataField="StrDescripcionPeligro" SortExpression="StrDescripcionPeligro" />
                                     <asp:BoundField HeaderText="Clasificación Peligro" DataField="StrClasificacionPeligro" SortExpression="StrClasificacionPeligro" />
                                     <asp:BoundField HeaderText="Riesgo" DataField="StrRiesgo" SortExpression="StrRiesgo" />
                                     <asp:BoundField HeaderText="Nivel del Riesgo" DataField="sepValorNivRiesgo" SortExpression="sepValorNivRiesgo" />

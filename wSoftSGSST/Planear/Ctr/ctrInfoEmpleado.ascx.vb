@@ -39,6 +39,8 @@ Public Class ctrInfoEmpleado
                     Me.pnlInfoUsuario.Visible = True
                     Me.pnlInfoUsuario.Enabled = True
                     Me.pnlInfoUsuarioCreaMod.Visible = True
+                    Me.pnlInfoUsuarioCreaMod.Enabled = True
+                    Me.pnlDeptoCiudad.Enabled = True
                     '=======================
                     'BOTONES================
                     Me.ibtnEditarInfo.Visible = False
@@ -51,10 +53,31 @@ Public Class ctrInfoEmpleado
                     Me.ibtnResponSGSST.ImageUrl = IIf(Me.pIdEmpleado = 0, "~/Images/OpcPagina/ibtnRespSGSSTGris.png", "~/Images/OpcPagina/ibtnRespSGSSTAzul.png")
                     '=======================
 
+                    'LISTAS DESPLEGABLES ====
+                    Me.ddlTipDoc.Enabled = True
+                    Me.ddlGenero.Enabled = True
+                    Me.ddlEducacion.Enabled = True
+                    Me.ddlProfesion.Enabled = True
+                    Me.ddlEstCivil.Enabled = True
+                    Me.ddlTipoContrato.Enabled = True
+                    '=======================
+                    'FECHAS=================
+                    Me.ctrFechaIngreso.pBooSoloLectura = False
+                    Me.ctrFechaNacimiento.pBooSoloLectura = False
+                    '=======================
+                    'CAJAS DE TEXTO=========
+                    Me.txtNombres.Enabled = True
+                    Me.txtApellidos.Enabled = True
+                    Me.txtNumDoc.Enabled = True
+                    '=======================
+
+                    Me.ctrCargosEmpleado1.pBoolSoloLectura = False
+
                     'SE INICIALIZA CONTROL DE PAIS_CIUDAD
                     Me.ctrPaisCiudadDep1.pBoolIniCtr = True
 
                     'SE INICIALIZA CONROL DE CARGO
+                    Me.ctrCargosEmpleado1.pBoolSoloLectura = False
                     Me.ctrCargosEmpleado1.pIdEmpleado = Me.pIdEmpleado
                     Me.ctrCargosEmpleado1.pBoolIniCtr = True
 
@@ -83,25 +106,26 @@ Public Class ctrInfoEmpleado
 
                     Me.pnlInfoUsuarioCreaMod.Enabled = False
                     Me.pnlInfoUsuario.Visible = True
-                    Me.pnlInfoUsuario.Enabled = False
+                    Me.pnlInfoUsuario.Enabled = True
+                    Me.pnlDeptoCiudad.Enabled = False
                     '=======================
 
-                    'LISTAS DESPLEGABLES====
-                    'Me.ddlTipDoc.Enabled = False
-                    'Me.ddlGenero.Enabled = False
-                    'Me.ddlEducacion.Enabled = False
-                    'Me.ddlProfesion.Enabled = False
-                    'Me.ddlEstCivil.Enabled = False
-                    'Me.ddlTipoContrato.Enabled = False
-                    ''=======================
-                    ''FECHAS=================
-                    'Me.ctrFechaIngreso.pBooSoloLectura = True
-                    'Me.ctrFechaNacimiento.pBooSoloLectura = True
-                    ''=======================
-                    ''CAJAS DE TEXTO=========
-                    'Me.txtNombres.Enabled = False
-                    'Me.txtApellidos.Enabled = False
-                    'Me.txtNumDoc.Enabled = False
+                    'LISTAS DESPLEGABLES ====
+                    Me.ddlTipDoc.Enabled = False
+                    Me.ddlGenero.Enabled = False
+                    Me.ddlEducacion.Enabled = False
+                    Me.ddlProfesion.Enabled = False
+                    Me.ddlEstCivil.Enabled = False
+                    Me.ddlTipoContrato.Enabled = False
+                    '=======================
+                    'FECHAS=================
+                    Me.ctrFechaIngreso.pBooSoloLectura = True
+                    Me.ctrFechaNacimiento.pBooSoloLectura = True
+                    '=======================
+                    'CAJAS DE TEXTO=========
+                    Me.txtNombres.Enabled = False
+                    Me.txtApellidos.Enabled = False
+                    Me.txtNumDoc.Enabled = False
                     '=======================
                     'BOTONES================
                     Me.ibtnEditarInfo.Visible = True
@@ -113,6 +137,8 @@ Public Class ctrInfoEmpleado
                     Me.ibtnRiesgosCargo.ImageUrl = IIf(Me.pIdEmpleado = 0, "~/Images/OpcPagina/ibtnRiesgosCargoGris.png", "~/Images/OpcPagina/ibtnRiesgosCargoAzul.png")
                     Me.ibtnResponSGSST.ImageUrl = IIf(Me.pIdEmpleado = 0, "~/Images/OpcPagina/ibtnRespSGSSTGris.png", "~/Images/OpcPagina/ibtnRespSGSSTAzul.png")
                     '=======================
+
+                    Me.ctrCargosEmpleado1.pBoolSoloLectura = True
 
                 Case EnmAccion.EditarEmpleado
                     'PANELES================
@@ -132,6 +158,26 @@ Public Class ctrInfoEmpleado
                     Me.ibtnRiesgosCargo.ImageUrl = IIf(Me.pIdEmpleado = 0, "~/Images/OpcPagina/ibtnRiesgosCargoGris.png", "~/Images/OpcPagina/ibtnRiesgosCargoAzul.png")
                     Me.ibtnResponSGSST.ImageUrl = IIf(Me.pIdEmpleado = 0, "~/Images/OpcPagina/ibtnRespSGSSTGris.png", "~/Images/OpcPagina/ibtnRespSGSSTAzul.png")
                     '=======================
+
+                    'LISTAS DESPLEGABLES ====
+                    Me.ddlTipDoc.Enabled = True
+                    Me.ddlGenero.Enabled = True
+                    Me.ddlEducacion.Enabled = True
+                    Me.ddlProfesion.Enabled = True
+                    Me.ddlEstCivil.Enabled = True
+                    Me.ddlTipoContrato.Enabled = True
+                    '=======================
+                    'FECHAS=================
+                    Me.ctrFechaIngreso.pBooSoloLectura = False
+                    Me.ctrFechaNacimiento.pBooSoloLectura = False
+                    '=======================
+                    'CAJAS DE TEXTO=========
+                    Me.txtNombres.Enabled = True
+                    Me.txtApellidos.Enabled = True
+                    Me.txtNumDoc.Enabled = True
+                    '=======================
+
+                    Me.ctrCargosEmpleado1.pBoolSoloLectura = False
             End Select
         End Set
     End Property
@@ -153,6 +199,8 @@ Public Class ctrInfoEmpleado
 
             If (Me.pIdEmpleado <> 0 AndAlso Me.varBoolGuardoEmpleado) Then
                 Me.SuccessLog("Empleado guardado correctamente")
+
+                Me.CargarEmpleado()
 
                 'SE CARGA LA INFORMACION DEL EMPLEADO
                 Me.pVisualizaXAccion = EnmAccion.CargarEmpleado
@@ -376,6 +424,43 @@ Public Class ctrInfoEmpleado
     End Function
 #End Region
 #Region "PUBLICO"
+    Public Sub LimpiarCtr()
+        Me.pIdEmpleado = 0
+
+        Me.ctrPaisCiudadDep1.LimpiarCtr()
+        Me.ctrCargosEmpleado1.LimpiarCtr()
+
+        Me.ctrFechaNacimiento.LimpiarControl()
+        Me.ctrFechaIngreso.LimpiarControl()
+
+        Me.txtNombres.Text = ""
+        Me.txtApellidos.Text = ""
+        Me.txtNumDoc.Text = ""
+
+        If (Me.ddlTipDoc.Items.Count > 0) Then
+            Me.ddlTipDoc.SelectedValue = 0
+        End If
+
+        If (Me.ddlGenero.Items.Count > 0) Then
+            Me.ddlGenero.SelectedValue = 0
+        End If
+
+        If (Me.ddlEducacion.Items.Count > 0) Then
+            Me.ddlEducacion.SelectedValue = 0
+        End If
+        If (Me.ddlProfesion.Items.Count > 0) Then
+            Me.ddlProfesion.SelectedValue = 0
+        End If
+        If (Me.ddlEstCivil.Items.Count > 0) Then
+            Me.ddlEstCivil.SelectedValue = 0
+        End If
+
+
+        If (Me.ddlTipoContrato.Items.Count > 0) Then
+            Me.ddlTipoContrato.SelectedValue = 0
+        End If
+
+    End Sub
     Public Sub CargarEmpleado()
         Dim objEmpleado As New dllSoftSGSST.SGSST.clSgsstEmpleado
         Dim dtDatos As New Data.DataTable
