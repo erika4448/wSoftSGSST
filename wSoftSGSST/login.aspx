@@ -99,23 +99,10 @@
             </table>
         </div>
         <div style="position: fixed; bottom: 0px; width: 100%; z-index: -1;">
+            <div style="position: fixed; bottom: 0px; margin-bottom: -2px; margin-left: -8px;">
+                <img src="Images/Login/imFooterFasem.png" />
+            </div>
             <div id="LoginFooter">
-                <div align="center">
-                    <table align="center" cellpadding="0" cellspacing="0" style="vertical-align: central; padding-top: 15px;">
-                        <tr>
-                            <td align="center">Software Desarrollado por:
-                            </td>
-                        </tr>
-                        <tr>
-                            <td align="center">Fábrica de Soluciones Empresariales FASEM
-                            </td>
-                        </tr>
-                        <tr>
-                            <td align="center">Bogotá D.C.
-                                a</td>
-                        </tr>
-                    </table>
-                </div>
             </div>
         </div>
     </form>

@@ -56,6 +56,12 @@
             End If
         End Set
     End Property
+    'PORPIEDAD PARA EL ALMACENAMIETNO DEL CARGOS SEL
+    Public ReadOnly Property pStrCargo As String
+        Get
+            Return IIf(Me.ddlCargo.Items.Count > 0, Me.ddlCargo.SelectedItem.Text, "")
+        End Get
+    End Property
     'PROPIEDAD PARA EL ALMACENAMIENTO DEL ID_EMPLEADO
     Public Property pIdEmpleado As Integer
         Get
@@ -265,6 +271,13 @@
         If (Me.ddlCargo.Items.Count > 0) Then
             Me.ddlCargo.SelectedValue = 0
         End If
+    End Sub
+#End Region
+#Region "EVENTOS"
+    Private Sub evtSelFecha() Handles ctrFechaIngreso.evtSelFecha
+        Me.Page.SetFocus(Me.ibtnGuardarCargo)
+        Me.ibtnGuardarCargo.Focus()
+        Me.upnlRelNuevoCargo.Update()
     End Sub
 #End Region
 #Region "DATA SOURCE GRILLA HISTORICO CARGOS"

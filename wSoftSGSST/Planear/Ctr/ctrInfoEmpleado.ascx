@@ -132,8 +132,8 @@
                             <tr>
                                 <td align="left" colspan="2">
                                     <asp:Panel ID="pnlDeptoCiudad" runat="server">
-                                    <uc2:ctrPaisCiudadDep ID="ctrPaisCiudadDep1" runat="server" />
-                                        </asp:Panel>
+                                        <uc2:ctrPaisCiudadDep ID="ctrPaisCiudadDep1" runat="server" />
+                                    </asp:Panel>
                                 </td>
                             </tr>
                             <tr>
@@ -233,6 +233,73 @@
                 </td>
             </tr>
         </table>
+        <%--VENTANA MODAL RIESGOS DEL CARGO--%>
+        <asp:Button ID="btnFake" runat="server" CausesValidation="False" Style="display: none" ToolTip="Editar Parámetro" />
+        <ajaxToolkit:ModalPopupExtender ID="modalInfoRiesgosCargo" runat="server" BackgroundCssClass="cssModalBackGround" Enabled="True" PopupControlID="pnlInfoRiesgosCargo" TargetControlID="btnFake">
+        </ajaxToolkit:ModalPopupExtender>
+        <asp:Panel ID="pnlInfoRiesgosCargo" runat="server" CssClass="ModalPoup" Style="display: none">
+            <asp:UpdatePanel ID="upnlInfoRiesgosCargo" runat="server" UpdateMode="Conditional">
+                <ContentTemplate>
+                    <table>
+                        <tr>
+                            <td align="right">
+
+                                <asp:ImageButton ID="ibtnCerrrarModalInfoRiesgoCargo" runat="server" ImageUrl="~/Images/General/ibtnCerrarModal.png" />
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center">
+                                <asp:Label ID="lblTituloRiesgosCargo" runat="server" CssClass="tituloForm" Text="Riesgos del Cargo"></asp:Label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td align="center">
+                                <table align="center">
+                                    <tr>
+                                        <td align="left">
+                                            <asp:Label ID="lblNomCargo" runat="server" Text="Nombre Cargo"></asp:Label>
+                                        </td>
+                                        <td align="left">
+                                            <asp:Label ID="lblCargoInfoRiesgo" runat="server" Font-Bold="True"></asp:Label>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center">
+                                <asp:Panel ID="pnlRiesgosCargo" runat="server" Height="300px" ScrollBars="Auto">
+                                    <asp:GridView ID="gvRiesgosCargo" runat="server" AutoGenerateColumns="False" CssClass="gvSGSST" DataSourceID="odsRiesgosCargo">
+                                        <Columns>
+                                            <asp:BoundField DataField="sgacNombre" HeaderText="Actividad" SortExpression="sgacNombre" />
+                                            <asp:BoundField DataField="sgplDescripcionPeligro" HeaderText="Descripción del Peligro" SortExpression="sgplDescripcionPeligro" />
+                                            <asp:BoundField DataField="sclpNombre" HeaderText="Clasificación del Peligro" SortExpression="sclpNombre" />
+                                            <asp:BoundField DataField="sgriNombre" HeaderText="Riesgo" SortExpression="sgriNombre" />
+                                            <asp:BoundField HeaderText="Evaluación" />
+                                        </Columns>
+                                        <AlternatingRowStyle CssClass="gvSGSST_Tr_Alternate" />
+                                    </asp:GridView>
+                                    <asp:ObjectDataSource ID="odsRiesgosCargo" runat="server" SelectMethod="GetTblInfoPeligroXIdCargo" TypeName="dllSoftSGSST.SGSST.clSgsstRelPeligroXCargo">
+                                        <SelectParameters>
+                                            <asp:Parameter Name="parIdCargo" Type="Int32" />
+                                            <asp:Parameter Name="parIdEstado" Type="Object" />
+                                        </SelectParameters>
+                                    </asp:ObjectDataSource>
+                                </asp:Panel>
+                            </td>
+                        </tr>
+                    </table>
+                </ContentTemplate>
+            </asp:UpdatePanel>
+        </asp:Panel>
     </ContentTemplate>
     <Triggers>
         <asp:PostBackTrigger ControlID="ibtnGuardarInfo" />

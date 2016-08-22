@@ -399,4 +399,103 @@ Partial Public Class ctrInfoEmpleado
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ibtnResponSGSST As Global.System.Web.UI.WebControls.ImageButton
+    
+    '''<summary>
+    '''btnFake control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents btnFake As Global.System.Web.UI.WebControls.Button
+    
+    '''<summary>
+    '''modalInfoRiesgosCargo control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents modalInfoRiesgosCargo As Global.AjaxControlToolkit.ModalPopupExtender
+    
+    '''<summary>
+    '''pnlInfoRiesgosCargo control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents pnlInfoRiesgosCargo As Global.System.Web.UI.WebControls.Panel
+    
+    '''<summary>
+    '''upnlInfoRiesgosCargo control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents upnlInfoRiesgosCargo As Global.System.Web.UI.UpdatePanel
+    
+    '''<summary>
+    '''ibtnCerrrarModalInfoRiesgoCargo control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ibtnCerrrarModalInfoRiesgoCargo As Global.System.Web.UI.WebControls.ImageButton
+    
+    '''<summary>
+    '''lblTituloRiesgosCargo control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblTituloRiesgosCargo As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
+    '''lblNomCargo control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblNomCargo As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
+    '''lblCargoInfoRiesgo control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblCargoInfoRiesgo As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
+    '''pnlRiesgosCargo control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents pnlRiesgosCargo As Global.System.Web.UI.WebControls.Panel
+    
+    '''<summary>
+    '''gvRiesgosCargo control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents gvRiesgosCargo As Global.System.Web.UI.WebControls.GridView
+    
+    '''<summary>
+    '''odsRiesgosCargo control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents odsRiesgosCargo As Global.System.Web.UI.WebControls.ObjectDataSource
 End Class

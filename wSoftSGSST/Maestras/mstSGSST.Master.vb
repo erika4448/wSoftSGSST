@@ -4,6 +4,7 @@
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         If Not IsPostBack Then
         End If
+
         Me.CargarMenu()
     End Sub
 #Region "PRIVADO"
@@ -25,7 +26,7 @@
         For Each drModuloRow As DataRow In dtDatosModulo.Rows
             strBuilder.Append(" {")
             strBuilder.AppendFormat("text: '<img src={0}{1}{0}/>',", Chr(34), New System.Uri(Context.Request.Url, ResolveUrl(drModuloRow("simoURL"))).ToString)
-
+            strBuilder.AppendFormat("href: '{0}',", ResolveUrl(drModuloRow("simoURLModulo")))
 
             'SE CARGAN LAS PAGINAS DEL MODULO
             dtDatosPagina = objPagina.GetTblInfoPaginaXIdModYRelUsuEmp(drModuloRow("simoIdModulo"), Me.pIdRelUsuXEmp)

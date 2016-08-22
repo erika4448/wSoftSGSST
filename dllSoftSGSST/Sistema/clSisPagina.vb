@@ -19,5 +19,13 @@ Namespace Sistema
 
             Return db.ExecuteDataSet(dbCommand).Tables(0)
         End Function
+        'FUNCION PARA CARGAR PORCENTAJE AVANCE DE PAGINAS PARA MENU PLANEAR
+        Public Function CargarPorcAvanceMenuPlanear(ByVal parIdEmpresa As Integer) As Data.DataSet
+            Dim dbCommand As DbCommand = db.GetStoredProcCommand("sis.spSisCargarPorcAvanceMenuPlanear")
+
+            db.AddInParameter(dbCommand, "parIdEmpresa", DbType.Int32, parIdEmpresa)
+
+            Return db.ExecuteDataSet(dbCommand)
+        End Function
     End Class
 End Namespace

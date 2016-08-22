@@ -212,13 +212,13 @@ Partial Public Class ctrInfoPeligro
     Protected WithEvents ibtnMedIntervencion As Global.System.Web.UI.WebControls.ImageButton
     
     '''<summary>
-    '''btnFake control.
+    '''btnFake123 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents btnFake As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents btnFake123 As Global.System.Web.UI.WebControls.Button
     
     '''<summary>
     '''modalInfoAdicPeligro control.
@@ -444,24 +444,6 @@ Partial Public Class ctrInfoPeligro
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ctrMtRsMedIntervencion1 As Global.wSoftSGSST.ctrMtRsMedIntervencion
-    
-    '''<summary>
-    '''btnFake2 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents btnFake2 As Global.System.Web.UI.WebControls.Button
-    
-    '''<summary>
-    '''modalEvalPeligro control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents modalEvalPeligro As Global.AjaxControlToolkit.ModalPopupExtender
     
     '''<summary>
     '''pnlEvalPeligro control.
