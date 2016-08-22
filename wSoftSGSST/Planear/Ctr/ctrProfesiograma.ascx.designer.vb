@@ -41,6 +41,15 @@ Partial Public Class ctrProfesiograma
     Protected WithEvents ibtnNuevaConsulta As Global.System.Web.UI.WebControls.ImageButton
     
     '''<summary>
+    '''ibtnVolver control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ibtnVolver As Global.System.Web.UI.WebControls.ImageButton
+    
+    '''<summary>
     '''ibtnNuevoProfesiograma control.
     '''</summary>
     '''<remarks>
@@ -48,6 +57,15 @@ Partial Public Class ctrProfesiograma
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ibtnNuevoProfesiograma As Global.System.Web.UI.WebControls.ImageButton
+    
+    '''<summary>
+    '''ibtnConsultarProfesiograma control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ibtnConsultarProfesiograma As Global.System.Web.UI.WebControls.ImageButton
     
     '''<summary>
     '''pnlBuscarCargo control.
@@ -86,13 +104,13 @@ Partial Public Class ctrProfesiograma
     Protected WithEvents ibntVerDetalle As Global.System.Web.UI.WebControls.ImageButton
     
     '''<summary>
-    '''pnlFormularioCargo control.
+    '''pnlFormularioCargoInfoBasica control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents pnlFormularioCargo As Global.System.Web.UI.WebControls.Panel
+    Protected WithEvents pnlFormularioCargoInfoBasica As Global.System.Web.UI.WebControls.Panel
     
     '''<summary>
     '''lblNomCargo control.
@@ -149,6 +167,15 @@ Partial Public Class ctrProfesiograma
     Protected WithEvents lblCodCargoObliga As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
+    '''pnlFormularioCargoInfoComp control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents pnlFormularioCargoInfoComp As Global.System.Web.UI.WebControls.Panel
+    
+    '''<summary>
     '''lblObjCargo control.
     '''</summary>
     '''<remarks>
@@ -183,15 +210,6 @@ Partial Public Class ctrProfesiograma
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtActividades As Global.System.Web.UI.WebControls.TextBox
-    
-    '''<summary>
-    '''lblActividadesObliga control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents lblActividadesObliga As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
     '''lblEducacion control.
@@ -372,6 +390,60 @@ Partial Public Class ctrProfesiograma
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ddlAreaDelCargo As Global.System.Web.UI.WebControls.DropDownList
+    
+    '''<summary>
+    '''ibtnAgreArea control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ibtnAgreArea As Global.System.Web.UI.WebControls.ImageButton
+    
+    '''<summary>
+    '''pnlNuevaArea control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents pnlNuevaArea As Global.System.Web.UI.WebControls.Panel
+    
+    '''<summary>
+    '''lblNewArea control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblNewArea As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
+    '''txtNuevaArea control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtNuevaArea As Global.System.Web.UI.WebControls.TextBox
+    
+    '''<summary>
+    '''btnGuardarNuevaArea control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents btnGuardarNuevaArea As Global.System.Web.UI.WebControls.ImageButton
+    
+    '''<summary>
+    '''btnCerrarNuevaArea control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents btnCerrarNuevaArea As Global.System.Web.UI.WebControls.ImageButton
     
     '''<summary>
     '''pnlRiesgos control.

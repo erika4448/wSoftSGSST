@@ -98,6 +98,9 @@
     <Content Include="frmPrincMenuPrincipal.aspx" />
     <Content Include="frmPrincPrimerIngreso.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="Images\Botones\boton_consultar_editar_cargo.fw.png" />
+    <Content Include="Images\Botones\boton_crear_nuevo_cargo.fw.png" />
+    <Content Include="Images\Botones\boton_volver.fw.png" />
     <Content Include="Images\Botones\ibtnRegresarMatriz.png" />
     <Content Include="Images\Botones\ibtnEscogerCampos.png" />
     <Content Include="Images\Botones\ibtnFiltrosConsulta.png" />
@@ -125,6 +128,7 @@
     <Content Include="Images\Botones\ibtnAgregarAzul.png" />
     <Content Include="Images\Botones\ibtnIngresarAzul.png" />
     <Content Include="Images\Botones\ibtnNuevaConsulta.png" />
+    <Content Include="Images\Botones\Nueva_Actividad.fw.png" />
     <Content Include="Images\frmGetImagenEmpleado.aspx" />
     <Content Include="Images\General\boton_grilla_eliminar.png" />
     <Content Include="Images\General\ibtnCalificarRiesgo.png" />

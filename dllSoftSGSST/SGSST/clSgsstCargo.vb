@@ -56,7 +56,7 @@ Namespace SGSST
 
             Using drLector As IDataReader = db.ExecuteReader(dbCommand)
                 While drLector.Read
-                    lst.Add(drLector("NOMBRE"))
+                    lst.Add(drLector("sgcaNombre"))
                 End While
             End Using
             Return lst
@@ -65,7 +65,7 @@ Namespace SGSST
         Public Function CargarInfoCargoXIdCargo(ByVal parIdCargo As Integer) As Data.DataTable
             Dim dbCommand As DbCommand = db.GetStoredProcCommand("spSgsstCargarInfoCargoXIdCargo")
 
-            db.AddInParameter(dbCommand, "parIdCargo", DbType.Int32, parIdCargo)
+            db.AddInParameter(dbCommand, "parId", DbType.Int32, parIdCargo)
 
             Return db.ExecuteDataSet(dbCommand).Tables(0)
         End Function
@@ -100,7 +100,7 @@ Namespace SGSST
         Public Sub CargarInfoCargoXStrCodCargo(ByVal parIdCargo As Integer, ByVal parStrCodigoCargo As String, ByVal parIdEstado As Integer)
             Dim dbCommand As DbCommand = db.GetStoredProcCommand("spSgsstCargarInfoCargoXStrCodCargo")
             db.AddInParameter(dbCommand, "parIdCargo", DbType.Int32, parIdCargo)
-            db.AddInParameter(dbCommand, "parCodigoCargo", DbType.Int32, parStrCodigoCargo)
+            db.AddInParameter(dbCommand, "parCodigoCargo", DbType.String, parStrCodigoCargo)
             db.AddInParameter(dbCommand, "parIdEstado", DbType.Int32, parIdEstado)
 
             Using drLector As IDataReader = db.ExecuteReader(dbCommand)

@@ -8,8 +8,10 @@
     'ENUMERACION PARA EL MANEJO DE ACCIONES
     Public Enum EnmAccion
         Inicio = 1
-        Cargar = 2
-        ActividadesPeligros = 3
+        Nuevo = 2
+        Editar = 3
+        Buscar = 4
+        ActividadesPeligros = 5
     End Enum
     'PROPIEDAD PARA INICIALIZAR EL CONTROL
     Public WriteOnly Property pBoolIniCtr As Boolean
@@ -24,21 +26,29 @@
                 Case EnmAccion.Inicio
                     'MOSTRAR PANELES
                     Me.pnlProfesiograma.Visible = True
-                    Me.pnlBuscarCargo.Visible = True
-                    Me.pnlFormularioCargo.Visible = False
+                    Me.pnlBuscarCargo.Visible = False
+                    Me.pnlFormularioCargoInfoBasica.Visible = False
+                    Me.pnlFormularioCargoInfoComp.Visible = False
                     Me.pnlActividadesPeligros.Visible = False
+                    Me.pnlNuevaArea.Visible = False
+
+                    'BOTONES
+                    Me.ibtnNuevoProfesiograma.Visible = True
+                    Me.ibtnConsultarProfesiograma.Visible = True
+                    Me.ibntVerDetalle.Visible = True
+                    Me.ibtnGuardar.Visible = False
+                    Me.ibtnNuevaConsulta.Visible = False
+                    Me.ibtnVolver.Visible = False
 
                     'INICIALIZAR EL CONTROL DE BUSQUEDA DINAMICO
                     Me.ctrDinaConsObjCargo.pIdConfigCtrBusDina = 1
                     Me.ctrDinaConsObjCargo.pBoolIniCtr = True
 
                     'OCULTAR BOTON DE VER DETALLES
-                    Me.ibntVerDetalle.Visible = True
 
                     'OCULTAR LOS LBL DE OBLIGATORIO
                     Me.lblNomCargoObliga.Visible = False
                     Me.lblCodCargoObliga.Visible = False
-                    Me.lblActividadesObliga.Visible = False
 
                     'INABILITAR LOS BOTONES COMPLEMENTARIOS
                     Me.pnlRiesgos.Enabled = False
@@ -66,17 +76,60 @@
                     'INCIALIZAR LA TABLA DE QUIEN LE REPORTA
                     Me.pTblQuienReportaCargo = New dllSoftSGSST.SGSST.dtsQuienLeReportaCargo.dtQuienRepCargoDataTable
 
-                Case EnmAccion.Cargar
+                Case EnmAccion.Nuevo
+                    'BOTONES
+                    Me.ibtnNuevoProfesiograma.Visible = False
+                    Me.ibtnConsultarProfesiograma.Visible = False
+                    Me.ibntVerDetalle.Visible = False
+                    Me.ibtnGuardar.Visible = True
+                    Me.ibtnNuevaConsulta.Visible = False
+                    Me.ibtnVolver.Visible = True
+
                     'MOSTRAR PANELES
                     Me.pnlProfesiograma.Visible = True
                     Me.pnlBuscarCargo.Visible = False
-                    Me.pnlFormularioCargo.Visible = True
+                    Me.pnlFormularioCargoInfoBasica.Visible = True
+                    Me.pnlFormularioCargoInfoComp.Visible = False
                     Me.pnlActividadesPeligros.Visible = False
+                    Me.pnlNuevaArea.Visible = False
 
-                    'OCULTAR BOTON DE VER DETALLES
+
+                Case EnmAccion.Buscar
+                    'BOTONES
+                    Me.ibtnNuevoProfesiograma.Visible = False
+                    Me.ibtnConsultarProfesiograma.Visible = False
+                    Me.ibntVerDetalle.Visible = True
+                    Me.ibtnGuardar.Visible = False
+                    Me.ibtnNuevaConsulta.Visible = False
+                    Me.ibtnVolver.Visible = True
+
+                    'MOSTRAR PANELES
+                    Me.pnlProfesiograma.Visible = True
+                    Me.pnlBuscarCargo.Visible = True
+                    Me.pnlFormularioCargoInfoBasica.Visible = False
+                    Me.pnlFormularioCargoInfoComp.Visible = False
+                    Me.pnlActividadesPeligros.Visible = False
+                    Me.pnlNuevaArea.Visible = False
+
+
+                Case EnmAccion.Editar
+                    'OCULTAR BOTONES DE NUEVO Y BUSCAR
+                    Me.ibtnNuevoProfesiograma.Visible = False
+                    Me.ibtnConsultarProfesiograma.Visible = False
                     Me.ibntVerDetalle.Visible = False
+                    Me.ibtnGuardar.Visible = True
+                    Me.ibtnNuevaConsulta.Visible = True
+                    Me.ibtnVolver.Visible = False
 
-                    'INABILITAR LOS BOTONES COMPLEMENTARIOS
+                    'MOSTRAR PANELES
+                    Me.pnlProfesiograma.Visible = True
+                    Me.pnlBuscarCargo.Visible = False
+                    Me.pnlFormularioCargoInfoBasica.Visible = True
+                    Me.pnlFormularioCargoInfoComp.Visible = True
+                    Me.pnlActividadesPeligros.Visible = False
+                    Me.pnlNuevaArea.Visible = False
+
+                    'BOTONES COMPLEMENTARIOS
                     Me.pnlRiesgos.Enabled = True
                     Me.pnlRqFisicos.Enabled = False
                     Me.pnlCondicSalud.Enabled = False
@@ -87,11 +140,14 @@
                     Me.ibtnRiesgos.ImageUrl = "~/Images/OpcPagina/ibtnRiesgosCargoAzul.png"
                     Me.itbnRqFisicos.ImageUrl = "~/Images/OpcPagina/ibtnReqFisiciosAzul.png"
 
+
+
                 Case EnmAccion.ActividadesPeligros
                     'MOSTRAR PANELES
                     Me.pnlProfesiograma.Visible = False
                     Me.pnlBuscarCargo.Visible = False
-                    Me.pnlFormularioCargo.Visible = False
+                    Me.pnlFormularioCargoInfoBasica.Visible = False
+                    Me.pnlFormularioCargoInfoComp.Visible = False
                     Me.pnlActividadesPeligros.Visible = True
             End Select
         End Set
@@ -128,7 +184,15 @@
     'EVENTO DEL BOTON GUARDAR
     Protected Sub ibtnGuardar_Click(sender As Object, e As ImageClickEventArgs) Handles ibtnGuardar.Click
         If (esValidoParaguardar._varBoolRtn) Then
-            Me.GuardarInfoCargo
+            Me.GuardarInfoCargo()
+
+            Me.LimpiarForm()
+            Me.LimpiarBuscador()
+
+            'EVALUAR SI SE ESTA MOSTRANDO EL PANEL DE INFORMACION COMPLEMENTARIA PARA VOVLER A LA BUSQUEDA DE CARGOS
+            If (Me.pnlFormularioCargoInfoComp.Visible) Then
+                Me.pVisualizacionXAccion = EnmAccion.Buscar
+            End If
         End If
     End Sub
     'EVENTO DEL BOTON AGREGAR CARGO A QUIEN LE REPORTA
@@ -168,7 +232,7 @@
             Me.CargarInfoCargoXIdCargo()
 
             'CARGAR VISUALIZACION
-            Me.pVisualizacionXAccion = EnmAccion.Cargar
+            Me.pVisualizacionXAccion = EnmAccion.Editar
 
         Else
             Me.AlertDialog("Debe seleccionar un Cargo.")
@@ -180,12 +244,20 @@
         Me.LimpiarBuscador()
 
         'CARGAR LA VISUALIZACION DE INICIO
-        Me.pVisualizacionXAccion = EnmAccion.Inicio
+        Me.pVisualizacionXAccion = EnmAccion.Buscar
     End Sub
     'EVENTO DEL BOTON NUEVO PROFESIOGRAMA
     Protected Sub ibtnNuevoProfesiograma_Click(sender As Object, e As ImageClickEventArgs) Handles ibtnNuevoProfesiograma.Click
-        Me.pVisualizacionXAccion = EnmAccion.Cargar
+        Me.pVisualizacionXAccion = EnmAccion.Nuevo
         Me.LimpiarForm()
+    End Sub
+    'EVENTO DEL BOTON CONSULTAR Y EDITAR
+    Protected Sub ibtnConsultarProfesiograma_Click(sender As Object, e As ImageClickEventArgs) Handles ibtnConsultarProfesiograma.Click
+        Me.pVisualizacionXAccion = EnmAccion.Buscar
+    End Sub
+    'EVENTO DEL BOTON VOLVER
+    Protected Sub ibtnVolver_Click(sender As Object, e As ImageClickEventArgs) Handles ibtnVolver.Click
+        Me.pVisualizacionXAccion = EnmAccion.Inicio
     End Sub
     'EVENTO DEL BOTON ELIMINAR DE LA GRILLA
     Protected Sub ibtnEliminar_Click(sender As Object, e As ImageClickEventArgs)
@@ -217,6 +289,31 @@
     'EVENTO DEL TXT CODIGO CARGO PARA VALIDAR SI YA EXISTE UN CARGO CON ESE CODIGO
     Protected Sub txtCodCargo_TextChanged(sender As Object, e As EventArgs) Handles txtCodCargo.TextChanged
         Me.ValidarExisteCodigoCargo
+    End Sub
+    'EVENTO DEL BOTON NUEVA AREA
+    Protected Sub ibtnAgreArea_Click(sender As Object, e As ImageClickEventArgs) Handles ibtnAgreArea.Click
+        Me.pnlNuevaArea.Visible = True
+    End Sub
+    'EVENTO DEL BOTON CERRAR NUEVA AREA
+    Protected Sub btnCerrarNuevaArea_Click(sender As Object, e As ImageClickEventArgs) Handles btnCerrarNuevaArea.Click
+        Me.pnlNuevaArea.Visible = False
+    End Sub
+    'EVENTO DEL BOTON GUARDAR NUEVA AREA
+    Protected Sub btnGuardarNuevaArea_Click(sender As Object, e As ImageClickEventArgs) Handles btnGuardarNuevaArea.Click
+        If (Me.txtNuevaArea.Text <> "") Then
+            Dim tmpIdArea As New Integer
+            tmpIdArea = Me.GuardarNuevaArea()
+
+            'CARGAR EL DDL DE AREA
+            Me.CargarDdlArea()
+
+            Me.ddlAreaDelCargo.SelectedValue = tmpIdArea
+
+            Me.pnlNuevaArea.Visible = False
+        Else
+            Me.AlertDialog("Debe digitar un nombre de Área")
+        End If
+
     End Sub
 #End Region
 #Region "PRIVADO"
@@ -281,16 +378,6 @@
             objMsj._varBoolRtn = False
         End If
 
-        'VALIDAR TXT ACTIVIDADES DEL CARGO
-        If (Trim(Me.txtActividades.Text) = "") Then
-            objMsj.AgregarMensaje("Debe digitar Actividades Cargo")
-            Me.lblActividadesObliga.Visible = True
-            objMsj._varBoolRtn = False
-
-        Else
-            Me.lblActividadesObliga.Visible = False
-        End If
-
         If Not (objMsj._varBoolRtn) Then
             Me.AlertDialog(objMsj.GetMensaje(dllSoftSGSST.Estructura.EstructuraMsjValidacion.EnmTipoMensaje.Advertencia, objMsj.GetMensajeValidacionCamposFaltantes()))
         End If
@@ -325,7 +412,7 @@
             objCargo.sgcaIdEducacion = Me.ddlEducacion.SelectedValue
             objCargo.sgcaIdProfesion = Me.ddlProfesion.SelectedValue
             objCargo.sgcaExperiencia = Me.txtExperiencia.Text
-            objCargo.sgcaAnosExperiencia = Me.txtExperienciaAnos.Text
+            objCargo.sgcaAnosExperiencia = IIf(Me.txtExperienciaAnos.Text = "", 0, Me.txtExperienciaAnos.Text)
             objCargo.sgcaHabilidades = Me.txtHabilidades.Text
             objCargo.sgcaAQuienRepotaIdCargo = Me.ddlAQuienReporta.SelectedValue
             objCargo.sgcaIdArea = Me.ddlAreaDelCargo.SelectedValue
@@ -377,6 +464,27 @@
             Me.AlertDialog("Código ya creado y perteneciente al cargo " & objCargo.sgcaNombre)
         End If
     End Sub
+    'FUNCION PARA GUARDAR NUEVA AREA
+    Private Function GuardarNuevaArea() As Integer
+        Dim objArea As New dllSoftSGSST.SGSST.clSgsstArea
+        Dim objTrans As New dllSoftSGSST.Estructura.EstructuraTransaccion
+
+        Try
+            objTrans.trCrearTransaccion()
+            objArea.sgarIdArea = 0
+            objArea.sgarNombre = Me.txtNuevaArea.Text
+            objArea.sgarIdEstado = dllSoftSGSST.Sistema.clSisEstado.EnmEstado.Activo
+            objArea.sgarIdEmpresa = 1
+            objArea.GuardarArea(objTrans.trTransaccion)
+            objTrans.trConfirmarTransaccion()
+
+            Return objArea.sgarIdArea
+        Catch ex As Exception
+            objTrans.trRollBackTransaccion()
+            Me.AlertDialog("No se pudo guardar el Área: " & ex.Message.ToString)
+        End Try
+
+    End Function
 #End Region
 #Region "PUBLICO"
     'FUNCION PARA CARGAR LA INFORMACION DE UN CARGO X ID CARGO
@@ -402,8 +510,11 @@
             Me.ddlAQuienReporta.Text = dtDatos.Rows(0)("sgcaAQuienRepotaIdCargo")
             Me.ddlAreaDelCargo.SelectedValue = dtDatos.Rows(0)("sgcaIdArea")
 
-            'CARGAR QUIEN LE REPORTA
 
+            'INCIALIZAR LA TABLA DE QUIEN LE REPORTA
+            Me.pTblQuienReportaCargo = New dllSoftSGSST.SGSST.dtsQuienLeReportaCargo.dtQuienRepCargoDataTable
+
+            'CARGAR QUIEN LE REPORTA
             dtDatosQuienRep = objCargoXQuienRep.GetTblInfoQuienLeReportaCargoXIdCargo(Me.pIdCargo, dllSoftSGSST.Sistema.clSisEstado.EnmEstado.Activo)
 
             If (dtDatosQuienRep.Rows.Count <> 0) Then
@@ -448,9 +559,7 @@
     End Sub
     'MANEJO DEL EVENTO CERRAR CTR DE ACTIVIDADES Y PELIGROS
     Public Sub evtCerrarCtrActividades() Handles ctrActividadesYPeligros.evtCerrarCtr
-        Me.pVisualizacionXAccion = EnmAccion.Cargar
+        Me.pVisualizacionXAccion = EnmAccion.Editar
     End Sub
-
-
 #End Region
 End Class

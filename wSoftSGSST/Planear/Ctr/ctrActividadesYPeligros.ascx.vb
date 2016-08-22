@@ -26,11 +26,15 @@
                 Case EnmAccion.Inicio
                     'VISUALIZACION PANELES
                     Me.pnlGvActRiesgos.Visible = True
-                    Me.pnlActividad.Visible = False
+                    Me.pnlActividad.Visible = True
                     Me.pnlNuevaActividad.Visible = False
                     Me.pnlDescClasRies.Visible = False
-                    Me.ibtnAgregarActividad.Visible = True
+                    'Me.ibtnAgregarActividad.Visible = True
                     Me.ibtCerrar.Visible = True
+
+                    'INICIALIZAR CONTROL DINAMICO DE ACTIVIDADES
+                    Me.ctrDinaConsObjActividad.pIdConfigCtrBusDina = 3
+                    Me.ctrDinaConsObjActividad.pBoolIniCtr = True
 
                     'INICIALIZAR DATASET
                     Me.pTblPeligro = New dllSoftSGSST.SGSST.dtsPeligro.dtPeligroDataTable
@@ -49,21 +53,17 @@
 
                 Case EnmAccion.AsociarActividad
                     'VISUALIZACION DE PANELES
-                    Me.pnlPeligrosXCargo.Visible = False
+                    Me.pnlPeligrosXCargo.Visible = True
                     Me.pnlActividad.Visible = True
                     Me.pnlNuevaActividad.Visible = False
                     Me.pnlDescClasRies.Visible = False
-                    Me.ibtnAgregarActividad.Visible = False
+                    'Me.ibtnAgregarActividad.Visible = False
                     Me.ibtCerrar.Visible = False
-
-                    'INICIALIZAR CONTROL DINAMICO DE ACTIVIDADES
-                    Me.ctrDinaConsObjActividad.pIdConfigCtrBusDina = 3
-                    Me.ctrDinaConsObjActividad.pBoolIniCtr = True
 
                 Case EnmAccion.NuevaActividad
                     'VISUALIZACION DE PANELES
-                    Me.pnlPeligrosXCargo.Visible = False
-                    Me.pnlActividad.Visible = False
+                    Me.pnlPeligrosXCargo.Visible = True
+                    Me.pnlActividad.Visible = True
                     Me.pnlNuevaActividad.Visible = True
                     Me.pnlDescClasRies.Visible = False
 
@@ -138,35 +138,35 @@
         Me.CargarGrillaPeligrosXCargo()
     End Sub
     'EVENTO DEL BOTON CERRAR REGISTRO NUEVA ACTIVIDAD
-    Protected Sub ibtnCerrarActividad_Click(sender As Object, e As ImageClickEventArgs) Handles ibtnCerrarActividad.Click
-        Me.pVisualizacionXAccion = EnmAccion.Inicio
-    End Sub
+    'Protected Sub ibtnCerrarActividad_Click(sender As Object, e As ImageClickEventArgs) Handles ibtnCerrarActividad.Click
+    '    Me.pVisualizacionXAccion = EnmAccion.Inicio
+    'End Sub
     'EVENTO DEL BOTON AGREGAR NUEVA ACTIVIDAD CON PELIGRO
-    Protected Sub ibtnAgregarActividad_Click(sender As Object, e As ImageClickEventArgs) Handles ibtnAgregarActividad.Click
-        'MODIFICAR LA VISUALIZACION DEL CONTROL
-        Me.pVisualizacionXAccion = EnmAccion.AsociarActividad
+    'Protected Sub ibtnAgregarActividad_Click(sender As Object, e As ImageClickEventArgs) Handles ibtnAgregarActividad.Click
+    '    'MODIFICAR LA VISUALIZACION DEL CONTROL
+    '    Me.pVisualizacionXAccion = EnmAccion.AsociarActividad
 
-        'LIMPIAR CTR DINA ACTIVIDAAD
-        Me.ctrDinaConsObjActividad.LimpiarCtr()
+    '    'LIMPIAR CTR DINA ACTIVIDAAD
+    '    Me.ctrDinaConsObjActividad.LimpiarCtr()
 
-        'LIMPIAR EL GV DE PELIGRO
-        Me.pTblPeligro = New dllSoftSGSST.SGSST.dtsPeligro.dtPeligroDataTable
+    '    'LIMPIAR EL GV DE PELIGRO
+    '    Me.pTblPeligro = New dllSoftSGSST.SGSST.dtsPeligro.dtPeligroDataTable
 
-        Me.CargarGrillaPeligros()
-    End Sub
+    '    Me.CargarGrillaPeligros()
+    'End Sub
     'EVENTO DEL BOTON AGREGAR ACTIVIDAD
-    Protected Sub ibnIncluirActividad_Click(sender As Object, e As ImageClickEventArgs) Handles ibnIncluirActividad.Click
-        If (Me.pIdActividad <> 0) Then
-            'LIMPIAR TABLA DE PELIGROS
-            Me.pTblPeligro = New dllSoftSGSST.SGSST.dtsPeligro.dtPeligroDataTable
+    'Protected Sub ibnIncluirActividad_Click(sender As Object, e As ImageClickEventArgs) Handles ibnIncluirActividad.Click
+    '    If (Me.pIdActividad <> 0) Then
+    '        'LIMPIAR TABLA DE PELIGROS
+    '        Me.pTblPeligro = New dllSoftSGSST.SGSST.dtsPeligro.dtPeligroDataTable
 
-            'CARGAR LOS PELIGROS ASOCIADOS A UNA ACTIVIDAD
-            Me.CargarPeligrosXIdActividad()
+    '        'CARGAR LOS PELIGROS ASOCIADOS A UNA ACTIVIDAD
+    '        Me.CargarPeligrosXIdActividad()
 
-        Else
-            Me.AlertDialog("Debe seleccionar una Actividad.")
-        End If
-    End Sub
+    '    Else
+    '        Me.AlertDialog("Debe seleccionar una Actividad.")
+    '    End If
+    'End Sub
     'EVENTO DEL BOTON NUEVA ACTIVIDAD
     Protected Sub ibtnNuevaActivdad_Click(sender As Object, e As ImageClickEventArgs) Handles ibtnNuevaActivdad.Click
         'MODIFICAR LA VISUALIZACION
@@ -214,41 +214,29 @@
         End If
     End Sub
     'EVENTO DEL BOTON CARGAR PELIGROS AL CARGO
-    Protected Sub ibtnCargar_Click(sender As Object, e As ImageClickEventArgs) Handles ibtnCargar.Click
-        If (Me.pTblPeligro.Rows.Count <> 0) Then
-            Dim objTrans As New dllSoftSGSST.Estructura.EstructuraTransaccion
-            Try
-                objTrans.trCrearTransaccion()
-                'GUARDAR LA INFORMACION DEL PELIGRO
-                Me.GuardarInfoPeligro(objTrans.trTransaccion)
+    'Protected Sub ibtnCargar_Click(sender As Object, e As ImageClickEventArgs) Handles ibtnCargar.Click
+    '    If (Me.pTblPeligro.Rows.Count <> 0) Then
+    '        Dim objTrans As New dllSoftSGSST.Estructura.EstructuraTransaccion
+    '        Try
+    '            objTrans.trCrearTransaccion()
+    '            'GUARDAR LA INFORMACION DEL PELIGRO
+    '            Me.GuardarInfoPeligro(objTrans.trTransaccion)
 
-                'GUARDAR LA INFORMACIUON DEL PELIGRO POR EL CARGO
-                Me.GuardarInfoPeligrosXcargo(objTrans.trTransaccion)
+    '            'GUARDAR LA INFORMACIUON DEL PELIGRO POR EL CARGO
+    '            Me.GuardarInfoPeligrosXcargo(objTrans.trTransaccion)
 
-                objTrans.trConfirmarTransaccion()
+    '            objTrans.trConfirmarTransaccion()
 
-                Me.pVisualizacionXAccion = EnmAccion.Inicio
-            Catch ex As Exception
-                objTrans.trRollBackTransaccion()
-                Me.AlertDialog("No se pudo guardar el Peligro :" & ex.Message.ToString)
-            End Try
+    '            Me.pVisualizacionXAccion = EnmAccion.Inicio
+    '        Catch ex As Exception
+    '            objTrans.trRollBackTransaccion()
+    '            Me.AlertDialog("No se pudo guardar el Peligro :" & ex.Message.ToString)
+    '        End Try
 
-        Else
-            Me.AlertDialog("Debe asociar informacion a la actividad para poder cargarla.")
-        End If
-    End Sub
-    'EVENTO DEL BOTON DESCARTAR
-    Protected Sub ibtnDescartar_Click(sender As Object, e As ImageClickEventArgs) Handles ibtnDescartar.Click
-        'LIMPIAR CTR DINA ACTIVIDAAD
-        Me.ctrDinaConsObjActividad.LimpiarCtr()
-
-        'LIMPIAR EL GV DE PELIGRO
-        Me.pTblPeligro = New dllSoftSGSST.SGSST.dtsPeligro.dtPeligroDataTable
-
-        Me.CargarGrillaPeligros()
-
-        Me.pVisualizacionXAccion = EnmAccion.Inicio
-    End Sub
+    '    Else
+    '        Me.AlertDialog("Debe asociar informacion a la actividad para poder cargarla.")
+    '    End If
+    'End Sub
     'EVENTO DEL CHECK DE INCLUIR
     Protected Sub chkIcluirPeligro_CheckedChanged(sender As Object, e As EventArgs)
         Dim Index As Integer = DirectCast(DirectCast(sender, System.Web.UI.Control).Parent.Parent, System.Web.UI.WebControls.GridViewRow).RowIndex

@@ -2,6 +2,7 @@
     Inherits dllSoftSGSST.Estructura.EstructuraPagina
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+        Me.MaintainScrollPositionOnPostBack = True
         If Not IsPostBack Then
             Me.pBoolIniPagina = True
         End If

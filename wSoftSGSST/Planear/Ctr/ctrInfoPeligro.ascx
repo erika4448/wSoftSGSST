@@ -272,9 +272,6 @@
                             <uc5:ctrMtRsMedIntervencion ID="ctrMtRsMedIntervencion1" runat="server" />
 
                         </asp:Panel>
-                        <asp:Panel ID="pnlEvalPeligro" runat="server">
-
-                        </asp:Panel>
                     </td>
                 </tr>
             </table>

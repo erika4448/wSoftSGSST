@@ -24,7 +24,7 @@
         <tr>
             <td>
                 <asp:Panel ID="pnlCtrProfesiograma" runat="server" HorizontalAlign="Center" ScrollBars="Auto">
-                    <uc1:ctrProfesiograma runat="server" ID="ctrProfesiograma" />
+                    <uc1:ctrProfesiograma runat="server" ID="ctrProfesiograma" align="center"/>
                 </asp:Panel>
             </td>
         </tr>

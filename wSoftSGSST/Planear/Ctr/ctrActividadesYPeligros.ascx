@@ -6,76 +6,38 @@
 <link rel="Stylesheet" type="text/css" href="../../App_Themes/SoftSGSST.css" />
 <%end if%>
 
-<style type="text/css">
-    .auto-style1 {
-        height: 21px;
-    }
-</style>
-
-<asp:Panel ID="pnlGvActRiesgos" runat="server">
+<asp:Panel ID="pnlActividad" runat="server">
     <table width="100%">
         <tr>
-            <td colspan="3" align="right">
+            <td align="right" colspan="3">
+                <%--<asp:ImageButton ID="ibtnCerrarActividad" runat="server" ImageUrl="~/Images/General/ibtnCerrarModal.png" />--%>
                 <asp:ImageButton ID="ibtCerrar" runat="server" ImageUrl="~/Images/General/ibtnCerrarModal.png" />
             </td>
         </tr>
         <tr>
-            <td></td>
-            <td align="center">
-                <asp:Label ID="lblRiesgos" runat="server" Text="Riesgos del Cargo"></asp:Label>
+            <td align="center" colspan="3">
+                <asp:Label ID="lblRiesgos" runat="server" Text="Registro de nueva Actividad con Riesgo" CssClass="tituloForm"></asp:Label>
             </td>
-            <td align="right"></td>
         </tr>
         <tr>
             <td colspan="3">&nbsp;</td>
         </tr>
         <tr>
-            <td></td>
-            <td>
-                <asp:Label ID="lblNomNomCargo" runat="server" Text="Nombre Cargo: "></asp:Label>
-                <asp:Label ID="lblNomCargo" runat="server" Text=""></asp:Label>
-            </td>
-            <td></td>
-        </tr>
-        <tr>
-            <td colspan="3" align="right">
-                <asp:ImageButton ID="ibtnAgregarActividad" runat="server" ImageUrl="~/Images/Botones/ibtnAgregarActRiesgos.png" />
+            <td align="left" colspan="3">
+                <asp:Label ID="lblNomNomCargo" runat="server" Text="Nombre Cargo: " Font-Bold="true"></asp:Label>
+                <asp:Label ID="lblNomCargo" runat="server" Text="" Font-Bold="true"></asp:Label>
             </td>
         </tr>
         <tr>
-            <td colspan="3" align="center">
-                <asp:Panel ID="pnlPeligrosXCargo" runat="server">
-                    <asp:GridView ID="gvPeligrosXCargo" runat="server" AutoGenerateColumns="False" CssClass="gvSGSST" DataKeyNames="sracIdRelPeligroXCargo">
-                        <Columns>
-                            <asp:BoundField HeaderText="Actividad" DataField="sgacNombre" SortExpression="sgacNombre" />
-                            <asp:BoundField HeaderText="Descripción del Peligro" DataField="sgplDescripcionPeligro" SortExpression="sgplDescripcionPeligro" />
-                            <asp:BoundField HeaderText="Clasificación del Peligro" DataField="sclpNombre" SortExpression="sclpNombre" />
-                            <asp:BoundField HeaderText="Riesgo" DataField="sgriNombre" SortExpression="sgriNombre" />
-                            <asp:BoundField HeaderText="Evaluación" />
-                            <asp:TemplateField HeaderText="Eliminar">
-                                <ItemTemplate>
-                                    <asp:ImageButton ID="ibtnEliminar" runat="server" ImageUrl="~/Images/General/boton_grilla_eliminar.png" OnClick="ibtnEliminar_Click" />
-                                </ItemTemplate>
-                            </asp:TemplateField>
-                        </Columns>
-                    </asp:GridView>
-                </asp:Panel>
-                <asp:Label ID="lblNoHayActividades" runat="server" Text="No hay Peligros relacionadas al Cargo."></asp:Label>
-            </td>
+            <td colspan="3">&nbsp;</td>
         </tr>
-    </table>
-</asp:Panel>
-<asp:Panel ID="pnlActividad" runat="server">
-    <table width="100%">
         <tr>
-            <td align="right" colspan="2">
-                <asp:ImageButton ID="ibtnCerrarActividad" runat="server" ImageUrl="~/Images/General/ibtnCerrarModal.png" />
+            <td align="left" colspan="3">
+                <asp:Label ID="lblInfor1" runat="server" Text="1. Porfavor primero seleccione o incluya una nueva actividad" Font-Italic="true"></asp:Label>
             </td>
         </tr>
         <tr>
-            <td align="center" colspan="2" class="auto-style1">
-                <asp:Label ID="lblRegNuevaAct" runat="server" Text="Registro Nueva Actividad"></asp:Label>
-            </td>
+            <td colspan="3">&nbsp;</td>
         </tr>
         <tr>
             <td>
@@ -85,8 +47,33 @@
                 <uc1:ctrDinaConsObj runat="server" ID="ctrDinaConsObjActividad" />
             </td>
             <td>
-                <asp:ImageButton ID="ibtnNuevaActivdad" runat="server" ImageUrl="~/Images/Botones/ibtnAgregarAzul.png" />
-                <asp:ImageButton ID="ibnIncluirActividad" runat="server" ImageUrl="~/Images/Botones/ibtIncluirAzul.png" />
+                <asp:ImageButton ID="ibtnNuevaActivdad" runat="server" ImageUrl="~/Images/Botones/Nueva_Actividad.fw.png" />
+                <%--<asp:ImageButton ID="ibnIncluirActividad" runat="server" ImageUrl="~/Images/Botones/ibtIncluirAzul.png" />--%>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <asp:Label ID="lblInfor2" runat="server" Text="Si no encontro la actividad que buscaba, debe crearla con el botón 'Crear Actividad'" Font-Italic="true" Font-Size="Smaller"></asp:Label>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <asp:Panel ID="pnlNuevaActividad" runat="server" CssClass="pnlContentInfoGris">
+                    <table align="center">
+                        <tr>
+                            <td>
+                                <asp:Label ID="lblNuevaAct" runat="server" Text="Nueva Actividad"></asp:Label>
+                            </td>
+                            <td>
+                                <asp:TextBox ID="txtNuevaActividad" runat="server"></asp:TextBox>
+                            </td>
+                            <td>
+                                <asp:ImageButton ID="ibtnGuardarNuevaAct" runat="server" ImageUrl="~/Images/Botones/ibtnGuardarAzul.png" />
+                                <asp:ImageButton ID="ibtnCerrarNuevaAct" runat="server" ImageUrl="~/Images/Botones/ibtnCerrarAzul.png" />
+                            </td>
+                        </tr>
+                    </table>
+                </asp:Panel>
             </td>
         </tr>
         <tr>
@@ -110,25 +97,39 @@
         </tr>
         <tr>
             <td align="center" colspan="2">
-                <asp:ImageButton ID="ibtnDescartar" runat="server" ImageUrl="~/Images/Botones/ibtnDescartarAzul.png" />
-                <asp:ImageButton ID="ibtnCargar" runat="server" ImageUrl="~/Images/Botones/ibtnCargarAzul.png" style="height: 27px" />
+                <%--<asp:ImageButton ID="ibtnCargar" runat="server" ImageUrl="~/Images/Botones/ibtnCargarAzul.png" Style="height: 27px" />--%>
                 <asp:ImageButton ID="ibntNuevoRiesgo" runat="server" ImageUrl="~/Images/Botones/ibtnNuevoRiesgoAzul.png" />
             </td>
         </tr>
     </table>
 </asp:Panel>
-<asp:Panel ID="pnlNuevaActividad" runat="server">
-    <table align="center">
+<asp:Panel ID="pnlGvActRiesgos" runat="server">
+    <table width="100%">
         <tr>
-            <td>
-                <asp:Label ID="lblNuevaAct" runat="server" Text="Nueva Actividad"></asp:Label>
+            <td align="center">
+                <%--<asp:ImageButton ID="ibtnAgregarActividad" runat="server" ImageUrl="~/Images/Botones/ibtnAgregarActRiesgos.png" />--%>
+                
             </td>
-            <td>
-                <asp:TextBox ID="txtNuevaActividad" runat="server"></asp:TextBox>
-            </td>
-            <td>
-                <asp:ImageButton ID="ibtnGuardarNuevaAct" runat="server" ImageUrl="~/Images/Botones/ibtnGuardarAzul.png" />
-                <asp:ImageButton ID="ibtnCerrarNuevaAct" runat="server" ImageUrl="~/Images/Botones/ibtnCerrarAzul.png" />
+        </tr>
+        <tr>
+            <td align="center">
+                <asp:Panel ID="pnlPeligrosXCargo" runat="server">
+                    <asp:GridView ID="gvPeligrosXCargo" runat="server" AutoGenerateColumns="False" CssClass="gvSGSST" DataKeyNames="sracIdRelPeligroXCargo">
+                        <Columns>
+                            <asp:BoundField HeaderText="Actividad" DataField="sgacNombre" SortExpression="sgacNombre" />
+                            <asp:BoundField HeaderText="Descripción del Peligro" DataField="sgplDescripcionPeligro" SortExpression="sgplDescripcionPeligro" />
+                            <asp:BoundField HeaderText="Clasificación del Peligro" DataField="sclpNombre" SortExpression="sclpNombre" />
+                            <asp:BoundField HeaderText="Riesgo" DataField="sgriNombre" SortExpression="sgriNombre" />
+                            <asp:BoundField HeaderText="Evaluación" />
+                            <asp:TemplateField HeaderText="Eliminar">
+                                <ItemTemplate>
+                                    <asp:ImageButton ID="ibtnEliminar" runat="server" ImageUrl="~/Images/General/boton_grilla_eliminar.png" OnClick="ibtnEliminar_Click" />
+                                </ItemTemplate>
+                            </asp:TemplateField>
+                        </Columns>
+                    </asp:GridView>
+                </asp:Panel>
+                <asp:Label ID="lblNoHayActividades" runat="server" Text="No hay Peligros relacionadas al Cargo."></asp:Label>
             </td>
         </tr>
     </table>

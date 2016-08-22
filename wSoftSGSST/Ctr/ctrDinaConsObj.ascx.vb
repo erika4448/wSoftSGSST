@@ -119,9 +119,16 @@
             Me.BuscarXNombre()
         End If
     End Sub
+    'EVENTO DEL DDL
     Protected Sub ddlObj_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddlObj.SelectedIndexChanged
         If (Trim(Me.txtObj.Text).Length >= Me.AutoCompleteExtender.MinimumPrefixLength) Then
             Me.BuscarXId(Me.ddlObj.SelectedValue)
+        End If
+    End Sub
+    'EVENTO DEL BOTON BUSCAR
+    Protected Sub ibtnBuscar_Click(sender As Object, e As ImageClickEventArgs) Handles ibtnBuscar.Click
+        If (Trim(Me.txtObj.Text).Length >= Me.AutoCompleteExtender.MinimumPrefixLength) Then
+            Me.BuscarXNombre()
         End If
     End Sub
 #End Region
@@ -215,6 +222,5 @@
         Me.txtObj.Text = ""
         Me.pIdSel = 0
     End Sub
-
 #End Region
 End Class
