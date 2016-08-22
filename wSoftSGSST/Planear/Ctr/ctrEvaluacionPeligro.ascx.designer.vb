@@ -14,15 +14,6 @@ Option Explicit On
 Partial Public Class ctrEvaluacionPeligro
     
     '''<summary>
-    '''upnlEvaluacionRiesgo control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents upnlEvaluacionRiesgo As Global.System.Web.UI.UpdatePanel
-    
-    '''<summary>
     '''pnlEvaluacionPeligro control.
     '''</summary>
     '''<remarks>
@@ -30,24 +21,6 @@ Partial Public Class ctrEvaluacionPeligro
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents pnlEvaluacionPeligro As Global.System.Web.UI.WebControls.Panel
-    
-    '''<summary>
-    '''ibtnCerrar control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents ibtnCerrar As Global.System.Web.UI.WebControls.ImageButton
-    
-    '''<summary>
-    '''lblEvalPeligro control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents lblEvalPeligro As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
     '''pnlDescripcion control.

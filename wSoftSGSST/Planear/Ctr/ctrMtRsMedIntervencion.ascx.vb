@@ -73,34 +73,34 @@
     Private Function PermiteGuardar() As Boolean
         Dim objMsjRtnValida As New dllSoftSGSST.Estructura.EstructuraMsjValidacion
 
-        'VALIDA ELIMINACION
-        If (Trim(Me.txtEliminacion.Text).Length = 0) Then
-            objMsjRtnValida.AgregarMensaje("Eliminación.")
-        End If
+        ''VALIDA ELIMINACION
+        'If (Trim(Me.txtEliminacion.Text).Length = 0) Then
+        '    objMsjRtnValida.AgregarMensaje("Eliminación.")
+        'End If
 
-        'VALIDA SUSTITUCION
-        If (Trim(Me.txtSustitucion.Text).Length = 0) Then
-            objMsjRtnValida.AgregarMensaje("Sustitución.")
-        End If
+        ''VALIDA SUSTITUCION
+        'If (Trim(Me.txtSustitucion.Text).Length = 0) Then
+        '    objMsjRtnValida.AgregarMensaje("Sustitución.")
+        'End If
 
-        'VALIDA CONTROL INGENIERIA
-        If (Trim(Me.txtCtrIngenieria.Text).Length = 0) Then
-            objMsjRtnValida.AgregarMensaje("Controles de Ingeniería.")
-        End If
+        ''VALIDA CONTROL INGENIERIA
+        'If (Trim(Me.txtCtrIngenieria.Text).Length = 0) Then
+        '    objMsjRtnValida.AgregarMensaje("Controles de Ingeniería.")
+        'End If
 
-        'VALIDA CONTROL ADMINISTRATIVOS
-        If (Trim(Me.txtCtrAdmin.Text).Length = 0) Then
-            objMsjRtnValida.AgregarMensaje("Controles Administrativos.")
-        End If
+        ''VALIDA CONTROL ADMINISTRATIVOS
+        'If (Trim(Me.txtCtrAdmin.Text).Length = 0) Then
+        '    objMsjRtnValida.AgregarMensaje("Controles Administrativos.")
+        'End If
 
-        'VALIDA CONTROL EEPP
-        If (Trim(Me.txtEEPP.Text).Length = 0) Then
-            objMsjRtnValida.AgregarMensaje("Elementos / Equipos de Protección Personal.")
-        End If
+        ''VALIDA CONTROL EEPP
+        'If (Trim(Me.txtEEPP.Text).Length = 0) Then
+        '    objMsjRtnValida.AgregarMensaje("Elementos / Equipos de Protección Personal.")
+        'End If
 
-        If Not (objMsjRtnValida.pBoolRtn) Then
-            Me.AlertDialog(objMsjRtnValida.GetMensajeValidacionCamposFaltantes())
-        End If
+        'If Not (objMsjRtnValida.pBoolRtn) Then
+        '    Me.AlertDialog(objMsjRtnValida.GetMensajeValidacionCamposFaltantes())
+        'End If
 
         Return objMsjRtnValida.pBoolRtn
     End Function

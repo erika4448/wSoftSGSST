@@ -273,6 +273,13 @@
         End If
     End Sub
 #End Region
+#Region "EVENTOS"
+    Private Sub evtSelFecha() Handles ctrFechaIngreso.evtSelFecha
+        Me.Page.SetFocus(Me.ibtnGuardarCargo)
+        Me.ibtnGuardarCargo.Focus()
+        Me.upnlRelNuevoCargo.Update()
+    End Sub
+#End Region
 #Region "DATA SOURCE GRILLA HISTORICO CARGOS"
     Public Sub CargarGrillaHistCargos()
         Me.gvHistCargos.DataBind()

@@ -41,22 +41,22 @@ Partial Public Class frmPlPerfDemografico
     Protected WithEvents lblTitulo As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
-    '''btnLimpiar control.
+    '''ibtnLimpiar control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents btnLimpiar As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents ibtnLimpiar As Global.System.Web.UI.WebControls.ImageButton
     
     '''<summary>
-    '''btnNuevaConsulta control.
+    '''ibtnNuevaConsulta control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents btnNuevaConsulta As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents ibtnNuevaConsulta As Global.System.Web.UI.WebControls.ImageButton
     
     '''<summary>
     '''ibtnNuevoEmpleado control.

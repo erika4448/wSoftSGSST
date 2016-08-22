@@ -58,9 +58,6 @@ C:\Users\Hernan Buitrago\Documents\SoftSGSST\wSoftSGSST\bin\Microsoft.Practices.
 C:\Users\Hernan Buitrago\Documents\SoftSGSST\wSoftSGSST\obj\Debug\wSoftSGSST.dll
 C:\Users\Hernan Buitrago\Documents\SoftSGSST\wSoftSGSST\obj\Debug\wSoftSGSST.xml
 C:\Users\Hernan Buitrago\Documents\SoftSGSST\wSoftSGSST\obj\Debug\wSoftSGSST.pdb
-D:\OTROS\WORKS\SG-SST\APP\SGSST\wSoftSGSST\wSoftSGSST\obj\Debug\wSoftSGSST.vbprojResolveAssemblyReference.cache
-D:\OTROS\WORKS\SG-SST\APP\SGSST\wSoftSGSST\wSoftSGSST\obj\Debug\wSoftSGSST.Resources.resources
-D:\OTROS\WORKS\SG-SST\APP\SGSST\wSoftSGSST\wSoftSGSST\obj\Debug\wSoftSGSST.vbproj.GenerateResource.Cache
 D:\OTROS\WORKS\SG-SST\APP\SGSST\wSoftSGSST\wSoftSGSST\bin\wSoftSGSST.dll.config
 D:\OTROS\WORKS\SG-SST\APP\SGSST\wSoftSGSST\wSoftSGSST\bin\wSoftSGSST.dll
 D:\OTROS\WORKS\SG-SST\APP\SGSST\wSoftSGSST\wSoftSGSST\bin\wSoftSGSST.pdb
@@ -75,6 +72,9 @@ D:\OTROS\WORKS\SG-SST\APP\SGSST\wSoftSGSST\wSoftSGSST\bin\Microsoft.Practices.En
 D:\OTROS\WORKS\SG-SST\APP\SGSST\wSoftSGSST\wSoftSGSST\bin\Microsoft.Practices.EnterpriseLibrary.Data.xml
 D:\OTROS\WORKS\SG-SST\APP\SGSST\wSoftSGSST\wSoftSGSST\bin\Microsoft.Practices.EnterpriseLibrary.Common.pdb
 D:\OTROS\WORKS\SG-SST\APP\SGSST\wSoftSGSST\wSoftSGSST\bin\Microsoft.Practices.EnterpriseLibrary.Common.xml
+D:\OTROS\WORKS\SG-SST\APP\SGSST\wSoftSGSST\wSoftSGSST\obj\Debug\wSoftSGSST.vbprojResolveAssemblyReference.cache
+D:\OTROS\WORKS\SG-SST\APP\SGSST\wSoftSGSST\wSoftSGSST\obj\Debug\wSoftSGSST.Resources.resources
+D:\OTROS\WORKS\SG-SST\APP\SGSST\wSoftSGSST\wSoftSGSST\obj\Debug\wSoftSGSST.vbproj.GenerateResource.Cache
 D:\OTROS\WORKS\SG-SST\APP\SGSST\wSoftSGSST\wSoftSGSST\obj\Debug\wSoftSGSST.dll
 D:\OTROS\WORKS\SG-SST\APP\SGSST\wSoftSGSST\wSoftSGSST\obj\Debug\wSoftSGSST.xml
 D:\OTROS\WORKS\SG-SST\APP\SGSST\wSoftSGSST\wSoftSGSST\obj\Debug\wSoftSGSST.pdb

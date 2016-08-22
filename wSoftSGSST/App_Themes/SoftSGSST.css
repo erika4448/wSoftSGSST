@@ -13,15 +13,31 @@
 /*FOOTER PAGINA LOGIN*/
 #LoginFooter {
     width: 101%;
-    height: 90px;
-    background-color: #003366;
+    height: 26px;
     bottom: 0px;
     color: #FFFFFF;
     font-family: Calibri;
     font-size: 10pt;
     font-weight: bold;
     margin-left: -10px;
+      background-color: #003366;
+          background-repeat:repeat-x;
+         
 }
+
+#BackFooter {
+    height: 23px;
+    vertical-align:bottom;
+  
+    bottom: 0px;
+    color: #FFFFFF;
+    font-family: Calibri;
+    font-size: 10pt;
+    font-weight: bold;
+    margin-left: -10px;
+
+}
+
 
 #LoginContent {
     padding-top: 10%;
@@ -97,7 +113,7 @@
     /*height:84vh;*/
     background-color: #DCDCDC;
     margin-left: -10px;
-    z-index: -2 !important;
+    z-index: -10 !important;
     vertical-align: top;
    text-decoration:none!important;
 }

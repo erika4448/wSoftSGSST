@@ -136,17 +136,25 @@
     <Content Include="Images\General\ibtnRefrescar.png" />
     <Content Include="Images\General\imAgregarFoto.png" />
     <Content Include="Images\General\imLoading.gif" />
+    <Content Include="Images\General\ibtnLimpiar.png" />
+    <Content Include="Images\General\ibtnNuevaConsulta.png" />
     <Content Include="Images\Login\imUsuarioIngreso.png" />
     <Content Include="Images\Login\imPswdIngreso.png" />
     <Content Include="Images\Login\ImIngreso.png" />
     <Content Include="Images\Login\imLogoCliente.png" />
+    <Content Include="Images\Login\imFooterFasem.png" />
+    <Content Include="Images\Login\imFooter.png" />
     <Content Include="Images\Maestra\imApp.png" />
     <Content Include="Images\Maestra\imLogoEmpresa.png" />
+    <Content Include="Images\MenuPrincipal\imMenuActuar1.png" />
     <Content Include="Images\MenuPrincipal\imMenuActuar.png" />
+    <Content Include="Images\MenuPrincipal\imMenuHacer1.png" />
     <Content Include="Images\MenuPrincipal\imMenuHacer.png" />
+    <Content Include="Images\MenuPrincipal\imMenuPlanear1.png" />
     <Content Include="Images\MenuPrincipal\imMenuPlanear.png" />
-    <Content Include="Images\MenuPrincipal\imMenuVerificar.png" />
+    <Content Include="Images\MenuPrincipal\imMenuVerificar1.png" />
     <Content Include="Images\MenuPrincipal\imMenuLogo.png" />
+    <Content Include="Images\MenuPrincipal\imMenuVerificar.png" />
     <Content Include="Images\Menu\imMenuMatrizRiesgos.fw.png" />
     <Content Include="Images\Menu\imMenuPerfilDemografico.fw.png" />
     <Content Include="Images\Menu\imMenuPlanear.fw.png" />
@@ -183,6 +191,17 @@
     <Content Include="Images\PrimerInicio\imEvaluacionInicial.fw.png" />
     <Content Include="Images\PrimerInicio\imLogoPrimerInicio.fw.png" />
     <Content Include="Images\PrimerInicio\imReconocimientoInicial.fw.png" />
+    <Content Include="Images\ZoomPlanear\imZoomMatrizLegal_0.png" />
+    <Content Include="Images\ZoomPlanear\imZoomMatrizRiesgos_0.png" />
+    <Content Include="Images\ZoomPlanear\imZoomMatrizRiesgos_100.png" />
+    <Content Include="Images\ZoomPlanear\imZoomPerfilSocioDemografico_0.png" />
+    <Content Include="Images\ZoomPlanear\imZoomPerfilSocioDemografico_100.png" />
+    <Content Include="Images\ZoomPlanear\imZoomPoliticasYObjetivos_0.png" />
+    <Content Include="Images\ZoomPlanear\imZoomProfesiograma_0.png" />
+    <Content Include="Images\ZoomPlanear\imZoomProfesiograma_100.png" />
+    <Content Include="Images\ZoomPlanear\imZoomProgramaGestion_0.png" />
+    <Content Include="Images\ZoomPlanear\imZoomProgramaVigilancia_0.png" />
+    <Content Include="Images\ZoomPlanear\imZoomTotalPlanear0.png" />
     <Content Include="js\alertify.js" />
     <Content Include="js\alertify.min.js" />
     <Content Include="js\jquery-1.8.3.min.js" />
@@ -208,6 +227,7 @@
     <Content Include="Planear\Ctr\ctrProceso.ascx" />
     <Content Include="Planear\Ctr\ctrProfesiograma.ascx" />
     <Content Include="Planear\Ctr\ctrPeligro.ascx" />
+    <Content Include="Planear\frmMenuPlanear.aspx" />
     <Content Include="Planear\MatrizRiesgos\frmMtRgCalificarRiesgo.aspx" />
     <Content Include="Planear\MatrizRiesgos\frmMtRgMatrizRiesgos.aspx" />
     <Content Include="Planear\PerfDemografico\frmPlPerfDemografico.aspx" />
@@ -394,6 +414,13 @@
     </Compile>
     <Compile Include="Planear\Ctr\ctrPeligro.ascx.vb">
       <DependentUpon>ctrPeligro.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Planear\frmMenuPlanear.aspx.designer.vb">
+      <DependentUpon>frmMenuPlanear.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Planear\frmMenuPlanear.aspx.vb">
+      <DependentUpon>frmMenuPlanear.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Planear\MatrizRiesgos\frmMtRgCalificarRiesgo.aspx.designer.vb">

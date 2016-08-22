@@ -121,9 +121,9 @@
 #End Region
 #Region "PROTEGIDO"
     'EVENTO DEL BOTON CERRAR POPUP
-    Protected Sub ibtnCerrar_Click(sender As Object, e As ImageClickEventArgs) Handles ibtnCerrar.Click
-        RaiseEvent evtCerrar()
-    End Sub
+    'Protected Sub ibtnCerrar_Click(sender As Object, e As ImageClickEventArgs) Handles ibtnCerrar.Click
+    '    RaiseEvent evtCerrar()
+    'End Sub
     'EVENTO DEL DDL NIVEL DE DEFICIENCIA
     Protected Sub ddlNivDef_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddlNivDef.SelectedIndexChanged
         'CARGAR INFORMACION NIVEL DE DEFICIENCIA
@@ -131,7 +131,7 @@
         'CALCULAR EL NIVEL DE PROBABILIDAD
         Me.CalcularNivelProbabilidad()
 
-        Me.upnlEvaluacionRiesgo.Update()
+        'Me.upnlEvaluacionRiesgo.Update()
     End Sub
     'EVENTO DEL DDL NIVEL DE EXPOSICION
     Protected Sub ddlNivExp_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddlNivExp.SelectedIndexChanged
@@ -141,7 +141,7 @@
         'CALCULAR EL NIVEL DE PROBABILIDAD
         Me.CalcularNivelProbabilidad()
 
-        Me.upnlEvaluacionRiesgo.Update()
+        'Me.upnlEvaluacionRiesgo.Update()
     End Sub
     'EVENTO DE LA LISTA DESPLEGABLE NIVEL DE CONSECUENCIA
     Protected Sub ddlNivCons_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddlNivCons.SelectedIndexChanged
@@ -153,7 +153,7 @@
         'CALCULAR ACEPTABILIDAD NIVEL DE RIESGO
         Me.CalcularNivelAceptabilidad()
 
-        Me.upnlEvaluacionRiesgo.Update()
+        'Me.upnlEvaluacionRiesgo.Update()
 
     End Sub
     'EVENTO DEL BOTON GUARDAR EVALUACION

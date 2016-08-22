@@ -165,7 +165,7 @@
         <asp:Button ID="btnFake3" runat="server" CausesValidation="False" Style="display: none" ToolTip="Editar Parámetro" />
         <ajaxToolkit:ModalPopupExtender ID="modalRelNuevoCargo" runat="server" BackgroundCssClass="cssModalBackGround" Enabled="True" PopupControlID="pnlRelNuevoCargo" TargetControlID="btnFake3">
         </ajaxToolkit:ModalPopupExtender>
-        <asp:Panel ID="pnlRelNuevoCargo" runat="server" CssClass="ModalPoup" Style="display: none">
+        <asp:Panel ID="pnlRelNuevoCargo" runat="server" CssClass="ModalPoup" Style="display: none" DefaultButton="ibtnGuardarCargo">
             <asp:UpdatePanel ID="upnlRelNuevoCargo" runat="server" UpdateMode="Conditional">
                 <ContentTemplate>
                     <table>
@@ -202,6 +202,18 @@
                                     </tr>
                                     <tr>
                                         <td align="left" class="tdLabel">
+                                            <asp:Label ID="lblAstValFchIngresoCargo" runat="server" Text="*"></asp:Label>
+                                            <asp:Label ID="lblFchIngresoCargo" runat="server" Text="Fecha Ingreso Nuevo Cargo"></asp:Label>
+
+                                        </td>
+                                        <td align="left" class="tdLabel">
+
+                                            <uc1:ctrFecha ID="ctrFechaIngreso" runat="server" />
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" class="tdLabel">
                                             <asp:Label ID="lblAstValNuevoCargo" runat="server" Text="*"></asp:Label>
                                             <asp:Label ID="lblNuevoCargo" runat="server" Text="Nuevo Cargo"></asp:Label>
 
@@ -210,18 +222,6 @@
 
                                             <asp:DropDownList ID="ddlNuevoCargo" runat="server">
                                             </asp:DropDownList>
-
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td align="left" class="tdLabel">
-                                            <asp:Label ID="lblAstValFchIngresoCargo" runat="server" Text="*"></asp:Label>
-                                            <asp:Label ID="lblFchIngresoCargo" runat="server" Text="Fecha Ingreso Cargo"></asp:Label>
-
-                                        </td>
-                                        <td align="left" class="tdLabel">
-
-                                            <uc1:ctrFecha ID="ctrFechaIngreso" runat="server" />
 
                                         </td>
                                     </tr>

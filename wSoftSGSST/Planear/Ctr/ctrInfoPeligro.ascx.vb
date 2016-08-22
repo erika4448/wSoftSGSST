@@ -58,6 +58,7 @@
                     Me.pnlMedIntervencion.Visible = False
                     Me.pnlInfoAdicParamPeligro.Visible = False
                     Me.pnlEvalPeligro.Visible = False
+                    Me.pnlInfoBasicaPeligro.Visible = True
                     '===========================
 
                     'INICIALIZA CONTROL DE CONTROLES EXISTENTES
@@ -74,6 +75,7 @@
                     Me.pnlMedIntervencion.Visible = False
                     Me.pnlInfoAdicParamPeligro.Visible = False
                     Me.pnlEvalPeligro.Visible = False
+                    Me.pnlInfoBasicaPeligro.Visible = True
                     '===========================
 
                     'INICIALIZA CONTROL DE CRITERIOS CONTROLES
@@ -90,6 +92,7 @@
                     Me.pnlMedIntervencion.Visible = True
                     Me.pnlInfoAdicParamPeligro.Visible = True
                     Me.pnlEvalPeligro.Visible = False
+                    Me.pnlInfoBasicaPeligro.Visible = True
                     '===========================
 
                     'INICIALIZA CONTROL DE MEDIDAS INTERVENCION
@@ -106,13 +109,14 @@
                     Me.pnlMedIntervencion.Visible = False
                     Me.pnlInfoAdicParamPeligro.Visible = False
                     Me.pnlEvalPeligro.Visible = True
+                    Me.pnlInfoBasicaPeligro.Visible = False
                     '===========================
-
 
                     'ESTABLECE EL TITULO DE LA VENTANA
                     Me.lblTituloInfoAdicPeligro.Text = "Evaluación del Riesgo"
 
-                    'AQUI VA LA INICIALIZACION DEL CONTROL DE HERNAN<------------OJO
+                    Me.ctrEvaluacionPeligro.pIdPeligro = Me.pIdPeligro
+                    Me.ctrEvaluacionPeligro.pBoolIniCtr = True
 
             End Select
         End Set
@@ -143,6 +147,7 @@
                 Me.SuccessLog("Se guardó correctamente.")
             End If
         End If
+        'Me.upnlInfoPeligro.Update()
     End Sub
     Protected Sub ibtnCtrExistentes_Click(sender As Object, e As ImageClickEventArgs) Handles ibtnCtrExistentes.Click
         'MODIFICACION VISUALIZACION
@@ -150,6 +155,7 @@
 
         Me.modalInfoAdicPeligro.Show()
         Me.upnlInfoAdicPeligro.Update()
+        'Me.upnlInfoPeligro.Update()
     End Sub
     Protected Sub ibtnCriControles_Click(sender As Object, e As ImageClickEventArgs) Handles ibtnCriControles.Click
         'MODIFICACION VISUALIZACION
@@ -157,6 +163,7 @@
 
         Me.modalInfoAdicPeligro.Show()
         Me.upnlInfoAdicPeligro.Update()
+        'Me.upnlInfoPeligro.Update()
     End Sub
     Protected Sub ibtnMedIntervencion_Click(sender As Object, e As ImageClickEventArgs) Handles ibtnMedIntervencion.Click
         'MODIFICACION VISUALIZACION
@@ -164,6 +171,7 @@
 
         Me.modalInfoAdicPeligro.Show()
         Me.upnlInfoAdicPeligro.Update()
+        'Me.upnlInfoPeligro.Update()
     End Sub
     Protected Sub ibtnCerrarInfoAdicPeligro_Click(sender As Object, e As ImageClickEventArgs) Handles ibtnCerrarInfoAdicPeligro.Click
         Me.ctrMtRsControlesExistentes1.LimpiarCtr()
@@ -172,15 +180,22 @@
 
         Me.modalInfoAdicPeligro.Hide()
         Me.upnlInfoAdicPeligro.Update()
+        ' Me.upnlInfoPeligro.Update()
     End Sub
     'EVENTO DEL BOTON EVALUACION DE RIESGO
     Protected Sub ibtnEvaluacionRiesgo_Click(sender As Object, e As ImageClickEventArgs) Handles ibtnEvaluacionRiesgo.Click
-        'INICIALIZAR EL CONTROL DE EVALUACION PELIGRO
-        Me.ctrEvaluacionPeligro.pIdPeligro = Me.pIdPeligro
-        Me.ctrEvaluacionPeligro.pBoolIniCtr = True
+        Me.pVisualizaXAccion = EnmAccion.SelEvalPeligro
 
-        'MOSTRAR EL POPUP
-        Me.modalEvalPeligro.Show()
+        Me.modalInfoAdicPeligro.Show()
+        Me.upnlInfoAdicPeligro.Update()
+
+        ''INICIALIZAR EL CONTROL DE EVALUACION PELIGRO
+        'Me.ctrEvaluacionPeligro.pIdPeligro = Me.pIdPeligro
+        'Me.ctrEvaluacionPeligro.pBoolIniCtr = True
+
+        ''MOSTRAR EL POPUP
+        'Me.modalEvalPeligro.Show()
+        ''Me.upnlInfoPeligro.Update()
     End Sub
 #End Region
 #Region "PRIVADO"
@@ -303,6 +318,7 @@
         'OCULTA LA VENTANA MODAL
         Me.modalInfoAdicPeligro.Hide()
         Me.upnlInfoAdicPeligro.Update()
+        'Me.upnlInfoPeligro.Update()
     End Sub
     Private Sub evtSelGuardoCriControles() Handles ctrMtRsCriControles1.evtGuardo
         'SE LIMPIA EL CONTROL
@@ -314,6 +330,7 @@
         'OCULTA LA VENTANA MODAL
         Me.modalInfoAdicPeligro.Hide()
         Me.upnlInfoAdicPeligro.Update()
+        'Me.upnlInfoPeligro.Update()
     End Sub
     Private Sub evtSelMedIntervencion() Handles ctrMtRsMedIntervencion1.evtGuardo
         'SE LIMPIA EL CONTROL
@@ -325,9 +342,11 @@
         'OCULTA LA VENTANA MODAL
         Me.modalInfoAdicPeligro.Hide()
         Me.upnlInfoAdicPeligro.Update()
+        'Me.upnlInfoPeligro.Update()
     End Sub
-    Private Sub evtCerrarEvaluacion() Handles ctrEvaluacionPeligro.evtCerrar
-        Me.modalEvalPeligro.Hide()
-    End Sub
+    'Private Sub evtCerrarEvaluacion() Handles ctrEvaluacionPeligro.evtCerrar
+    '    Me.modalEvalPeligro.Hide()
+    '    'Me.upnlInfoPeligro.Update()
+    'End Sub
 #End Region
 End Class

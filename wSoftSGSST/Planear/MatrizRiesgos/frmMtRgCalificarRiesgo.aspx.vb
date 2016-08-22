@@ -50,6 +50,8 @@
 
         varStrURL = New System.Uri(Context.Request.Url, ResolveUrl("~/Planear/MatrizRiesgos/frmMtRgMatrizRiesgos.aspx")).ToString
         Me.Response.Redirect(varStrURL)
+
+        Me.upnlCalificarRiesgo.Update()
     End Sub
 #End Region
 #Region "PRIVADO"

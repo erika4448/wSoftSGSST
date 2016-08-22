@@ -365,33 +365,6 @@ Partial Public Class ctrCargosEmpleado
     Protected WithEvents lblInfoCargoActualRelNuevoCargo As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
-    '''lblAstValNuevoCargo control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents lblAstValNuevoCargo As Global.System.Web.UI.WebControls.Label
-    
-    '''<summary>
-    '''lblNuevoCargo control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents lblNuevoCargo As Global.System.Web.UI.WebControls.Label
-    
-    '''<summary>
-    '''ddlNuevoCargo control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents ddlNuevoCargo As Global.System.Web.UI.WebControls.DropDownList
-    
-    '''<summary>
     '''lblAstValFchIngresoCargo control.
     '''</summary>
     '''<remarks>
@@ -417,6 +390,33 @@ Partial Public Class ctrCargosEmpleado
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ctrFechaIngreso As Global.wSoftSGSST.ctrFecha
+    
+    '''<summary>
+    '''lblAstValNuevoCargo control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblAstValNuevoCargo As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
+    '''lblNuevoCargo control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblNuevoCargo As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
+    '''ddlNuevoCargo control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ddlNuevoCargo As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
     '''ibtnGuardarCargo control.
