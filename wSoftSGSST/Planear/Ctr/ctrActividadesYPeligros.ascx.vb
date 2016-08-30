@@ -11,7 +11,7 @@
         Inicio = 1
         AsociarActividad = 2
         NuevaActividad = 3
-        NuevoPeligro = 4
+        AgregoActividad = 4
     End Enum
     'PROPIEDAD PARA INICIALIZAR EL CONTROL
     Public WriteOnly Property pBoolIniCtr As Boolean
@@ -28,9 +28,16 @@
                     Me.pnlGvActRiesgos.Visible = True
                     Me.pnlActividad.Visible = True
                     Me.pnlNuevaActividad.Visible = False
-                    Me.pnlDescClasRies.Visible = False
-                    'Me.ibtnAgregarActividad.Visible = True
+                    Me.pnlGvPeligro.Visible = False
+
+                    'BOTONES
+                    Me.ibtnCargar.Visible = False
+                    Me.ibntNuevoRiesgo.Visible = False
                     Me.ibtCerrar.Visible = True
+
+                    'LABELS
+                    Me.lblInfor3.Visible = False
+                    Me.lblRiesXAct.Visible = False
 
                     'INICIALIZAR CONTROL DINAMICO DE ACTIVIDADES
                     Me.ctrDinaConsObjActividad.pIdConfigCtrBusDina = 3
@@ -56,7 +63,6 @@
                     Me.pnlPeligrosXCargo.Visible = True
                     Me.pnlActividad.Visible = True
                     Me.pnlNuevaActividad.Visible = False
-                    Me.pnlDescClasRies.Visible = False
                     'Me.ibtnAgregarActividad.Visible = False
                     Me.ibtCerrar.Visible = False
 
@@ -65,7 +71,6 @@
                     Me.pnlPeligrosXCargo.Visible = True
                     Me.pnlActividad.Visible = True
                     Me.pnlNuevaActividad.Visible = True
-                    Me.pnlDescClasRies.Visible = False
 
                     'LIMPIAR CTR DINA ACTIVIDAAD
                     Me.ctrDinaConsObjActividad.LimpiarCtr()
@@ -75,12 +80,13 @@
 
                     Me.CargarGrillaPeligros()
 
-                Case EnmAccion.NuevoPeligro
-                    'VISUALIZACION DE PANELES
-                    Me.pnlPeligrosXCargo.Visible = False
-                    Me.pnlActividad.Visible = True
-                    Me.pnlNuevaActividad.Visible = False
-                    Me.pnlDescClasRies.Visible = True
+                Case EnmAccion.AgregoActividad
+
+                    Me.lblInfor3.Visible = True
+
+                    Me.ibntNuevoRiesgo.Visible = True
+
+                    Me.ibtnCargar.Visible = True
             End Select
         End Set
     End Property
@@ -188,13 +194,16 @@
             'CARGAR EL CONTROL DINAMICO CON LA ACTIVIDAD CREADA
             Me.ctrDinaConsObjActividad.BuscarXId(Me.pIdActividad)
 
+            Me.pVisualizacionXAccion = EnmAccion.AgregoActividad
+
         End If
     End Sub
     'EVENTO DEL BOTON NUEVO RIESGO
     Protected Sub ibntNuevoRiesgo_Click(sender As Object, e As ImageClickEventArgs) Handles ibntNuevoRiesgo.Click
         'EVALUA SI SE HA SELECCIONADO ALGUNA ACTIVIDAD
         If (Me.pIdActividad <> 0) Then
-            Me.pVisualizacionXAccion = EnmAccion.NuevoPeligro
+            Me.ModalPopupExtenderNuevoRiesgo.Show()
+            Me.upnlDescClasRies.Update()
         Else
             Me.AlertDialog("Debe selecionar una Actividad.")
         End If
@@ -207,36 +216,40 @@
             'AGREGAR LA INFORMACION DEL PELIGRO AL DATASET
             Me.AgregarPeligro()
 
+            Me.ModalPopupExtenderNuevoRiesgo.Hide()
+
             'LIMPIAR CAMPOS
             Me.LimpiarFrmDescClasifRiesgo()
 
             Me.pVisualizacionXAccion = EnmAccion.AsociarActividad
+
+            Me.upnlPeligro.Update()
         End If
     End Sub
     'EVENTO DEL BOTON CARGAR PELIGROS AL CARGO
-    'Protected Sub ibtnCargar_Click(sender As Object, e As ImageClickEventArgs) Handles ibtnCargar.Click
-    '    If (Me.pTblPeligro.Rows.Count <> 0) Then
-    '        Dim objTrans As New dllSoftSGSST.Estructura.EstructuraTransaccion
-    '        Try
-    '            objTrans.trCrearTransaccion()
-    '            'GUARDAR LA INFORMACION DEL PELIGRO
-    '            Me.GuardarInfoPeligro(objTrans.trTransaccion)
+    Protected Sub ibtnCargar_Click(sender As Object, e As ImageClickEventArgs) Handles ibtnCargar.Click
+        If (Me.pTblPeligro.Rows.Count <> 0) Then
+            Dim objTrans As New dllSoftSGSST.Estructura.EstructuraTransaccion
+            Try
+                objTrans.trCrearTransaccion()
+                'GUARDAR LA INFORMACION DEL PELIGRO
+                Me.GuardarInfoPeligro(objTrans.trTransaccion)
 
-    '            'GUARDAR LA INFORMACIUON DEL PELIGRO POR EL CARGO
-    '            Me.GuardarInfoPeligrosXcargo(objTrans.trTransaccion)
+                'GUARDAR LA INFORMACIUON DEL PELIGRO POR EL CARGO
+                Me.GuardarInfoPeligrosXcargo(objTrans.trTransaccion)
 
-    '            objTrans.trConfirmarTransaccion()
+                objTrans.trConfirmarTransaccion()
 
-    '            Me.pVisualizacionXAccion = EnmAccion.Inicio
-    '        Catch ex As Exception
-    '            objTrans.trRollBackTransaccion()
-    '            Me.AlertDialog("No se pudo guardar el Peligro :" & ex.Message.ToString)
-    '        End Try
+                Me.pVisualizacionXAccion = EnmAccion.Inicio
+            Catch ex As Exception
+                objTrans.trRollBackTransaccion()
+                Me.AlertDialog("No se pudo guardar el Peligro :" & ex.Message.ToString)
+            End Try
 
-    '    Else
-    '        Me.AlertDialog("Debe asociar informacion a la actividad para poder cargarla.")
-    '    End If
-    'End Sub
+        Else
+            Me.AlertDialog("Debe asociar informacion a la actividad para poder cargarla.")
+        End If
+    End Sub
     'EVENTO DEL CHECK DE INCLUIR
     Protected Sub chkIcluirPeligro_CheckedChanged(sender As Object, e As EventArgs)
         Dim Index As Integer = DirectCast(DirectCast(sender, System.Web.UI.Control).Parent.Parent, System.Web.UI.WebControls.GridViewRow).RowIndex
@@ -248,6 +261,10 @@
                 row("EstIncluir") = IIf(DirectCast(sender, Web.UI.WebControls.CheckBox).Checked, 1, 0)
             End If
         Next
+    End Sub
+    'EVENTO DEL BOTON CERRAR POPUP
+    Protected Sub btnCerrarModalRiesgo_Click(sender As Object, e As ImageClickEventArgs) Handles btnCerrarModalRiesgo.Click
+        Me.ModalPopupExtenderNuevoRiesgo.Hide()
     End Sub
 #End Region
 #Region "PRIVADO"
@@ -276,10 +293,8 @@
 
         If (dtDatos.Rows.Count <> 0) Then
             Me.pnlPeligrosXCargo.Visible = True
-            Me.lblNoHayActividades.Visible = False
         Else
             Me.pnlPeligrosXCargo.Visible = False
-            Me.lblNoHayActividades.Visible = True
         End If
     End Sub
     'FUNCION PARA INACTIVAR LA RELACION DEL PELIGRO POR EL CARGO
@@ -449,14 +464,24 @@
         Me.gvPeligro.DataBind()
 
         If (Me.gvPeligro.Rows.Count <> 0) Then
+            Me.lblRiesXAct.Visible = True
             Me.pnlGvPeligro.Visible = True
         Else
+            Me.lblRiesXAct.Visible = False
             Me.pnlGvPeligro.Visible = False
         End If
     End Sub
     'EVENTO DE LA SELECCION DE ACTIVIDAD
     Public Sub evtSeleccionoActividad() Handles ctrDinaConsObjActividad.evtSelecciono
         Me.pIdActividad = Me.ctrDinaConsObjActividad.pIdSel
+
+        Me.pVisualizacionXAccion = EnmAccion.AgregoActividad
+
+        'LIMPIAR TABLA DE PELIGROS
+        Me.pTblPeligro = New dllSoftSGSST.SGSST.dtsPeligro.dtPeligroDataTable
+
+        'CARGAR LOS PELIGROS ASOCIADOS A UNA ACTIVIDAD
+        Me.CargarPeligrosXIdActividad()
     End Sub
     'FUNCION PARA LIMPIAR LA DESCRIPCION, CLASIFICACION Y RIESGO
     Public Sub LimpiarFrmDescClasifRiesgo()
@@ -464,5 +489,7 @@
         Me.ddlClasificacion.SelectedValue = 0
         Me.ddlRiesgo.SelectedValue = 0
     End Sub
+
+
 #End Region
 End Class

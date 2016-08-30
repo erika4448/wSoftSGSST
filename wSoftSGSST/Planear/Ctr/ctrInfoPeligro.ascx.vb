@@ -115,6 +115,8 @@
                     'ESTABLECE EL TITULO DE LA VENTANA
                     Me.lblTituloInfoAdicPeligro.Text = "Evaluación del Riesgo"
 
+                    Me.ctrEvaluacionPeligro.pStrDescPeligro = Me.txtDescripcion.Text
+                    Me.ctrEvaluacionPeligro.pStrClasifPeligro = Me.lblClasificacion.Text
                     Me.ctrEvaluacionPeligro.pIdPeligro = Me.pIdPeligro
                     Me.ctrEvaluacionPeligro.pBoolIniCtr = True
 

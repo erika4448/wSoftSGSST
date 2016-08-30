@@ -117,7 +117,26 @@
             ViewState("pIdAceptabilidad") = value
         End Set
     End Property
-
+    'PROPIEDAD PARA DEFINIR EL LABEL DE DESCRIPCION PELIGRO
+    Public Property pStrDescPeligro As String
+        Get
+            Return ViewState("pStrDescPeligro")
+        End Get
+        Set(value As String)
+            ViewState("pStrDescPeligro") = value
+            Me.lblDescPeligro.Text = value
+        End Set
+    End Property
+    'PROPIEDAD PARA DEFINIR EL LABEL DE CLASIFICACION PELIGRO
+    Public Property pStrClasifPeligro As String
+        Get
+            Return ViewState("pStrClasifPeligro")
+        End Get
+        Set(value As String)
+            ViewState("pStrClasifPeligro") = value
+            Me.lblClasifPeligro.Text = value
+        End Set
+    End Property
 #End Region
 #Region "PROTEGIDO"
     'EVENTO DEL BOTON CERRAR POPUP
@@ -190,7 +209,7 @@
 
         If (objNivDef.sndIdNivelDeficiencia <> 0) Then
             Me.pNivelDeficiencia = objNivDef.sndValor
-            Me.lblExpNivDef.Text = "Significado Nivel de Deficiencia (" & objNivDef.sndNombre & ") - Valor " & objNivDef.sndValor & ") " & objNivDef.sndSignificado
+            Me.lblExpNivDef.Text = "Significado Nivel de Deficiencia (" & objNivDef.sndNombre & ") - Valor " & objNivDef.sndValor & ")" & "</br>" & objNivDef.sndSignificado
         Else
             Me.pNivelDeficiencia = 0
 
@@ -206,7 +225,7 @@
         'DEFINIR EL LABEL DE NIVEL EXPOSICION SEGUN LA SELECCION
         If (objNivExp.sneIdNivelExposicion <> 0) Then
             Me.pNivelExposicion = objNivExp.sneValor
-            Me.lblExpNivExp.Text = "Significado Nivel de Exposición (" & objNivExp.sneNombre & ") - Valor " & objNivExp.sneValor & ") " & objNivExp.sneSignificado
+            Me.lblExpNivExp.Text = "Significado Nivel de Exposición (" & objNivExp.sneNombre & ") - Valor " & objNivExp.sneValor & ") " & "</br>" & objNivExp.sneSignificado
         Else
             Me.pNivelExposicion = objNivExp.sneValor
             Me.lblExpNivExp.Text = ""
@@ -221,7 +240,7 @@
         If (objNivCons.sncIdNivelConsecuencia <> 0) Then
 
             Me.pNivelConsecuencia = objNivCons.sncValor
-            Me.lblExpNivCons.Text = "Significado Nivel de Consecuencia (" & objNivCons.sncNombre & ") - Valor " & objNivCons.sncValor & objNivCons.sncSignificado
+            Me.lblExpNivCons.Text = "Significado Nivel de Consecuencia (" & objNivCons.sncNombre & ") - Valor " & objNivCons.sncValor & "</br>" & objNivCons.sncSignificado
         Else
             Me.pNivelConsecuencia = objNivCons.sncIdNivelConsecuencia
             Me.lblExpNivCons.Text = ""
@@ -245,7 +264,7 @@
         If (objNivProb.sgnIdNivelProbabilidad <> 0) Then
             Me.pIdNivelProbabilidad = objNivProb.sgnIdNivelProbabilidad
             Me.lblValNivProb.Text = Me.pNivelProbabilidad
-            Me.lblExpNivProb.Text = "Significado Nivel de Probabilidad (" & objNivProb.sgnNombre & ") - Valor " & objNivProb.sgnValorMax & " y " & objNivProb.sgnValorMin & objNivProb.sgnSignificado
+            Me.lblExpNivProb.Text = "Significado Nivel de Probabilidad (" & objNivProb.sgnNombre & ") - Valor " & objNivProb.sgnValorMax & " y " & objNivProb.sgnValorMin & "</br>" & objNivProb.sgnSignificado
 
         Else
             Me.pIdNivelProbabilidad = 0
@@ -265,7 +284,7 @@
         If (objNivRies.snrIdNivelRiesgo <> 0) Then
             Me.pIdNivelRiesgo = objNivRies.snrIdNivelRiesgo
             Me.lblValNivRies.Text = Me.pValNivelRiesgo
-            Me.lblExpNivRies.Text = "Significado Nivel de Riesgo (" & objNivRies.snrNombre & ") - Valor " & objNivRies.snrValorMax & " - " & objNivRies.snrValorMin & objNivRies.snrSignificado
+            Me.lblExpNivRies.Text = "Significado Nivel de Riesgo (" & objNivRies.snrNombre & ") - Valor " & objNivRies.snrValorMax & " - " & objNivRies.snrValorMin & "</br>" & objNivRies.snrSignificado
         Else
             Me.pIdNivelRiesgo = 0
             Me.lblValNivRies.Text = Me.pValNivelRiesgo
@@ -281,7 +300,7 @@
         If (objNivAcep.sgaIdNivelRiesgo <> 0) Then
             Me.pIdAceptabilidad = objNivAcep.sgaIdAceptabilidad
             Me.lblValAcepNiv.Text = objNivAcep.sgaNombre
-            Me.lblExpValAcep.Text = "Significado Aceptabilidad Nivel de Riesgo (" & objNivAcep.sgaIdNivelRiesgo & ") - Valor " & objNivAcep.sgaNombre & objNivAcep.sgaSignificado
+            Me.lblExpValAcep.Text = "Significado Aceptabilidad Nivel de Riesgo (" & objNivAcep.sgaIdNivelRiesgo & ") - Valor " & objNivAcep.sgaNombre & "</br>" & objNivAcep.sgaSignificado
 
         Else
             Me.pIdAceptabilidad = 0

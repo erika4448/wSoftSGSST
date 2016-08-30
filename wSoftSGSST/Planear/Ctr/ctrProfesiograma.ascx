@@ -36,6 +36,11 @@
                 <asp:Panel ID="pnlBuscarCargo" runat="server">
                     <table>
                         <tr>
+                            <td colspan="2" align="center">
+                                <asp:Label ID="lblInfor" runat="server" Text="Aquí podra digitar un nombre o codígo de los cargos creados previamente para consultar y editar su información detallada." Font-Italic="true" Font-Size="Smaller"></asp:Label>
+                            </td>
+                        </tr>
+                        <tr>
                             <td width="140px">
                                 <asp:Label ID="lblNomCargoBus" runat="server" Text="Nombre Cargo"></asp:Label>
                             </td>
@@ -63,10 +68,10 @@
                                         <td width="140px" align="left">
                                             <asp:Label ID="lblNomCargo" runat="server" Text="*Nombre Cargo"></asp:Label>
                                         </td>
-                                        <td>
+                                        <td align="left">
                                             <asp:TextBox ID="txtNomCargo" runat="server"></asp:TextBox>
                                         </td>
-                                        <td>
+                                        <td align="left">
                                             <asp:Label ID="lblNomCargoObliga" runat="server" Text="**Obligatorio" ForeColor="Red"></asp:Label>
                                         </td>
                                     </tr>
@@ -74,10 +79,10 @@
                                         <td width="140px" align="left">
                                             <asp:Label ID="lblCodCargo" runat="server" Text="*Código del Cargo"></asp:Label>
                                         </td>
-                                        <td>
+                                        <td align="left">
                                             <asp:TextBox ID="txtCodCargo" runat="server" AutoPostBack="True"></asp:TextBox>
                                         </td>
-                                        <td>
+                                        <td align="left">
                                             <asp:Label ID="lblCodCargoObliga" runat="server" Text="**Obligatorio" ForeColor="Red"></asp:Label>
                                         </td>
                                     </tr>
@@ -93,7 +98,7 @@
                                         <td width="140px" align="left">
                                             <asp:Label ID="lblObjCargo" runat="server" Text="Objetivo Cargo"></asp:Label>
                                         </td>
-                                        <td>
+                                        <td align="left">
                                             <asp:TextBox ID="txtObjCargo" runat="server" TextMode="MultiLine" Height="120px" Width="400px"></asp:TextBox>
                                         </td>
                                         <td></td>
@@ -102,7 +107,7 @@
                                         <td width="140px" align="left">
                                             <asp:Label ID="lblActividades" runat="server" Text="Actividades Cargo"></asp:Label>
                                         </td>
-                                        <td>
+                                        <td align="left">
                                             <asp:TextBox ID="txtActividades" runat="server" TextMode="MultiLine" Height="120px" Width="400px"></asp:TextBox>
                                         </td>
                                         <td>&nbsp;</td>
@@ -111,7 +116,7 @@
                                         <td width="140px" align="left">
                                             <asp:Label ID="lblEducacion" runat="server" Text="Educación"></asp:Label>
                                         </td>
-                                        <td>
+                                        <td align="left">
                                             <asp:DropDownList ID="ddlEducacion" runat="server"></asp:DropDownList>
                                         </td>
                                         <td></td>
@@ -120,7 +125,7 @@
                                         <td width="140px" align="left">
                                             <asp:Label ID="lblProfesion" runat="server" Text="Profesión"></asp:Label>
                                         </td>
-                                        <td>
+                                        <td align="left">
                                             <asp:DropDownList ID="ddlProfesion" runat="server"></asp:DropDownList>
                                         </td>
                                         <td></td>
@@ -129,7 +134,7 @@
                                         <td width="140px" align="left">
                                             <asp:Label ID="lblExperiencia" runat="server" Text="Campo de Experiencia"></asp:Label>
                                         </td>
-                                        <td>
+                                        <td align="left">
                                             <asp:TextBox ID="txtExperiencia" runat="server"></asp:TextBox>
                                         </td>
                                         <td></td>
@@ -138,7 +143,7 @@
                                         <td width="140px" align="left">
                                             <asp:Label ID="lblExperienciaAnos" runat="server" Text="Años de Experiencia"></asp:Label>
                                         </td>
-                                        <td>
+                                        <td align="left">
                                             <asp:TextBox ID="txtExperienciaAnos" runat="server"></asp:TextBox>
                                             <ajaxToolkit:FilteredTextBoxExtender ID="txtExperienciaAnos_FilteredTextBoxExtender" runat="server" BehaviorID="txtExperienciaAnos_FilteredTextBoxExtender" FilterType="Numbers" TargetControlID="txtExperienciaAnos" />
                                         </td>
@@ -148,7 +153,7 @@
                                         <td width="140px" align="left">
                                             <asp:Label ID="lblHabilidades" runat="server" Text="Habilidades"></asp:Label>
                                         </td>
-                                        <td>
+                                        <td align="left">
                                             <asp:TextBox ID="txtHabilidades" runat="server" TextMode="MultiLine"></asp:TextBox>
                                         </td>
                                         <td></td>
@@ -157,7 +162,7 @@
                                         <td width="140px" align="left">
                                             <asp:Label ID="lblAQuienReporta" runat="server" Text="A quien le reporta"></asp:Label>
                                         </td>
-                                        <td>
+                                        <td align="left">
                                             <asp:DropDownList ID="ddlAQuienReporta" runat="server"></asp:DropDownList>
                                         </td>
                                         <td></td>
@@ -166,10 +171,10 @@
                                         <td width="140px" align="left">
                                             <asp:Label ID="lblQuienLePreporta" runat="server" Text="Quien le Reporta"></asp:Label>
                                         </td>
-                                        <td>
+                                        <td align="left">
                                             <uc1:ctrDinaConsObj runat="server" ID="ctrDinaConsObjQuienLeRep" />
                                         </td>
-                                        <td>
+                                        <td align="left">
                                             <asp:ImageButton ID="ibtnAgregarQuienLeReporta" runat="server" ImageUrl="~/Images/Botones/ibtnAgregarAzul.png" />
                                         </td>
                                     </tr>
@@ -195,10 +200,10 @@
                                         <td width="140px" align="left">
                                             <asp:Label ID="lblAreaDelCargo" runat="server" Text="Área del Cargo"></asp:Label>
                                         </td>
-                                        <td>
+                                        <td align="left">
                                             <asp:DropDownList ID="ddlAreaDelCargo" runat="server"></asp:DropDownList>
                                         </td>
-                                        <td>
+                                        <td align="left">
                                             <asp:ImageButton ID="ibtnAgreArea" runat="server" ImageUrl="~/Images/Botones/ibtnAgregarAzul.png" />
                                         </td>
                                     </tr>

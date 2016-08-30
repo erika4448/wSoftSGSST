@@ -11,7 +11,7 @@
         <tr>
             <td align="right" colspan="3">
                 <%--<asp:ImageButton ID="ibtnCerrarActividad" runat="server" ImageUrl="~/Images/General/ibtnCerrarModal.png" />--%>
-                <asp:ImageButton ID="ibtCerrar" runat="server" ImageUrl="~/Images/General/ibtnCerrarModal.png" />
+                <asp:ImageButton ID="ibtCerrar" runat="server" ImageUrl="~/Images/Botones/boton_volver.fw.png" />
             </td>
         </tr>
         <tr>
@@ -62,7 +62,7 @@
                     <table align="center">
                         <tr>
                             <td>
-                                <asp:Label ID="lblNuevaAct" runat="server" Text="Nueva Actividad"></asp:Label>
+                                <asp:Label ID="Label1" runat="server" Text="Nueva Actividad"></asp:Label>
                             </td>
                             <td>
                                 <asp:TextBox ID="txtNuevaActividad" runat="server"></asp:TextBox>
@@ -77,28 +77,53 @@
             </td>
         </tr>
         <tr>
-            <td align="center" colspan="2">
-                <asp:Panel ID="pnlGvPeligro" runat="server">
-                    <asp:GridView ID="gvPeligro" runat="server" CssClass="gvSGSST" AutoGenerateColumns="False" DataKeyNames="EstIncluir,idCabPeligro">
-                        <Columns>
-                            <asp:TemplateField HeaderText="Incluir">
-                                <ItemTemplate>
-                                    <asp:CheckBox ID="chkIcluirPeligro" runat="server" Checked='<%# IIf(Eval("EstIncluir") = 1, True, False) %>' AutoPostBack="True" OnCheckedChanged="chkIcluirPeligro_CheckedChanged" />
-                                </ItemTemplate>
-                                <ItemStyle HorizontalAlign="Center" VerticalAlign="Middle" />
-                            </asp:TemplateField>
-                            <asp:BoundField DataField="NomDescripcionPeligro" HeaderText="Descripción del Peligro" SortExpression="NomDescripcionPeligro" />
-                            <asp:BoundField DataField="NomClasificacionPeligro" HeaderText="Clasificación del Peligro" SortExpression="NomClasificacionPeligro" />
-                            <asp:BoundField DataField="NomRiesgo" HeaderText="Riesgo" SortExpression="NomRiesgo" />
-                        </Columns>
-                    </asp:GridView>
-                </asp:Panel>
+            <td colspan="3">&nbsp;</td>
+        </tr>
+        <tr>
+            <td colspan="3" align="left">
+                <asp:Label ID="lblInfor3" runat="server" Text="2. Una vez haya seleccionado  una actividad por favor incluya los riesgos asociados a la actividad." Font-Italic="true"></asp:Label>
             </td>
         </tr>
         <tr>
-            <td align="center" colspan="2">
-                <%--<asp:ImageButton ID="ibtnCargar" runat="server" ImageUrl="~/Images/Botones/ibtnCargarAzul.png" Style="height: 27px" />--%>
+            <td colspan="3">&nbsp;</td>
+        </tr>
+        <tr>
+            <td align="center" colspan="3">
+                <asp:Label ID="lblRiesXAct" runat="server" Text="Riesgos relacionados a la Actividad" CssClass="tituloForm"></asp:Label>
+            </td>
+        </tr>
+        <tr>
+            <td align="center" colspan="3">
+                <asp:UpdatePanel ID="upnlPeligro" runat="server" UpdateMode="Conditional">
+                    <ContentTemplate>
+                        <asp:Panel ID="pnlGvPeligro" runat="server" CssClass="pnlContentGv">
+                            <asp:GridView ID="gvPeligro" runat="server" CssClass="gvSGSST" AutoGenerateColumns="False" DataKeyNames="EstIncluir,idCabPeligro">
+                                <Columns>
+                                    <asp:TemplateField HeaderText="Incluir">
+                                        <ItemTemplate>
+                                            <asp:CheckBox ID="chkIcluirPeligro" runat="server" Checked='<%# IIf(Eval("EstIncluir") = 1, True, False) %>' AutoPostBack="True" OnCheckedChanged="chkIcluirPeligro_CheckedChanged" />
+                                        </ItemTemplate>
+                                        <ItemStyle HorizontalAlign="Center" VerticalAlign="Middle" />
+                                    </asp:TemplateField>
+                                    <asp:BoundField DataField="NomDescripcionPeligro" HeaderText="Descripción del Peligro" SortExpression="NomDescripcionPeligro" />
+                                    <asp:BoundField DataField="NomClasificacionPeligro" HeaderText="Clasificación del Peligro" SortExpression="NomClasificacionPeligro" />
+                                    <asp:BoundField DataField="NomRiesgo" HeaderText="Riesgo" SortExpression="NomRiesgo" />
+                                </Columns>
+                            </asp:GridView>
+                        </asp:Panel>
+
+                    </ContentTemplate>
+                </asp:UpdatePanel>
+            </td>
+        </tr>
+        <tr>
+            <td align="center" colspan="3">
                 <asp:ImageButton ID="ibntNuevoRiesgo" runat="server" ImageUrl="~/Images/Botones/ibtnNuevoRiesgoAzul.png" />
+            </td>
+        </tr>
+        <tr>
+            <td align="center" colspan="3">
+                <asp:ImageButton ID="ibtnCargar" runat="server" ImageUrl="~/Images/Botones/ibtnGuardarInfoVerde.png" Style="height: 27px" />
             </td>
         </tr>
     </table>
@@ -129,41 +154,62 @@
                         </Columns>
                     </asp:GridView>
                 </asp:Panel>
-                <asp:Label ID="lblNoHayActividades" runat="server" Text="No hay Peligros relacionadas al Cargo."></asp:Label>
             </td>
         </tr>
     </table>
 </asp:Panel>
-<asp:Panel ID="pnlDescClasRies" runat="server">
-    <table>
-        <tr>
-            <td>
-                <asp:Label ID="lblDescripcion" runat="server" Text="Descripción del Peligro"></asp:Label>
-            </td>
-            <td>
-                <asp:TextBox ID="txtDescripcion" runat="server" TextMode="MultiLine"></asp:TextBox>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <asp:Label ID="lblCladificacion" runat="server" Text="Clasificación del Peligro"></asp:Label>
-            </td>
-            <td>
-                <asp:DropDownList ID="ddlClasificacion" runat="server"></asp:DropDownList>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <asp:Label ID="lblRiesgo" runat="server" Text="Riesgo"></asp:Label>
-            </td>
-            <td>
-                <asp:DropDownList ID="ddlRiesgo" runat="server"></asp:DropDownList>
-            </td>
-        </tr>
-        <tr>
-            <td colspan="2" align="center">
-                <asp:ImageButton ID="ibtAgregarDescClasRies" runat="server" ImageUrl="~/Images/Botones/ibtnAgregarVerde.png" />
-            </td>
-        </tr>
-    </table>
+
+<asp:Button ID="btnfake" runat="server" Text="" Style="display: none" />
+<ajaxToolkit:ModalPopupExtender ID="ModalPopupExtenderNuevoRiesgo" runat="server" PopupControlID="pnlDescClasRies" TargetControlID="btnfake" BackgroundCssClass="cssModalBackGround" Enabled="true"></ajaxToolkit:ModalPopupExtender>
+<asp:Panel ID="pnlDescClasRies" runat="server" CssClass="ModalPoup" Style="display: none">
+    <asp:UpdatePanel ID="upnlDescClasRies" runat="server" UpdateMode="Conditional">
+        <ContentTemplate>
+            <table align="center">
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td align="right">
+                        <asp:ImageButton ID="btnCerrarModalRiesgo" runat="server" ImageUrl="~/Images/General/ibtnCerrarModal.png" />
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" colspan="3">
+                        <asp:Label ID="lblNuevoRiesgo" runat="server" Text="Definir el Peligro y Riesgo asociado a la actividad" CssClass="tituloForm"></asp:Label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <asp:Label ID="lblDescripcion" runat="server" Text="Descripción del Peligro"></asp:Label>
+                    </td>
+                    <td>
+                        <asp:TextBox ID="txtDescripcion" runat="server" TextMode="MultiLine"></asp:TextBox>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <asp:Label ID="lblCladificacion" runat="server" Text="Clasificación del Peligro"></asp:Label>
+                    </td>
+                    <td>
+                        <asp:DropDownList ID="ddlClasificacion" runat="server"></asp:DropDownList>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <asp:Label ID="lblRiesgo" runat="server" Text="Riesgo"></asp:Label>
+                    </td>
+                    <td>
+                        <asp:DropDownList ID="ddlRiesgo" runat="server"></asp:DropDownList>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <asp:ImageButton ID="ibtAgregarDescClasRies" runat="server" ImageUrl="~/Images/Botones/ibtnAgregarVerde.png" />
+                    </td>
+                </tr>
+            </table>
+        </ContentTemplate>
+    </asp:UpdatePanel>
 </asp:Panel>

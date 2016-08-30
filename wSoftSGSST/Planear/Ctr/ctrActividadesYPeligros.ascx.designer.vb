@@ -113,13 +113,13 @@ Partial Public Class ctrActividadesYPeligros
     Protected WithEvents pnlNuevaActividad As Global.System.Web.UI.WebControls.Panel
     
     '''<summary>
-    '''lblNuevaAct control.
+    '''Label1 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents lblNuevaAct As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents Label1 As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
     '''txtNuevaActividad control.
@@ -149,6 +149,33 @@ Partial Public Class ctrActividadesYPeligros
     Protected WithEvents ibtnCerrarNuevaAct As Global.System.Web.UI.WebControls.ImageButton
     
     '''<summary>
+    '''lblInfor3 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblInfor3 As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
+    '''lblRiesXAct control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblRiesXAct As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
+    '''upnlPeligro control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents upnlPeligro As Global.System.Web.UI.UpdatePanel
+    
+    '''<summary>
     '''pnlGvPeligro control.
     '''</summary>
     '''<remarks>
@@ -174,6 +201,15 @@ Partial Public Class ctrActividadesYPeligros
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ibntNuevoRiesgo As Global.System.Web.UI.WebControls.ImageButton
+    
+    '''<summary>
+    '''ibtnCargar control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ibtnCargar As Global.System.Web.UI.WebControls.ImageButton
     
     '''<summary>
     '''pnlGvActRiesgos control.
@@ -203,13 +239,22 @@ Partial Public Class ctrActividadesYPeligros
     Protected WithEvents gvPeligrosXCargo As Global.System.Web.UI.WebControls.GridView
     
     '''<summary>
-    '''lblNoHayActividades control.
+    '''btnfake control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents lblNoHayActividades As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents btnfake As Global.System.Web.UI.WebControls.Button
+    
+    '''<summary>
+    '''ModalPopupExtenderNuevoRiesgo control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ModalPopupExtenderNuevoRiesgo As Global.AjaxControlToolkit.ModalPopupExtender
     
     '''<summary>
     '''pnlDescClasRies control.
@@ -219,6 +264,33 @@ Partial Public Class ctrActividadesYPeligros
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents pnlDescClasRies As Global.System.Web.UI.WebControls.Panel
+    
+    '''<summary>
+    '''upnlDescClasRies control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents upnlDescClasRies As Global.System.Web.UI.UpdatePanel
+    
+    '''<summary>
+    '''btnCerrarModalRiesgo control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents btnCerrarModalRiesgo As Global.System.Web.UI.WebControls.ImageButton
+    
+    '''<summary>
+    '''lblNuevoRiesgo control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblNuevoRiesgo As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
     '''lblDescripcion control.

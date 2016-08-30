@@ -77,6 +77,15 @@ Partial Public Class ctrProfesiograma
     Protected WithEvents pnlBuscarCargo As Global.System.Web.UI.WebControls.Panel
     
     '''<summary>
+    '''lblInfor control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblInfor As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
     '''lblNomCargoBus control.
     '''</summary>
     '''<remarks>

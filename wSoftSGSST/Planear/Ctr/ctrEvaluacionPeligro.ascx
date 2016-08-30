@@ -14,7 +14,7 @@
                                 <asp:Label ID="lblNomDescPeligro" runat="server" Text="Descripción del Peligro"></asp:Label>
                             </td>
                             <td>
-                                <asp:Label ID="lblDescPeligro" runat="server" Text=""></asp:Label>
+                                <asp:Label ID="lblDescPeligro" runat="server" Text="" style="padding-left:5px" Font-Bold="true"></asp:Label>
                             </td>
                         </tr>
                         <tr>
@@ -22,7 +22,7 @@
                                 <asp:Label ID="lblNomClasifPeligro" runat="server" Text="Clasificación del Peligro"></asp:Label>
                             </td>
                             <td>
-                                <asp:Label ID="lblClasifPeligro" runat="server" Text=""></asp:Label>
+                                <asp:Label ID="lblClasifPeligro" runat="server" Text="" style="padding-left:5px" Font-Bold="true"></asp:Label>
                             </td>
                         </tr>
                     </table>
@@ -58,12 +58,12 @@
                 <asp:DropDownList ID="ddlNivDef" runat="server" AutoPostBack="True" Width="180px">
                 </asp:DropDownList>
             </td>
-            <td>
-                <asp:Panel ID="pnlExpNivDef" runat="server" Width="400px">
+            <td align="center">
+                <asp:Panel ID="pnlExpNivDef" runat="server" Width="600px">
                     <table>
                         <tr>
                             <td align="center">
-                                <asp:Label ID="lblExpNivDef" runat="server" Text=""></asp:Label>
+                                <asp:Label ID="lblExpNivDef" runat="server" Font-Size="10px"></asp:Label>
                             </td>
                         </tr>
                     </table>
@@ -81,12 +81,12 @@
                 <asp:DropDownList ID="ddlNivExp" runat="server" AutoPostBack="True" Width="180px">
                 </asp:DropDownList>
             </td>
-            <td>
-                <asp:Panel ID="pnlExpNivExp" runat="server" Width="400px">
+            <td align="center">
+                <asp:Panel ID="pnlExpNivExp" runat="server" Width="600px">
                     <table>
                         <tr>
                             <td align="center">
-                                <asp:Label ID="lblExpNivExp" runat="server" Text=""></asp:Label>
+                                <asp:Label ID="lblExpNivExp" runat="server" Font-Size="10px"></asp:Label>
                             </td>
                         </tr>
                     </table>
@@ -103,12 +103,12 @@
             <td align="center">
                 <asp:Label ID="lblValNivProb" runat="server" Text="" Style="align-content: center"></asp:Label>
             </td>
-            <td>
-                <asp:Panel ID="pnlExpNivProb" runat="server" Width="400px">
+            <td align="center">
+                <asp:Panel ID="pnlExpNivProb" runat="server" Width="600px">
                     <table>
                         <tr>
                             <td align="center">
-                                <asp:Label ID="lblExpNivProb" runat="server" Text=""></asp:Label>
+                                <asp:Label ID="lblExpNivProb" runat="server" Font-Size="10px"></asp:Label>
                             </td>
                         </tr>
                     </table>
@@ -131,12 +131,12 @@
                     <asp:ListItem Value="4">Leve (L)</asp:ListItem>
                 </asp:DropDownList>
             </td>
-            <td>
-                <asp:Panel ID="pnlExpNivCons" runat="server" Width="400px">
+            <td align="center">
+                <asp:Panel ID="pnlExpNivCons" runat="server" Width="600px">
                     <table>
                         <tr>
                             <td align="center">
-                                <asp:Label ID="lblExpNivCons" runat="server" Text=""></asp:Label>
+                                <asp:Label ID="lblExpNivCons" runat="server" Font-Size="10px"></asp:Label>
                             </td>
                         </tr>
                     </table>
@@ -153,12 +153,12 @@
             <td align="center">
                 <asp:Label ID="lblValNivRies" runat="server" Text="" Style="align-content: center"></asp:Label>
             </td>
-            <td>
-                <asp:Panel ID="pnlExpNivRies" runat="server" Width="400px">
+            <td align="center">
+                <asp:Panel ID="pnlExpNivRies" runat="server" Width="600px">
                     <table>
                         <tr>
                             <td align="center">
-                                <asp:Label ID="lblExpNivRies" runat="server" Text=""></asp:Label>
+                                <asp:Label ID="lblExpNivRies" runat="server" Font-Size="10px"></asp:Label>
                             </td>
                         </tr>
                     </table>
@@ -175,12 +175,12 @@
             <td align="center">
                 <asp:Label ID="lblValAcepNiv" runat="server" Text="" Style="align-content: center"></asp:Label>
             </td>
-            <td>
-                <asp:Panel ID="pnlExpValAcep" runat="server" Width="400px">
+            <td align="center">
+                <asp:Panel ID="pnlExpValAcep" runat="server" Width="600px">
                     <table>
                         <tr>
                             <td align="center">
-                                <asp:Label ID="lblExpValAcep" runat="server" Text=""></asp:Label>
+                                <asp:Label ID="lblExpValAcep" runat="server" Font-Size="10px"></asp:Label>
                             </td>
                         </tr>
                     </table>
