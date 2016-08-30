@@ -74,9 +74,49 @@
                     varStrURL = New System.Uri(Context.Request.Url, ResolveUrl("~/Planear/MatrizRiesgos/frmMtRgCalificarRiesgo.aspx?PIP=" & varIdPeligro)).ToString
                     Me.Response.Redirect(varStrURL)
                 End If
+
+            Case "cmdMedidas"
+                Dim varIdPeligro As Integer = 0
+
+                varIdPeligro = Me.gvMatrizRiesgos.DataKeys(e.CommandArgument).Values("sgplIdPeligro")
+
+                'INICIALIZA CONTROL DE MEDIDAS INTERVENCION
+                Me.ctrMtRsMedIntervencion1.pIdPeligro = varIdPeligro
+                Me.ctrMtRsMedIntervencion1.pBoolIniCtr = True
+                Me.ctrMtRsMedIntervencion1.pBoolPermiteEditar = False
+
+                'SE CARGA LA INFORMACION DE PELIGRO
+                Me.CargarInfoPeligro(varIdPeligro)
+
+                Me.modalInfoMedIntervencion.Show()
+                Me.upnlInfoMedIntervencion.Update()
         End Select
 
         Me.upnlMatrizRiesgos.Update()
+    End Sub
+    Protected Sub ibtnCerrarMedIntervencion_Click(sender As Object, e As ImageClickEventArgs) Handles ibtnCerrarMedIntervencion.Click
+        Me.modalInfoMedIntervencion.Hide()
+        Me.upnlInfoMedIntervencion.Update()
+        Me.upnlMatrizRiesgos.Update()
+    End Sub
+#End Region
+#Region "PRIVADO"
+    Private Sub CargarInfoPeligro(ByVal parIdPeligro As Integer)
+        Dim objPeligro As New dllSoftSGSST.SGSST.clSgsstPeligro
+        Dim dtDatosPeligro As New Data.DataTable
+
+        'SE CARGA LA INFORMACION DEL PELIGRO
+        dtDatosPeligro = objPeligro.CargarInfoPeligroXIdPeligro(parIdPeligro)
+
+        If (dtDatosPeligro.Rows.Count > 0) Then
+            'INFORMACION BASICA QUE SE MUESTRA EN LAS VENTANAS MODALES
+            Me.lblDescPeligro.Text = dtDatosPeligro.Rows(0)("StrDescripcion")
+            Me.lblClasiPeligro.Text = dtDatosPeligro.Rows(0)("StrClasificacion")
+            Me.lblEvalPeligro.Text = dtDatosPeligro.Rows(0)("tmpNivelRiesgo")
+            Me.lblNumExpuestos.Text = dtDatosPeligro.Rows(0)("sgplCriCtrNumExpuestos")
+            Me.lblPeorConsec.Text = dtDatosPeligro.Rows(0)("sgplCriCtrPeorConsec")
+            Me.lblReqLegal.Text = dtDatosPeligro.Rows(0)("StrReqLegal")
+        End If
     End Sub
 #End Region
 #Region "DATA SOURCE GRILLA MATRIZ PELIGROS"

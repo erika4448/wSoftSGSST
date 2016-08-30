@@ -51,6 +51,18 @@
             End If
         End Set
     End Property
+    'PROPIEDAD PARA VALIDAR SI EL CONTROL ES EDITABLE
+    Public WriteOnly Property pBoolPermiteEditar As Boolean
+        Set(value As Boolean)
+
+            Me.txtCtrAdmin.ReadOnly = Not value
+            Me.txtCtrIngenieria.ReadOnly = Not value
+            Me.txtEEPP.ReadOnly = Not value
+            Me.txtEliminacion.ReadOnly = Not value
+            Me.txtSustitucion.ReadOnly = Not value
+            Me.ibtnGuardarInfo.Visible = value
+        End Set
+    End Property
 #End Region
 #Region "PROTEGIDO"
     Protected Sub ibtnGuardarInfo_Click(sender As Object, e As ImageClickEventArgs) Handles ibtnGuardarInfo.Click

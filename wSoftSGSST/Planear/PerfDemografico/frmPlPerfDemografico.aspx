@@ -36,8 +36,8 @@
                 </tr>
                 <tr>
                     <td align="right">
-                        <asp:ImageButton ID="ibtnLimpiar" runat="server" CausesValidation="False" ImageUrl="~/Images/General/ibtnLimpiar.png" />
-                        <asp:ImageButton ID="ibtnNuevaConsulta" runat="server" CausesValidation="False" ImageUrl="~/Images/General/ibtnNuevaConsulta.png" />
+                        <asp:ImageButton ID="ibtnLimpiar" runat="server" CausesValidation="false" ImageUrl="~/Images/General/ibtnLimpiar.png" />
+                        <asp:ImageButton ID="ibtnNuevaConsulta" runat="server" CausesValidation="false" ImageUrl="~/Images/General/ibtnNuevaConsulta.png" />
                         <asp:ImageButton ID="ibtnNuevoEmpleado" runat="server" CausesValidation="false" ImageUrl="~/Images/Botones/ibtnNuevoEmpleado.png" />
                     </td>
                 </tr>
