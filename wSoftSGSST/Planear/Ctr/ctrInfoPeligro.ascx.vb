@@ -98,6 +98,7 @@
                     'INICIALIZA CONTROL DE MEDIDAS INTERVENCION
                     Me.ctrMtRsMedIntervencion1.pIdPeligro = Me.pIdPeligro
                     Me.ctrMtRsMedIntervencion1.pBoolIniCtr = True
+                    Me.ctrMtRsMedIntervencion1.pBoolPermiteEditar = True
 
                     'ESTABLECE EL TITULO DE LA VENTANA
                     Me.lblTituloInfoAdicPeligro.Text = "Medidas de Intervención"
