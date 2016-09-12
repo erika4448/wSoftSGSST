@@ -151,7 +151,7 @@
                 <asp:Label ID="lblNivRies" runat="server" Text="Nivel de Riesgo"></asp:Label>
             </td>
             <td align="center">
-                <asp:Label ID="lblValNivRies" runat="server" Text="" Style="align-content: center"></asp:Label>
+                <asp:Label ID="lblValNivRies" runat="server" Text="" Style="align-content: center" Width="80px"></asp:Label>
             </td>
             <td align="center">
                 <asp:Panel ID="pnlExpNivRies" runat="server" Width="600px">

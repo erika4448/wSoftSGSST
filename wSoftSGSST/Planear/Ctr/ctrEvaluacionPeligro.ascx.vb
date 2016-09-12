@@ -280,6 +280,8 @@
         Dim objNivRies As New dllSoftSGSST.SGSST.clSgsstNivelRiesgo
         objNivRies.CargarInfoNivelRiesgoXValor(Me.pValNivelRiesgo)
 
+        'CARGAR COLOR NIVEL DE RIESGO
+        Me.CalcularColorNivelRiesgo(Me.pValNivelRiesgo)
 
         If (objNivRies.snrIdNivelRiesgo <> 0) Then
             Me.pIdNivelRiesgo = objNivRies.snrIdNivelRiesgo
@@ -384,8 +386,31 @@
             'CARGAR NIVEL RIESGO
             Me.CalcularNivelRiesgo()
 
+            'CARGAR EL COLOR DEL NIVEL DE RIESGO
+            Me.CalcularColorNivelRiesgo(Me.pValNivelRiesgo)
+
             'CARGAR ACEPTABILIDAD DEL RIESGO
             Me.CalcularNivelAceptabilidad()
+        End If
+    End Sub
+    'FUNCION PARA CALCULAR EL COLOR DEL NIVEL DE RIESGO
+    Private Sub CalcularColorNivelRiesgo(ByVal parValNivelRiesgo As Integer)
+        If (parValNivelRiesgo >= 0 AndAlso parValNivelRiesgo <= 20) Then
+            Me.lblValNivRies.BackColor = Drawing.Color.FromArgb(255, 255, 255)
+            Me.lblValNivRies.ForeColor = Drawing.Color.FromKnownColor(Drawing.KnownColor.Black)
+
+        ElseIf (parValNivelRiesgo >= 40 AndAlso parValNivelRiesgo <= 120) Then
+            Me.lblValNivRies.BackColor = Drawing.Color.FromArgb(70, 140, 0)
+            Me.lblValNivRies.ForeColor = Drawing.Color.FromKnownColor(Drawing.KnownColor.White)
+
+        ElseIf (parValNivelRiesgo >= 150 AndAlso parValNivelRiesgo <= 500) Then
+            Me.lblValNivRies.BackColor = Drawing.Color.FromArgb(255, 128, 0)
+            Me.lblValNivRies.ForeColor = Drawing.Color.FromKnownColor(Drawing.KnownColor.White)
+
+        ElseIf (parValNivelRiesgo >= 600 AndAlso parValNivelRiesgo <= 4000) Then
+            Me.lblValNivRies.BackColor = Drawing.Color.FromArgb(217, 0, 0)
+            Me.lblValNivRies.ForeColor = Drawing.Color.FromKnownColor(Drawing.KnownColor.White)
+
         End If
     End Sub
 #End Region

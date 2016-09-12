@@ -45,18 +45,23 @@
 
             Select Case e.Row.DataItem("snrIdNivelRiesgo")
                 Case 0
+                    e.Row.Cells(6).ForeColor = Drawing.Color.FromKnownColor(Drawing.KnownColor.Black)
                     e.Row.Cells(6).BackColor = Nothing
 
                 Case 1
+                    e.Row.Cells(6).ForeColor = Drawing.Color.FromKnownColor(Drawing.KnownColor.White)
                     e.Row.Cells(6).BackColor = Drawing.Color.FromArgb(217, 0, 0)
 
                 Case 2
+                    e.Row.Cells(6).ForeColor = Drawing.Color.FromKnownColor(Drawing.KnownColor.White)
                     e.Row.Cells(6).BackColor = Drawing.Color.FromArgb(255, 128, 0)
 
                 Case 3
+                    e.Row.Cells(6).ForeColor = Drawing.Color.FromKnownColor(Drawing.KnownColor.White)
                     e.Row.Cells(6).BackColor = Drawing.Color.FromArgb(70, 140, 0)
 
                 Case 4
+                    e.Row.Cells(6).ForeColor = Drawing.Color.FromKnownColor(Drawing.KnownColor.Black)
                     e.Row.Cells(6).BackColor = Drawing.Color.FromArgb(255, 255, 255)
             End Select
         End If

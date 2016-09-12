@@ -3644,6 +3644,204 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
+<member name="F:wSoftSGSST.frmMtRgMatrizRiesgos._btnFake123">
+<summary>
+btnFake123 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.frmMtRgMatrizRiesgos._modalInfoMedIntervencion">
+<summary>
+modalInfoMedIntervencion control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.frmMtRgMatrizRiesgos._pnlInfoMedIntervencion">
+<summary>
+pnlInfoMedIntervencion control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.frmMtRgMatrizRiesgos._upnlInfoMedIntervencion">
+<summary>
+upnlInfoMedIntervencion control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.frmMtRgMatrizRiesgos._ibtnCerrarMedIntervencion">
+<summary>
+ibtnCerrarMedIntervencion control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.frmMtRgMatrizRiesgos._lblTituloInfoAdicPeligro">
+<summary>
+lblTituloInfoAdicPeligro control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.frmMtRgMatrizRiesgos._pnlInfoBasicaPeligro">
+<summary>
+pnlInfoBasicaPeligro control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.frmMtRgMatrizRiesgos._bNomDescPeligro">
+<summary>
+bNomDescPeligro control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.frmMtRgMatrizRiesgos._lblDescPeligro">
+<summary>
+lblDescPeligro control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.frmMtRgMatrizRiesgos._lblNomClasiPeligro">
+<summary>
+lblNomClasiPeligro control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.frmMtRgMatrizRiesgos._lblClasiPeligro">
+<summary>
+lblClasiPeligro control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.frmMtRgMatrizRiesgos._pnlInfoAdicParamPeligro">
+<summary>
+pnlInfoAdicParamPeligro control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.frmMtRgMatrizRiesgos._lblNomEvalPeligro">
+<summary>
+lblNomEvalPeligro control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.frmMtRgMatrizRiesgos._lblEvalPeligro">
+<summary>
+lblEvalPeligro control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.frmMtRgMatrizRiesgos._lblNomNumExpuestos">
+<summary>
+lblNomNumExpuestos control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.frmMtRgMatrizRiesgos._lblNumExpuestos">
+<summary>
+lblNumExpuestos control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.frmMtRgMatrizRiesgos._lblNomPeorConsec">
+<summary>
+lblNomPeorConsec control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.frmMtRgMatrizRiesgos._lblPeorConsec">
+<summary>
+lblPeorConsec control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.frmMtRgMatrizRiesgos._lblNomReqLegal">
+<summary>
+lblNomReqLegal control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.frmMtRgMatrizRiesgos._lblReqLegal">
+<summary>
+lblReqLegal control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.frmMtRgMatrizRiesgos._pnlMedIntervencion">
+<summary>
+pnlMedIntervencion control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:wSoftSGSST.frmMtRgMatrizRiesgos._ctrMtRsMedIntervencion1">
+<summary>
+ctrMtRsMedIntervencion1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:wSoftSGSST.frmPlPerfDemografico._upnlPerfDemografico">
 <summary>
 upnlPerfDemografico control.

@@ -436,7 +436,12 @@
 
             objTrans.trConfirmarTransaccion()
 
-            Me.AlertDialog("Se ha guardado correctamente.")
+            If Not (Me.pnlFormularioCargoInfoComp.Visible) Then
+                Me.AlertDialog("Se ha guardado correctamente.</br> Recuerde que es necesario completar la informacion detallada de cada uno de los cargos creados, ingresando a la página 'Profesiograma' y seleccionando la opción 'Consultar y Editar información del Cargo'.")
+            Else
+                Me.AlertDialog("Se ha guardado correctamente.")
+            End If
+
 
         Catch ex As Exception
             objTrans.trRollBackTransaccion()

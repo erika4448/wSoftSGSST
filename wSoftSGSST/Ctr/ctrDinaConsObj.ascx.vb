@@ -106,11 +106,6 @@
     End Property
 #End Region
 #Region "PROTEGIDO"
-    Protected Sub ibtnBuscar_Click(sender As Object, e As ImageClickEventArgs) Handles ibtnBuscar.Click
-        If (Trim(Me.txtObj.Text).Length >= Me.AutoCompleteExtender.MinimumPrefixLength) Then
-            Me.BuscarXNombre()
-        End If
-    End Sub
     'EVENTO DEL BOTON ACTUALIZAR
     Protected Sub ibtnActualizar_Click(sender As Object, e As ImageClickEventArgs) Handles ibtnActualizar.Click
         Me.pIdSel = 0

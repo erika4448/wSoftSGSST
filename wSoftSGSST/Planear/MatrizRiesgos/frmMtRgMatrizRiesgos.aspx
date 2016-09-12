@@ -73,7 +73,7 @@
                                     <asp:BoundField HeaderText="Clasificación Peligro" DataField="StrClasificacionPeligro" SortExpression="StrClasificacionPeligro" />
                                     <asp:BoundField HeaderText="Riesgo" DataField="StrRiesgo" SortExpression="StrRiesgo" />
                                     <asp:BoundField HeaderText="Nivel del Riesgo" DataField="sepValorNivRiesgo" SortExpression="sepValorNivRiesgo">
-                                        <ItemStyle HorizontalAlign="Center" />
+                                        <ItemStyle HorizontalAlign="Center" Font-Bold="True" Font-Size="15px" />
                                     </asp:BoundField>
                                     <asp:BoundField HeaderText="Interpretación del Riesgo" DataField="StrInterpretacionRiesgo" SortExpression="StrInterpretacionRiesgo">
                                         <ItemStyle HorizontalAlign="Center" />
