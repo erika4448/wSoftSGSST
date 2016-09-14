@@ -102,8 +102,8 @@
             <div style="position: fixed; bottom: 0px; margin-bottom: -2px; margin-left: -8px;">
                 <img src="Images/Login/imFooterFasem.png" />
             </div>
-            <div id="LoginFooter">
-            </div>
+            <%--<div id="LoginFooter">
+            </div>--%>
         </div>
     </form>
 </body>
